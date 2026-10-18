@@ -1,0 +1,11 @@
+{
+  "step": 0,
+  "trainable_without_grad": [],
+  "trainable_zero_grad": [],
+  "frozen_with_grad": [],
+  "grad_norm_by_group": {
+    "fuser_gates": 0.027484901472045895,
+    "fuser": 0.005144437248246944,
+    "position_net": 0.0024987751664012825
+  }
+}

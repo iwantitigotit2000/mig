@@ -1,0 +1,29 @@
+{
+  "step": 750,
+  "n_frozen_checked": 686,
+  "frozen_changed": [],
+  "trainable_unchanged": [],
+  "trainable_delta_l2_by_group": {
+    "fuser_gates": 0.005567314004447933,
+    "fuser": 3.9627395897794746,
+    "position_net": 0.28851140288040156
+  },
+  "tanh_alpha_attn": {
+    "input_blocks.1.1.transformer_blocks.0.fuser.alpha_attn": 0.012980402572791361,
+    "input_blocks.2.1.transformer_blocks.0.fuser.alpha_attn": -0.012241117125674422,
+    "input_blocks.4.1.transformer_blocks.0.fuser.alpha_attn": 0.009382471783735639,
+    "input_blocks.5.1.transformer_blocks.0.fuser.alpha_attn": -0.0066071164470712426,
+    "input_blocks.7.1.transformer_blocks.0.fuser.alpha_attn": 0.003455033282032327,
+    "input_blocks.8.1.transformer_blocks.0.fuser.alpha_attn": -0.0075258495595519675,
+    "middle_block.1.transformer_blocks.0.fuser.alpha_attn": -0.007829355280848906,
+    "output_blocks.3.1.transformer_blocks.0.fuser.alpha_attn": 0.012865842023504156,
+    "output_blocks.4.1.transformer_blocks.0.fuser.alpha_attn": 0.01997790437600113,
+    "output_blocks.5.1.transformer_blocks.0.fuser.alpha_attn": -0.01691783652116116,
+    "output_blocks.6.1.transformer_blocks.0.fuser.alpha_attn": 0.04082223708261362,
+    "output_blocks.7.1.transformer_blocks.0.fuser.alpha_attn": -0.050274040552982055,
+    "output_blocks.8.1.transformer_blocks.0.fuser.alpha_attn": -0.05371698985843635,
+    "output_blocks.9.1.transformer_blocks.0.fuser.alpha_attn": -0.05557010974851441,
+    "output_blocks.10.1.transformer_blocks.0.fuser.alpha_attn": 0.055675495247522945,
+    "output_blocks.11.1.transformer_blocks.0.fuser.alpha_attn": 0.03624166285121403
+  }
+}

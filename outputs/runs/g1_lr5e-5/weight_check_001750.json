@@ -1,0 +1,10 @@
+{
+  "step": 1750,
+  "n_frozen_checked": 958,
+  "frozen_changed": [],
+  "trainable_unchanged": [],
+  "trainable_delta_l2_by_group": {
+    "position_net": 2.515863236778136
+  },
+  "tanh_alpha_attn": {}
+}

@@ -1,0 +1,20 @@
+{
+  "mode": "g1",
+  "n_trainable": 1083968,
+  "n_unet_total": 1068623204,
+  "fraction": 0.0010143594074530314,
+  "by_group": {
+    "position_net": 1083968
+  },
+  "n_tensors": 8,
+  "names": [
+    "position_net.null_positive_feature",
+    "position_net.null_position_feature",
+    "position_net.linears.0.weight",
+    "position_net.linears.0.bias",
+    "position_net.linears.2.weight",
+    "position_net.linears.2.bias",
+    "position_net.linears.4.weight",
+    "position_net.linears.4.bias"
+  ]
+}

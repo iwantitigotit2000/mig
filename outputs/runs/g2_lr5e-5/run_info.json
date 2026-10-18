@@ -1,0 +1,63 @@
+{
+  "config": {
+    "seed": 2024,
+    "total_steps": 2000,
+    "keep_steps": [
+      500,
+      2000
+    ],
+    "batch_size": 2,
+    "grad_accum": 4,
+    "warmup_steps": 100,
+    "weight_decay": 0.0,
+    "precision": "bf16",
+    "sdpa": true,
+    "workers": 2,
+    "log_every": 10,
+    "save_every": 250,
+    "data": {
+      "train_manifest": "manifests/coco_train.jsonl",
+      "val_manifest": "manifests/coco_trainval.jsonl",
+      "prob_use_caption": 0.5,
+      "max_boxes_per_data": 30
+    },
+    "val": {
+      "every": 250,
+      "n_images": 50,
+      "timesteps": [
+        100,
+        300,
+        500,
+        800
+      ],
+      "sample_manifest": "manifests/cocomig_pilot.jsonl",
+      "n_samples": 4
+    },
+    "name": "g2_lr5e-5",
+    "mode": "g2",
+    "lr": 5e-05
+  },
+  "env": {
+    "python": "3.10.22",
+    "platform": "Linux-5.14.0-503.14.1.el9_5.x86_64-x86_64-with-glibc2.34",
+    "packages": {
+      "torch": "2.1.2+cu121",
+      "torchvision": "0.16.2+cu121",
+      "transformers": "4.19.2",
+      "huggingface_hub": "0.36.2",
+      "numpy": "1.26.4",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "cuda": "12.1",
+    "gpu": "NVIDIA A40",
+    "gpu_total_mem_gb": 44.43
+  },
+  "gligen_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+  "init_checkpoint": {
+    "path": "/home/mcaai/xinkuo001/mig_assets/weights/gligen_generation_text_box.bin",
+    "size": 6775067861,
+    "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+  },
+  "n_train_images": 3000,
+  "n_val_images": 100
+}

@@ -1,0 +1,9 @@
+{
+  "step": 0,
+  "trainable_without_grad": [],
+  "trainable_zero_grad": [],
+  "frozen_with_grad": [],
+  "grad_norm_by_group": {
+    "position_net": 0.002495892148249495
+  }
+}
