@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig126_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "126",
+  "caption": "a photo of a green toilet and a yellow sink and a yellow suitcase",
+  "objects": [
+    {
+      "desc": "a green toilet",
+      "box": [
+        0.4975625,
+        0.26101562500000003,
+        0.7590625000000001,
+        0.6146874999999999
+      ]
+    },
+    {
+      "desc": "a yellow sink",
+      "box": [
+        0.715875,
+        0.46290624999999996,
+        1.0,
+        0.658546875
+      ]
+    },
+    {
+      "desc": "a yellow suitcase",
+      "box": [
+        0.0379375,
+        0.390203125,
+        0.1951041666666667,
+        0.5894375000000001
+      ]
+    }
+  ],
+  "seconds": 6.38,
+  "peak_mem_allocated_gb": 7.82,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

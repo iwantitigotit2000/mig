@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig470_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "470",
+  "caption": "a photo of a black cat and a green suitcase and a black chair",
+  "objects": [
+    {
+      "desc": "a black cat",
+      "box": [
+        0.015020833333333334,
+        0.33896875,
+        0.9429374999999999,
+        0.6858124999999999
+      ]
+    },
+    {
+      "desc": "a green suitcase",
+      "box": [
+        0.00010416666666666667,
+        0.192046875,
+        1.0,
+        0.8469687499999999
+      ]
+    },
+    {
+      "desc": "a black chair",
+      "box": [
+        0.0,
+        0.7540312499999999,
+        0.9055833333333333,
+        1.0
+      ]
+    }
+  ],
+  "seconds": 6.489,
+  "peak_mem_allocated_gb": 7.823,
+  "peak_mem_reserved_gb": 8.674,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

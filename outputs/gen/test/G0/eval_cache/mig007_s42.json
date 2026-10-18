@@ -1,0 +1,135 @@
+{
+  "sample_id": "mig007_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "15eac8d4d1d690383730b9cd585cdf7093d3df79",
+  "detections": {
+    "bird": {
+      "xyxy": [
+        [
+          269.15826416015625,
+          282.3152160644531,
+          348.392333984375,
+          406.9245300292969
+        ],
+        [
+          386.0957946777344,
+          232.75189208984375,
+          491.0496520996094,
+          341.5582275390625
+        ]
+      ],
+      "conf": [
+        0.8280422687530518,
+        0.8254280090332031
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black bird",
+      "category": "bird",
+      "color": "black",
+      "box": [
+        0.5079374999999999,
+        0.566923076923077,
+        0.6703749999999999,
+        0.7924941724941725
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.7831609333162718,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "UiW41o?1N100O101N1`A:f<FUCb0g<_OUCh0h<XOUCm0h<UOUCo0i<QOTCS1j<nNTCV1j<jNUCX1i<jNTCZ1j<fNUC\\1i<fNUC]1i<dNUC^1j<eNRC]1l<iNmB[1Q=k0O1O2PC[Ma<R30M3L4N2L4O101O010O010?AN2M3K5J6K6L5M2N4L3M1O2N1N2O10000100101N101O0O<C2N2M2N2N2O1N2N3N1N3M3M3M4L3M3M3I7LhSb2"
+      },
+      "sam_score_gt_box": 0.9911818504333496,
+      "mask_area": 4695,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0025559105431309905,
+        "yellow": 0.0,
+        "green": 0.00021299254526091586,
+        "black": 0.9599574014909478,
+        "white": 0.0,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7831609333162718,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7831609333162718,
+      "o2o_det": [
+        269.15826416015625,
+        282.3152160644531,
+        348.392333984375,
+        406.9245300292969
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9599574014909478
+    },
+    {
+      "idx": 1,
+      "desc": "a white bird",
+      "category": "bird",
+      "color": "white",
+      "box": [
+        0.74815625,
+        0.4516083916083916,
+        0.935546875,
+        0.6666666666666666
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8479636413690632,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "dWR61o?1N101O00000O2i@;Q>ElAb0P>^OnAg0o=ZOnAk0o=UOPBn0n=ROPBR1n=nNQBT1n=mNPBV1m=kNRBW1k=kNTBX1h=b0N2O1N2O1N2O2N1O2N1O1QC_M]<b2^CdMa<m20O2N1L5K5L4LoBdMd<\\2YCgMi<X2RClMo<a23I7J7K5K9G6L2M3N1O2N101N1O2N1O1O1O1O2N1O1O1N101O1O2O0O1010O01O0000001O01O01O0O2N1O1O1O001O1O1O00100O1M3O1O1N2N2N2N200O100O1O1Oge:"
+      },
+      "sam_score_gt_box": 0.996245265007019,
+      "mask_area": 4376,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.003656307129798903,
+        "yellow": 0.0,
+        "green": 0.00022851919561243144,
+        "black": 0.9574954296160878,
+        "white": 0.0,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8479636413690632,
+      "o2o_det": [
+        386.0957946777344,
+        232.75189208984375,
+        491.0496520996094,
+        341.5582275390625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig372_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "372",
+  "caption": "a photo of a blue refrigerator and a white dining table and a blue oven",
+  "objects": [
+    {
+      "desc": "a blue refrigerator",
+      "box": [
+        0.512078125,
+        0.2336065573770492,
+        0.804453125,
+        0.9842622950819672
+      ]
+    },
+    {
+      "desc": "a white dining table",
+      "box": [
+        0.0,
+        0.6269789227166277,
+        0.23343750000000002,
+        0.9859016393442623
+      ]
+    },
+    {
+      "desc": "a blue oven",
+      "box": [
+        0.6581875,
+        0.49662763466042154,
+        0.9985312499999999,
+        1.0
+      ]
+    }
+  ],
+  "seconds": 6.345,
+  "peak_mem_allocated_gb": 7.824,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

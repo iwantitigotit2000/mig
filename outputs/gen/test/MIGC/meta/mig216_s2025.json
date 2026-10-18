@@ -1,0 +1,52 @@
+{
+  "sample_id": "mig216_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "216",
+  "caption": "a photo of a yellow sheep and a black sheep",
+  "objects": [
+    {
+      "desc": "a yellow sheep",
+      "box": [
+        0.0351875,
+        0.3192677824267783,
+        0.31665625,
+        0.5419665271966527
+      ]
+    },
+    {
+      "desc": "a black sheep",
+      "box": [
+        0.5246562499999999,
+        0.3201255230125523,
+        0.8588281249999999,
+        0.8525732217573221
+      ]
+    }
+  ],
+  "seconds": 6.189,
+  "peak_mem_allocated_gb": 7.81,
+  "peak_mem_reserved_gb": 8.662,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

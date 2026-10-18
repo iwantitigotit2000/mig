@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig149_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "149",
+  "caption": "a photo of a blue zebra and a green zebra and a brown zebra",
+  "objects": [
+    {
+      "desc": "a blue zebra",
+      "box": [
+        0.22196875,
+        0.4484375,
+        0.48431250000000003,
+        0.7399166666666666
+      ]
+    },
+    {
+      "desc": "a green zebra",
+      "box": [
+        0.458421875,
+        0.494375,
+        0.72303125,
+        0.7258333333333333
+      ]
+    },
+    {
+      "desc": "a brown zebra",
+      "box": [
+        0.46003125,
+        0.5035208333333333,
+        0.671296875,
+        0.71575
+      ]
+    }
+  ],
+  "seconds": 6.319,
+  "peak_mem_allocated_gb": 7.816,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig780_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "780",
+  "caption": "a photo of a white laptop and a blue laptop and a brown laptop and a yellow keyboard and a black tv",
+  "objects": [
+    {
+      "desc": "a white laptop",
+      "box": [
+        0.052468749999999995,
+        0.5662997658079625,
+        0.313359375,
+        0.8988758782201405
+      ]
+    },
+    {
+      "desc": "a blue laptop",
+      "box": [
+        0.5983125,
+        0.4698829039812646,
+        0.801609375,
+        0.7604683840749413
+      ]
+    },
+    {
+      "desc": "a brown laptop",
+      "box": [
+        0.1164375,
+        0.42601873536299767,
+        0.29889062499999997,
+        0.6237704918032787
+      ]
+    },
+    {
+      "desc": "a yellow keyboard",
+      "box": [
+        0.09767187499999999,
+        0.7184777517564404,
+        0.31856249999999997,
+        0.8986416861826698
+      ]
+    },
+    {
+      "desc": "a black tv",
+      "box": [
+        0.368828125,
+        0.39833723653395786,
+        0.620515625,
+        0.6318501170960188
+      ]
+    }
+  ],
+  "seconds": 5.287,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

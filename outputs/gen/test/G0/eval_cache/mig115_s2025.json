@@ -1,0 +1,106 @@
+{
+  "sample_id": "mig115_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "5db3c82afb90a98194b5f980c806bedc897154b1",
+  "detections": {
+    "chair": {
+      "xyxy": [
+        [
+          254.884765625,
+          253.93431091308594,
+          462.94366455078125,
+          511.8392333984375
+        ]
+      ],
+      "conf": [
+        0.9225143790245056
+      ]
+    },
+    "dining table": {
+      "xyxy": [],
+      "conf": []
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black chair",
+      "category": "chair",
+      "color": "black",
+      "box": [
+        0.500203125,
+        0.4707438016528926,
+        0.900375,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9379364379318236,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "n_P42h?6J6K5K5K5I7H8K5F:[O`0K43N3M4L4N2M3L4N2N3O00010O010O001O0100O100O1eN\\NZDe1`;POoCQ1P<\\OdCd0Y<d1N1O1N3O0O1O2NcL_D]2a;`MnDT2Q;lMZEj1e:VN\\Ek1c:TN^El1a:TN`El1`:TN`Em1^:SNbEn1^:RNbEn1]:RNdEn1\\:RNdEo1[:PNfEP2Y:PNhEP2X:PNhEQ2V:PNiEQ2W:oMiEQ2V:oMkER2T:mMmET2R:lMnEU2`NeNY:WOWG[3i8dLXG\\3h8dLXG\\3g8dLZG\\3f8dLYG]3g8cLYG]3f8dLZG\\3f8cL[G]3e8cL[G]3e8cL[G]3d8cL]G]3c8cL]G]3b8dL^G\\3b8dL^G[3c8dL^GQ3m8oLSGi2T9XMlF^2^9aMcF\\2`9dM`FW2d9jM\\Fo1k9QNUFo1k9PNVFo1k9QNUFP2i9QNWFo1i9PNXFP2g9QNYFo1g9QNYFo1f9QN[Fo1d9RN\\Fn1d9RNYFQ2f9oMXFT2h9lMRFZ2m9gMnE^2R:aMjEd2V:\\MeEi2Z:XMaEm2_:SM\\ER3d:mLWEY3i:gLSE]3l:cLPEb3P;^LjDh3V;a00000O1L4L4K7J8H:E:F9G=D8H7H8I7L3L3N1O1O1O100O100000M3M3N2N2N2[Oe0@`0L4001O002N1O1O0O3N1O1O0O]NiF`LV9\\3PG]K7;g8T4SHkKm7R4YHlKe7S4_HlK`7R4eHlKZ7Q4kHoKS7o3PIRLn6l3WIWLc6f3bI\\LY6c3mI]Lo5a3VJaLe5\\3cJcLY5[3mJdLQ5X3UKjLf4T3_KmL]4Q3iKkLW4S3oKiLQ4U3TLhLl3U3[LgLf3V3^LhLb3W3d4M3N2N3M2M3N2N3L3N2M3N3M2M3N2N3M3M3L4M4K4M3L3N3N1M3N2M3N2M2N3N2M3M4L3M5Kdgh0"
+      },
+      "sam_score_gt_box": 1.0006824731826782,
+      "mask_area": 23287,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.8028084338901533,
+        "green": 0.0,
+        "black": 0.0003864817280027483,
+        "white": 0.004036586936917594,
+        "brown": 0.23214669128698415
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.9379364379318236,
+      "o2o_det": [
+        254.884765625,
+        253.93431091308594,
+        462.94366455078125,
+        511.8392333984375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.00038679731820526046
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow dining table",
+      "category": "dining table",
+      "color": "yellow",
+      "box": [
+        0.17459375,
+        0.5836570247933884,
+        0.35865625,
+        0.8200413223140496
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

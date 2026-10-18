@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig322_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "322",
+  "caption": "a photo of a green potted plant and a black chair and a red dining table and a white chair and a black book",
+  "objects": [
+    {
+      "desc": "a green potted plant",
+      "box": [
+        0.05328125,
+        0.5021102661596959,
+        0.29125,
+        0.8004372623574144
+      ]
+    },
+    {
+      "desc": "a black chair",
+      "box": [
+        0.42334375,
+        0.7553802281368821,
+        0.68725,
+        0.9859885931558935
+      ]
+    },
+    {
+      "desc": "a red dining table",
+      "box": [
+        0.0019375,
+        0.7482319391634981,
+        0.502796875,
+        0.9858745247148287
+      ]
+    },
+    {
+      "desc": "a white chair",
+      "box": [
+        0.0,
+        0.6518631178707224,
+        0.13646875,
+        0.7816159695817491
+      ]
+    },
+    {
+      "desc": "a black book",
+      "box": [
+        0.18125,
+        0.06273764258555133,
+        0.95,
+        0.5798479087452472
+      ]
+    }
+  ],
+  "seconds": 6.61,
+  "peak_mem_allocated_gb": 7.821,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

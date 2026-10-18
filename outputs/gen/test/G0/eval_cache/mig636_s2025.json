@@ -1,0 +1,387 @@
+{
+  "sample_id": "mig636_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "154409f7e3baff63e1160577a6c2c84d43918939",
+  "detections": {
+    "bench": {
+      "xyxy": [
+        [
+          385.30078125,
+          285.8993835449219,
+          511.817626953125,
+          356.9648132324219
+        ]
+      ],
+      "conf": [
+        0.679551362991333
+      ]
+    },
+    "chair": {
+      "xyxy": [
+        [
+          269.72528076171875,
+          272.5385437011719,
+          384.02227783203125,
+          446.2285461425781
+        ]
+      ],
+      "conf": [
+        0.7957991361618042
+      ]
+    },
+    "dining table": {
+      "xyxy": [
+        [
+          54.432945251464844,
+          252.4869384765625,
+          198.86444091796875,
+          357.04345703125
+        ],
+        [
+          385.38836669921875,
+          286.26104736328125,
+          511.77001953125,
+          357.1280517578125
+        ]
+      ],
+      "conf": [
+        0.5233619809150696,
+        0.3220106363296509
+      ]
+    },
+    "potted plant": {
+      "xyxy": [
+        [
+          448.53973388671875,
+          247.97488403320312,
+          511.89666748046875,
+          357.2772521972656
+        ],
+        [
+          69.74588012695312,
+          119.90989685058594,
+          168.75338745117188,
+          261.21441650390625
+        ],
+        [
+          184.54501342773438,
+          243.8994903564453,
+          250.64056396484375,
+          329.5672302246094
+        ],
+        [
+          159.5963592529297,
+          265.7701110839844,
+          182.57310485839844,
+          291.0651550292969
+        ]
+      ],
+      "conf": [
+        0.7257346510887146,
+        0.6201643347740173,
+        0.615028977394104,
+        0.4445803165435791
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue chair",
+      "category": "chair",
+      "color": "blue",
+      "box": [
+        0.52466,
+        0.53128,
+        0.7550399999999999,
+        0.8922666666666668
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9106128709538095,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "chW48g?6K6J3M3M3N3L4]DTOj7P1jGYOU8k0`G\\Oa8h0SG_Om8g0eFA[9f0QFGo9S32M4L3J6K5H8F:D<B^C]Md<b2]C^Mb<b2_C]Ma<c2_C^M`<c2`C\\M`<d2`C]M_<d2`C\\M`<d2`C]M`<c2_C]Ma<c2_C^M`<b2_C_Ma<b2]CWMO4c<e2^CWMO4c<e2]CXM12b<g2[CWM52_<k2aCUM_<j2cCVM]<i2cCWM]<i2cCWM]<j2bCWM]<V305K1O1O0000M4]OiCZMX<f2iCZMV<e2kC[MU<e2kC[MU<f2jCZMV<f2jCZMV<f2jC[MU<e2lCZMT<f2lCZMT<f2lCZMT<f2lCZMU<e2kC[MQ1Oa9g2]EZMe0<n9Z2]EZM9i0Y:n1\\EZM0S1d:h30000000J6F:F:F:D=hL_Db1n;]NcDR1^;nNbDR1^;nNbDh0eNUOi<2cDi0dNUOi<2cDi0dNUOj<MfDm0bNUO_>k0aAUO_>k0bATO^>l0bAUO]>k0cAUO^>j0bAVO^>i0cAWO]>i0cAWO]>i0dAVO\\>j0dAVO\\>i0eAWO[>i0eAWO\\>h0dAXO\\>h0dAYO[>f0fAZOZ>f0fAZOZ>f0fAZO[>d0gA[OY>e0gA[OY>e0gA[OY>e0fA\\O[>b0eA^O\\>b0cA_O]>S1Ok0VO0O1O01O0ZNiBa0Z=\\Of1O2N3MTUP2"
+      },
+      "sam_score_gt_box": 0.9878101348876953,
+      "mask_area": 8953,
+      "color_ratios": {
+        "red": 0.011727912431587178,
+        "blue": 0.15938791466547525,
+        "yellow": 0.00011169440411035407,
+        "green": 0.0010052496369931867,
+        "black": 0.45392605830447896,
+        "white": 0.1301239807885625,
+        "brown": 0.04300234558248632
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9106128709538095,
+      "o2o_det": [
+        269.72528076171875,
+        272.5385437011719,
+        384.02227783203125,
+        446.2285461425781
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.15936522127849798
+    },
+    {
+      "idx": 1,
+      "desc": "a blue potted plant",
+      "category": "potted plant",
+      "color": "blue",
+      "box": [
+        0.14052,
+        0.24848,
+        0.31762,
+        0.5010666666666667
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.8381943424396826,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "_dT1>f0CU>a0aAH\\>P1N1O11O000O100O01gAjNf=W1nAZOl=b1H8F9BZMVCm2f<;K4M4L2O21O0NO001O001O000O1O2D;O2O1N10001O04L1O00O2N1O100001O6J001O1O1O001O1O0000000O1000O10000001O1O00000000001N1^LjCZ3`<N0hLaCn2k<L3N2M2M3M3M3M4L3L5L4K6QOmAI\\>1gAHe>1\\AJj>3ZAFk>6a0O2M5KYj[5"
+      },
+      "sam_score_gt_box": 0.999968409538269,
+      "mask_area": 9273,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.22894424673784106,
+        "yellow": 0.24361048204464575,
+        "green": 0.15151515151515152,
+        "black": 0.2305618462202092,
+        "white": 0.021460153132750997,
+        "brown": 0.009382076997735361
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8381943424396826,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8381943424396826,
+      "o2o_det": [
+        69.74588012695312,
+        119.90989685058594,
+        168.75338745117188,
+        261.21441650390625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2281662906864325
+    },
+    {
+      "idx": 2,
+      "desc": "a blue dining table",
+      "category": "dining table",
+      "color": "blue",
+      "box": [
+        0.73802,
+        0.55864,
+        0.99762,
+        0.7036000000000001
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8944405879350708,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "XYQ68h?001N1O10001N1000000O2O0000001O0000001O000O10001O000O2O00000O2O008HL4O11N2O00O1O1O100001O00001O0000010O0000001O01O000001O01O000000010O002N4L3N1N1O1O1O1O100O2N1O100O1O001O1O01O004L9\\@^OY?P1D1O1O001O00000001O01O00000000000000000000000O0100N3K4G:E:M20100O1000QF"
+      },
+      "sam_score_gt_box": 0.9738258123397827,
+      "mask_area": 2866,
+      "color_ratios": {
+        "red": 0.4884856943475227,
+        "blue": 0.0,
+        "yellow": 0.0006978367062107466,
+        "green": 0.0,
+        "black": 0.025819958129797628,
+        "white": 0.377529658060014,
+        "brown": 0.4619678995115143
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "red",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8944405879350708,
+      "o2o_det": [
+        385.38836669921875,
+        286.26104736328125,
+        511.77001953125,
+        357.1280517578125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 3,
+      "desc": "a blue bench",
+      "category": "bench",
+      "color": "blue",
+      "box": [
+        0.24803999999999998,
+        0.49104,
+        0.37724,
+        0.7461333333333332
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.0,
+      "o2o_det": [
+        385.30078125,
+        285.8993835449219,
+        511.817626953125,
+        356.9648132324219
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 4,
+      "desc": "a white potted plant",
+      "category": "potted plant",
+      "color": "white",
+      "box": [
+        0.33083999999999997,
+        0.4856266666666667,
+        0.4605,
+        0.65744
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.5635990831337633,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Shm2;d?6J5L3L3M101N1O3N?@2N5L>A6K2M2N10000O10000O100000000O100000O10000O100O1N2K6H7L5M3M2O1N3M2L4L4O2N102N1O1O1O1O1O2M2N3M3M2M>C\\WS4"
+      },
+      "sam_score_gt_box": 0.9880048036575317,
+      "mask_area": 3429,
+      "color_ratios": {
+        "red": 0.23009623797025372,
+        "blue": 0.0,
+        "yellow": 0.36016331291921844,
+        "green": 0.21493146689997084,
+        "black": 0.03820355788859726,
+        "white": 0.00029163021289005544,
+        "brown": 0.21026538349372995
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.5635990831337633,
+      "o2o_det": [
+        184.54501342773438,
+        243.8994903564453,
+        250.64056396484375,
+        329.5672302246094
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 5,
+      "desc": "a yellow potted plant",
+      "category": "potted plant",
+      "color": "yellow",
+      "box": [
+        0.8674,
+        0.46882666666666667,
+        0.994,
+        0.6215466666666667
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.5473921770747424,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "chP73k?7J3L3N3M2N2N3J;G5M1O1N2N2N2O1O1O1O2N1I7O1O1O0O2O00000010O001O00O1O10001O0000000O1001O1O1O00000000000O10002L3N2M200O2N2O0O10nG"
+      },
+      "sam_score_gt_box": 1.0039278268814087,
+      "mask_area": 3495,
+      "color_ratios": {
+        "red": 0.14506437768240343,
+        "blue": 0.0,
+        "yellow": 0.4,
+        "green": 0.1854077253218884,
+        "black": 0.0955650929899857,
+        "white": 0.0,
+        "brown": 0.25178826895565093
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.5473921770747424,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.5473921770747424,
+      "o2o_det": [
+        448.53973388671875,
+        247.97488403320312,
+        511.89666748046875,
+        357.2772521972656
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.32033937170373766
+    }
+  ]
+}

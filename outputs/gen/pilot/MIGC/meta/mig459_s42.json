@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig459_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "459",
+  "caption": "a photo of a white dining table and a black dining table and a green pizza and a red wine glass and a white cup and a green bowl",
+  "objects": [
+    {
+      "desc": "a white dining table",
+      "box": [
+        0.0,
+        0.5123593750000001,
+        1.0,
+        0.986515625
+      ]
+    },
+    {
+      "desc": "a black dining table",
+      "box": [
+        0.0,
+        0.24325000000000002,
+        1.0,
+        0.6914374999999999
+      ]
+    },
+    {
+      "desc": "a green pizza",
+      "box": [
+        0.04813807531380754,
+        0.5101093750000001,
+        0.7913179916317992,
+        0.9955
+      ]
+    },
+    {
+      "desc": "a red wine glass",
+      "box": [
+        0.1630334728033473,
+        0.0,
+        0.7764853556485356,
+        0.557078125
+      ]
+    },
+    {
+      "desc": "a white cup",
+      "box": [
+        0.613786610878661,
+        0.1528125,
+        0.9628033472803348,
+        0.431453125
+      ]
+    },
+    {
+      "desc": "a green bowl",
+      "box": [
+        0.0748744769874477,
+        0.19037500000000002,
+        0.38939330543933054,
+        0.35368750000000004
+      ]
+    }
+  ],
+  "seconds": 9.219,
+  "peak_mem_allocated_gb": 7.828,
+  "peak_mem_reserved_gb": 8.674,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

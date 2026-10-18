@@ -1,0 +1,169 @@
+{
+  "sample_id": "mig126_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "2404585d593c48aead27d178bbad5944e5dc0b7c",
+  "detections": {
+    "sink": {
+      "xyxy": [
+        [
+          377.40380859375,
+          245.59349060058594,
+          511.88580322265625,
+          343.9094543457031
+        ]
+      ],
+      "conf": [
+        0.7312313914299011
+      ]
+    },
+    "suitcase": {
+      "xyxy": [],
+      "conf": []
+    },
+    "toilet": {
+      "xyxy": [
+        [
+          245.4010467529297,
+          131.25489807128906,
+          388.67059326171875,
+          334.04766845703125
+        ]
+      ],
+      "conf": [
+        0.8265448808670044
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green toilet",
+      "category": "toilet",
+      "color": "green",
+      "box": [
+        0.4975625,
+        0.26101562500000003,
+        0.7590625000000001,
+        0.6146874999999999
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8344605034695394,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Zdk35g?5N101O2N:F1O0000003Mf0YO`0B;D8H8H6J1N8I3M2N1O1OFfCnLZ<Q3iCnLV<Q3lCnLT<R3mCnLR<R3nCnLR<R3oCmLQ<S3oCmLQ<T3oClLP<T3oCmLQ<T3nCkLS<U3nCiLS<W3;3[ChL\\<Y3cCgL]<^300fC`LT<^3lCiLZ1b0]8V3fFPL3m0W9W3cFoK0l0\\9X3bFnKNm0_9V3\\FiKO45n0`9W3ZFhKO55m0b9g3]FYLd9f3\\FZLd9f3\\FZLd9f3\\FZLd9f3]FYLc9c3aF]L^9d3aF]L_9d3`F\\L`9f3_FYLb9f3^F[La9e3`FZL`9f3`FZL`9h3_FWLa9i3`FVL_9k3aFUL_9l3\\FXLe9Q5000000000000000000000001O00000000000000000000000000O11O0000O100000000O1^LYFJ3]Nd9b1`F02YN^9^1jF7MWNY9Z1RG>ITNV9V1YGf0EoMS9U1^Gl0AlMR9P1eGS1]9dNlF\\1T9]NSGc1m8VNZGi1g8TN\\Gl1d8SN]Gm1e8PN\\Go1g8oMYGP2\\;00O2O0O1O101N100O2O000O2N10001N2O0O2N1N3L5L3M5K3FSA\\OQ??;M4M3M3L^hm1"
+      },
+      "sam_score_gt_box": 0.962360143661499,
+      "mask_area": 17493,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 5.7165723432230034e-05,
+        "yellow": 0.00022866289372892014,
+        "green": 0.7680786600354428,
+        "black": 0.07031383982164294,
+        "white": 0.0022294632138569713,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8344605034695394,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8344605034695394,
+      "o2o_det": [
+        245.4010467529297,
+        131.25489807128906,
+        388.67059326171875,
+        334.04766845703125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7575587591855051
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow sink",
+      "category": "sink",
+      "color": "yellow",
+      "box": [
+        0.715875,
+        0.46290624999999996,
+        1.0,
+        0.658546875
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.7957656595846281,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "hXm59c?8J4L3M4M2D<M3N3L3N2N2M3O1O1O1O0O2O1O1O1O001O1O001O001O001O1N101O1O001O001O001O001O001O001O00001O001O001O001O00001O1O001O001O1O1O2N2N1O1O001O001O0001O000001O0000000000000001N10000O100N200O2N1N2N2O1O1O1O2N100O1O1O100O2O0O100O101N100O10001N10001O0O101O000O2N1O2M2M4M2NoG"
+      },
+      "sam_score_gt_box": 1.0073310136795044,
+      "mask_area": 10209,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.45391321383093347,
+        "green": 0.39230091096091685,
+        "black": 0.06376726417866588,
+        "white": 0.0,
+        "brown": 0.0028406308159467136
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7957656595846281,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7957656595846281,
+      "o2o_det": [
+        377.40380859375,
+        245.59349060058594,
+        511.88580322265625,
+        343.9094543457031
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4541801430951681
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow suitcase",
+      "category": "suitcase",
+      "color": "yellow",
+      "box": [
+        0.0379375,
+        0.390203125,
+        0.1951041666666667,
+        0.5894375000000001
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

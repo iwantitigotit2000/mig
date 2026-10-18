@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig773_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "773",
+  "caption": "a photo of a yellow tv and a green cup and a yellow keyboard and a black book and a yellow book",
+  "objects": [
+    {
+      "desc": "a yellow tv",
+      "box": [
+        0.660328125,
+        0.004004683840749415,
+        1.0,
+        0.5369320843091335
+      ]
+    },
+    {
+      "desc": "a green cup",
+      "box": [
+        0.405671875,
+        0.3094145199063232,
+        0.545,
+        0.4741217798594847
+      ]
+    },
+    {
+      "desc": "a yellow keyboard",
+      "box": [
+        0.5337500000000001,
+        0.5101170960187353,
+        0.85759375,
+        0.8629274004683841
+      ]
+    },
+    {
+      "desc": "a black book",
+      "box": [
+        0.0,
+        0.429344262295082,
+        0.620921875,
+        0.6613348946135831
+      ]
+    },
+    {
+      "desc": "a yellow book",
+      "box": [
+        0.066546875,
+        0.5364402810304449,
+        0.654234375,
+        0.9237939110070258
+      ]
+    }
+  ],
+  "seconds": 6.562,
+  "peak_mem_allocated_gb": 7.825,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

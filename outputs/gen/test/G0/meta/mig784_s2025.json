@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig784_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "784",
+  "caption": "a photo of a green dining table and a white cup and a white pizza and a green pizza and a yellow pizza",
+  "objects": [
+    {
+      "desc": "a green dining table",
+      "box": [
+        0.0,
+        0.00022,
+        1.0,
+        0.98904
+      ]
+    },
+    {
+      "desc": "a white cup",
+      "box": [
+        0.30261333333333335,
+        0.0022400000000000002,
+        0.6651733333333333,
+        0.16404000000000002
+      ]
+    },
+    {
+      "desc": "a white pizza",
+      "box": [
+        0.0035733333333333337,
+        0.1591,
+        0.74152,
+        0.46122
+      ]
+    },
+    {
+      "desc": "a green pizza",
+      "box": [
+        0.7090133333333333,
+        0.20706,
+        1.0,
+        0.36236
+      ]
+    },
+    {
+      "desc": "a yellow pizza",
+      "box": [
+        0.19394666666666668,
+        0.52844,
+        0.8222666666666667,
+        1.0
+      ]
+    }
+  ],
+  "seconds": 5.29,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

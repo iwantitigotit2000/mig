@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig781_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "781",
+  "caption": "a photo of a blue fork and a red knife and a red pizza and a white pizza and a yellow dining table",
+  "objects": [
+    {
+      "desc": "a blue fork",
+      "box": [
+        0.505032679738562,
+        0.0,
+        0.8360130718954248,
+        0.13839869281045752
+      ]
+    },
+    {
+      "desc": "a red knife",
+      "box": [
+        0.6966339869281045,
+        0.01573529411764706,
+        1.0,
+        0.26516339869281047
+      ]
+    },
+    {
+      "desc": "a red pizza",
+      "box": [
+        0.11684640522875818,
+        0.13933006535947712,
+        0.6696568627450981,
+        0.6876470588235294
+      ]
+    },
+    {
+      "desc": "a white pizza",
+      "box": [
+        0.46965686274509805,
+        0.6269607843137255,
+        0.7325816993464053,
+        0.869656862745098
+      ]
+    },
+    {
+      "desc": "a yellow dining table",
+      "box": [
+        0.0022549019607843133,
+        0.0022549019607843133,
+        0.9977450980392157,
+        0.9932516339869281
+      ]
+    }
+  ],
+  "seconds": 6.561,
+  "peak_mem_allocated_gb": 7.819,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

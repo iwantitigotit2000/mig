@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig307_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "307",
+  "caption": "a photo of a brown dog and a brown car and a brown truck",
+  "objects": [
+    {
+      "desc": "a brown dog",
+      "box": [
+        0.311134328358209,
+        0.12318000000000001,
+        0.818865671641791,
+        0.42324
+      ]
+    },
+    {
+      "desc": "a brown car",
+      "box": [
+        0.6034328358208956,
+        0.09248,
+        1.0,
+        0.22795999999999997
+      ]
+    },
+    {
+      "desc": "a brown truck",
+      "box": [
+        0.0023283582089552238,
+        0.06122,
+        1.0,
+        0.99786
+      ]
+    }
+  ],
+  "seconds": 6.324,
+  "peak_mem_allocated_gb": 7.822,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

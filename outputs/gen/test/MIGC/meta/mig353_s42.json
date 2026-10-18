@@ -1,0 +1,70 @@
+{
+  "sample_id": "mig353_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "353",
+  "caption": "a photo of a white car and a blue car and a blue car and a brown car",
+  "objects": [
+    {
+      "desc": "a white car",
+      "box": [
+        0.21590625000000002,
+        0.7094145199063232,
+        0.368828125,
+        0.8802107728337237
+      ]
+    },
+    {
+      "desc": "a blue car",
+      "box": [
+        0.43621875,
+        0.6842154566744731,
+        0.65446875,
+        0.9484777517564403
+      ]
+    },
+    {
+      "desc": "a blue car",
+      "box": [
+        0.0035000000000000005,
+        0.6681733021077283,
+        0.1605,
+        0.9458313817330211
+      ]
+    },
+    {
+      "desc": "a brown car",
+      "box": [
+        0.626,
+        0.716440281030445,
+        0.862890625,
+        0.8938173302107729
+      ]
+    }
+  ],
+  "seconds": 6.429,
+  "peak_mem_allocated_gb": 7.819,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

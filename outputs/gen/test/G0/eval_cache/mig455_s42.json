@@ -1,0 +1,196 @@
+{
+  "sample_id": "mig455_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "6e9ea2ef22946421aaf98ba190d1c2d328b7433b",
+  "detections": {
+    "chair": {
+      "xyxy": [],
+      "conf": []
+    },
+    "oven": {
+      "xyxy": [
+        [
+          217.88174438476562,
+          200.44589233398438,
+          444.2946472167969,
+          511.7774353027344
+        ]
+      ],
+      "conf": [
+        0.285571813583374
+      ]
+    },
+    "potted plant": {
+      "xyxy": [
+        [
+          0.013072967529296875,
+          0.01181793212890625,
+          102.98213195800781,
+          179.36651611328125
+        ]
+      ],
+      "conf": [
+        0.8196105360984802
+      ]
+    },
+    "refrigerator": {
+      "xyxy": [
+        [
+          378.23309326171875,
+          0.03033447265625,
+          512.0164794921875,
+          512.0297241210938
+        ]
+      ],
+      "conf": [
+        0.5713095664978027
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black oven",
+      "category": "oven",
+      "color": "black",
+      "box": [
+        0.06722,
+        0.7982758620689655,
+        0.38996000000000003,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.0,
+      "o2o_det": [
+        217.88174438476562,
+        200.44589233398438,
+        444.2946472167969,
+        511.7774353027344
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a blue potted plant",
+      "category": "potted plant",
+      "color": "blue",
+      "box": [
+        0.0,
+        0.0,
+        0.17662,
+        0.3451724137931034
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8650179079593905,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "0a5_:000000eJdER5e:01OO10O10000000001O0000O000O01N3N1N3L4M3O1M3N2M3N2N2N2O1N1O2N0101000O100000000001O001O1O0001WL[DU3g;hLZDY3f;eL\\DZ3e;dL]D[3c;dL^D[3c;eL]D[3c;dL_D[3a;dL`D\\3`;dLaDk2E\\Mk;HaDl2FWMm;K^Dm2HSM_<m2;00000O11O0O01OO10O0N2N3N2OC[CaMe<^2]CaMc<_2]CbMb<]2`CcM_<]2bCbM^<^2bCbM^<]2eCaM[<;\\C]1=UNX<<^C]1W=bNlB4K`0Z=RObB5:7L0NJc=LfBLH257NKc=N[C5TOKm>5SAJn>5SAKm>5?00O010O100O100O2Nj]]6"
+      },
+      "sam_score_gt_box": 1.0037214756011963,
+      "mask_area": 11457,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.021820720956620406,
+        "green": 0.1021209740769835,
+        "black": 0.707689622065113,
+        "white": 8.728288382648163e-05,
+        "brown": 0.0068080649384655665
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8650179079593905,
+      "o2o_det": [
+        0.013072967529296875,
+        0.01181793212890625,
+        102.98213195800781,
+        179.36651611328125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 2,
+      "desc": "a brown refrigerator",
+      "category": "refrigerator",
+      "color": "brown",
+      "box": [
+        0.44224,
+        0.4224668435013263,
+        0.80652,
+        0.9887533156498673
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.08943409196938766,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.08943409196938766,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.08943409196938766,
+      "o2o_det": [
+        378.23309326171875,
+        0.03033447265625,
+        512.0164794921875,
+        512.0297241210938
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a white chair",
+      "category": "chair",
+      "color": "white",
+      "box": [
+        0.52622,
+        0.8089389920424404,
+        0.69696,
+        0.9611405835543767
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

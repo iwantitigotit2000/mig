@@ -1,0 +1,128 @@
+{
+  "sample_id": "mig188_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "d8f9576f4ab1be6aef48aa8740df5449ef72edde",
+  "detections": {
+    "cat": {
+      "xyxy": [
+        [
+          0.0880279541015625,
+          110.48597717285156,
+          400.85687255859375,
+          501.05303955078125
+        ]
+      ],
+      "conf": [
+        0.9574325084686279
+      ]
+    },
+    "couch": {
+      "xyxy": [
+        [
+          192.28851318359375,
+          255.22801208496094,
+          511.22894287109375,
+          511.67596435546875
+        ],
+        [
+          -0.0665435791015625,
+          254.3279266357422,
+          511.71148681640625,
+          511.58013916015625
+        ]
+      ],
+      "conf": [
+        0.5364529490470886,
+        0.2528921365737915
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue cat",
+      "category": "cat",
+      "color": "blue",
+      "box": [
+        0.010499999999999999,
+        0.2173474178403756,
+        0.72559375,
+        0.9830985915492957
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9068376139577518,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "l7o2o<4K8H8I7I5J5L9G:F5K4L4K6L3L5K5K5K4K5L4L4L4L3N3L3N2M3N2M3N2M3N3L2O2N2N2N2N3M3L6K3M3M2N3M3M2N3L4M3M2N3M3M2O2M2N3M2N2O1N2N1O1O2N100O1O1O1OO2N1M3@mInFZ6Q9:1O102M2N2O2M3N2M3M3N3L3M4M3M4K3M3N3L3N2M3N2M2N3N1N2N2O1N10001N100O101N100O101N100O1000000OkMjKbHV4]7oK_HQ4^7VL^Hi3a7\\L\\Hd3b7aL[H_3d7eLYHZ3h7hLVHX3i7kLUHU3i7PMUHn2j7UMUHk2j7YMRHh2m7[MQHe2n7^MPHb2P8_MoGa2P8cMmG\\2S8fMlGZ2R8iMmGW2R8kMmGU2R8nMlGR2T8nMlGR2S8oMmGP2T8QNkGo1U8QNkGo1T8RNlGn1S8TNlGl1S8UNmGk1R8WNmGh1R8ZNnGf1Q8\\NmGe1R8\\NnGd1R8]NmGc1Q8`NnG`1Q8bNmG_1Q8dNmG]1R8gNjGZ1U8iNfGZ1X8W301O1O1O1O1O100O1O100O1O1O2O0O1O100O100O101O000O100O2O000O101O00000O1O1O1O100O1O2O0O100O1O100O101O0001O0001O01O00101N1O1O102M1O1O2N3N3L2N3M2N2N2O2M3M2N4M2M3M2N2O2N1N2O1\\O[GdIF1U9T6f0K5M3M2M5M2M2N5L4K4M3TKVE[4Z;N2M10O100000000O100O101N1O1O100O1O1O1O1O001O10O0O100000O010000000000000000001O00000O1000000RNiKSHW4e7VLVHj3e7aLUH_3b7lL\\HT3_7QMaHo2Y7WMfHj2W7YMiHg2T7\\MlHd2Q7_MnHb2o6bMPI^2m6eMSI[2i6iMVIY2d6lM\\IT2^6SN`In1Y6YNgIh1g5PKQJZ36g1i5PKmI^37d1j5kNTJV1k5lNRJW1l5_4O1O101N1O1O1O100O100O100O1O1O1N3M2N2O2M2O1O1N2N2N2M3N2M3N1N3M2L4O2N1M4N2O001O0O101O1N11O01N11O\\O]DlLd;S3_DkL`;T3fDgL[;W3hDgLX;Y3kDeLT;[3oDbLR;X3m0[N]CMe<1`CIb<7aCEa<8eCB^<;hC^OZ<a0lCVOZ<g0a1N2M3M3O1M4L4L4LRln1"
+      },
+      "sam_score_gt_box": 1.0073126554489136,
+      "mask_area": 101268,
+      "color_ratios": {
+        "red": 0.05771813406011771,
+        "blue": 0.007850456215191374,
+        "yellow": 0.0,
+        "green": 0.00011849745230477545,
+        "black": 0.1227534858000553,
+        "white": 0.010595647193585338,
+        "brown": 0.05331397874945688
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9068376139577518,
+      "o2o_det": [
+        0.0880279541015625,
+        110.48597717285156,
+        400.85687255859375,
+        501.05303955078125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.007829349720802434
+    },
+    {
+      "idx": 1,
+      "desc": "a red couch",
+      "category": "couch",
+      "color": "red",
+      "box": [
+        0.682796875,
+        0.46943661971830986,
+        0.9991562500000001,
+        0.9898591549295773
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.48245659518424244,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.48245659518424244,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.48245659518424244,
+      "o2o_det": [
+        192.28851318359375,
+        255.22801208496094,
+        511.22894287109375,
+        511.67596435546875
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

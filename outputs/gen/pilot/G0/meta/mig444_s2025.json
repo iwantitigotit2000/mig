@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig444_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "444",
+  "caption": "a photo of a white wine glass and a white wine glass and a brown wine glass and a red wine glass and a red wine glass",
+  "objects": [
+    {
+      "desc": "a white wine glass",
+      "box": [
+        0.217390625,
+        0.07818750000000001,
+        0.513375,
+        1.0
+      ]
+    },
+    {
+      "desc": "a white wine glass",
+      "box": [
+        0.4729375,
+        0.1501875,
+        0.751765625,
+        0.9878333333333332
+      ]
+    },
+    {
+      "desc": "a brown wine glass",
+      "box": [
+        0.6388281250000001,
+        0.18822916666666664,
+        0.931765625,
+        0.9882291666666667
+      ]
+    },
+    {
+      "desc": "a red wine glass",
+      "box": [
+        0.8239375000000001,
+        0.23145833333333332,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "desc": "a red wine glass",
+      "box": [
+        0.0017656249999999998,
+        0.0035416666666666665,
+        0.23348437500000002,
+        0.9870208333333333
+      ]
+    }
+  ],
+  "seconds": 5.287,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig755_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "755",
+  "caption": "a photo of a red horse and a green dining table and a green chair and a blue potted plant and a green chair",
+  "objects": [
+    {
+      "desc": "a red horse",
+      "box": [
+        0.226453125,
+        0.38575,
+        0.727515625,
+        0.8075833333333333
+      ]
+    },
+    {
+      "desc": "a green dining table",
+      "box": [
+        0.5314687499999999,
+        0.369625,
+        0.9995625,
+        0.6041666666666666
+      ]
+    },
+    {
+      "desc": "a green chair",
+      "box": [
+        0.092078125,
+        0.40275,
+        0.230546875,
+        0.6119166666666668
+      ]
+    },
+    {
+      "desc": "a blue potted plant",
+      "box": [
+        0.5267031249999999,
+        0.0680625,
+        0.6925625,
+        0.25877083333333334
+      ]
+    },
+    {
+      "desc": "a green chair",
+      "box": [
+        0.0125,
+        0.35625,
+        0.9984375,
+        0.56875
+      ]
+    }
+  ],
+  "seconds": 5.409,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

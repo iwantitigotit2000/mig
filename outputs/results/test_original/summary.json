@@ -1,0 +1,185 @@
+{
+  "manifest": "manifests/cocomig_test.jsonl",
+  "runs": {
+    "G0": {
+      "gen_dir": "outputs/gen/test/G0",
+      "missing_samples": [],
+      "run_configs": [
+        "outputs\\gen\\test\\G0\\run_config_20261015_163156.json",
+        "outputs\\gen\\test\\G0\\run_config_20261015_174845.json",
+        "outputs\\gen\\test\\G0\\run_config_20261015_181133.json"
+      ],
+      "overall": {
+        "n_images": 200,
+        "n_instances": 800,
+        "official_instance_success": 0.32125,
+        "official_image_success": 0.065,
+        "official_miou": 0.28824491054410617,
+        "official_position_rate": 0.80875,
+        "official_colour_given_position": 0.3972179289026275,
+        "loc_iou": 0.6902588781598697,
+        "presence_any": 0.9675,
+        "o2o_presence": 0.9175,
+        "o2o_position_rate": 0.805,
+        "o2o_iou": 0.6800176213809976,
+        "o2o_instance_success": 0.3125,
+        "o2o_image_success": 0.065,
+        "fail_missing": 0.0325,
+        "fail_mislocated": 0.15875,
+        "fail_colour_wrong": 0.4875,
+        "crosstalk_share_of_colour_wrong": 0.5717948717948718,
+        "eval_errors": 0,
+        "clipiqa": 0.6890430106222629,
+        "sec_per_image": 5.74812,
+        "peak_mem_allocated_gb_max": 9.361
+      },
+      "ci95": {
+        "official_instance_success": [
+          0.2857142857142857,
+          0.36125527392947104
+        ],
+        "official_image_success": [
+          0.025,
+          0.11012499999999989
+        ],
+        "official_miou": [
+          0.25859495726300447,
+          0.31862510954992174
+        ],
+        "loc_iou": [
+          0.6580305068576608,
+          0.7204419130450875
+        ],
+        "o2o_instance_success": [
+          0.27581191241743264,
+          0.3531666118691435
+        ],
+        "o2o_presence": [
+          0.8890154465212876,
+          0.9421667795317524
+        ],
+        "clipiqa": [
+          0.6722446246892214,
+          0.707187597874552
+        ]
+      }
+    },
+    "MIGC": {
+      "gen_dir": "outputs/gen/test/MIGC",
+      "missing_samples": [],
+      "run_configs": [
+        "outputs\\gen\\test\\MIGC\\run_config_20261015_164518.json",
+        "outputs\\gen\\test\\MIGC\\run_config_20261015_174926.json",
+        "outputs\\gen\\test\\MIGC\\run_config_20261015_181602.json"
+      ],
+      "overall": {
+        "n_images": 200,
+        "n_instances": 800,
+        "official_instance_success": 0.665,
+        "official_image_success": 0.28,
+        "official_miou": 0.5722744065638107,
+        "official_position_rate": 0.8725,
+        "official_colour_given_position": 0.7621776504297995,
+        "loc_iou": 0.7410052065990397,
+        "presence_any": 0.99125,
+        "o2o_presence": 0.9325,
+        "o2o_position_rate": 0.8625,
+        "o2o_iou": 0.7266679845988182,
+        "o2o_instance_success": 0.6575,
+        "o2o_image_success": 0.275,
+        "fail_missing": 0.00875,
+        "fail_mislocated": 0.11875,
+        "fail_colour_wrong": 0.2075,
+        "crosstalk_share_of_colour_wrong": 0.4397590361445783,
+        "eval_errors": 0,
+        "clipiqa": 0.7070541067421436,
+        "sec_per_image": 6.516969999999999,
+        "peak_mem_allocated_gb_max": 7.829
+      },
+      "ci95": {
+        "official_instance_success": [
+          0.6200526888110974,
+          0.7099015129187544
+        ],
+        "official_image_success": [
+          0.21,
+          0.36
+        ],
+        "official_miou": [
+          0.5344042796145906,
+          0.6091189984080829
+        ],
+        "loc_iou": [
+          0.7141265024928318,
+          0.7654525719676466
+        ],
+        "o2o_instance_success": [
+          0.611625429853704,
+          0.7038520408163266
+        ],
+        "o2o_presence": [
+          0.9021717845385402,
+          0.9576932367149759
+        ],
+        "clipiqa": [
+          0.6862014451622963,
+          0.7258398827798664
+        ]
+      }
+    }
+  },
+  "paired_vs_ref": {
+    "MIGC-G0": {
+      "n_common_images": 200,
+      "official_instance_success": {
+        "diff": 0.34375000000000006,
+        "ci95": [
+          0.2975702559334662,
+          0.392772407217251
+        ]
+      },
+      "official_image_success": {
+        "diff": 0.21500000000000002,
+        "ci95": [
+          0.14500000000000002,
+          0.28500000000000003
+        ]
+      },
+      "official_miou": {
+        "diff": 0.2840294960197045,
+        "ci95": [
+          0.24420286884024253,
+          0.32365655478909827
+        ]
+      },
+      "loc_iou": {
+        "diff": 0.05074632843916993,
+        "ci95": [
+          0.023585647933226494,
+          0.08037420107071039
+        ]
+      },
+      "o2o_instance_success": {
+        "diff": 0.345,
+        "ci95": [
+          0.29751924295934074,
+          0.39484241662657305
+        ]
+      },
+      "o2o_presence": {
+        "diff": 0.015000000000000013,
+        "ci95": [
+          -0.011753232624642548,
+          0.04093153279618487
+        ]
+      },
+      "clipiqa": {
+        "diff": 0.01801109611988072,
+        "ci95": [
+          0.0019570217914879314,
+          0.03498825123161079
+        ]
+      }
+    }
+  }
+}

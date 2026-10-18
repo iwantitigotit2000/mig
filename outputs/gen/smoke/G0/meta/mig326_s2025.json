@@ -1,0 +1,62 @@
+{
+  "sample_id": "mig326_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "326",
+  "caption": "a photo of a white laptop and a blue chair",
+  "objects": [
+    {
+      "desc": "a white laptop",
+      "box": [
+        0.0,
+        0.0022384937238493726,
+        0.9533125,
+        0.8764016736401674
+      ]
+    },
+    {
+      "desc": "a blue chair",
+      "box": [
+        0.00020312500000000002,
+        0.06981171548117154,
+        0.17376562499999998,
+        0.2210878661087866
+      ]
+    }
+  ],
+  "seconds": 5.3,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "D:/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

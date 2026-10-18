@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig797_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "797",
+  "caption": "a photo of a blue oven and a blue oven and a yellow oven and a yellow car and a green oven",
+  "objects": [
+    {
+      "desc": "a blue oven",
+      "box": [
+        0.27471875,
+        0.48314583333333333,
+        0.52246875,
+        0.7550625
+      ]
+    },
+    {
+      "desc": "a blue oven",
+      "box": [
+        0.3745625,
+        0.4704583333333333,
+        0.641828125,
+        0.7066041666666666
+      ]
+    },
+    {
+      "desc": "a yellow oven",
+      "box": [
+        0.148390625,
+        0.44277083333333334,
+        0.3121875,
+        0.6814166666666667
+      ]
+    },
+    {
+      "desc": "a yellow car",
+      "box": [
+        0.0,
+        0.381125,
+        0.13940625,
+        0.6305833333333334
+      ]
+    },
+    {
+      "desc": "a green oven",
+      "box": [
+        0.486828125,
+        0.38829166666666665,
+        0.66934375,
+        0.5905
+      ]
+    }
+  ],
+  "seconds": 6.553,
+  "peak_mem_allocated_gb": 7.824,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

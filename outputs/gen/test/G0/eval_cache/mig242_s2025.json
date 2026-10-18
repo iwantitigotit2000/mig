@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig242_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "d59150a19bc9af03f7de8671857fc8b588f624ce",
+  "detections": {
+    "train": {
+      "xyxy": [
+        [
+          35.250152587890625,
+          0.160858154296875,
+          511.8868103027344,
+          454.9537658691406
+        ]
+      ],
+      "conf": [
+        0.77175372838974
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a yellow train",
+      "category": "train",
+      "color": "yellow",
+      "box": [
+        0.5687031250000001,
+        0.0,
+        1.0,
+        0.7887735849056604
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.41087441689563786,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.41087441689563786,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.41087441689563786,
+      "o2o_det": [
+        35.250152587890625,
+        0.160858154296875,
+        511.8868103027344,
+        454.9537658691406
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a black train",
+      "category": "train",
+      "color": "black",
+      "box": [
+        0.02409375,
+        0.41299528301886795,
+        0.6538906250000001,
+        0.6077830188679246
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.13637459221401943,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.13637459221401943,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

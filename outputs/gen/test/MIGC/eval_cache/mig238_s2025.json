@@ -1,0 +1,178 @@
+{
+  "sample_id": "mig238_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "62387101ae0f6e185884e3f780a19507edba18a0",
+  "detections": {
+    "cow": {
+      "xyxy": [
+        [
+          208.5615234375,
+          254.69766235351562,
+          463.645263671875,
+          417.3877868652344
+        ],
+        [
+          71.3835220336914,
+          229.59024047851562,
+          259.5203552246094,
+          385.7380065917969
+        ]
+      ],
+      "conf": [
+        0.846294641494751,
+        0.7679744362831116
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black cow",
+      "category": "cow",
+      "color": "black",
+      "box": [
+        0.42378125000000005,
+        0.49131250000000004,
+        0.9088750000000001,
+        0.8123333333333334
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9344967929703858,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "]kX35h?6K5K;D6J3L5K4L4O1O00J5100O110000O2OBlNRBQ1n=TOnAk0S>TOnAk0S>UOlAk0T>VOlAj0T>`010O1000O0100O010O1O0010O0001O01O01O101N1O1O2N100O1O101N100O100O1O00100O1O2N100O100O010O00010O01000O010O010O101N100O100O2O000O2O1lC_Mf:c2VE`Mj:c2VDaM92_;g300O100O10O0N3G8K6M2O2M3M2O2N101O001O100O010O100O100O1O010001O3M3M4L3L3N3M1O2N2N4L5K<D2N1O00\\NiD_NW;`1PE_MG:Y;W2fEdMZ:\\2iEaMW:`2kE]MU:c2mE[MS:e2oEYMQ:g2RFUMo9k2c11O00000O101O00000000000000000000000O100000O1000000000000O10000O0100000O10000O10O0100O100OcDTMh9l2UFXMi9i2TFZMl9g2QF[Mo9n2eEUM[:P3]ESMb:R3VERMj:R4O10000O010O01O11N2O\\OQEWLo:e3TE\\Ll:`3UEcLk:\\3SEhLl:Y3oDkLQ;R400001O0O1O2L3I7G:K4M3M3N2N2M4M2M3N2O12O0O2O0O2O002N2N4MjMnC?o;WO]Dk0_;lNkD]1o:UN]Eh1`<M;E8cNhAb0n>M4L3N3L3L4M3K`Sh0"
+      },
+      "sam_score_gt_box": 1.0008302927017212,
+      "mask_area": 23778,
+      "color_ratios": {
+        "red": 0.0070653545293969215,
+        "blue": 0.003995289763647069,
+        "yellow": 0.0012616704516780217,
+        "green": 0.002439229539910842,
+        "black": 0.6875262848010766,
+        "white": 0.0,
+        "brown": 0.013289595424341829
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9344967929703858,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9344967929703858,
+      "o2o_det": [
+        208.5615234375,
+        254.69766235351562,
+        463.645263671875,
+        417.3877868652344
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6868882073688191
+    },
+    {
+      "idx": 1,
+      "desc": "a red cow",
+      "category": "cow",
+      "color": "red",
+      "box": [
+        0.20425,
+        0.4753125,
+        0.6153906250000001,
+        0.740125
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.5691653446443823,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ZY[13m?5U`02g_O:D2E\\OTAf0j>:MHTAEf>:[AIi>_OZA:O:o>_ORAf0Y>XOmA4Fk0V=QOkB0000040L004OO6U1g<iNTC]10Kk<i1O0HoL`CX26UNY<k1SDQNW;EgDW2<nMm:KfD\\2\\<eMcC]2[<dMbCb2Z<^McCi2Y<WMgCl2V<UMhCo2U<QMiCS3U<mLjCW3T<hLkC\\3R<dLmC_3Q<eLoCY3o;hLPDZ3n;?M1O100OYOXDVMh;f2`DVM`;\\2ZDYM>7X;`2UE]Mk:c2WE[Mj:d2YEYMg:g2Y11O00100O001O10O01O001O01O01O0000000001O000O10000O2O00000O1000000O1000000000000O100010O3TDXMY:P3ZEYMb:X3jDmLU;P4N10000O1000O1N3I6G9L5K4N3L3K5J7O1N10001O001O001O0O101O000O10mBVMP=R3K00000O01O0O2N1N3L4N1O2M3H8N2M300N3N1N2O2M2O2MRBYNh=c1VBbNk=:^B0I@K5o=8aBOFEQ>;oBEQ=;SCDj<<]100000lAEb<;b1000000001N1000O10O10O100O001O1N3N1N3M[Xn3"
+      },
+      "sam_score_gt_box": 0.9670336246490479,
+      "mask_area": 13604,
+      "color_ratios": {
+        "red": 0.5804910320493972,
+        "blue": 0.00022052337547780066,
+        "yellow": 0.002131725962952073,
+        "green": 0.00022052337547780066,
+        "black": 0.06696559835342546,
+        "white": 0.0009556012937371361,
+        "brown": 0.27271390767421344
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.5691653446443823,
+      "failure": "success",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a brown cow",
+      "category": "cow",
+      "color": "brown",
+      "box": [
+        0.12562500000000001,
+        0.43374999999999997,
+        0.48317187500000003,
+        0.6507083333333333
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.5789936359868527,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "nWT15]?d0H5L4L3N2M4M3M2M3N3M3M4K4M6J4K7J8H9F4M2N1OO\\CjL`<V3`CPMZ<_3LFiCdL141Lo;[3XDdLK1l;_3[DaLe;c3:0gC]LU<k3L^O\\DhLd;P3k0K4002N5K3MDZCVM00001Ob<m2bCTMK4_<m2aCoL07\\<i2fCoLN105Z<i2VDVMf;i2\\DXMc;j2`DQM_;P3`DPM`;P3mCRMd<R3[CPM`<P3`CSM]<n2bCnLc<V31L4C=O11O01O01O001O010O1O0010O01O1O0001O01O00000001O0O1000000O101O0O1000000O1000000000000O10001O0001N10OnBZMk<g2QCZMO1n<n20MRCTMn<k2310000PCTMl<P310O00O2O0101TCQMc<Q36O001O001O000LRCUMP=j2PCVMP=m21O000O2JmB]MS=b2nB]MS=b2oB\\MR=c26O1O10hB_MQ=a2VC_Mc<`2]CaMb<`2>1kB_Mk<a295LO1O1M2K6M3O1M3O1N3N1N2O2N1M4M3M3mNPB1T>LQBNR>1o000O1000000000O1000000O2O00O1000O10O1O001O1N3N1N3M[Xn3"
+      },
+      "sam_score_gt_box": 0.9508661031723022,
+      "mask_area": 14335,
+      "color_ratios": {
+        "red": 0.6405301709103592,
+        "blue": 0.00020927799093128707,
+        "yellow": 6.975933031042901e-05,
+        "green": 0.0,
+        "black": 0.049598883850715036,
+        "white": 0.004534356470177886,
+        "brown": 0.29794209975584235
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.5789936359868527,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.5789936359868527,
+      "o2o_det": [
+        71.3835220336914,
+        229.59024047851562,
+        259.5203552246094,
+        385.7380065917969
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.30782986332864987
+    }
+  ]
+}

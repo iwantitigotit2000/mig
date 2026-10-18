@@ -1,0 +1,200 @@
+{
+  "sample_id": "mig479_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "4c42f95b9b1c3680b209eff8baa5d4542597a669",
+  "detections": {
+    "bench": {
+      "xyxy": [
+        [
+          36.170021057128906,
+          100.47677612304688,
+          206.26611328125,
+          217.54656982421875
+        ]
+      ],
+      "conf": [
+        0.8996186852455139
+      ]
+    },
+    "cow": {
+      "xyxy": [
+        [
+          146.439208984375,
+          103.4053955078125,
+          385.5064697265625,
+          416.79339599609375
+        ],
+        [
+          0.13054656982421875,
+          349.1700744628906,
+          222.43783569335938,
+          511.4717712402344
+        ]
+      ],
+      "conf": [
+        0.8408930897712708,
+        0.6655797958374023
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green cow",
+      "category": "cow",
+      "color": "green",
+      "box": [
+        0.140328125,
+        0.15052777777777776,
+        0.785078125,
+        0.8494722222222222
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.6342033603850288,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "mh[22m?1O2O1N2O001O001O00001N100000000jAEg<<UCJg<7XCKg<5WCNh<1YCOg<1XC0g<1YCOg<1XC1g<OXC1i<OWC1i<NWC3i<MVC4j<LVC4i<NTC3m<6WB=i=P1M7I2N000000O100O01N2L4L4M3M3N3L3M3N3M2M3M3N2M3M2O2N1O1N3M3fDZLW:h3dEaLW:`3hEbLV:`3iEaLU:`3kEaLS:b3kE^LT:e3iE\\LV:g3hEXLX:g41N1E:L5N2O001M3L4I71O2N2O1N2N101N2O0O2O000O2O000O100000000001O001O1O1O10O1000000O101O0O2O0O2O0O2O0O2O0O100O101THkJj4V5SKnJl4R5QKQKn4o4PKUKn4l4lJZKT5f4[IjJ:e0Z6d4TISK:;a6j4fHUKd04e6l5UIWJk6m5gHRILX1\\7X701O10O0001OO2K4F:UO]HYId7e6dHUI\\7i6kHRIV7j6PITIo6Q6m1L4M3K5I7G:I6N2O20O01O010O010O010O0010O010O010[GVKT6i4jI[KT6f4iI]KW6b4hI`KX6`4eIcKZ6]4fIdKZ6\\4bIhK^6X4aIiK_6V4_ImK`6T4_ImKa6S4\\IoKe6P4YISLg6m3UIVLl6j3QIYLn6h3oHZLR7f3jH\\LX7n3XHiKW8m53O010000O10O001\\Od0J5N3M3M2O2fNUF\\Lm9c3]FRLf9l3W1ObGfKZ5X4eJlKZ5R4cJTL\\5j3dJXL\\5f3nG\\Lj12X6a3lGdLd1O`6\\3lGjL]1Mh6a4QIaKo6b4gHdK[7_4ZHhKg7[4kGoKV8l52O1N2^O]GbIg8[6a0YOnF^JS9W5[GdJg8T5dGgJ^8T5Z1K5J6jNUEPMR;i2[ElLi:n2X1I8G9D=hNY1]OWlo1"
+      },
+      "sam_score_gt_box": 1.0009924173355103,
+      "mask_area": 33903,
+      "color_ratios": {
+        "red": 0.006695572663186149,
+        "blue": 0.00011798365926319205,
+        "yellow": 0.12155266495590361,
+        "green": 0.15907146860159868,
+        "black": 0.41132053210630326,
+        "white": 0.00041294280742117215,
+        "brown": 0.03456921216411527
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.6342033603850288,
+      "o2o_det": [
+        146.439208984375,
+        103.4053955078125,
+        385.5064697265625,
+        416.79339599609375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.15850398096189441
+    },
+    {
+      "idx": 1,
+      "desc": "a white cow",
+      "category": "cow",
+      "color": "white",
+      "box": [
+        0.00240625,
+        0.6533055555555556,
+        0.4661406250000001,
+        0.9873611111111111
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8214989439120476,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "j=j1U>=C1O1O1O1O1O1O1O1O100O1O1O1O100O10000O10000O10000000000O1000000000000O100000000O1000000O10000O10000O10000O10000O10000O10000O10000O100O10000O10000O100O100O10000O100O100O10000O1O100O100O100O10000O100O1O10000O1O100O100O1O100O100O1O1O1O1O1O1O100O1O1000000O1000000O1000000O10O1O001O001O1O001O1O001O001O001O010O001OJZLSDf3n;51101N3M3M4L101N3M2N0O100O10000O10000O10mMgD_OY;`0kD]OT;b0QE[On:e0VEUOm:j0XElNm:T1YEnM_;R2X10O100O00011N3N1O1O1O00100O000001O000000000000O100OfMnBDNo1T=\\NZC^1e<aN`C\\1`<bNdC[1\\<eNfCZ1Z<eN_Dc0a;[OgD?Y;@kD=W;_OmD?\\=N3Lbba4"
+      },
+      "sam_score_gt_box": 1.0112810134887695,
+      "mask_area": 22674,
+      "color_ratios": {
+        "red": 0.005292405398253507,
+        "blue": 0.010231983769956779,
+        "yellow": 0.003440063508864779,
+        "green": 0.024521478345241245,
+        "black": 0.02311017023904031,
+        "white": 0.31697097997706625,
+        "brown": 0.013275116873952544
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8214989439120476,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8214989439120476,
+      "o2o_det": [
+        0.13054656982421875,
+        349.1700744628906,
+        222.43783569335938,
+        511.4717712402344
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.3174750419648379
+    },
+    {
+      "idx": 2,
+      "desc": "a black bench",
+      "category": "bench",
+      "color": "black",
+      "box": [
+        0.08139062500000001,
+        0.19355555555555556,
+        0.35265625,
+        0.4195277777777778
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.7897763363466938,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "jcb07h?5L4L3M3M4mA^O`<g0UCAi<d0mBAR=f110000000O10000000O1O1L3O2O100O1000O10000000000O10001O00001O0O2O1O1O1O1O1N4M3M3M3M1O0O1000000000000OoNQCSOo<k0RCUOo<j0RC[NMe0Q=P1SCUOm<k0SCTOm<l0RCUOo<k0QCTOP=k0QCSOQ=m0nBROT=n0lBQOU=n0lBROS=o0nBPOR=P1mBQOS=o0mBPOT=o0mBQOS=o0mBQOS=o0mBPOT=P1mBoNS=Q1oBmNP=S1QClNP=T1QCkNo<U1TCgNm<Y1TCeNm<Z1mB[NM9W=\\1TC^N@O\\=d1UC[NQ=e1e00000ORB\\Nb=d1]B]NO0W=d1jB\\Nb=d1_B[Na=d1`B[Na=e1=000O1^B\\Nh<d1WC]Ni<b1UC\\N^O0^=d1TC\\N]O1_=c1RC\\N@1_=b1SC\\N^O2_=b1TCaNk<_1YC]Nf<d1k0O1000000O10O1000O1000000O010000000O1000O010000000000O1000000O1000000O101O001N102N1O2M3Nb0^O6I4M3Mc[Q5"
+      },
+      "sam_score_gt_box": 0.9768695831298828,
+      "mask_area": 9445,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.18210693488618315,
+        "yellow": 0.0,
+        "green": 0.0015881418740074113,
+        "black": 0.520275277924828,
+        "white": 0.11201694017998941,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7897763363466938,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7897763363466938,
+      "o2o_det": [
+        36.170021057128906,
+        100.47677612304688,
+        206.26611328125,
+        217.54656982421875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4508483033932136
+    }
+  ]
+}

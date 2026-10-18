@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig392_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "392",
+  "caption": "a photo of a red bed and a blue chair and a blue chair and a green bed",
+  "objects": [
+    {
+      "desc": "a red bed",
+      "box": [
+        0.0033750000000000004,
+        0.2668958333333334,
+        0.6199375,
+        0.8862708333333333
+      ]
+    },
+    {
+      "desc": "a blue chair",
+      "box": [
+        0.6530781250000001,
+        0.42704166666666665,
+        0.821296875,
+        0.6789791666666666
+      ]
+    },
+    {
+      "desc": "a blue chair",
+      "box": [
+        0.33387500000000003,
+        0.39689583333333334,
+        0.486734375,
+        0.5449791666666666
+      ]
+    },
+    {
+      "desc": "a green bed",
+      "box": [
+        0.0,
+        0.6886041666666666,
+        0.42357812499999997,
+        0.9942916666666667
+      ]
+    }
+  ],
+  "seconds": 5.358,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

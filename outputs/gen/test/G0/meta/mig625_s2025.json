@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig625_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "625",
+  "caption": "a photo of a yellow oven and a red sink and a red bowl and a white bowl and a blue spoon",
+  "objects": [
+    {
+      "desc": "a yellow oven",
+      "box": [
+        0.00298,
+        0.0022522522522522522,
+        0.20906,
+        0.8565165165165166
+      ]
+    },
+    {
+      "desc": "a red sink",
+      "box": [
+        0.72088,
+        0.1648048048048048,
+        1.0,
+        0.8021621621621622
+      ]
+    },
+    {
+      "desc": "a red bowl",
+      "box": [
+        0.55076,
+        0.2118018018018018,
+        0.82914,
+        0.5848348348348348
+      ]
+    },
+    {
+      "desc": "a white bowl",
+      "box": [
+        0.20756,
+        0.17264264264264265,
+        0.45396000000000003,
+        0.5627927927927928
+      ]
+    },
+    {
+      "desc": "a blue spoon",
+      "box": [
+        0.27298,
+        0.46504504504504507,
+        0.54174,
+        0.6008108108108109
+      ]
+    }
+  ],
+  "seconds": 67.162,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

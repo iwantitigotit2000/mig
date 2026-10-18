@@ -1,0 +1,70 @@
+{
+  "sample_id": "mig389_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "389",
+  "caption": "a photo of a brown airplane and a yellow airplane and a black truck and a red airplane",
+  "objects": [
+    {
+      "desc": "a brown airplane",
+      "box": [
+        0.375734375,
+        0.1452927400468384,
+        0.944421875,
+        0.4845433255269321
+      ]
+    },
+    {
+      "desc": "a yellow airplane",
+      "box": [
+        0.001109375,
+        0.3359016393442623,
+        0.549015625,
+        0.5013583138173302
+      ]
+    },
+    {
+      "desc": "a black truck",
+      "box": [
+        0.60528125,
+        0.47772833723653396,
+        0.772765625,
+        0.6145433255269321
+      ]
+    },
+    {
+      "desc": "a red airplane",
+      "box": [
+        0.0,
+        0.23550351288056207,
+        0.21385937500000002,
+        0.3656674473067915
+      ]
+    }
+  ],
+  "seconds": 6.429,
+  "peak_mem_allocated_gb": 7.821,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

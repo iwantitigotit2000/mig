@@ -1,0 +1,295 @@
+{
+  "sample_id": "mig772_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "45e2a33627535d851261015addc909ccf5177c4f",
+  "detections": {
+    "bench": {
+      "xyxy": [
+        [
+          99.20074462890625,
+          129.64669799804688,
+          416.59783935546875,
+          437.4837951660156
+        ]
+      ],
+      "conf": [
+        0.8884915709495544
+      ]
+    },
+    "car": {
+      "xyxy": [
+        [
+          -0.01966094970703125,
+          -0.08298110961914062,
+          102.46624755859375,
+          84.2923583984375
+        ],
+        [
+          178.31625366210938,
+          -0.07290267944335938,
+          384.3250427246094,
+          81.74894714355469
+        ]
+      ],
+      "conf": [
+        0.7168928980827332,
+        0.6280933022499084
+      ]
+    },
+    "truck": {
+      "xyxy": [
+        [
+          178.27285766601562,
+          -0.01613616943359375,
+          384.4287414550781,
+          81.75849151611328
+        ]
+      ],
+      "conf": [
+        0.619523286819458
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a yellow car",
+      "category": "car",
+      "color": "yellow",
+      "box": [
+        0.34976562499999997,
+        0.0,
+        0.7541874999999999,
+        0.18036553524804178
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8739189218157378,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Tai26i?4M1O1O0[OJ_A7`>M]A3b>0\\A0Z>H`A<4L\\>>bAB]>a0aA@^>Q1O2O4L2N1O001O000000000000001O0000000000001O1O1O002N001O000000000000000000O1N2000000O100000000000000000000000000O100000000000000000000O1000000000000000000000000000000000000005K1O2N3M3M1O001O1O2N1O2N001O00001O000000000000O1O1N2N2M3N2N2M3N2L4L4M3O10000001O0000000000000000O10000O100O100O100O10000O10000O1000000O100000000O100000000003M2N2N1O2N1O00000000O100N2K5L4M3M3O1O1N2N200O100O10000VO^A5cnP2"
+      },
+      "sam_score_gt_box": 0.9883937835693359,
+      "mask_area": 11245,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.03236994219653179,
+        "yellow": 0.0031124944419742106,
+        "green": 0.45335704757670076,
+        "black": 0.366651845264562,
+        "white": 8.89284126278346e-05,
+        "brown": 0.011471765228990663
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8739189218157378,
+      "o2o_det": [
+        178.31625366210938,
+        -0.07290267944335938,
+        384.3250427246094,
+        81.74894714355469
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.00311498754004984
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow car",
+      "category": "car",
+      "color": "yellow",
+      "box": [
+        0.0,
+        0.005065274151436031,
+        0.212484375,
+        0.17809399477806787
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8444121534823272,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "0S2m=000000000000000000000000O1000000000002M2O1O1010O1O1OO01O1O2N001O002N001O1O001O001O00000010O00000000000O10000000000O1O100N201N1O1N2O1N2N2M3K5L40000O100O1O10000O2O000000000O2O00001O001N102N3L8I6I1O2M3M3Kon\\6"
+      },
+      "sam_score_gt_box": 1.0039910078048706,
+      "mask_area": 5873,
+      "color_ratios": {
+        "red": 0.4488336454963392,
+        "blue": 0.022475736420909245,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.3592712412736251,
+        "white": 0.0069810999489187805,
+        "brown": 0.006300017027073046
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "red",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8444121534823272,
+      "o2o_det": [
+        -0.01966094970703125,
+        -0.08298110961914062,
+        102.46624755859375,
+        84.2923583984375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 2,
+      "desc": "a green bench",
+      "category": "bench",
+      "color": "green",
+      "box": [
+        0.18784375,
+        0.22869451697127938,
+        0.825203125,
+        0.8138903394255875
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8730083953891395,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "mib1>_?7K2N1O2N101N1O1O2N100O2N1O100O2N1O1O2N100O1O2N1O2O0O1O1O2N100O1O1O2N100O1O2N1O101N1O1O2N101N1O1O2N101bBkMn<^3UO5K2N2O0O1O2N1O101N1O1O1O2N100O1O1O1O100O000001O00000000001O0O100O100N3\\O`DbLe;^3>1O101N1O1O1O2O0O1O1O1O2O0O1O2N1O1O101N1O1O2O0O1O1O2N1O101N1O3hDkL`9n4M1N1O2N2O0O1O2N1O101N2N1O101N1O2N1O2O0O1O1O100O1O00O101O000J6]Oc0lNU1M2O1O10000O2O000O101O00000O101N1000001O00000O101O0O10001N10000O101O00000O2O000O101N1000001N10000O2O00000O101N1000001N1000000O2O000O10000O10001N10000O2O001N2O1O1N2O1O1O1N2O1O2N1N2O1O1N2O1N2O1O2M2O1O1O1O100O11O0010O01O0000001O00000001O01O0000001O0001O000O100O1O1N2gNRDZNT<c1V1O1N3N1N2N2O1O1O1N3N1O1O1O1O1N2O1O2N1O1N2O1N2O1O1O2M2Od[`1"
+      },
+      "sam_score_gt_box": 1.0107675790786743,
+      "mask_area": 37777,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.7616274452709321,
+        "green": 0.06268364348677767,
+        "black": 0.028880006353071974,
+        "white": 0.0,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8730083953891395,
+      "o2o_det": [
+        99.20074462890625,
+        129.64669799804688,
+        416.59783935546875,
+        437.4837951660156
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.06210520728276448
+    },
+    {
+      "idx": 3,
+      "desc": "a green truck",
+      "category": "truck",
+      "color": "green",
+      "box": [
+        0.0,
+        0.0,
+        0.20604687500000002,
+        0.18657963446475195
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 4,
+      "desc": "a green truck",
+      "category": "truck",
+      "color": "green",
+      "box": [
+        0.357375,
+        0.0004960835509138381,
+        0.7509062500000001,
+        0.1796083550913838
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.867985248022017,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Tai26i?4M1O1O0[OJ_A7`>M]A3b>0\\A0Z>H`A<4L\\>>bAB]>a0aA@^>Q1O2O4L2N1O001O000000000000001O0000000000001O1O1O001O1O1O00000000000000O10000N2000000O1000000000000000000000000O10000000000000000000000O1000000000000000000000000000000000000005K1O2N3M3M1O1O002N1O1O2N001O00001O000000000000O1O1N2N2M3N2N2M3M3M3L4M3O10000001O0000000000000000O10000O100O100O100O10000O10000O1000000O100000000O100000000003M2N2N1O2N1O00000000O1O1O1K5L4M3M3O1O1N2N200O100O10000VO^A5cnP2"
+      },
+      "sam_score_gt_box": 0.9880647659301758,
+      "mask_area": 11241,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.032381460724134864,
+        "yellow": 0.0031136019927052753,
+        "green": 0.45351837025175695,
+        "black": 0.3665154345698781,
+        "white": 8.896005693443644e-05,
+        "brown": 0.0114758473445423
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.867985248022017,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.867985248022017,
+      "o2o_det": [
+        178.27285766601562,
+        -0.01613616943359375,
+        384.4287414550781,
+        81.75849151611328
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.45354218583125666
+    }
+  ]
+}

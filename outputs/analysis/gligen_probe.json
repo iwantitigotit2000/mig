@@ -1,0 +1,619 @@
+{
+  "sample": "mig277_s42",
+  "caption": "a photo of a green toilet and a green clock",
+  "n_objects": 2,
+  "fusers": [
+    {
+      "name": "input_blocks.1.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        4096,
+        320
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        320
+      ],
+      "concat_len": 4126,
+      "heads": 8,
+      "tanh_alpha_attn": 0.01348820049315691,
+      "tanh_alpha_dense": 0.03504805639386177,
+      "n_params": 1888962
+    },
+    {
+      "name": "input_blocks.2.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        4096,
+        320
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        320
+      ],
+      "concat_len": 4126,
+      "heads": 8,
+      "tanh_alpha_attn": -0.012990457937121391,
+      "tanh_alpha_dense": -0.059119489043951035,
+      "n_params": 1888962
+    },
+    {
+      "name": "input_blocks.4.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        1024,
+        640
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        640
+      ],
+      "concat_len": 1054,
+      "heads": 8,
+      "tanh_alpha_attn": 0.009779542684555054,
+      "tanh_alpha_dense": -0.022328153252601624,
+      "n_params": 7054722
+    },
+    {
+      "name": "input_blocks.5.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        1024,
+        640
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        640
+      ],
+      "concat_len": 1054,
+      "heads": 8,
+      "tanh_alpha_attn": -0.006606470327824354,
+      "tanh_alpha_dense": -0.025776918977499008,
+      "n_params": 7054722
+    },
+    {
+      "name": "input_blocks.7.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        256,
+        1280
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        1280
+      ],
+      "concat_len": 286,
+      "heads": 8,
+      "tanh_alpha_attn": 0.003546455642208457,
+      "tanh_alpha_dense": 0.011487957090139389,
+      "n_params": 27216642
+    },
+    {
+      "name": "input_blocks.8.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        256,
+        1280
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        1280
+      ],
+      "concat_len": 286,
+      "heads": 8,
+      "tanh_alpha_attn": -0.007757711689919233,
+      "tanh_alpha_dense": -0.018964359536767006,
+      "n_params": 27216642
+    },
+    {
+      "name": "middle_block.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        64,
+        1280
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        1280
+      ],
+      "concat_len": 94,
+      "heads": 8,
+      "tanh_alpha_attn": -0.008369680494070053,
+      "tanh_alpha_dense": 0.04530106112360954,
+      "n_params": 27216642
+    },
+    {
+      "name": "output_blocks.3.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        256,
+        1280
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        1280
+      ],
+      "concat_len": 286,
+      "heads": 8,
+      "tanh_alpha_attn": 0.013150596991181374,
+      "tanh_alpha_dense": -0.045502424240112305,
+      "n_params": 27216642
+    },
+    {
+      "name": "output_blocks.4.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        256,
+        1280
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        1280
+      ],
+      "concat_len": 286,
+      "heads": 8,
+      "tanh_alpha_attn": 0.020395996049046516,
+      "tanh_alpha_dense": 0.06744904071092606,
+      "n_params": 27216642
+    },
+    {
+      "name": "output_blocks.5.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        256,
+        1280
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        1280
+      ],
+      "concat_len": 286,
+      "heads": 8,
+      "tanh_alpha_attn": -0.017828961834311485,
+      "tanh_alpha_dense": -0.07783284038305283,
+      "n_params": 27216642
+    },
+    {
+      "name": "output_blocks.6.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        1024,
+        640
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        640
+      ],
+      "concat_len": 1054,
+      "heads": 8,
+      "tanh_alpha_attn": 0.04117072746157646,
+      "tanh_alpha_dense": -0.15919137001037598,
+      "n_params": 7054722
+    },
+    {
+      "name": "output_blocks.7.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        1024,
+        640
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        640
+      ],
+      "concat_len": 1054,
+      "heads": 8,
+      "tanh_alpha_attn": -0.050282713025808334,
+      "tanh_alpha_dense": -0.13532836735248566,
+      "n_params": 7054722
+    },
+    {
+      "name": "output_blocks.8.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        1024,
+        640
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        640
+      ],
+      "concat_len": 1054,
+      "heads": 8,
+      "tanh_alpha_attn": -0.05453772470355034,
+      "tanh_alpha_dense": -0.07280901819467545,
+      "n_params": 7054722
+    },
+    {
+      "name": "output_blocks.9.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        4096,
+        320
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        320
+      ],
+      "concat_len": 4126,
+      "heads": 8,
+      "tanh_alpha_attn": -0.05653964355587959,
+      "tanh_alpha_dense": -0.20778071880340576,
+      "n_params": 1888962
+    },
+    {
+      "name": "output_blocks.10.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        4096,
+        320
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        320
+      ],
+      "concat_len": 4126,
+      "heads": 8,
+      "tanh_alpha_attn": 0.05727842450141907,
+      "tanh_alpha_dense": 0.14167994260787964,
+      "n_params": 1888962
+    },
+    {
+      "name": "output_blocks.11.1.transformer_blocks.0.fuser",
+      "x_visual_tokens": [
+        1,
+        4096,
+        320
+      ],
+      "objs_in": [
+        1,
+        30,
+        768
+      ],
+      "objs_projected": [
+        1,
+        30,
+        320
+      ],
+      "concat_len": 4126,
+      "heads": 8,
+      "tanh_alpha_attn": 0.037310659885406494,
+      "tanh_alpha_dense": -0.08848390728235245,
+      "n_params": 1888962
+    }
+  ],
+  "cross_attn": [
+    {
+      "name": "input_blocks.1.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        4096,
+        320
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "input_blocks.2.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        4096,
+        320
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "input_blocks.4.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        1024,
+        640
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "input_blocks.5.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        1024,
+        640
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "input_blocks.7.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        256,
+        1280
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "input_blocks.8.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        256,
+        1280
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "middle_block.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        64,
+        1280
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.3.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        256,
+        1280
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.4.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        256,
+        1280
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.5.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        256,
+        1280
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.6.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        1024,
+        640
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.7.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        1024,
+        640
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.8.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        1024,
+        640
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.9.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        4096,
+        320
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.10.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        4096,
+        320
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    },
+    {
+      "name": "output_blocks.11.1.transformer_blocks.0.attn2",
+      "query": [
+        1,
+        4096,
+        320
+      ],
+      "context": [
+        1,
+        77,
+        768
+      ]
+    }
+  ],
+  "position_net": {
+    "boxes": [
+      1,
+      30,
+      4
+    ],
+    "masks": [
+      1,
+      30
+    ],
+    "positive_embeddings": [
+      1,
+      30,
+      768
+    ],
+    "fourier_xyxy_dim": 64,
+    "out_tokens": [
+      1,
+      30,
+      768
+    ],
+    "mlp": "Sequential(\n  (0): Linear(in_features=832, out_features=512, bias=True)\n  (1): SiLU()\n  (2): Linear(in_features=512, out_features=512, bias=True)\n  (3): SiLU()\n  (4): Linear(in_features=512, out_features=768, bias=True)\n)"
+  },
+  "unet_out": [
+    1,
+    4,
+    64,
+    64
+  ],
+  "n_params": {
+    "unet_total": 1068623204,
+    "position_net": 1083968,
+    "fusers_total": 208018272
+  }
+}

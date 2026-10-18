@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig373_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "373",
+  "caption": "a photo of a yellow bowl and a brown broccoli and a red broccoli and a green broccoli and a green broccoli and a red broccoli",
+  "objects": [
+    {
+      "desc": "a yellow bowl",
+      "box": [
+        0.04371875,
+        0.0,
+        1.0,
+        0.9856458333333333
+      ]
+    },
+    {
+      "desc": "a brown broccoli",
+      "box": [
+        0.258734375,
+        0.4313333333333333,
+        0.5054531250000001,
+        0.6573541666666666
+      ]
+    },
+    {
+      "desc": "a red broccoli",
+      "box": [
+        0.5140781249999999,
+        0.6105625,
+        0.686625,
+        0.9579791666666666
+      ]
+    },
+    {
+      "desc": "a green broccoli",
+      "box": [
+        0.09746875,
+        0.2634583333333333,
+        0.3556875,
+        0.5716458333333333
+      ]
+    },
+    {
+      "desc": "a green broccoli",
+      "box": [
+        0.794125,
+        0.27058333333333334,
+        0.977640625,
+        0.5647083333333334
+      ]
+    },
+    {
+      "desc": "a red broccoli",
+      "box": [
+        0.533765625,
+        0.46675,
+        0.670125,
+        0.7550624999999999
+      ]
+    }
+  ],
+  "seconds": 7.009,
+  "peak_mem_allocated_gb": 7.82,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

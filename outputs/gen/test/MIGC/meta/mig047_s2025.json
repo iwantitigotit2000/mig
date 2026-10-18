@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig047_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "47",
+  "caption": "a photo of a blue bowl and a green broccoli and a brown carrot and a white dining table and a brown cup and a brown bowl",
+  "objects": [
+    {
+      "desc": "a blue bowl",
+      "box": [
+        0.00414,
+        0.1399,
+        0.9989600000000001,
+        0.8886
+      ]
+    },
+    {
+      "desc": "a green broccoli",
+      "box": [
+        0.19012,
+        0.194575,
+        0.76612,
+        0.6675249999999999
+      ]
+    },
+    {
+      "desc": "a brown carrot",
+      "box": [
+        0.18388,
+        0.463375,
+        0.44888,
+        0.708525
+      ]
+    },
+    {
+      "desc": "a white dining table",
+      "box": [
+        0.61836,
+        0.064525,
+        0.85956,
+        0.241375
+      ]
+    },
+    {
+      "desc": "a brown cup",
+      "box": [
+        0.41766000000000003,
+        0.0026,
+        0.6441600000000001,
+        0.13765
+      ]
+    },
+    {
+      "desc": "a brown bowl",
+      "box": [
+        0.41928,
+        0.0,
+        0.63818,
+        0.135125
+      ]
+    }
+  ],
+  "seconds": 7.747,
+  "peak_mem_allocated_gb": 7.822,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

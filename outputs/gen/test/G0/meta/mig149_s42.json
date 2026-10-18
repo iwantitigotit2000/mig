@@ -1,0 +1,71 @@
+{
+  "sample_id": "mig149_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "149",
+  "caption": "a photo of a blue zebra and a green zebra and a brown zebra",
+  "objects": [
+    {
+      "desc": "a blue zebra",
+      "box": [
+        0.22196875,
+        0.4484375,
+        0.48431250000000003,
+        0.7399166666666666
+      ]
+    },
+    {
+      "desc": "a green zebra",
+      "box": [
+        0.458421875,
+        0.494375,
+        0.72303125,
+        0.7258333333333333
+      ]
+    },
+    {
+      "desc": "a brown zebra",
+      "box": [
+        0.46003125,
+        0.5035208333333333,
+        0.671296875,
+        0.71575
+      ]
+    }
+  ],
+  "seconds": 5.355,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

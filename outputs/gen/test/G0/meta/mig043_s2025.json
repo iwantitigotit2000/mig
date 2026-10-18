@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig043_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "43",
+  "caption": "a photo of a yellow fork and a brown cake and a red cake and a black cake",
+  "objects": [
+    {
+      "desc": "a yellow fork",
+      "box": [
+        0.000484375,
+        0.5353286384976526,
+        0.21384375000000003,
+        0.9734741784037559
+      ]
+    },
+    {
+      "desc": "a brown cake",
+      "box": [
+        0.125640625,
+        0.5550469483568075,
+        0.49360937499999996,
+        0.9303286384976526
+      ]
+    },
+    {
+      "desc": "a red cake",
+      "box": [
+        0.45621875,
+        0.0,
+        0.9124375,
+        0.8539436619718309
+      ]
+    },
+    {
+      "desc": "a black cake",
+      "box": [
+        0.2725,
+        0.24629107981220658,
+        0.5152187500000001,
+        0.5773943661971832
+      ]
+    }
+  ],
+  "seconds": 5.301,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

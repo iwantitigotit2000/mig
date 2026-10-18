@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig405_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "405",
+  "caption": "a photo of a white car and a red truck and a yellow car and a green car",
+  "objects": [
+    {
+      "desc": "a white car",
+      "box": [
+        0.5354687499999999,
+        0.7182669789227166,
+        0.747734375,
+        0.9105152224824355
+      ]
+    },
+    {
+      "desc": "a red truck",
+      "box": [
+        0.0,
+        0.5662997658079625,
+        0.3838125,
+        0.9887587822014051
+      ]
+    },
+    {
+      "desc": "a yellow car",
+      "box": [
+        0.22181250000000002,
+        0.7837236533957845,
+        0.621453125,
+        1.0
+      ]
+    },
+    {
+      "desc": "a green car",
+      "box": [
+        0.8550156250000001,
+        0.7448711943793911,
+        1.0,
+        0.8954332552693209
+      ]
+    }
+  ],
+  "seconds": 5.384,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

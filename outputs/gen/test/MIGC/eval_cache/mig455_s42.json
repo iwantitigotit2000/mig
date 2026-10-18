@@ -1,0 +1,256 @@
+{
+  "sample_id": "mig455_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "c02f4dd864d8e6022c5bd49b6cf2a14e5dda7a5c",
+  "detections": {
+    "chair": {
+      "xyxy": [
+        [
+          281.8419189453125,
+          421.45086669921875,
+          387.37408447265625,
+          511.9283447265625
+        ]
+      ],
+      "conf": [
+        0.7021722793579102
+      ]
+    },
+    "oven": {
+      "xyxy": [
+        [
+          40.434608459472656,
+          414.2073669433594,
+          197.65505981445312,
+          511.9747009277344
+        ],
+        [
+          41.35906982421875,
+          452.76629638671875,
+          196.85177612304688,
+          512.0198364257812
+        ]
+      ],
+      "conf": [
+        0.4153345227241516,
+        0.33520299196243286
+      ]
+    },
+    "potted plant": {
+      "xyxy": [
+        [
+          0.08037185668945312,
+          0.00881195068359375,
+          104.49298095703125,
+          168.2630615234375
+        ]
+      ],
+      "conf": [
+        0.4758368134498596
+      ]
+    },
+    "refrigerator": {
+      "xyxy": [
+        [
+          222.39117431640625,
+          220.732177734375,
+          409.67071533203125,
+          511.8131103515625
+        ]
+      ],
+      "conf": [
+        0.9251794815063477
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black oven",
+      "category": "oven",
+      "color": "black",
+      "box": [
+        0.06722,
+        0.7982758620689655,
+        0.38996000000000003,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9006420638351478,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ame0_2^=30000000000000000O1000000L^MjBb2W=_MgBa2Z=^MfBb2\\=0001O00N2000000000000O11O000000000000O100000000O1O1M3O100O1O100O10000O1000000O10000O100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000O10000000000000000000000000000001O1O2N2N001O002N002NZ2cM`Pm4"
+      },
+      "sam_score_gt_box": 0.996817946434021,
+      "mask_area": 14183,
+      "color_ratios": {
+        "red": 0.000634562504406684,
+        "blue": 0.0802369033349785,
+        "yellow": 0.0,
+        "green": 0.000493548614538532,
+        "black": 0.7769865331735176,
+        "white": 0.002185715292956356,
+        "brown": 0.003948388916308256
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9006420638351478,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9006420638351478,
+      "o2o_det": [
+        40.434608459472656,
+        414.2073669433594,
+        197.65505981445312,
+        511.9747009277344
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7680978185355009
+    },
+    {
+      "idx": 1,
+      "desc": "a blue potted plant",
+      "category": "potted plant",
+      "color": "blue",
+      "box": [
+        0.0,
+        0.0,
+        0.17662,
+        0.3451724137931034
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8285301874070731,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "0m4S;1O001O001O1O00O10000O12N3M1O1O00001OF:00O1O1N2H8L400O11O000000O1N2M3O1O10000O11O000000O1001O1O2N1OO100000000\\O\\DkLf;S3_DeLf;Z3`001N100O2N1010O3N2O1N1OO2L3N2O1N2O1O1O1K5K4N3M3M2N2N3iMeBe1^=YNfBc1]=[NdBb1`=\\NbB`1Q>M4M3L5L6J3M3N1N2N3M3M2M4Km]]6"
+      },
+      "sam_score_gt_box": 0.9983141422271729,
+      "mask_area": 11730,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.4578005115089514,
+        "yellow": 8.525149190110827e-05,
+        "green": 0.1774083546462063,
+        "black": 0.12966751918158567,
+        "white": 0.0005967604433077579,
+        "brown": 0.0005115089514066496
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8285301874070731,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8285301874070731,
+      "o2o_det": [
+        0.08037185668945312,
+        0.00881195068359375,
+        104.49298095703125,
+        168.2630615234375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4574785051502511
+    },
+    {
+      "idx": 2,
+      "desc": "a brown refrigerator",
+      "category": "refrigerator",
+      "color": "brown",
+      "box": [
+        0.44224,
+        0.4224668435013263,
+        0.80652,
+        0.9887533156498673
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.929723383601745,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "kW`3]2`=V1cBgMk:U4A6Ji0WOk1aFmG]7\\8N2N2N2O1N2O1N2O1O100O10000O1000000000000000000000000001O000000000000000000000000000000001O0000000000000SNVIdJj6V5bIdJ^6Y5hI_J]6_5hIQJe6l5aIaIo6^6Z1O1N2O1OYHoIb5P6XJWJg5h5YJYJg5f5YJ\\Jf5c5\\J\\Jd5d5^JYJc5f5^JZJb5e5`JZJ`5f5`JZJ`5e5bJ[J]5e5dJZJ\\5e5eJ[J[5e5fJYJ[5g5eJYJ[5g5fJXJZ5g5gJYJY5g5gJYJZ5f5gJZJX5f5hJZJX5f5hJYJY5f5hJ[JW5e5iJ[JW5e5iJ[JW5e5jJYJW5g5kJTJX5l5^2000WHmIPN7Z7l5iJWJU5i5jJWJW5i5iJWJW5j5gJXJX5h5hJXJX5h5hJWJZ5h5fJXJZ5h5fJXJZ5h5fJXJZ5i5eJWJ[5i5dJWJ]5i5cJWJ]5j5bJVJ^5j5aJWJ_5i5aJWJ_5j5_JVJb5j5^JVJb5k5]JUJc5l5[JUJe5k5[JTJf5m5XJTJh5l5WJUJi5l5UJUJk5l5TJSJn5m5QJSJo5n5nITJR6m5hIdIhN?a7n5RJiIo5X6l12N1O2N2jG^Ij6d6lHlIl6V6oHnIP7U6kHnIT7_700001O0000000001O00001O00000010O0001O001O0O101O1O001O1O1O1O1O3M2N000000000000000000000001O00001O1O4L=Ci1YIbFh2^Pd1"
+      },
+      "sam_score_gt_box": 0.9885144233703613,
+      "mask_area": 46346,
+      "color_ratios": {
+        "red": 0.38881456867906616,
+        "blue": 0.00010788417554913045,
+        "yellow": 0.0008630734043930436,
+        "green": 0.00034522936175721745,
+        "black": 0.01275190954990722,
+        "white": 0.008566003538600958,
+        "brown": 0.930026323738834
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.929723383601745,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.929723383601745,
+      "o2o_det": [
+        222.39117431640625,
+        220.732177734375,
+        409.67071533203125,
+        511.8131103515625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9300012942749903
+    },
+    {
+      "idx": 3,
+      "desc": "a white chair",
+      "category": "chair",
+      "color": "white",
+      "box": [
+        0.52622,
+        0.8089389920424404,
+        0.69696,
+        0.9611405835543767
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.4790577878422214,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4790577878422214,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.4790577878422214,
+      "o2o_det": [
+        281.8419189453125,
+        421.45086669921875,
+        387.37408447265625,
+        511.9283447265625
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

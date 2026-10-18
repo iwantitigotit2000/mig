@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig288_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "288",
+  "caption": "a photo of a black dining table and a red bench and a yellow bench and a red umbrella and a white dining table",
+  "objects": [
+    {
+      "desc": "a black dining table",
+      "box": [
+        0.34640624999999997,
+        0.7442916666666667,
+        0.6390156250000001,
+        0.9729791666666666
+      ]
+    },
+    {
+      "desc": "a red bench",
+      "box": [
+        0.649859375,
+        0.6811666666666666,
+        0.894546875,
+        0.8731249999999999
+      ]
+    },
+    {
+      "desc": "a yellow bench",
+      "box": [
+        0.8432031249999999,
+        0.6436041666666666,
+        0.9917187499999999,
+        0.7793541666666667
+      ]
+    },
+    {
+      "desc": "a red umbrella",
+      "box": [
+        0.31703125,
+        0.2903541666666667,
+        0.79309375,
+        0.5442708333333334
+      ]
+    },
+    {
+      "desc": "a white dining table",
+      "box": [
+        0.672703125,
+        0.6740833333333334,
+        0.8768437499999999,
+        0.8112916666666667
+      ]
+    }
+  ],
+  "seconds": 6.59,
+  "peak_mem_allocated_gb": 7.825,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

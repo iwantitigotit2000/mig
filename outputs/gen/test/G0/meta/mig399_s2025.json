@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig399_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "399",
+  "caption": "a photo of a yellow banana and a black orange and a brown orange and a yellow broccoli and a green orange",
+  "objects": [
+    {
+      "desc": "a yellow banana",
+      "box": [
+        0.6076235294117647,
+        0.4403900709219858,
+        0.775364705882353,
+        0.662304964539007
+      ]
+    },
+    {
+      "desc": "a black orange",
+      "box": [
+        0.6056235294117647,
+        0.728758865248227,
+        0.7511764705882353,
+        0.9693262411347519
+      ]
+    },
+    {
+      "desc": "a brown orange",
+      "box": [
+        0.4636941176470588,
+        0.7764539007092199,
+        0.6213647058823529,
+        0.985886524822695
+      ]
+    },
+    {
+      "desc": "a yellow broccoli",
+      "box": [
+        0.43268235294117646,
+        0.4271631205673759,
+        0.6616941176470588,
+        0.7013829787234043
+      ]
+    },
+    {
+      "desc": "a green orange",
+      "box": [
+        0.3326352941176471,
+        0.7071276595744681,
+        0.49463529411764706,
+        0.9149290780141843
+      ]
+    }
+  ],
+  "seconds": 5.348,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "sample_id": "mig601_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "601",
+  "caption": "a photo of a blue apple and a black apple and a white apple and a white apple",
+  "objects": [
+    {
+      "desc": "a blue apple",
+      "box": [
+        0.230453125,
+        0.3502291666666667,
+        0.48376562500000003,
+        0.6838541666666667
+      ]
+    },
+    {
+      "desc": "a black apple",
+      "box": [
+        0.0016875000000000002,
+        0.37304166666666666,
+        0.23257812500000002,
+        0.6696666666666666
+      ]
+    },
+    {
+      "desc": "a white apple",
+      "box": [
+        0.596953125,
+        0.39127083333333335,
+        0.7975,
+        0.6629375000000001
+      ]
+    },
+    {
+      "desc": "a white apple",
+      "box": [
+        0.451953125,
+        0.3818125,
+        0.598046875,
+        0.6623333333333333
+      ]
+    }
+  ],
+  "seconds": 6.464,
+  "peak_mem_allocated_gb": 7.822,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

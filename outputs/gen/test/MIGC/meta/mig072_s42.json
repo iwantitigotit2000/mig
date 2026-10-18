@@ -1,0 +1,52 @@
+{
+  "sample_id": "mig072_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "72",
+  "caption": "a photo of a red cow and a yellow cow",
+  "objects": [
+    {
+      "desc": "a red cow",
+      "box": [
+        0.43934375000000003,
+        0.31018823529411765,
+        1.0,
+        0.9891529411764706
+      ]
+    },
+    {
+      "desc": "a yellow cow",
+      "box": [
+        0.002984375,
+        0.12108235294117647,
+        0.586640625,
+        0.9887999999999999
+      ]
+    }
+  ],
+  "seconds": 6.274,
+  "peak_mem_allocated_gb": 7.813,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

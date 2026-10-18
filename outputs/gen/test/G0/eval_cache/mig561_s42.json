@@ -1,0 +1,397 @@
+{
+  "sample_id": "mig561_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "d0b39a1349f9a5b5d2213820361a0bf9d3fdc7f0",
+  "detections": {
+    "bench": {
+      "xyxy": [
+        [
+          175.5518798828125,
+          128.21923828125,
+          313.4587707519531,
+          295.48291015625
+        ],
+        [
+          79.31739807128906,
+          255.25765991210938,
+          436.9578857421875,
+          459.4857482910156
+        ]
+      ],
+      "conf": [
+        0.38170045614242554,
+        0.3641839921474457
+      ]
+    },
+    "potted plant": {
+      "xyxy": [
+        [
+          201.4894561767578,
+          361.9089050292969,
+          300.8385925292969,
+          493.1856384277344
+        ],
+        [
+          359.39764404296875,
+          356.3384094238281,
+          488.28851318359375,
+          511.8726501464844
+        ],
+        [
+          119.91940307617188,
+          181.20095825195312,
+          179.71234130859375,
+          293.3820495605469
+        ],
+        [
+          298.42987060546875,
+          132.89224243164062,
+          405.52435302734375,
+          269.85565185546875
+        ],
+        [
+          326.70574951171875,
+          221.06790161132812,
+          440.50616455078125,
+          394.1412048339844
+        ],
+        [
+          178.00112915039062,
+          56.696258544921875,
+          311.9008483886719,
+          280.9586181640625
+        ]
+      ],
+      "conf": [
+        0.7855972051620483,
+        0.7427721619606018,
+        0.7417033314704895,
+        0.7150882482528687,
+        0.4541763961315155,
+        0.314349502325058
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a red bench",
+      "category": "bench",
+      "color": "red",
+      "box": [
+        0.34175,
+        0.26081967213114754,
+        0.612296875,
+        0.5608430913348946
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9146477978654007,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Tdg2:d?n0TOf0ZOW1oAlLh<S4SOm0SO3M001O000000O1O1J60000O1000000000O10000000000O2O0O1O1N2MnJWES5h:RKZEh4P;O00000000000000000000000000000000000000000000000000000000000001O00O11O0000O1001O00O11O0001N1001O00O11O0000O1001O00O11O0000O1001O0000000000O100001N10000000O100001O00000000000000WLSE_2m:^MYE_2g:`M[E`2d:_M^E`2b:_M`Ee2[:[MfEe2Y:ZMiEe2W:[MjEd2V:\\MkEc2U:]MlEb2T:]MPF_2Q:aMSHUOSM0O51K2?j:9UPT3"
+      },
+      "sam_score_gt_box": 0.9877936840057373,
+      "mask_area": 20809,
+      "color_ratios": {
+        "red": 0.03224566293430727,
+        "blue": 0.006775914267864866,
+        "yellow": 0.01989523763756067,
+        "green": 0.12513816137248307,
+        "black": 0.08496323706088711,
+        "white": 0.2924696044980537,
+        "brown": 0.07568840405593734
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9146477978654007,
+      "o2o_det": [
+        175.5518798828125,
+        128.21923828125,
+        313.4587707519531,
+        295.48291015625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.032132937458097886
+    },
+    {
+      "idx": 1,
+      "desc": "a brown potted plant",
+      "category": "potted plant",
+      "color": "brown",
+      "box": [
+        0.71028125,
+        0.6901639344262295,
+        0.9688906249999999,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.8945521803288992,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "kle59V?1m@4Q??K6L6K2O1N2N2N3M3M3M3M5K4K4M5K7I6J6J6K5J6K7H9H9G3L2N100O100O10000O10000O10000O100000000O10000O100O100000000001O00000000000000001O000000000000000000000000001O00001O001O001O00001O001O001O001O1O001O001O002N1O1O1O001O1O2N1O1nMWDSNMb1l;9`EfNa:X1cEUN_N=P<[1gEcNY:[1oE_NR:T1e2I6M3M4J7ZOl@9iR="
+      },
+      "sam_score_gt_box": 0.996809720993042,
+      "mask_area": 15053,
+      "color_ratios": {
+        "red": 0.1078190393941407,
+        "blue": 0.0,
+        "yellow": 0.004185212250049824,
+        "green": 0.4106158240882216,
+        "black": 0.32226134325383643,
+        "white": 0.0002657277619079253,
+        "brown": 0.007307513452467947
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8945521803288992,
+      "o2o_det": [
+        359.39764404296875,
+        356.3384094238281,
+        488.28851318359375,
+        511.8726501464844
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.007307906458797328
+    },
+    {
+      "idx": 2,
+      "desc": "a green potted plant",
+      "category": "potted plant",
+      "color": "green",
+      "box": [
+        0.651203125,
+        0.3803512880562061,
+        0.863671875,
+        0.7490866510538642
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.7619133630775534,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "eXV54_?Oi@5T?Og@5V?b0F5L2O2M3M2O1M4M4M3N4mA\\Na=T2M4L2N2N2N2N2N4L7I:G;D9G:G8H6I3N1N01O0O2O1O00100O1N2O001O100O0O2O1O0010O01O1O1O100O10000O100O0010000O101O00001N101N2O001N101O0O101O0O2O000O2O001O001O0O2N1H9I6K5L5L4M3N3WOiBdNZ=Y1iBbN[=[1g0N2N3L4L7Ia0\\OfWT1"
+      },
+      "sam_score_gt_box": 0.9855877161026001,
+      "mask_area": 11938,
+      "color_ratios": {
+        "red": 0.12045568771988607,
+        "blue": 0.0,
+        "yellow": 0.0015077902496230524,
+        "green": 0.4328195677667951,
+        "black": 0.26210420505947396,
+        "white": 8.376612497905847e-05,
+        "brown": 0.0031831127492042218
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7619133630775534,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7619133630775534,
+      "o2o_det": [
+        326.70574951171875,
+        221.06790161132812,
+        440.50616455078125,
+        394.1412048339844
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4328757951121527
+    },
+    {
+      "idx": 3,
+      "desc": "a red potted plant",
+      "category": "potted plant",
+      "color": "red",
+      "box": [
+        0.581921875,
+        0.25559718969555034,
+        0.788359375,
+        0.5134426229508197
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.91508609393871,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "WUf46h?3N2N2N1O2O1O1O1O2M3N7H5I;F5K5L4L4L5K5L4K7I7I6J5L4K5L4K2O000O100O10N1L50O0010O1N1M4O010O1O1N2O1O100O1N2O1O1O100O1O100O1O1000000O2O000O100O100O2N1O10000000001O00001O0O10001O0O1J7J6K5L4K5M3M201M3N2L5I7K7J5A\\[f1"
+      },
+      "sam_score_gt_box": 0.9936962127685547,
+      "mask_area": 8086,
+      "color_ratios": {
+        "red": 0.005317833292109819,
+        "blue": 0.0,
+        "yellow": 0.007049220875587435,
+        "green": 0.3852337373237695,
+        "black": 0.4130596092010883,
+        "white": 0.0008656937917388078,
+        "brown": 0.006554538708879545
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.91508609393871,
+      "o2o_det": [
+        298.42987060546875,
+        132.89224243164062,
+        405.52435302734375,
+        269.85565185546875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.005320465231378372
+    },
+    {
+      "idx": 4,
+      "desc": "a blue potted plant",
+      "category": "potted plant",
+      "color": "blue",
+      "box": [
+        0.38471875,
+        0.7194847775175645,
+        0.604796875,
+        0.942857142857143
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.7800065684965292,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "^\\W3;Z?<N2N2O1N2N101N3M2M4M3M6G8K7J4L5K5J7J6J6I6J8I2M3N1O1O1N101O001N100O101O000000000000000O2O0000O10000000001O00000O10001O1O0O2O0O100O100O100O1O1O1M4L4L6I5M3L4K5E:I7K6K4L5H8F=H6J5M3N4K7IfcZ3"
+      },
+      "sam_score_gt_box": 1.0038349628448486,
+      "mask_area": 8465,
+      "color_ratios": {
+        "red": 0.1748375664500886,
+        "blue": 0.0,
+        "yellow": 0.02362669816893089,
+        "green": 0.3488481984642646,
+        "black": 0.28966331955109276,
+        "white": 0.0,
+        "brown": 0.028470171293561726
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7800065684965292,
+      "o2o_det": [
+        201.4894561767578,
+        361.9089050292969,
+        300.8385925292969,
+        493.1856384277344
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 5,
+      "desc": "a red potted plant",
+      "category": "potted plant",
+      "color": "red",
+      "box": [
+        0.22731249999999997,
+        0.3387822014051522,
+        0.35790625,
+        0.593887587822014
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.7680466732952529,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "cgl14k?4L3N2jNH`B9]=N]B4`=1]B1`=2^B0^=5_BN\\=7aBMZ=8bBLY=9cBKW=:fBKT=e1L5J3N1N1O100O101N100O10000O100000000O100001O0O1000001O000000001O00001O0O101O001O1O2NP1]MVBo0h>ETXV5"
+      },
+      "sam_score_gt_box": 1.005315899848938,
+      "mask_area": 5132,
+      "color_ratios": {
+        "red": 0.2954014029618083,
+        "blue": 0.0,
+        "yellow": 0.0003897116134060795,
+        "green": 0.4292673421667966,
+        "black": 0.06975837879968823,
+        "white": 0.0005845674201091193,
+        "brown": 0.003897116134060795
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7680466732952529,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7680466732952529,
+      "o2o_det": [
+        119.91940307617188,
+        181.20095825195312,
+        179.71234130859375,
+        293.3820495605469
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.29572516103845403
+    }
+  ]
+}

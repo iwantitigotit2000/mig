@@ -1,0 +1,27 @@
+# Unified generation settings. Both checkpoints are trained on Stable Diffusion v1.4.
+common:
+  height: 512
+  width: 512
+  steps: 50
+  guidance_scale: 7.5
+  # MIGC's pipeline falls back to this string when negative_prompt=None (its benchmark
+  # script never sets one); GLIGEN's official default is a longer superset. Unified here.
+  negative_prompt: "worst quality, low quality, bad anatomy"
+  # Same starting latent for every method: torch.randn(1,4,64,64) from a CPU generator
+  # seeded with the sample seed (common.utils.initial_noise).
+  shared_initial_noise: true
+  autocast_fp16: true        # weights stay fp32; matmuls in fp16 autocast for both methods
+
+gligen:
+  checkpoint: gligen_box_text   # key in paths.yaml -> HF gligen/gligen-generation-text-box
+  sampler: plms                 # official gligen_inference.py default (cannot be unified with MIGC)
+  alpha_type: [0.3, 0.0, 0.7]   # official example for generation_box_text; tuned on val
+  sdpa: true                    # numerically checked against the einsum attention
+
+migc:
+  checkpoint: migc_sd14
+  base: CompVis/stable-diffusion-v1-4
+  scheduler: euler_discrete     # official inference_mig_benchmark.py (cannot be unified with GLIGEN)
+  MIGCsteps: 25                 # official benchmark value; tuned on val
+  NaiveFuserSteps: -1
+  aug_phase_with_and: true      # official benchmark value

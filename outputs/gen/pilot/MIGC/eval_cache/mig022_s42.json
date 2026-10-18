@@ -1,0 +1,251 @@
+{
+  "sample_id": "mig022_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "42b334b2e8964b88da19a9213fcb091c0ebffab8",
+  "detections": {
+    "vase": {
+      "xyxy": [
+        [
+          64.17190551757812,
+          293.378662109375,
+          146.2854461669922,
+          434.25592041015625
+        ],
+        [
+          157.1853485107422,
+          308.9864501953125,
+          224.53819274902344,
+          447.6610107421875
+        ],
+        [
+          254.74276733398438,
+          291.43975830078125,
+          334.8506774902344,
+          456.90264892578125
+        ],
+        [
+          387.4403381347656,
+          289.7190246582031,
+          463.3735046386719,
+          442.6212463378906
+        ]
+      ],
+      "conf": [
+        0.6967660784721375,
+        0.645831286907196,
+        0.6349568367004395,
+        0.6171605587005615
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a red vase",
+      "category": "vase",
+      "color": "red",
+      "box": [
+        0.503859375,
+        0.5870218579234973,
+        0.6624062500000001,
+        0.9072677595628416
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.8262964008221787,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Q]P4a0W?:H8E;F9C>C<E<F9H8I7I7K5I6K6J6K4L4M4M20001N10000000001O00000000000000000000000000000001O000000000000000000O02O0000000O10001N4L6K5J7I9G8H8H:F<C`0A<C<D>B:G9EQch2"
+      },
+      "sam_score_gt_box": 1.006260871887207,
+      "mask_area": 10460,
+      "color_ratios": {
+        "red": 0.9953154875717017,
+        "blue": 0.0,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.0,
+        "brown": 0.0003824091778202677
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8262964008221787,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8262964008221787,
+      "o2o_det": [
+        254.74276733398438,
+        291.43975830078125,
+        334.8506774902344,
+        456.90264892578125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9937959339505583
+    },
+    {
+      "idx": 1,
+      "desc": "a green vase",
+      "category": "vase",
+      "color": "green",
+      "box": [
+        0.30290625000000004,
+        0.6019398907103826,
+        0.45670312500000004,
+        0.8815300546448087
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.8285971147724722,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "T\\_2<^??D8I8H6J6K4L4L3M3M3M3VNmMbEU2]:VNXEk1f:^NQEc1o:fNgD\\1X;oNZDT1f;d1O0000001O00000000000000000000000000000000000000000000O1000000O100O1VM`DT1`;fNgDX1Z;bNmD\\1T;^NSE`1n:YNZEe1h:SN`Ek1\\<M3M3M3L5J6I7J7G;CUd_4"
+      },
+      "sam_score_gt_box": 1.0068615674972534,
+      "mask_area": 6854,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0002918004085205719,
+        "green": 0.9935803910125475,
+        "black": 0.0,
+        "white": 0.0,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8285971147724722,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8285971147724722,
+      "o2o_det": [
+        157.1853485107422,
+        308.9864501953125,
+        224.53819274902344,
+        447.6610107421875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9937226277372263
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow vase",
+      "category": "vase",
+      "color": "yellow",
+      "box": [
+        0.7522031250000001,
+        0.5731967213114754,
+        0.9016093749999999,
+        0.8524863387978142
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.8883663847431732,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "k[R6:Z?h0_O;F8K5H8H6L5K4L5K5K5K4M2M2N3N1N3N1N2N2N3M2M3M3L4_Oa0O1O101O000000000000000000000000000000O1000000000000O100O1N2O1M3N2N2N2aLdDX2^;fMhDT2[;hMkDS2X;jMlDR2W;kMmDP2Y;jMlDQ2e<K5K5K6J6I7I9F=\\OkTh0"
+      },
+      "sam_score_gt_box": 1.0140537023544312,
+      "mask_area": 8531,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.912788653147345,
+        "green": 0.002696049701090142,
+        "black": 0.030945961786425977,
+        "white": 0.0,
+        "brown": 0.005509318954401594
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8883663847431732,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8883663847431732,
+      "o2o_det": [
+        387.4403381347656,
+        289.7190246582031,
+        463.3735046386719,
+        442.6212463378906
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.912605435801312
+    },
+    {
+      "idx": 3,
+      "desc": "a black vase",
+      "category": "vase",
+      "color": "black",
+      "box": [
+        0.12575,
+        0.5534699453551912,
+        0.28532812500000004,
+        0.848688524590164
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.9276903675924663,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "fkP1a0[?9H6K5K4M3L5L2N3M3M2N3M2N2O1N2N2O1N2O1N2O1N2N2[NaMgE_2X:eMdE]2[:fMaE\\2^:gM^EZ2b:iMYEZ2f:kMQEY2o:PN`DX2`;T10O10000000000000000000000000000O100000000^LnDV2R;eMWEW2i:dM^EY2c:cMbE\\2_:`MeE^2o;01N2N1O2N101N2N1O2N1O2N2M2N3N2M3M3L5L3M4K6J6I=^O_df5"
+      },
+      "sam_score_gt_box": 0.9994468688964844,
+      "mask_area": 6891,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.005804672761573066,
+        "yellow": 0.00014511681903932666,
+        "green": 0.0,
+        "black": 0.9677840661732695,
+        "white": 0.00043535045711797995,
+        "brown": 0.0005804672761573066
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9276903675924663,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9276903675924663,
+      "o2o_det": [
+        64.17190551757812,
+        293.378662109375,
+        146.2854461669922,
+        434.25592041015625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9677653550166981
+    }
+  ]
+}

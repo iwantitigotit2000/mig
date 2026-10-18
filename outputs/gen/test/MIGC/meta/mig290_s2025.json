@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig290_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "290",
+  "caption": "a photo of a green bed and a white bed and a black chair",
+  "objects": [
+    {
+      "desc": "a green bed",
+      "box": [
+        0.0015,
+        0.3061826697892272,
+        0.61171875,
+        0.9848243559718969
+      ]
+    },
+    {
+      "desc": "a white bed",
+      "box": [
+        0.30815625,
+        0.28250585480093676,
+        0.7554531250000001,
+        0.6592037470725995
+      ]
+    },
+    {
+      "desc": "a black chair",
+      "box": [
+        0.6701875,
+        0.3438173302107728,
+        0.796125,
+        0.5056206088992974
+      ]
+    }
+  ],
+  "seconds": 6.375,
+  "peak_mem_allocated_gb": 7.82,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

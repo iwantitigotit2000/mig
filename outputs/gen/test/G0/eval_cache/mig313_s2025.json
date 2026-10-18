@@ -1,0 +1,141 @@
+{
+  "sample_id": "mig313_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "6974570067518c21c4127c6258e76122a0c65e1f",
+  "detections": {
+    "bird": {
+      "xyxy": [
+        [
+          42.30483627319336,
+          308.9356689453125,
+          119.58168029785156,
+          418.09747314453125
+        ]
+      ],
+      "conf": [
+        0.862162172794342
+      ]
+    },
+    "elephant": {
+      "xyxy": [
+        [
+          186.0169677734375,
+          91.36543273925781,
+          470.67022705078125,
+          435.0452880859375
+        ]
+      ],
+      "conf": [
+        0.9515494704246521
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a brown bird",
+      "category": "bird",
+      "color": "brown",
+      "box": [
+        0.0975,
+        0.616112412177986,
+        0.239453125,
+        0.7785245901639343
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.6668517020165449,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "S\\f04k?1N2O1O1N4M1O000O2N2O0O2N2O001O1N2O001O1O1N10100N201N6J3M10M200000001O01O0O100N2O1O1N2G9N101O01O100O2N1N3N1oNZBFj=6R1O100O100O101N1O10001O001O001O1O001O1NTVT6"
+      },
+      "sam_score_gt_box": 0.9842245578765869,
+      "mask_area": 2020,
+      "color_ratios": {
+        "red": 0.15693069306930693,
+        "blue": 0.0009900990099009901,
+        "yellow": 0.006435643564356435,
+        "green": 0.0024752475247524753,
+        "black": 0.009405940594059406,
+        "white": 0.4099009900990099,
+        "brown": 0.27970297029702973
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.6668517020165449,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.6668517020165449,
+      "o2o_det": [
+        42.30483627319336,
+        308.9356689453125,
+        119.58168029785156,
+        418.09747314453125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2775073028237585
+    },
+    {
+      "idx": 1,
+      "desc": "a white elephant",
+      "category": "elephant",
+      "color": "white",
+      "box": [
+        0.39778125000000003,
+        0.1722950819672131,
+        0.90271875,
+        0.856768149882904
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8922568721191901,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ecm23k?5L3M3M3M4L4M2M4L4M4K3M3M4L4L4M1N4M1N3N1N3N1N3N1O2M2O2N1O1O2M2O1O2QEXMb8i2[G[Mc8e2\\G]Mc8d2\\G]Mc8e2ZG\\Mf8e2XG\\Mg8f2VG\\Mj8e2TG\\Ml8e2QG]Mo8d2oF\\MR9f2jF\\MV9e2gF\\MY9f2dF\\M\\9d2bF]M_9d2^F]Mc9d2ZF]Mg9c2PFiLXOf0i:b2jEfMX:[2cEhM]:Y2`EiMa:W2[ElMm1gNkM2c8\\3^GRNi06a7R6K4L3M2N3M2N2M3N1O2N2O0N2O2O0N2O1O100O1O1O1O1[JWGQ4i8lKZGT4g8iK\\GV4e8hK\\GY4c8eK_G\\4a8bK`G_4`8_KbGb4\\8]KeGd4[8YKgGg4Z8WKhGh4Y8UKiGk4W8TKjGl4W8QKkGn4W8nJlGR5T8lJnGT5R8hJRHX5[901O00000000000000000000O101N1O1O1O100N3N1N2N1N2M3L5K4K_JdFj4]9RKhFk4[9PKhFP5\\9kJeFU5\\9hJfFX5]9aJhF]5n900000000000000000000000000001O0000000O10000O1001O000000001O0000000000000000hNkJeGV5U8TKfGl4S8^KjGb4o7gKoGY4m7nKPHR4l7TLRHl3i7[LUHe3f7bLWH_3f7fLXHZ3f7a2M3L4M3M3M3N2N3N100000001O0000001O000010O01O00001O001O10O0100OmIUIQ3k6kLZIU3e6jL]IV3c6fL`IZ3`6cLcI^3]6^LfIc3Y6YLlIg3T6SLQJm3o5jKZJW4g5`K`J`4c5WKdJi4`5hJjJX5o700000001O0001O0000001O001O001O001O1N101O001O1N1kMjJ`IW5W6YK_Ii4\\6bK^I_4Z6lK^IY4^6f2L5K5L3L5L4L4L4K4M4L4K5K5K5L4J6L4K5L4L4K5K6K4K5J6L5K4M4J5L5K6J6J6I7J7G:E<C_Ze0"
+      },
+      "sam_score_gt_box": 0.9998595714569092,
+      "mask_area": 65173,
+      "color_ratios": {
+        "red": 0.2193239531707916,
+        "blue": 0.0,
+        "yellow": 0.0005830635385819281,
+        "green": 1.534377733110337e-05,
+        "black": 0.16453132432142145,
+        "white": 0.04613873843462784,
+        "brown": 0.4645021711444923
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8922568721191901,
+      "o2o_det": [
+        186.0169677734375,
+        91.36543273925781,
+        470.67022705078125,
+        435.0452880859375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.04633139194477828
+    }
+  ]
+}

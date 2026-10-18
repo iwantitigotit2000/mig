@@ -1,0 +1,52 @@
+{
+  "sample_id": "mig277_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "277",
+  "caption": "a photo of a green toilet and a green clock",
+  "objects": [
+    {
+      "desc": "a green toilet",
+      "box": [
+        0.3453541666666667,
+        0.6047343749999999,
+        0.6666666666666666,
+        0.9876093749999999
+      ]
+    },
+    {
+      "desc": "a green clock",
+      "box": [
+        0.4958958333333333,
+        0.008859375,
+        0.6548958333333333,
+        0.13565625
+      ]
+    }
+  ],
+  "seconds": 6.283,
+  "peak_mem_allocated_gb": 7.818,
+  "peak_mem_reserved_gb": 8.674,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

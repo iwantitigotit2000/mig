@@ -1,0 +1,163 @@
+{
+  "sample_id": "mig506_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "0909313214f4377f93427dd0a2d7a513bb3421bd",
+  "detections": {
+    "hot dog": {
+      "xyxy": [
+        [
+          0.6425628662109375,
+          248.49037170410156,
+          511.24334716796875,
+          510.787109375
+        ],
+        [
+          0.681304931640625,
+          78.23812103271484,
+          181.93911743164062,
+          224.27645874023438
+        ]
+      ],
+      "conf": [
+        0.7399075031280518,
+        0.7158485651016235
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue hot dog",
+      "category": "hot dog",
+      "color": "blue",
+      "box": [
+        0.006270833333333333,
+        0.178828125,
+        0.35764583333333333,
+        0.43059375
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8654010251309615,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "g4d085R>MmA6n=NoA5n=Q1M2N3M2O1N2O1O1N101O000]OgM^CZ2a<iM\\CX2c<lMYCV2f<mMVCT2i<b0O100O1O2N100O1O1O10001N100O1000000O1000000O1000000000O1000O10O01O1M2O2N101O0O2O0O1N2000001O01N101O001N101N2N1O2N2O1N20O101O5K4L3M2N2N2N1O1O1O1O1O1O1O1O001O00001O01O000000001O00001O001O1O1O1O1O1O2N3L3N3L3N1O1N010O1000000O10001N1O100O2O0O100O101N1O1O100O1O100O1O100O2N1O2O1N2N101N3M2O0O2O1N2N2N1O2N2N1O2N2N2N2cNTBc0n=XOWBf0l=RO[Bk0_>N3L4J6G[kU5"
+      },
+      "sam_score_gt_box": 0.9918907880783081,
+      "mask_area": 19308,
+      "color_ratios": {
+        "red": 0.42904495545887716,
+        "blue": 0.15547959395069402,
+        "yellow": 0.0,
+        "green": 0.001191216076237829,
+        "black": 0.09892272633105449,
+        "white": 0.004505904288377874,
+        "brown": 0.5143463849181686
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8654010251309615,
+      "o2o_det": [
+        0.681304931640625,
+        78.23812103271484,
+        181.93911743164062,
+        224.27645874023438
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.15401041666666668
+    },
+    {
+      "idx": 1,
+      "desc": "a white hot dog",
+      "category": "hot dog",
+      "color": "white",
+      "box": [
+        0.0,
+        0.49671875,
+        1.0,
+        0.9868593749999999
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9542466087999029,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "S:m5S:0O10000O100O10000O100O10000O100O10000O10000O1000000O100000O010000O1000O010000O01000O10O01000000O0100000O0100000O01000O01000O01000O10O10O10O1000O01000O10O100000O0100000O10O100O10O1000O01000O10000O0100000O1000O10O10000O1000000O100O010O100O1000O100000O100000O01000000000O01000000O1000O10O1000000O10O10O100000O01000000O010O10000O010O1000O010000O10O0100O1000O10O10000O01000000O010000O100000O0100O1000O01000000O01000O1O1000O10O10000O10000O10000O100O10000O0100000O100O100000O10O100O100O100O01000O10000000O100000O10000000O01000000O01000000000O1000O01000000O100O1000O1000O1000000000000000O01000000O10000O1000O100000O10000O10O1000O100000O010000O1000000O0100000O1000O10O10000000O10O1000000O1000O1000O1000000O10000O1000O01000000O1000O10O1000000O01000O100000O0100O100000000O10000O01000O1000000O10000O10000O01001N01000O100O10000O10000O10000O10000O10000O10000O100O10000O100O100O10O010000O101N100O100O100O1O100O101N100O100O1O2O0O100O101N1O100O2O0O1O101N1O100O2N100O1O2O0O2O0O2O0N201N1O2N1O2O0O2N2M2O2N1O2M2O2N2M2O2N2N2N2N2N1O3L3N1N3M4J5KZG"
+      },
+      "sam_score_gt_box": 1.0073392391204834,
+      "mask_area": 87359,
+      "color_ratios": {
+        "red": 0.11389782392197713,
+        "blue": 0.0,
+        "yellow": 0.008562369074737577,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.09739122471640015,
+        "brown": 0.6556279261438432
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9542466087999029,
+      "o2o_det": [
+        0.6425628662109375,
+        248.49037170410156,
+        511.24334716796875,
+        510.787109375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.09736559016731135
+    },
+    {
+      "idx": 2,
+      "desc": "a white hot dog",
+      "category": "hot dog",
+      "color": "white",
+      "box": [
+        0.0032916666666666667,
+        0.781078125,
+        0.6108333333333333,
+        0.98796875
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.24602680977039115,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.24602680977039115,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

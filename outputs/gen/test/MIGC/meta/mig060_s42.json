@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig060_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "60",
+  "caption": "a photo of a black dining table and a red bowl and a brown cake and a black pizza and a red cake and a brown bowl",
+  "objects": [
+    {
+      "desc": "a black dining table",
+      "box": [
+        0.0,
+        0.0,
+        0.9951718749999999,
+        0.9813875598086125
+      ]
+    },
+    {
+      "desc": "a red bowl",
+      "box": [
+        0.447109375,
+        0.004688995215311005,
+        0.8912968749999999,
+        0.3917224880382775
+      ]
+    },
+    {
+      "desc": "a brown cake",
+      "box": [
+        0.0,
+        0.0,
+        0.263046875,
+        0.4884210526315789
+      ]
+    },
+    {
+      "desc": "a black pizza",
+      "box": [
+        0.00146875,
+        0.004497607655502392,
+        0.27153125,
+        0.4741626794258373
+      ]
+    },
+    {
+      "desc": "a red cake",
+      "box": [
+        0.34715625,
+        0.46057416267942586,
+        0.6119375,
+        0.8457177033492823
+      ]
+    },
+    {
+      "desc": "a brown bowl",
+      "box": [
+        0.78609375,
+        0.22839712918660288,
+        0.99940625,
+        0.6199043062200957
+      ]
+    }
+  ],
+  "seconds": 6.663,
+  "peak_mem_allocated_gb": 7.822,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "sample_id": "mig123_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "d7ceb68a2854a846d04719f0b6ec99eb76cb70fc",
+  "detections": {
+    "dog": {
+      "xyxy": [
+        [
+          124.47058868408203,
+          0.0781097412109375,
+          280.1120300292969,
+          271.35662841796875
+        ]
+      ],
+      "conf": [
+        0.9531433582305908
+      ]
+    },
+    "skateboard": {
+      "xyxy": [
+        [
+          0.211151123046875,
+          25.442657470703125,
+          164.42922973632812,
+          229.97869873046875
+        ]
+      ],
+      "conf": [
+        0.698655366897583
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white dog",
+      "category": "dog",
+      "color": "white",
+      "box": [
+        0.22334375,
+        0.006333333333333333,
+        0.543265625,
+        0.5395208333333333
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9009491496378932,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ndo1>m0K[=;aBIZ=<aBH[==aBG[==aBG[==`BG]==_BG]=`1N2N3L2O2N1O0000000O01J5K5102M4M2N4L3L4dCWMZ;n2`D_Mo:k2mD\\Me:o2VEVMe:U4M4M2N2M2M4K4F;H7L4L5L3N2M3M3N2N2N2N2N2O1N3M2O1N2N2O1O1N2N2N2O0N3L3010O01O1O1O1O0001O1O1N2O1O1N2O1N2oNUH[I]8b6b0K5J6N200002N8H7I8Ha0_O4L2N2N2N1O1O0000000000000000001O00\\NgH`JZ7[5nHbJR7Z5TIcJm6h4ZHaJT1f0b6f4mIYKS6g4nIXKR6h4PJVKP6i4RJUKo5k4SJQKo5o4RJlJR6S5RJgJQ6Y5[2PO_E_Ld:Q3mEkLU:S3PFiLR:S3SFkLn9T3VFgLl9k3gEoK[:d48O100O1O2M2O2M2N3L2O2N4L4L6J;E4hMdDDQ>K2N2M2O2N1M3N4IX[d3"
+      },
+      "sam_score_gt_box": 1.0066750049591064,
+      "mask_area": 26923,
+      "color_ratios": {
+        "red": 0.002340006685733388,
+        "blue": 0.0027114363183894812,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.014560041600118857,
+        "white": 0.8129851799576571,
+        "brown": 0.00386286817962337
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9009491496378932,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9009491496378932,
+      "o2o_det": [
+        124.47058868408203,
+        0.0781097412109375,
+        280.1120300292969,
+        271.35662841796875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.8133105421574821
+    },
+    {
+      "idx": 1,
+      "desc": "a white skateboard",
+      "category": "skateboard",
+      "color": "white",
+      "box": [
+        0.0050625,
+        0.0720625,
+        0.36485937500000004,
+        0.42116666666666663
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.769569988035286,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "V1W5i:000O2O0O10O0100O10001O4L1O1O1O2N2N010O3M01O01O2N1O010O1O010O00001O01O00001O00000O2O0O101N1N2O2N1O1M3N3N1O1O2N1O1O2N1O101N1O1N2J7O0O101N100O2O0O100O2O000O2O0O100O2O0O101N10000O2O0O100O2O0O10001N1O101N10000O2O0O100O20O00O1N3N1000001O00000O2O000O1O2M2I7I7L5K4O1N2N3M2O1N2N3N1O1O1O2N1N2O2N1N2O1N3N1O1N3N1O1L4J6K6H7K5O101N1M4Mhm^5"
+      },
+      "sam_score_gt_box": 0.9949536323547363,
+      "mask_area": 21274,
+      "color_ratios": {
+        "red": 0.024066936166212277,
+        "blue": 0.4248848359499859,
+        "yellow": 0.006110745510952336,
+        "green": 0.03638243865751622,
+        "black": 0.26342013725674535,
+        "white": 0.10378866221679045,
+        "brown": 0.008273009307135471
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "blue",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.769569988035286,
+      "o2o_det": [
+        0.211151123046875,
+        25.442657470703125,
+        164.42922973632812,
+        229.97869873046875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.10345959122445153
+    }
+  ]
+}

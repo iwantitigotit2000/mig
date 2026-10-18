@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig444_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "444",
+  "caption": "a photo of a white wine glass and a white wine glass and a brown wine glass and a red wine glass and a red wine glass",
+  "objects": [
+    {
+      "desc": "a white wine glass",
+      "box": [
+        0.217390625,
+        0.07818750000000001,
+        0.513375,
+        1.0
+      ]
+    },
+    {
+      "desc": "a white wine glass",
+      "box": [
+        0.4729375,
+        0.1501875,
+        0.751765625,
+        0.9878333333333332
+      ]
+    },
+    {
+      "desc": "a brown wine glass",
+      "box": [
+        0.6388281250000001,
+        0.18822916666666664,
+        0.931765625,
+        0.9882291666666667
+      ]
+    },
+    {
+      "desc": "a red wine glass",
+      "box": [
+        0.8239375000000001,
+        0.23145833333333332,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "desc": "a red wine glass",
+      "box": [
+        0.0017656249999999998,
+        0.0035416666666666665,
+        0.23348437500000002,
+        0.9870208333333333
+      ]
+    }
+  ],
+  "seconds": 8.009,
+  "peak_mem_allocated_gb": 7.826,
+  "peak_mem_reserved_gb": 8.674,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

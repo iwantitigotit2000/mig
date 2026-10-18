@@ -1,0 +1,71 @@
+{
+  "sample_id": "mig126_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "126",
+  "caption": "a photo of a green toilet and a yellow sink and a yellow suitcase",
+  "objects": [
+    {
+      "desc": "a green toilet",
+      "box": [
+        0.4975625,
+        0.26101562500000003,
+        0.7590625000000001,
+        0.6146874999999999
+      ]
+    },
+    {
+      "desc": "a yellow sink",
+      "box": [
+        0.715875,
+        0.46290624999999996,
+        1.0,
+        0.658546875
+      ]
+    },
+    {
+      "desc": "a yellow suitcase",
+      "box": [
+        0.0379375,
+        0.390203125,
+        0.1951041666666667,
+        0.5894375000000001
+      ]
+    }
+  ],
+  "seconds": 5.379,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

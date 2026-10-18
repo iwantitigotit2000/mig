@@ -1,0 +1,133 @@
+{
+  "sample_id": "mig195_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "bf0649c1ea0c47300ccfa24ab16f69887534a381",
+  "detections": {
+    "zebra": {
+      "xyxy": [
+        [
+          190.2611083984375,
+          140.57357788085938,
+          365.29364013671875,
+          348.73150634765625
+        ],
+        [
+          79.03402709960938,
+          121.21304321289062,
+          180.675048828125,
+          198.82461547851562
+        ]
+      ],
+      "conf": [
+        0.8417261242866516,
+        0.6987321972846985
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black zebra",
+      "category": "zebra",
+      "color": "black",
+      "box": [
+        0.372765625,
+        0.24337499999999998,
+        0.734546875,
+        0.6956249999999999
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8441440229289744,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "fgo23l?4M3L2O2O0O1O100000000O0O2L4J6L4M7[AUOh=g1G7K5J6L7TCgMd;^3L3L3M4M3M2N2N3M2O1N2O1O1O1O1N2M2N2O1O00H8O2QNRElNo:R1\\EdNd:\\1kEUNW:i1QFoMP:P2\\FdMd9\\2o102O0001O00100O1O2O1N3N3M3M3N2M3N2N3M5\\E\\La8l3RGXLn8l3jFYLV9j3bFYL_9m3XFVLh9Q51O00000O1HeEjJ\\:U58O1]MkEZOV:a0WFWOi9i0`FnN`9R1[GRNf8o1aGhM_8Y2d2000O1O1O1O2M2N2O1O1O1O1O100O100O100O1000O0100O1000O10O0100O010O1O10O01O10O01O100O1O100N2O1O1O1N2O100O1003M2O2M3M3N2M3bEPMg7Q3UHQMk7R3PHQMP8P3lGRMT8Q3fGRM[8Q3^GRMb8Q3YGQMh8Q3PGTMP9o2fFXM[9m2WF[Mj9\\42O0O2N2I7iL[EP1g:mN^En0e:POaEj0a:SOdEg0`:QOjEc0`:ZOeE9g:D]E0m:MXEIR;3SEES;7RE@W;9^2GgjY2"
+      },
+      "sam_score_gt_box": 1.0108989477157593,
+      "mask_area": 18101,
+      "color_ratios": {
+        "red": 0.00281752389370753,
+        "blue": 0.04629578476327275,
+        "yellow": 0.0060770123197613395,
+        "green": 0.0006629467985194189,
+        "black": 0.6307386332246837,
+        "white": 0.010883376609027126,
+        "brown": 0.07933263355615712
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8441440229289744,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8441440229289744,
+      "o2o_det": [
+        190.2611083984375,
+        140.57357788085938,
+        365.29364013671875,
+        348.73150634765625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6312354828005752
+    },
+    {
+      "idx": 1,
+      "desc": "a black zebra",
+      "category": "zebra",
+      "color": "black",
+      "box": [
+        0.193515625,
+        0.23710416666666667,
+        0.37875,
+        0.39914583333333337
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.6692979051937522,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "\\d]14j?4L3N3L8I3M3M3M3M4L4L4M3L4M4K4M3M5K2N001OPOhBXOX=f0RCROn<n0VCmNk<S1R10O0001O010O00001O01O0001O000000001O000000000000O1000O10O10O100O010O1O0100O010O2O2N3L5L6Id0]O3M00N2J6K6J5F;K6N10O10001O101N01O0XOfAG^>OblU5"
+      },
+      "sam_score_gt_box": 0.9877686500549316,
+      "mask_area": 3627,
+      "color_ratios": {
+        "red": 0.0041356492969396195,
+        "blue": 0.03915081334436173,
+        "yellow": 0.0019299696719051558,
+        "green": 0.0019299696719051558,
+        "black": 0.4138406396470913,
+        "white": 0.037772263578715194,
+        "brown": 0.03832368348497381
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.6692979051937522,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.6692979051937522,
+      "o2o_det": [
+        79.03402709960938,
+        121.21304321289062,
+        180.675048828125,
+        198.82461547851562
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4283910078302602
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "sample_id": "mig797_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "c2f126eb4aaba7b6d79dd4c3f6b5c5ca50387172",
+  "detections": {
+    "car": {
+      "xyxy": [
+        [
+          -0.047580718994140625,
+          197.73150634765625,
+          64.43351745605469,
+          332.15423583984375
+        ],
+        [
+          242.4954833984375,
+          202.79843139648438,
+          336.1654052734375,
+          329.2273864746094
+        ]
+      ],
+      "conf": [
+        0.30536365509033203,
+        0.29740381240844727
+      ]
+    },
+    "oven": {
+      "xyxy": [],
+      "conf": []
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue oven",
+      "category": "oven",
+      "color": "blue",
+      "box": [
+        0.27471875,
+        0.48314583333333333,
+        0.52246875,
+        0.7550625
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a blue oven",
+      "category": "oven",
+      "color": "blue",
+      "box": [
+        0.3745625,
+        0.4704583333333333,
+        0.641828125,
+        0.7066041666666666
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow oven",
+      "category": "oven",
+      "color": "yellow",
+      "box": [
+        0.148390625,
+        0.44277083333333334,
+        0.3121875,
+        0.6814166666666667
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a yellow car",
+      "category": "car",
+      "color": "yellow",
+      "box": [
+        0.0,
+        0.381125,
+        0.13940625,
+        0.6305833333333334
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8293203484870416,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Y6_3`<100000O100000000000O10O1000000O1000000000000O10000000000O1000000000000O2O00000000000001O2N2N101N2N1O2N2N1O0001O0000000O2ZOe0ZM[\\P7"
+      },
+      "sam_score_gt_box": 1.0079702138900757,
+      "mask_area": 6900,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.17884057971014491,
+        "yellow": 0.6357971014492754,
+        "green": 0.0008695652173913044,
+        "black": 0.0336231884057971,
+        "white": 0.01956521739130435,
+        "brown": 0.5565217391304348
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8293203484870416,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8293203484870416,
+      "o2o_det": [
+        -0.047580718994140625,
+        197.73150634765625,
+        64.43351745605469,
+        332.15423583984375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6357971014492754
+    },
+    {
+      "idx": 4,
+      "desc": "a green oven",
+      "category": "oven",
+      "color": "green",
+      "box": [
+        0.486828125,
+        0.38829166666666665,
+        0.66934375,
+        0.5905
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

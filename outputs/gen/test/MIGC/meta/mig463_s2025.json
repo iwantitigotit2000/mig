@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig463_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "463",
+  "caption": "a photo of a red cat and a black bed and a yellow teddy bear and a black teddy bear and a yellow teddy bear",
+  "objects": [
+    {
+      "desc": "a red cat",
+      "box": [
+        0.34194,
+        0.30751999999999996,
+        0.6548399999999999,
+        0.6516
+      ]
+    },
+    {
+      "desc": "a black bed",
+      "box": [
+        0.0016799999999999999,
+        0.00224,
+        1.0,
+        0.9887733333333333
+      ]
+    },
+    {
+      "desc": "a yellow teddy bear",
+      "box": [
+        0.58784,
+        0.26576,
+        0.83108,
+        0.5090133333333333
+      ]
+    },
+    {
+      "desc": "a black teddy bear",
+      "box": [
+        0.22053999999999999,
+        0.18450666666666665,
+        0.63786,
+        0.4176266666666667
+      ]
+    },
+    {
+      "desc": "a yellow teddy bear",
+      "box": [
+        0.1354,
+        0.28914666666666666,
+        0.45384,
+        0.7943999999999999
+      ]
+    }
+  ],
+  "seconds": 6.536,
+  "peak_mem_allocated_gb": 7.826,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

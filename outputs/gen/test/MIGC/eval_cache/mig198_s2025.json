@@ -1,0 +1,139 @@
+{
+  "sample_id": "mig198_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "aefd19f1a40d33a9e2765d7356e88bd7d494ce4e",
+  "detections": {
+    "bench": {
+      "xyxy": [
+        [
+          262.82061767578125,
+          218.69187927246094,
+          470.64300537109375,
+          447.31500244140625
+        ]
+      ],
+      "conf": [
+        0.8987028002738953
+      ]
+    },
+    "horse": {
+      "xyxy": [
+        [
+          101.1341781616211,
+          154.38095092773438,
+          323.88153076171875,
+          396.7760925292969
+        ]
+      ],
+      "conf": [
+        0.9629868268966675
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white horse",
+      "category": "horse",
+      "color": "white",
+      "box": [
+        0.195203125,
+        0.2894791666666666,
+        0.61153125,
+        0.771875
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9181962600999058,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "jec1>f>0dA?Q>o0J5L9\\BoMd<T2TCTNi<d2NO01O2N1O001N2O1O000O1oFfL\\5Y3cJoLW5Q3gJRMX5n2fJTMZ5l2dJVM[5n2eIlLoM=\\8m2ZInMg6W2PIlMP7W2jHlMV7X2`HnM`7Z2PHnMP8P51HYGUIh8a6`0D<N2O3M3M3E:F;J5M4L3N3K4M4J6L4M3O001O11VEoKa9T4QFaL4XOh8P6fFWJZ9X6001N100000000O0QOfFXK[9b4mF\\KS9_4SG^Ko8_4UG_Kl8`4WG]Kk8a4YG[Kh8e4[GWKg8i4ZGSKi8l4V12NaNUEiMk:Q2[EoMd:o1_ESN]:m1dEVNY:i1iEWNU:i1mEWNR:h1QFVNn9j1VFTNh9l1]FQNa9o1gFkMX9T2nFiMo8W2SGiMk8W2WGgMi8Y2YGfMf8Z2]GcMc8]2cG\\M^8d2eGYM[8g2hGVMX8i2jGVMV8j2lGSMU8m2lGRMT8n2PHlLR8S3]21000O0100O010O10O01cEnLk7S3eGjL`N6j9o2eGoL]N4m9n2dGSMZN1R:k2dGdM[8]2bGfM]8Z2cGgM]8Y2aGhM_8X2`GjM`8V2^GlMa8U2]GmMc8R2\\GoMd8R2ZGPNe8Q2XGRNh8m1WGUNi8k1UGVNk8k1RGXNn8i1gFjLYOa1P:g1bFaN^9f1YF]Ng9m31O10O01N2N2N2N2N2O1O1O100O1O2N100001O2N101N1O1OSNdFWM\\9e2PGSMo8j2\\GlLf8S3U2O00010O0100O2O2Mh0jC[Lb:[1YES1g:hNdES1\\:jNiEU1V:hNnE_1i9`NYFa1f9\\N^Fc1b9[NaFc1`9\\NcF`1_9_NfF\\1Z9cNSGP1P9nNRGP1o8oNXGi0j8VOaG>a8AnGOT80UHmNPMe0l:=o3O1O00001O1O000O2O000O2O000O2O0I7N3N1O20O010O010000O010O010O010O001O001O1O100O2N2M2OkXo2"
+      },
+      "sam_score_gt_box": 0.9998561143875122,
+      "mask_area": 26166,
+      "color_ratios": {
+        "red": 7.643506840938622e-05,
+        "blue": 0.002598792325919132,
+        "yellow": 0.03252312160819384,
+        "green": 0.008751815332874722,
+        "black": 0.0077199419093480085,
+        "white": 0.5006879156156845,
+        "brown": 0.06726286020025989
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9181962600999058,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9181962600999058,
+      "o2o_det": [
+        101.1341781616211,
+        154.38095092773438,
+        323.88153076171875,
+        396.7760925292969
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.500860190388806
+    },
+    {
+      "idx": 1,
+      "desc": "a black bench",
+      "category": "bench",
+      "color": "black",
+      "box": [
+        0.500578125,
+        0.4292916666666667,
+        0.889671875,
+        0.8960416666666667
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8549251993384355,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "jgT4=a?5K4M2N2N3N1N2O1O5SAkNe42U5g1XJ]Ng5i1oI[NQ6m1dIVN\\6R2WISNi6Z2]HSNc7c2dG`M\\8P3QGSMo8o400O1000O10000CVFdJi9\\3gFeMCoNf9]3fGbLfNLLJj9^2YFgN[1ROhNNh9X2\\FdNR1UOjNOi9X2_FaNm0XOkNOi9X2aFaNh0YOmNNk9X2`FbNg0XOnNMk9Z2`FbNe0XOoNLm9Y2_FdNe0WOoNLm9Y2_FeNd0VOoNLo9Y2]FgNc0VOoNKQ:X2]FgNb0_OR9j1[FiNb0\\OT9k1ZFiNa0]OU9i1[FkN?[OW9j1YFlN`0ZOV9k1ZFkN`0YOW9l1YFlN`0WOW9m1YFlNa0VOV9m1YFnNb0TOU9n1YFnNc0SOT9o1YFnNd0ROS9P2YFoNc0POU9Q2XFoNd0mNV9S2VFQOd0lNV9S2VFQOd0lNV9S2VFQOe0kNU9T2VFQOe0kNT9U2VFPOh0jNR9U2WFQOg0jNR9U2WFQOh0iNQ9V2WFQOh0jNP9U2WFROi0iNP9U2WFRO1dN66a9S2YFRONhN92`9T2YFQONnN5Nc9S2ZFQONjNEKa07a9S2ZFQO0nN5O_9S2\\FoN0QO5M^9S2]FnN1RO5M\\9R2_FnN1SO4N[9R2^FmN4SO21Z9P2_FjN6WOM4\\9\\3iFbLB<c9P3nFiMo8U2QGnMn8W2gFRNV9_4L2O00001OgKjFh1V9WNSG5JdNS9W1SGL9hNc8[1UGFh0fNS8d1UGBQ1eNj7i1UG\\O[1gN_7n1UGVOe1iNV7Q2UGUOh1hNS7R2VGVOi1eNR7U2UGVOX;j0hDUOY;k0fDVOZ;j0fDVOZ;i0gDWOY;i0gDVOZ;j0fDVOZ;j0eDWOZ;i0gDWOY;i0gDVOZ;j0fDVOZ;j0fDVOZ;j0fDVOZ;i0fDWO[;i0eDWO[;i0eDWO[;i0eDWO[;h0fDWO[;i0dDXO[;i0eDWO[;i0eDVO\\;j0cDWO];h0dDXO\\;h0dDXO\\;h0dDWO];i0cDWO];i0cDWO\\;i0dDXO\\;h0dDWO];i0cDWO];i0cDWO];i0bDWO_;i0aDWO_;h0bDXO^;h0bDXO];i0cDVO^;j0bDVO^;j0bDVO^;i0bDWO_;i0aDWO_;i0aDWO_;i0aDWO_;i0aDVO`;j0`DVO_;k0`DVO`;P1ZDPOf;W1RDjNb1eNg8n3UGYLi8g3TG]Lk8c3nFdLR9\\3bFPM]9Q3`FQMa9g4O^LmEX1Q:jNWFo0g9RO^Fk0a9UO_Fk0a9UO^Fk0d9TO\\FSOC;Q:a0]FTOH5l9f0\\FTO4B@VOS:S2XFVO;ZOh9]1mEXO=XOi9_1jEYO>UOn9^1dE]O>QOY:[1YEC>QOc:[1gDEf0oNj:h2VEWMS;`2nD`MX;Z2hDfM^;T2aDlMf;n1ZDRNo;d1QD]NY<Y1fChNa<Q1_CPOb<n0^CROb<n0^CROa<n0`CRO`<n0`CRO`<o0`CPO`<P1`CPO`<P1aCnN`<S1_CmNa<T1_CkNa<U1_ClN`<P1eCoN[<Q1eCoN[<P1gCoNY<Q1gCoNY<Q1YCkNE4R=P1iBlN184LQ=P1kBlNN:5JR=P1lBlNL97LP=n0oB\\O2Eo<o0PC[O1Gn<n0RCYO2Ik<n0TCXO1Kj<l0XCWOMOj<j0YCZOG0o<\\2O2O1N1O3RCPMg<U3OlNZCoNe<=SD_On;=WDBi;9]DEd;7bDG];6iDGX;6nDFS;5TEHn:2YEKi:N^EO[=O2N1NYSe0"
+      },
+      "sam_score_gt_box": 0.9984898567199707,
+      "mask_area": 22881,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.09894672435645295,
+        "yellow": 0.0021415147939338316,
+        "green": 0.010882391503867838,
+        "black": 0.4716140028844893,
+        "white": 0.035662776976530745,
+        "brown": 0.00043704383549670033
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8549251993384355,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8549251993384355,
+      "o2o_det": [
+        262.82061767578125,
+        218.69187927246094,
+        470.64300537109375,
+        447.31500244140625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.471571322598944
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "sample_id": "mig007_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "44c6ed56235c28e5a928636c1ba5a3c6b3e54278",
+  "detections": {
+    "bird": {
+      "xyxy": [
+        [
+          390.576904296875,
+          240.31300354003906,
+          478.83416748046875,
+          347.50537109375
+        ],
+        [
+          252.33604431152344,
+          284.37249755859375,
+          363.3027038574219,
+          410.09576416015625
+        ]
+      ],
+      "conf": [
+        0.819993257522583,
+        0.8171406984329224
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black bird",
+      "category": "bird",
+      "color": "black",
+      "box": [
+        0.5079374999999999,
+        0.566923076923077,
+        0.6703749999999999,
+        0.7924941724941725
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.6884961222363649,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Wio31o?0O100O2O000O10000O2O001O0O2N2N2O2M3N3L3VAGi==oALc1YO]:n1_ESNa:P2ZERNf:P2WEQNi:Q2TEPNl:Q2SEoMm:S2QEmMo:T2oDmMQ;T2nDkMS;V2lDjMT;W2kDiMU;X2iDiMX;W2gDiMZ;V2fDjM[;V2dDjM\\;W2bDjM`;U2_DkMb;T2]DnMc;R2[DoMg;P2WDQNj;n1UDSNm;l1PDVNR<i1kCZNV<d1hC^NY<b1eC_N]<`1_CcNb<]1[CeNf<[1VCgNl<k1WC_Mk<\\2YCcMh<Y2\\CeMf<X2c0M3M3N2N3M2N2N2O2M2N3M2N3M3L4L4N2N201N2N101O1O000O1000O010O01O01O00010OO10000O101N1O1N3N2N1N3M2O2N101N1O2O0ObcZ2"
+      },
+      "sam_score_gt_box": 0.9953234195709229,
+      "mask_area": 4598,
+      "color_ratios": {
+        "red": 0.005437146585471945,
+        "blue": 0.03023053501522401,
+        "yellow": 0.0023923444976076554,
+        "green": 0.011961722488038277,
+        "black": 0.7037842540234884,
+        "white": 0.0,
+        "brown": 0.0032622879512831664
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.6884961222363649,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.6884961222363649,
+      "o2o_det": [
+        252.33604431152344,
+        284.37249755859375,
+        363.3027038574219,
+        410.09576416015625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7047930283224401
+    },
+    {
+      "idx": 1,
+      "desc": "a white bird",
+      "category": "bird",
+      "color": "white",
+      "box": [
+        0.74815625,
+        0.4516083916083916,
+        0.935546875,
+        0.6666666666666666
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8025648831234953,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "YjS62m?1O1N2O1O1N1O2O1N101O0O2O001O1O0O2N3M2O1N2O0O2O1O1N2O1O1N101O1O1O:F6KHjAiNR>X1SBdNl=_1TB_Nj=c1WB\\Nh=Z1XBiNn=W1VBgNi=Y1YBfNe=Z1]BeNc=[1_BeN^=\\1bBeN]=[1dBdN\\=[1eBeNZ=\\1fBdNZ=\\1fBdNZ=\\1fBdNY=]1gBcNY=a1cB_N]=d1`B]N_=[1ZBiN3Lb=[1^BiNNLd=Z1aBjNf=U1]BkNa=U1aBjN]=V1eBlNX=S1jBlNU=T1mBkNS=T1oBlNo<U1RCjNm<V1TCjNX<4XCR1b0iNT<8XCo0e0iNQ<:XCn0h0hNn;<YCl0j0hNl;=XCl0m0gNj;>WCl0P1fNh;m1YDSNg;k1\\DTNc;l1^DSNc;l1^DTNb;j1`DVN`;i1aDWN_;g1_1N1N2O2M3M3N2M4K5H9@`h`0"
+      },
+      "sam_score_gt_box": 0.9826209545135498,
+      "mask_area": 3409,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.2464065708418891,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.010560281607509533,
+        "white": 0.5462012320328542,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8025648831234953,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8025648831234953,
+      "o2o_det": [
+        390.576904296875,
+        240.31300354003906,
+        478.83416748046875,
+        347.50537109375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5415939499709134
+    }
+  ]
+}

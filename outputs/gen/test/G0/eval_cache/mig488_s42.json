@@ -1,0 +1,217 @@
+{
+  "sample_id": "mig488_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "d74a76ec4501e72d6bddb5238d6dab9ed8bb03e6",
+  "detections": {
+    "bicycle": {
+      "xyxy": [
+        [
+          268.13702392578125,
+          291.18084716796875,
+          512.0227661132812,
+          511.84716796875
+        ]
+      ],
+      "conf": [
+        0.9270856976509094
+      ]
+    },
+    "boat": {
+      "xyxy": [
+        [
+          75.72335815429688,
+          192.02513122558594,
+          356.0805969238281,
+          344.326416015625
+        ]
+      ],
+      "conf": [
+        0.7812855243682861
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white boat",
+      "category": "boat",
+      "color": "white",
+      "box": [
+        0.24659375,
+        0.3402291666666667,
+        0.7354999999999999,
+        0.6703958333333333
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.6914650721599118,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ih^11_P15]_OM2OjL1[F2b90]F0b90_FNb92^FMc94_FN\\90bF5^9HcF4nLNi>NoA4U>NjA2ZOMf>2aAM43F1^>4fAL30I0Y>8hADM490G2Y>8jABM51K34L3Z<I_E`0ZN@M58OH4X<IbE>]ND3;n;ClE4SNN77j;G[E2eN5OL76j;FYE5cN73H86h;FTE:iN3OCM51KO02029S<GkC1Q1o0POXOMM0L57R<HkC2k0S1UOUOM05OW<J`DS1WOA0DT<NcDn0XOSONb0V<^ObDn0ZORONb0V<^OaDo0[OQONc0U<^O\\DS1AKT<QOYDV1CIT<ROSDZ1IES<ROnC^1O@S<Q1mCoNS<R1kCPOT<^2000bNlCQOT<n0lCROT<m0nCROR<o0lCSOS<m0mCSOT<\\20001O00_NmCVOR<j0nCVOR<j0nCVOR<]2N1O1O2N11O0\\NSDUOl;a20O1O00O2O01O1YNSDYOl;_2O0O10000001XNUDZOj;f0VDZOi;_2001O00O2O000000001O000000001O0000000000001O0000000001O0000000001O000000000000000000000000000O10000000000000000O1001O00000000000000000000000000000000000001OO2OO2O01O00000000001O00001O00001O1O00001O0000010N1001O01O001O001O001O1O001O001O1O1O001O10O01O1N101N2N1N3M3N2N2M3N2O0O2N101ZOWCfML8n<o1YCUNh<h1ZCXNg<f1ZCmMF9R=f1[CQNC9S=e1[C\\Ng<a1ZC`Ng<^1ZCaNg<^1ZCaNh<]1YCcNh<\\1ZCaNh<^1n0O001O2M2O1O2N2N2N2N1O2N2N100O1O1N101O10O000001Om@UOQ?m01Mn@VOR?l01O1O001Mk@YOW?`0n@@S?:<L7J`g_2"
+      },
+      "sam_score_gt_box": 0.966866135597229,
+      "mask_area": 26879,
+      "color_ratios": {
+        "red": 0.05082034301871349,
+        "blue": 0.05335019904014286,
+        "yellow": 0.00033483388518918116,
+        "green": 0.000297630120168161,
+        "black": 0.023996428438557982,
+        "white": 0.48848543472599426,
+        "brown": 0.003236727556828751
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.6914650721599118,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.6914650721599118,
+      "o2o_det": [
+        75.72335815429688,
+        192.02513122558594,
+        356.0805969238281,
+        344.326416015625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4844156757897699
+    },
+    {
+      "idx": 1,
+      "desc": "a red bicycle",
+      "category": "bicycle",
+      "color": "red",
+      "box": [
+        0.73153125,
+        0.5154375,
+        0.9991093750000001,
+        0.6441041666666667
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.091883088416016,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.091883088416016,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a black bicycle",
+      "category": "bicycle",
+      "color": "black",
+      "box": [
+        0.47673437500000004,
+        0.5576458333333334,
+        0.98571875,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8607899948732304,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "S]W4P1g>`0A<I7I7J5J7J4L5K4L4J6K6I5M4L4M3M2N2O2M2N2O2M2O1O1N2O001O1O000XO]KSFc4l9^KTFb4m9\\KTFd4m9_KoEa4o9aKQF_4n9bKRF^4n9ZKbE6a0_4m9[KcE5`0`4m9[KbE6a0_4i8[KgG9A[4f8bKeG3E[4f8fK`G0KY4d8hKaGOKY4d8lK\\GL1W4c8PLYGI4W4c8RLXGF6W4a8VLXGB7X4a8WLWGA9W4`8YLWG\\O=Z4\\8ZLWG[O?Z4Z8[LWG[O?Z4Z8[LWG[O?Z4Z8[LYGXO=^4Z8ZLWHg3i7YLVHh3j7XLYGYOB2<b4i8SLjFXO:<FC7h4o8XLkFE0X4U9j110000O11O1O0000000000000000iIRG\\5n8dJYGU5g8jJaGo4_8QKhGh4X8XKnGb4R8]KPHb4P8^KQHa4o7_KQHa4o7_KRH`4n7`KRHMhNU4V9nKRHLQOn3m8ULSHMVOh3g8[LTHK[Oe3a8_LUHLA^3Z8fLUHLGX3T8lLUHLLS3o7PMVHM1m2i7UMWHN4i2e7YMWHO6e2c7\\MXHN7d2a7]MYHO9a2^7_MZH0<]2Z7cMZH0?Z2W7fMZH0a0X2U7gM[H1c0U2S7iMZH2f0R2P7lM[H2g0o1n6oM[H2i0m1m6mM]H6i0j1d8VN_Gg1a8YNbGd1^8\\NeGa1[8_NhG^1Y8aNjG\\1V8dNnGX1R8hNPHV1P8kNQHS1o7mNRHR1n7nNQHS1o7mNRHR1o7mNQHl0mLmNT;7oGQ1Q8oNnGT1P8lNPHT1P8mNoGS1Q8mNnGT1R8lNmGU1T8jNlGV1T8jNjGX1V8hNiGY1W8hNgGY1Y8gNeG[1[8eNdG\\1\\8dNcG]1^8bN`G`1`8aN]Ga1c8_N[Gc1e8]NZGd1f8\\NjDG\\2o1j8]NSGe1m8\\NoFg1Q9YNnFh1R9XNlFj1U9UNhFn1X9SNfFn1Z9RNdFP2\\9PNcFQ2]9PN`FR2`9nM]FU2d9jM[FW2e9iMZFX2f9hMYFY2g9gMXFZ2h9fMWF[2i9eMVF\\2k9cMSF_2m9aMRF`2n9`MPFb2P:]MPFd2P:\\MoEe2Q:[MmEg2T:XMkEi2U:WMjEj2V:VMiEk2W:UMgEm2Y:SMfEn2Z:RMdEP3\\:PMbER3^:oL`ER3`:nL^ET3b:lL]EU3c:kL\\EV3e:iLYEY3g:hLWEY3i:gLUE[3k:eLTE\\3d9cLhF2B]3f9fLcFNE]3h9iL_FJG_3i9lL\\FHF^3n9RMSFe3m9_LoEa3Q:W100O100000000O10000000000000000O100000YLQF]1o9bNSF]1m9bNVF\\1j9^N_F_1a9_NbF`1^9_NdF`1\\9_NfF`1Y9aNgF_1Y9`NhF`1X9`NhF`1X9`NhF`1X9`NhF`1X9`NhF`1X9`NhF`1X9`NhF`1X9`NhF`1X9`NhF`1Y9_NgFa1Z9^NfFb1[9]NfFb1\\9\\NdFd1]9[NcFe1]9ZNdFf1\\9ZNdFf1\\9UNmEaNh0Z3\\9SNiFm1V9SNlFl1S9SNoFm1Q9RNPGn1P9QNQGo1o8oMSGQ2m8lMWGS2i8eM_G[2a8eM_G[2b8dM^G\\2b8dM^G\\2c8cM]G]2c8cM^G\\2c8cM]G]2c8cM]G]2d8bM\\G^2d8aM]G_2d8`M]G_2d8_M]Ga2d8^M]Ga2c8_M]Ga2c8^M^Gb2"
+      },
+      "sam_score_gt_box": 0.991113543510437,
+      "mask_area": 33365,
+      "color_ratios": {
+        "red": 0.33996703132024575,
+        "blue": 0.10633897797092762,
+        "yellow": 0.0,
+        "green": 0.0004495729057395474,
+        "black": 0.20587441930166342,
+        "white": 0.011119436535291473,
+        "brown": 0.006294020680353664
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8607899948732304,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8607899948732304,
+      "o2o_det": [
+        268.13702392578125,
+        291.18084716796875,
+        512.0227661132812,
+        511.84716796875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2054889022195561
+    },
+    {
+      "idx": 3,
+      "desc": "a white bicycle",
+      "category": "bicycle",
+      "color": "white",
+      "box": [
+        0.650984375,
+        0.6317916666666666,
+        1.0,
+        0.8924583333333334
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.4431470113916824,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4431470113916824,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 4,
+      "desc": "a yellow bicycle",
+      "category": "bicycle",
+      "color": "yellow",
+      "box": [
+        0.028125,
+        0.32708333333333334,
+        0.9984375,
+        0.6979166666666666
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.12175332573364735,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.12175332573364735,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

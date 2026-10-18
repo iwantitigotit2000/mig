@@ -1,0 +1,218 @@
+{
+  "sample_id": "mig631_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "f4aefb69a64d8f46fb9ca68ff25f624c6f406715",
+  "detections": {
+    "cell phone": {
+      "xyxy": [
+        [
+          64.14855194091797,
+          175.81346130371094,
+          201.41799926757812,
+          508.56854248046875
+        ],
+        [
+          166.8446044921875,
+          6.3797607421875,
+          286.09423828125,
+          302.2333068847656
+        ],
+        [
+          212.36094665527344,
+          164.01829528808594,
+          511.7938232421875,
+          511.79583740234375
+        ]
+      ],
+      "conf": [
+        0.7426446676254272,
+        0.5978134274482727,
+        0.5468534827232361
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white cell phone",
+      "category": "cell phone",
+      "color": "white",
+      "box": [
+        0.2938125,
+        0.0009583333333333334,
+        0.549796875,
+        0.5965416666666666
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.820773709226094,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "kPd2g0U?e0\\O`0A?B>A;F<E>A>C<D8H3L2O00000000001O001O00001N101O1O1O1O2N2N2N3M;\\GQJ`NOj7i8VO2N1O0000000O1000000000000000000000O1000000000O2O00O1000000000000000000000000000O1000O10000000000000000000000000000\\IiI_3W6]LUJ[3k5dL`JR3`5mLkJh2V5WM[KY2f4eM^KX2b4gM`KX2`4hMaKW2`4gMbKX2_4fMcKY2^4eMfKX2[4gMlKR2U4mMlKR2V4lMkKR2X4kMiKU2[4gMfKX2h4ZM]Ka2S5nLSKl2W9I:mLmBf2\\=ZMeB]2i=Dc0]O?Ad0YOiWa3"
+      },
+      "sam_score_gt_box": 0.9976520538330078,
+      "mask_area": 25495,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.002667189645028437,
+        "yellow": 0.0,
+        "green": 3.922337713277113e-05,
+        "black": 0.3527358305550108,
+        "white": 0.5886644440086292,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.820773709226094,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.820773709226094,
+      "o2o_det": [
+        166.8446044921875,
+        6.3797607421875,
+        286.09423828125,
+        302.2333068847656
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5892169952092987
+    },
+    {
+      "idx": 1,
+      "desc": "a white cell phone",
+      "category": "cell phone",
+      "color": "white",
+      "box": [
+        0.43928124999999996,
+        0.3187083333333333,
+        0.9993124999999999,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.9548526212772416,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ko[35h?3K5M3M3M3O1M3O1N2O1M3N2N2O1M3N2N2O1M3O1N2N2N2N2O1N2O1N2N2N2N2O1N2N2N2N2O1N2N2N2O1N2N2N2N2O1M3O1N2O1M3N2N2O1N2N2N2O1M3N2N2O1N2O1N2N2N2O1M3O1N2N2N2O1N2N2N2O1N2N2O1N2N2O1N2N2N2O1N2O1N2N2N2N2O1N2N2N2O1N2N2N2N2O1M3O1N2N2N2N2N2N2N2N2N2N2M3N2N2N2N2M3O1N2N2N2O1N2O1N2N2O1N2O1N2O1N2O1O1N2N2N2O1N2O1N2O1N2O1N2N2O1N2O1O1N2N2N2O1N2N2O1N2N2N2O1N2O1N2N2O1N2N2O1N2O1N2O1N2N2O1N2O1O1O1O1O1O1O1O1O100O100O100O10000000000000000000000001O0000001O001O00001O001O1O001O001O001O1O1O00001O001O1O001O1O001O001O1O001O1O001O1O001O001O1O1O001O001O001O1O1O001O1O0O20OO2N2N1N3N1L5N2M2N3M2N3N2N1O2L3O2M3M2O2N1N3N2M2N3M3L3MYI"
+      },
+      "sam_score_gt_box": 1.0013753175735474,
+      "mask_area": 68779,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.007007953008912604,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.24843338809811133,
+        "white": 0.6814725424911674,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9548526212772416,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9548526212772416,
+      "o2o_det": [
+        212.36094665527344,
+        164.01829528808594,
+        511.7938232421875,
+        511.79583740234375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6813635702863788
+    },
+    {
+      "idx": 2,
+      "desc": "a white cell phone",
+      "category": "cell phone",
+      "color": "white",
+      "box": [
+        0.52078125,
+        0.0949375,
+        0.864609375,
+        0.3174166666666667
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.041719581887502015,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.041719581887502015,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a black cell phone",
+      "category": "cell phone",
+      "color": "black",
+      "box": [
+        0.117875,
+        0.30572916666666666,
+        0.39346875,
+        0.9723124999999999
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8905922417077899,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "n\\Q1_2n;f1WMh2dMoIZI^7\\6X1J5M4M2O2M3N100O100O10000O10000000000000000000000000000000000000000001O01O0000O11O00O11O0000000000000000000000000000000000000000000000000000000000000000000000000001O000000000000000000000000000000000000000000000000000000O1000000001N10000O2O0O2N1O2N2N3L3L5D<_Kc4XMS3YN`AL0Oohk4"
+      },
+      "sam_score_gt_box": 1.003186583518982,
+      "mask_area": 42441,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.016894041139464196,
+        "yellow": 0.0,
+        "green": 2.3562121533422868e-05,
+        "black": 0.43834970900779907,
+        "white": 0.25421172922409935,
+        "brown": 2.3562121533422868e-05
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8905922417077899,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8905922417077899,
+      "o2o_det": [
+        64.14855194091797,
+        175.81346130371094,
+        201.41799926757812,
+        508.56854248046875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4383616524874508
+    }
+  ]
+}

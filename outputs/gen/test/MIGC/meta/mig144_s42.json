@@ -1,0 +1,70 @@
+{
+  "sample_id": "mig144_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "144",
+  "caption": "a photo of a brown dog and a black dog and a green dog and a blue frisbee",
+  "objects": [
+    {
+      "desc": "a brown dog",
+      "box": [
+        0.392359375,
+        0.0022083333333333334,
+        0.69265625,
+        0.8090416666666667
+      ]
+    },
+    {
+      "desc": "a black dog",
+      "box": [
+        0.003015625,
+        0.35039583333333335,
+        0.47384375,
+        0.9902291666666667
+      ]
+    },
+    {
+      "desc": "a green dog",
+      "box": [
+        0.577421875,
+        0.3612916666666666,
+        0.9983906250000001,
+        0.9913958333333334
+      ]
+    },
+    {
+      "desc": "a blue frisbee",
+      "box": [
+        0.3875,
+        0.48925,
+        0.648671875,
+        0.6965416666666667
+      ]
+    }
+  ],
+  "seconds": 6.454,
+  "peak_mem_allocated_gb": 7.821,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

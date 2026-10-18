@@ -1,0 +1,32 @@
+{
+  "eval_cfg": {
+    "box_threshold": 0.25,
+    "text_threshold": 0.25,
+    "nms_threshold": 0.8,
+    "iou_threshold": 0.5,
+    "color_ratio_threshold": 0.2,
+    "image_size": 512,
+    "detector": "GroundingDINO SwinT-OGC",
+    "segmenter": "SAM ViT-H",
+    "version": 2
+  },
+  "config_hash": "59e1dab752",
+  "env": {
+    "python": "3.10.22",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "torch": "2.1.2+cu121",
+      "torchvision": "0.16.2+cu121",
+      "transformers": "4.33.3",
+      "huggingface_hub": "0.36.2",
+      "numpy": "1.26.4",
+      "opencv-python-headless": "4.11.0.86",
+      "supervision": "0.7.0",
+      "pyiqa": "0.1.10"
+    },
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "gpu_total_mem_gb": 11.99
+  },
+  "mig_bench_commit": "063ec4595f16632ab09b9ef71a7be00345ce1ead"
+}

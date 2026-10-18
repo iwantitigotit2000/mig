@@ -1,0 +1,98 @@
+{
+  "sample_id": "mig060_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "60",
+  "caption": "a photo of a black dining table and a red bowl and a brown cake and a black pizza and a red cake and a brown bowl",
+  "objects": [
+    {
+      "desc": "a black dining table",
+      "box": [
+        0.0,
+        0.0,
+        0.9951718749999999,
+        0.9813875598086125
+      ]
+    },
+    {
+      "desc": "a red bowl",
+      "box": [
+        0.447109375,
+        0.004688995215311005,
+        0.8912968749999999,
+        0.3917224880382775
+      ]
+    },
+    {
+      "desc": "a brown cake",
+      "box": [
+        0.0,
+        0.0,
+        0.263046875,
+        0.4884210526315789
+      ]
+    },
+    {
+      "desc": "a black pizza",
+      "box": [
+        0.00146875,
+        0.004497607655502392,
+        0.27153125,
+        0.4741626794258373
+      ]
+    },
+    {
+      "desc": "a red cake",
+      "box": [
+        0.34715625,
+        0.46057416267942586,
+        0.6119375,
+        0.8457177033492823
+      ]
+    },
+    {
+      "desc": "a brown bowl",
+      "box": [
+        0.78609375,
+        0.22839712918660288,
+        0.99940625,
+        0.6199043062200957
+      ]
+    }
+  ],
+  "seconds": 5.46,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

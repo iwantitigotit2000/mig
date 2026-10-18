@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig661_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "661",
+  "caption": "a photo of a red spoon and a brown carrot and a brown bowl and a yellow carrot",
+  "objects": [
+    {
+      "desc": "a red spoon",
+      "box": [
+        0.33404687499999997,
+        0.013481894150417827,
+        0.5042187499999999,
+        0.537075208913649
+      ]
+    },
+    {
+      "desc": "a brown carrot",
+      "box": [
+        0.724421875,
+        0.8166295264623956,
+        0.853328125,
+        1.0
+      ]
+    },
+    {
+      "desc": "a brown bowl",
+      "box": [
+        0.005828125,
+        0.005181058495821727,
+        0.9994843750000001,
+        1.0
+      ]
+    },
+    {
+      "desc": "a yellow carrot",
+      "box": [
+        0.046875,
+        0.0,
+        0.9875,
+        0.9972144846796658
+      ]
+    }
+  ],
+  "seconds": 5.256,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

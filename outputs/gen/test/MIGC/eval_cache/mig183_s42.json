@@ -1,0 +1,139 @@
+{
+  "sample_id": "mig183_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "a0f5f6625386355ece98867c21006d1eaa214220",
+  "detections": {
+    "keyboard": {
+      "xyxy": [
+        [
+          14.375991821289062,
+          106.08644104003906,
+          434.66180419921875,
+          410.213623046875
+        ]
+      ],
+      "conf": [
+        0.9445567727088928
+      ]
+    },
+    "mouse": {
+      "xyxy": [
+        [
+          409.77423095703125,
+          229.32044982910156,
+          486.2891845703125,
+          422.0028076171875
+        ]
+      ],
+      "conf": [
+        0.8898648023605347
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green mouse",
+      "category": "mouse",
+      "color": "green",
+      "box": [
+        0.811734375,
+        0.45617210682492576,
+        0.952546875,
+        0.8247181008902077
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8863069129936846,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "hg]62h?<H4N5J5K6K5J6K4K6K5K5J6K4L6I6K7I7I=bDgLZ9n3eEeLU:e4O1N1N2O1O1N2O1O001N101O000000001O0000000000O2O0000001N101O1O1N3N1O2M3N3L3N3L3M4L4L3M5J6J6J5K6I7I8G8G=C;Bf0YOXV="
+      },
+      "sam_score_gt_box": 1.0039159059524536,
+      "mask_area": 10188,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.042206517471535136,
+        "yellow": 0.0,
+        "green": 0.8815272870043188,
+        "black": 0.0031409501374165686,
+        "white": 0.00530035335689046,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8863069129936846,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8863069129936846,
+      "o2o_det": [
+        409.77423095703125,
+        229.32044982910156,
+        486.2891845703125,
+        422.0028076171875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.8814989209338827
+    },
+    {
+      "idx": 1,
+      "desc": "a white keyboard",
+      "category": "keyboard",
+      "color": "white",
+      "box": [
+        0.049703125,
+        0.2195252225519288,
+        0.8354062499999999,
+        0.7476261127596439
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8509721252299101,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "dV8=`?=E;F?@>fAoMk=\\2G8`B`Mo<Q3H`0@`0_O`0A8H:F>B6J7H5L2M2O000O2OO10O1000000O01000000O1000000O10O001000O01000O10O10O1000O010000O10O11N101O001N2O00M2N3O00100O10O100O010000O0100O10O100000O1000O01000O0100O10O1000O10O1000O10O1000O10O10O2O00O01000O010O10O10O10O1000O010000O01000O10000O1000O1O010O010000O010000O010000O01000O10O10O1000000O01000O01000O01000O10O10O1000O010000O10000O01O100O010000O01000O1000O10O10O010000O1000O01000O10O10O10O10O1000O10O10O10O10O2O0O0100O100O01000O01000000O01000O10000O01000O01000O010O10O10O1000O0100000000O01O0100O10O10O10O10O1000O010000O010O100000O1000O010O10O10O1000O010000O01000O10000O010O10O100O010000O10O10O10000O10000O10O1O001000O010000O0100000O0100O10O10O10000O0100O0100O01000O01000O10O10O10O10O1000O10O10O01000O01000O0100O01000O10O1000O101N3N3M3L4M5J5L2N2M5L3L4M2N6I3M3N2M6VOnC\\MV<Q2lC`M7<Q<i1jDhM^;R2\\1L4L3M4L5L5J4M2N3L5L2M4M4K4M2N3L5L3LlhX1"
+      },
+      "sam_score_gt_box": 1.0015133619308472,
+      "mask_area": 75972,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.617095772126573,
+        "yellow": 0.000473858790080556,
+        "green": 0.00044753330174274734,
+        "black": 0.0012767861843837203,
+        "white": 0.2053388090349076,
+        "brown": 0.0026720370662875795
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8509721252299101,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8509721252299101,
+      "o2o_det": [
+        14.375991821289062,
+        106.08644104003906,
+        434.66180419921875,
+        410.213623046875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.20484584388822533
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "sample_id": "mig126_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "dfae7133206faaa41cfb92a4d0792b4238df68cd",
+  "detections": {
+    "sink": {
+      "xyxy": [
+        [
+          368.93023681640625,
+          250.98147583007812,
+          512.0003051757812,
+          327.0802307128906
+        ],
+        [
+          340.62591552734375,
+          238.88095092773438,
+          511.822021484375,
+          435.9212341308594
+        ]
+      ],
+      "conf": [
+        0.477958619594574,
+        0.3489855229854584
+      ]
+    },
+    "suitcase": {
+      "xyxy": [],
+      "conf": []
+    },
+    "toilet": {
+      "xyxy": [
+        [
+          254.0572509765625,
+          123.77921295166016,
+          356.452880859375,
+          325.9122619628906
+        ]
+      ],
+      "conf": [
+        0.4605359137058258
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green toilet",
+      "category": "toilet",
+      "color": "green",
+      "box": [
+        0.4975625,
+        0.26101562500000003,
+        0.7590625000000001,
+        0.6146874999999999
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.6942624719602655,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Qgo3<a?=D6L1N3M3M3N1O1N3N1[MAgE`0W:0YE2e:?kDBS;k0`DWO_;n0\\DSOc;f2O1O001N2O1O001O001O001O0XEaK_O4T:\\4TFWLi9i3SF]Lk9d3QF`Ln9j4O1O001O00001O001O0000000000001O00000000000000000001O0O10000hKeFk1[9gMTGX2m8^M\\Ga2e8PMjGP3W8mLeF@]Ol01TOOc3P:eLhFg0ZOQONc3l:]LTE10l03SONb3S;_LPE1KO131O8_3k:_LPE001O04NIb3U;^LoD1L0O:8FH`3V;aLjDO0d06o2m9\\LgF0WO1Og4T:XKeFo4[9RKdFZ1YOfNO\\3U:dLcFZ1YOfNO\\3T:eLdFY1\\OQ2Q:fLcFY1YOeN0[3V:fLWF0I^1J<2]N5<S:]OSF0J]1I<f;WNgD1INJ1O50099HZ1g;XNfD1INJ100409=CZ1h;YNfDOI<IH9;HX1g;ZNoD_1YO6i;\\NeDNG[1MeNNe1j;]NlDo0^OQO2b1f;]NjDc06o0Q;^NjD=5ESO^1P<`N_D1FN06KK10;o1e;QN^D2EM15L000On1R<nM^D1D1N3NO2OOl1S<QN\\D1D2M:OG0k1U<QNZD2EMM1O\\10IY<jNVD3EMLa11Bj<QOYC_1M^O_<POkC2Ia1MYOb<TOhC1I_2c<`MeC0Hg1NiNi<@aC1Hf1NdNm<E]C1HY1MoN6KX=NdBY1NhN20g=OYB`10bNf=NZBY1MiN7Lb=2ZBY1MeN10R>2PBY1MdNj=0bB3GT1NjNd0Oo<4^BP1NlN21OO1113M1c=O_BS1OBb=[O_Bk1e=UN[Bh1h=WNYBa1o=_NRB]1Q>bN`Bh0W=VOaB27d0]=[O[B10e0l=ZOTB1I1K`0l>@XA?o>3H]OVAN6?j>Do@N1?T?28Jc@D`?96KikQ2"
+      },
+      "sam_score_gt_box": 0.9494376182556152,
+      "mask_area": 14807,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0005402850003376782,
+        "green": 0.6361180522725738,
+        "black": 0.0657121631660701,
+        "white": 0.0,
+        "brown": 0.00013507125008441954
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.6942624719602655,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.6942624719602655,
+      "o2o_det": [
+        254.0572509765625,
+        123.77921295166016,
+        356.452880859375,
+        325.9122619628906
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6995209872533896
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow sink",
+      "category": "sink",
+      "color": "yellow",
+      "box": [
+        0.715875,
+        0.46290624999999996,
+        1.0,
+        0.658546875
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.747164630328412,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "`hi59e?4M3L3O1N2N2O1N2N2O0O2O1N2O001N2O001N101O0O2O001O001N101O000O2O001O0O2O00001O000O2O00001O00001O001O0O101O0000001O00001O0000001O0000001O0000001O000000001O000000001O000000001O000000001O00000001O01O00000000001O00000000010O00000000001O00000001O00000001O01OO11O000000001O01O00000001O00mG"
+      },
+      "sam_score_gt_box": 1.0037091970443726,
+      "mask_area": 8053,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.9574071774493977,
+        "green": 0.00496709300881659,
+        "black": 0.0,
+        "white": 0.020737613311809264,
+        "brown": 0.016018874953433505
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.747164630328412,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.747164630328412,
+      "o2o_det": [
+        368.93023681640625,
+        250.98147583007812,
+        512.0003051757812,
+        327.0802307128906
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9629723240237583
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow suitcase",
+      "category": "suitcase",
+      "color": "yellow",
+      "box": [
+        0.0379375,
+        0.390203125,
+        0.1951041666666667,
+        0.5894375000000001
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

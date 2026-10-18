@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig063_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "63",
+  "caption": "a photo of a green cup and a yellow bottle and a yellow bottle and a brown sink and a brown toothbrush and a brown toothbrush",
+  "objects": [
+    {
+      "desc": "a green cup",
+      "box": [
+        0.2728403755868545,
+        0.45279687500000004,
+        0.7343427230046948,
+        0.7891250000000001
+      ]
+    },
+    {
+      "desc": "a yellow bottle",
+      "box": [
+        0.24502347417840376,
+        0.30171875,
+        0.44812206572769947,
+        0.7094374999999999
+      ]
+    },
+    {
+      "desc": "a yellow bottle",
+      "box": [
+        0.8047417840375587,
+        0.3355,
+        1.0,
+        0.7593125000000001
+      ]
+    },
+    {
+      "desc": "a brown sink",
+      "box": [
+        0.0,
+        0.8409375000000001,
+        0.453755868544601,
+        1.0
+      ]
+    },
+    {
+      "desc": "a brown toothbrush",
+      "box": [
+        0.15368544600938966,
+        0.27478125000000003,
+        0.34131455399061034,
+        0.461
+      ]
+    },
+    {
+      "desc": "a brown toothbrush",
+      "box": [
+        0.27612676056338026,
+        0.23157812500000002,
+        0.40835680751173703,
+        0.4583281250000001
+      ]
+    }
+  ],
+  "seconds": 7.077,
+  "peak_mem_allocated_gb": 7.824,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

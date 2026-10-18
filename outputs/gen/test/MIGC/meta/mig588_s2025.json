@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig588_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "588",
+  "caption": "a photo of a red broccoli and a brown broccoli and a red broccoli and a brown broccoli and a blue broccoli and a brown broccoli",
+  "objects": [
+    {
+      "desc": "a red broccoli",
+      "box": [
+        0.45304687499999996,
+        0.14334117647058825,
+        0.833859375,
+        0.6161176470588235
+      ]
+    },
+    {
+      "desc": "a brown broccoli",
+      "box": [
+        0.0,
+        0.12985882352941175,
+        0.332890625,
+        0.6025882352941176
+      ]
+    },
+    {
+      "desc": "a red broccoli",
+      "box": [
+        0.206984375,
+        0.0025882352941176473,
+        0.55884375,
+        0.3532470588235294
+      ]
+    },
+    {
+      "desc": "a brown broccoli",
+      "box": [
+        0.377734375,
+        0.4935058823529412,
+        0.6347343750000001,
+        0.9636470588235294
+      ]
+    },
+    {
+      "desc": "a blue broccoli",
+      "box": [
+        0.76065625,
+        0.1584470588235294,
+        1.0,
+        0.6597411764705882
+      ]
+    },
+    {
+      "desc": "a brown broccoli",
+      "box": [
+        0.2225,
+        0.5896,
+        0.386359375,
+        0.7532470588235294
+      ]
+    }
+  ],
+  "seconds": 6.956,
+  "peak_mem_allocated_gb": 7.823,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

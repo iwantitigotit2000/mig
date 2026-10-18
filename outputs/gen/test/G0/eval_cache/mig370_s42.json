@@ -1,0 +1,224 @@
+{
+  "sample_id": "mig370_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "88c5816d182b8a3aeac9bd642af0825f308732d7",
+  "detections": {
+    "boat": {
+      "xyxy": [
+        [
+          346.3868103027344,
+          296.5393371582031,
+          511.8786926269531,
+          392.9154357910156
+        ],
+        [
+          322.5868835449219,
+          78.62610626220703,
+          412.7397766113281,
+          143.71746826171875
+        ],
+        [
+          45.183685302734375,
+          59.308502197265625,
+          354.2359619140625,
+          253.0980224609375
+        ],
+        [
+          45.1790771484375,
+          6.9275360107421875,
+          354.1149597167969,
+          253.0404815673828
+        ],
+        [
+          51.739837646484375,
+          222.84210205078125,
+          350.0298156738281,
+          404.757080078125
+        ],
+        [
+          0.0022735595703125,
+          67.56465911865234,
+          60.139854431152344,
+          121.34319305419922
+        ],
+        [
+          0.04246711730957031,
+          79.86207580566406,
+          56.77510070800781,
+          121.4249267578125
+        ]
+      ],
+      "conf": [
+        0.6312628388404846,
+        0.5860818028450012,
+        0.4106091856956482,
+        0.3644639849662781,
+        0.3255540430545807,
+        0.2751663327217102,
+        0.2718351185321808
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green boat",
+      "category": "boat",
+      "color": "green",
+      "box": [
+        0.63584375,
+        0.14629032258064517,
+        0.788703125,
+        0.29096774193548386
+      ],
+      "status": "ok",
+      "n_det": 7,
+      "present_any": true,
+      "loc_iou": 0.7752413321531115,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ScR5310f?=I2M2O001N2N1O2O0O2O001O0O2O1O0O2N1O2N2N1O2O1O1O1O1N3N2N2N2N1O00001O000O100000000O10000000000000000O100000000O11O0000000000O10000000O1000000O101O0O1N2M3L4K6L4L4K6J5L4K5J\\]b1"
+      },
+      "sam_score_gt_box": 0.9675167798995972,
+      "mask_area": 3990,
+      "color_ratios": {
+        "red": 0.7476190476190476,
+        "blue": 0.010275689223057645,
+        "yellow": 0.0010025062656641604,
+        "green": 0.006265664160401002,
+        "black": 0.10827067669172932,
+        "white": 0.010776942355889725,
+        "brown": 0.028070175438596492
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "red",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7752413321531115,
+      "o2o_det": [
+        322.5868835449219,
+        78.62610626220703,
+        412.7397766113281,
+        143.71746826171875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 1,
+      "desc": "a red boat",
+      "category": "boat",
+      "color": "red",
+      "box": [
+        0.700875,
+        0.5840967741935483,
+        0.996078125,
+        0.7917741935483871
+      ],
+      "status": "ok",
+      "n_det": 7,
+      "present_any": true,
+      "loc_iou": 0.7954200201108147,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "gY_53l?3N100O2N1O2N2N2L4L3K6K4O2N2N2N1O1O1O10O01O1O1O1O1O010O1O1O001O100O1O001O1O0010O01O00001O10O01O001O0010O01O001O010O00001O10O01O001O00010O001O0010O01O001O00010O001O000010O0000010O000001O0001O01O00000010O0000010O000000010O0000010O000000010O00000010O000000010O000001O01O000001O0001O01O0001O01O000010O0000010O000001O000010O000gE"
+      },
+      "sam_score_gt_box": 0.994742751121521,
+      "mask_area": 9413,
+      "color_ratios": {
+        "red": 0.6554764687134813,
+        "blue": 0.0,
+        "yellow": 0.011898438329969192,
+        "green": 0.00010623605651758207,
+        "black": 0.209709975565707,
+        "white": 0.001593540847763731,
+        "brown": 0.033570593859555936
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7954200201108147,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7954200201108147,
+      "o2o_det": [
+        346.3868103027344,
+        296.5393371582031,
+        511.8786926269531,
+        392.9154357910156
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6440271257172666
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow boat",
+      "category": "boat",
+      "color": "yellow",
+      "box": [
+        0.0875,
+        0.012903225806451613,
+        0.7515625,
+        0.5096774193548387
+      ],
+      "status": "ok",
+      "n_det": 7,
+      "present_any": true,
+      "loc_iou": 0.8792146324194207,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Seg0=Z?>^O`0J6[NgN[D`1_;dN[Df1];\\NaDj1Y;ZNdDm1T;YNfDl1U;bN]Db1_;b1M2O1N2O1N2O1N101N2O0O2O000O2O0O101O000O2O00000kNRKWGP5l900001mNoJfF0LQ5]9QKZFO404Q5^9PKZFO1O;R5c9nJSF09S5k9mJQF0GS5d:nJ\\ER5i:1O0000001N10000O2O000O2O000000001N10000O101O0O1EbJQFa5h8_100010O9G3M4L1OO2O0OjIeFi5V9\\JkFc5S9_JmFa5S9_JmFb5R9f000000iImFa5S9^JoFa5Q9g0O2N1\\OTISHm6k7e00000000001O02N8H6J5K5K5K5K2N1O000001O000000000001O000000002N2N1O1O1O001O001O0000001O001O00XOVJmFG=Q6f8[JZGd5f8\\JnFE9n5g8SJPGO008ONo5j8SJ\\G2Jk5j8SJTGOM56i5h9O4L001O000000O11O00000001O00000000O10010O0O1001O00O1001O00000000000jNfJfGZ5Z8jJbGV5]8oJ_GQ5`8XKTGoN1i5j8]KUGc4k8]KUGc4k8]KUGc4k8]KUGc4k8]KUGc4m8[KTGd4T:01O1O00001O0000001O000000001O00001O001O001O1O0000001O00001PKhEV4Y:eKlEZ4U:bKnE^4S:_KoEa4h:0000000000000000000000000001OO101O000001O0000000000000000000000000000001O1O2bKbDV4d;O2N1O2M2N2N2N3N1N2O1N3M2O1O1N2O1O2N1N2O2N2M3M2O1N2N3M2O2M2O2M3L3O2M2N3L3N3M3M3L3N3K6K4J7F:BT\\_2"
+      },
+      "sam_score_gt_box": 0.9910984039306641,
+      "mask_area": 50603,
+      "color_ratios": {
+        "red": 0.027923245657372094,
+        "blue": 0.020058099322174575,
+        "yellow": 0.06861253285378337,
+        "green": 0.08102286425705986,
+        "black": 0.33885342766239157,
+        "white": 0.040175483666976264,
+        "brown": 0.24917495010177262
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8792146324194207,
+      "o2o_det": [
+        45.1790771484375,
+        6.9275360107421875,
+        354.1149597167969,
+        253.0404815673828
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.06694947936752796
+    }
+  ]
+}

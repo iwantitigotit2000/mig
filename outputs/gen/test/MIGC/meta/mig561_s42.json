@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig561_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "561",
+  "caption": "a photo of a red bench and a brown potted plant and a green potted plant and a red potted plant and a blue potted plant and a red potted plant",
+  "objects": [
+    {
+      "desc": "a red bench",
+      "box": [
+        0.34175,
+        0.26081967213114754,
+        0.612296875,
+        0.5608430913348946
+      ]
+    },
+    {
+      "desc": "a brown potted plant",
+      "box": [
+        0.71028125,
+        0.6901639344262295,
+        0.9688906249999999,
+        1.0
+      ]
+    },
+    {
+      "desc": "a green potted plant",
+      "box": [
+        0.651203125,
+        0.3803512880562061,
+        0.863671875,
+        0.7490866510538642
+      ]
+    },
+    {
+      "desc": "a red potted plant",
+      "box": [
+        0.581921875,
+        0.25559718969555034,
+        0.788359375,
+        0.5134426229508197
+      ]
+    },
+    {
+      "desc": "a blue potted plant",
+      "box": [
+        0.38471875,
+        0.7194847775175645,
+        0.604796875,
+        0.942857142857143
+      ]
+    },
+    {
+      "desc": "a red potted plant",
+      "box": [
+        0.22731249999999997,
+        0.3387822014051522,
+        0.35790625,
+        0.593887587822014
+      ]
+    }
+  ],
+  "seconds": 7.029,
+  "peak_mem_allocated_gb": 7.82,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "sample_id": "mig031_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "7b95efea21f3b96648c42fde12400fc313a22661",
+  "detections": {
+    "cake": {
+      "xyxy": [
+        [
+          138.72723388671875,
+          31.112533569335938,
+          374.79486083984375,
+          266.1466064453125
+        ],
+        [
+          0.01312255859375,
+          305.2693786621094,
+          131.67921447753906,
+          440.7331237792969
+        ],
+        [
+          0.028240203857421875,
+          63.69754409790039,
+          73.59759521484375,
+          157.95863342285156
+        ],
+        [
+          -0.06829452514648438,
+          -0.11031723022460938,
+          80.998046875,
+          84.14791870117188
+        ],
+        [
+          0.045497894287109375,
+          -0.04071044921875,
+          80.98878479003906,
+          159.0485382080078
+        ]
+      ],
+      "conf": [
+        0.6682506799697876,
+        0.6407763361930847,
+        0.4364244043827057,
+        0.4228579103946686,
+        0.3866250216960907
+      ]
+    },
+    "dining table": {
+      "xyxy": [
+        [
+          0.0084228515625,
+          -0.0419158935546875,
+          512.0050048828125,
+          511.938720703125
+        ]
+      ],
+      "conf": [
+        0.30617663264274597
+      ]
+    },
+    "donut": {
+      "xyxy": [
+        [
+          138.03564453125,
+          30.766036987304688,
+          374.8779296875,
+          266.40679931640625
+        ]
+      ],
+      "conf": [
+        0.8956628441810608
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white dining table",
+      "category": "dining table",
+      "color": "white",
+      "box": [
+        0.005059999999999999,
+        0.008986666666666667,
+        0.9337,
+        0.9325866666666668
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8577300683690414,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "T6`3T4hNo1Y1QNgNo1Y1QNgNo1X1RNhNn1W1TNhNl1W1VNhNi1X1YNgNg1Y1ZNfNf1Y1\\NfNd1Y1^NfNa1Z1`NfN`1Z1aNeN_1Z1cNeN\\1[1eNeN[1[1eNeN[1Z1gNeNY1Z1iNeNV1\\1jNdNV1\\1kNcNU1\\1lNdNT1\\1mNcNR1]1oNcNQ1\\1QOcNo0]1QOcNn0]1TObNl0^1UOaNj0`1VO`Nj0_1WOaNh0`1YO_Ng0`1ZO`Nf0`1ZO`Ne0a1[O_Ne0`1]O_Nb0b1^O^Nb0b1_O]N`0c1A]N?c1A]N>d1C[N=e1C[N<e1E[N;e1FZN9g1GYN8h1HXN8h1HXN7h1JXN5i1LVN4j1LVN3k1MUN2k10TN0l10TNOm11SNNn12RNMo13QNMo14PNKQ25oMJR26nMIS27mMIS27mMHT28lMGU29kMFV2:jMEW2;iMDX2<hMCY2=gMBZ2>fMA[2?hM]OY2c0hM[OY2e0hMYOY2g0hMWOZ2h0gMVOZ2j0gMSO[2m0fMQO[2o0fMoN[2Q1eMnN\\2R1eMkN]2T1fMiN\\2V1eMhN\\2X1eMeN]2[1eMaN]2_1dM_N]2a1dM\\N_2c1bMZN`2e1cMXN^2h1cMUN]N]M]2^4XOSNPNUN]2g3ESNfMdN`2X3L>NB5`0F@<b0A\\Oa0h0ZOXOi0h0UOWOn0i0oNVOU1j0iNUOZ1j0dNVOa1h0\\NWOk1XLaLQ3b1f0V2cKeLi3S1c0\\3@cL?[3EcL;Z3JeL5Z3NdL1[33dLLZ38dLHa0SKn0Z5`NAc0UKl0\\5`N^OZ3f0eLYOY3k0fLSOh0YKe0f5bNQOi0YKc0j5cNkNk0[K`0m5eNgNk0\\K?P6dNcNn0]K<T6eN]NP1_K9W6gNYNP1`K8Y6gNVNR1aK6\\6gNRNS1bK4_6iNmMT1dK2a6jNjMT1eK1d6iNfMW1fKNg6kNaMX1hKLi6lN]MY1jKJk6mNYMZ1lKGn6oNTM[1nKEP7POPM\\1PLCS7POkL^1RLAU7QOhLW3Z3hLeLX3]3iL`LW3b3iL\\LW3f3iLXLW3j3iLTLW3n3iLPLW3R4jLkKV3W4jLgKV3[4jLcKV3_4kL]KV3e4jLYKV3i4kLSKV3o4jLoJV3S5kLjJU3X5lLdJU3^5lL_JU3a5lL\\JU3f5mLUJT3m5mLoIT3S6nLgIU3Z6lLbIU3_6oL[IR3g6PMRIS3P7PMiHS3X7PM`HS3b7TMoGR3R8]22O1N101N2N2N101N2O0O2N2O0O2O1N101N101N101N2O0O2O0O101N101N101^OWFkJi9U5WFjJk9e5000O2O1N101O0O101O0O10001N101N1000001O0O101O0O1000001O0O101O0000001N100000001O000O100000001OXJeJk0[5SOiJk0W5oNoJQ1Q5lNSKS1l4lNYKQ1g4lN^KR1b4lNaKT1^4kNdKT1\\4mNcKS1]4lNdKT1\\4kNeKU1[4kNfKT1Z4kNhKT1X4kNkKS1U4lNmKS1S4mNmKS1S4lNnKT1R4lNnKT1R4lNnKT1R4lNnKT1R4lNnKT1R4kNoKU1Q4lNmKU1S4kNmKU1S4jNoKU1Q4kNoKU1Q4kNoKU1Q4kNoKU1Q4kNoKU1Q4kNoKU1Q4lNmKU1S4kNmKU1S4kNnKT1S4kNmKU1S4kNlKV1T4kNjKV1V4kNhKV1X4kNfKU1[4lNcKU1]4kNcKU1]4kNcKU1^4jNaKW1_4iNaKW1_4kN]KW1c4kNYKV1h4lNTKV1l4lNQKU1P5kNnJV1R5jNnJV1R5l4000O2O000000001N10001O000O101O0O101O001N1000001N101O0O2O000O2O000O2O001N101O0O2N101O0O2O0O2O0O2O0O2O0O2O1N101N1O2O1NiI[GU5e8fJeGV5Y8hJlGV5T8gJQHX5m7gJWHX5h7fJ]HX5a7gJbHX5^7fJeHZ5Z7eJiHZ5U7fJmHZ5m8O2OO1000O1000gMgJiIZ5V6fJkIZ5]8100cMdJUJ[5i5gJXJY5g5gJYJZ5e5gJ[JZ5c5fJ^J[5`5fJaJZ5]5gJcJZ5[5fJfJ[5X5fJiJZ5U5gJkJZ5S5gJmJZ5Q5gJoJZ5o4gJRKY5l4gJUKZ5i4gJWKZ5g4gJYKZ5e4gJ[KZ5c4gJ]KZ5a4gJ_KZ5_4gJaK[5\\4fJdK[5Z4fJfK[5X4fJhK[5V4fJiK]5S4eJnK[5P4fJPL[5n3fJQL\\5m3eJSL]5i3fJUL\\5i3eJWL\\5g3eJYL]5c3eJ]L]5`3dJ_L^5^3eJaL]5\\3dJdL]5Y3eJfL]5W3fJgL]5V3dJiL_5S3dJlL^5P3dJPM]5m2fJQM]5k2eJUM\\5h2gJVM]5e2eJ[M]5a2fJ\\M]5b2eJ]M^5^2eJ`M^5[2fJcM^5W2fJgM]5U2fJiM]5S2fJkM^5o1eJPN_5j1fJSN]5i1fJTN_5e1gJXN_5_1fJ^N`5Z1fJcN_5U1gJfN_5T1eJjNd5h0eJQOd5e0fJROf5?]k`0_OPZ_O:G6K4dHZO[Oi0?BXOa0d0FVO>e0IUO:g0JWO8f0LVO7g0MVO5h0NUO5g0NVO4i0NUO4i0NUO5h0MVO4i0NUO4i0MVO4i0NUO4j0MUO4i0NUO4i0MVO4j0MUO3j0OTO3k0MUO3j0OTO2l0OSO4j0LUO5j0MUO4j0LVO3j0NUO3k0NTO3k0MUO3k0MTO6j0KUO6i0KWO5i0KWO5i0KWO4j0MTO4l0LTO4l0LTO4k0MUO1TK\\Mg5c2UO1m0OSO2l0NTO1m0OSO1m0OSO0n00RO0n00RO0o0OQO0P10PO0P10POOQ11oNOQ11oNNR12nNNR12nN1o0OQO4SNZM"
+      },
+      "sam_score_gt_box": 0.9902095794677734,
+      "mask_area": 120878,
+      "color_ratios": {
+        "red": 0.016181604593060773,
+        "blue": 0.0,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.2616687900196893,
+        "white": 0.0,
+        "brown": 0.0037806714207713563
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8577300683690414,
+      "o2o_det": [
+        0.0084228515625,
+        -0.0419158935546875,
+        512.0050048828125,
+        511.938720703125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 1,
+      "desc": "a white donut",
+      "category": "donut",
+      "color": "white",
+      "box": [
+        0.24662,
+        0.06418666666666667,
+        0.7212799999999999,
+        0.4966133333333333
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8765158939018737,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "YdV2d0U?>D`0XA_NX>i1J:E8I4M6J4K5K5L2O3L5K3M5K3L5L3M3N1N4L4M2N3L3N2N1N3M3N3M2N2O1M3N1O2N2N2N2O1N1O2N2N2N2O0O2N2N101N1O2O0O2N2O0O2O1N100O2O001N2O000O2O001N101O0O101N101N10001O0O2O00000O2O000000gLXG[Og8a0`G\\O`8a0fG\\OZ8b0iG]OV8b0mG]OS8b0oG^OP8a0RH^On7`0UH_Oj7a0XH^Oh7a0ZH^Of7a0\\H^Od7a0]H_Oc7a0^H_Oa7a0_H_O`7a0bH^O^7b0bH^O^7a0dH^O\\7b0dH^O\\7b0dH^O\\7b0eH^OZ7b0fH^OZ7a0gH_OY7a0gH_OY7a0gH_OY7a0gH_OY7a0hH^OX7b0gH_OY7a0gH_OY7a0gH_OY7a0gH_OY7a0gH_OY7a0gH^OZ7b0fH^OZ7b0fH^OZ7b0eH_O[7a0eH_O[7b0dH^O]7a0bH@^7`0aHA_7`0`H@`7`0_HAa7?_HAa7`0]HAc7`0[HAf7?YHAg7`0VHAk7`0SHAm7`0RH@n7a0PH@P8a0mGAT8`0iGAW8`0fGBZ8`0bGA_8b0[GAe8m31O001N10000O2O000O2O001N10001N100O2O001N101N101O0O2O0O2O0O2O1N100O2N101N2O0O2O0O2N101N2N2O0O2N1O2N2O1N2N2N1O2N2N2N2N3M2N2N2N2N2N2M4M2M4M3M2M3M4M3L3M4L4L4L4L3M5K5I7J7H6K6I8G9G:F<_OQlT2"
+      },
+      "sam_score_gt_box": 1.0019810199737549,
+      "mask_area": 40692,
+      "color_ratios": {
+        "red": 0.0038091025262950947,
+        "blue": 0.0,
+        "yellow": 0.06320652708149022,
+        "green": 0.5891329991153053,
+        "black": 0.0013270421704511942,
+        "white": 0.004177725351420427,
+        "brown": 0.3489629411186474
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8765158939018737,
+      "o2o_det": [
+        138.03564453125,
+        30.766036987304688,
+        374.8779296875,
+        266.40679931640625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.003899458546520292
+    },
+    {
+      "idx": 2,
+      "desc": "a green cake",
+      "category": "cake",
+      "color": "green",
+      "box": [
+        0.0016799999999999999,
+        0.004506666666666667,
+        0.16516,
+        0.37304
+      ],
+      "status": "ok",
+      "n_det": 5,
+      "present_any": true,
+      "loc_iou": 0.7795399355232944,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "k4V1j>00000O10000O10O1000O10O1000O10O10000O1000O01000O0100O100O10O010000O100O010O1O100O10O01O100O1O010O1O100O`KXOiIh0X6XOhIg0Y6ZOfIe0[6\\OdIc0^6\\OUG1:c0a8^ORG2;?d8_OPG68;j8_OlF=43Q9@kFb0OMX9AgFg0MG]9CeFj0ICd9CaFP1F\\Ok9D]FY1_OSOV:C[F`1YOlN]:EXFb1XOiNb:ETFg1VOcNh:FPFP2oNZNS;EnER2nNXNV;FjEU2nNSN[;HfEV2mNRN_;HbEX2mNPNc;H_Eh2c:XM[Eg2h:XMXEg2j:[MREd2Q;\\MlDe2W;`M^Db2e;cMkCe2Y<>3N2M4L4L4L3M4K6J5J6K7H7I9H8F`0]OT^_6"
+      },
+      "sam_score_gt_box": 0.9764345288276672,
+      "mask_area": 5232,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.04606269113149847,
+        "green": 0.03191896024464832,
+        "black": 0.04472477064220184,
+        "white": 0.6529051987767585,
+        "brown": 0.07989296636085627
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7795399355232944,
+      "o2o_det": [
+        0.045497894287109375,
+        -0.04071044921875,
+        80.98878479003906,
+        159.0485382080078
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.03338712931208392
+    },
+    {
+      "idx": 3,
+      "desc": "a yellow cake",
+      "category": "cake",
+      "color": "yellow",
+      "box": [
+        0.2528,
+        0.06517333333333333,
+        0.74832,
+        0.5707733333333334
+      ],
+      "status": "ok",
+      "n_det": 5,
+      "present_any": true,
+      "loc_iou": 0.8299694512919009,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ZdV2b0V??E8I9F;F7H7K4L5J4M5K3M3M4L4L4L4L4L4L3M3M4L3N3M3M2M3N1N3M4M2N3M2O1N2N1O2N2N3M2N2N2N1O1O3M101N2N2O1N1O1O2O1N2N2O001N1O2O1N101O1N10001N10001O1N101N100O2O001N101O000O2O00000O2O0000fLZGZOf8b0aG\\O^8a0hG\\OX8c0jG\\OU8c0nG\\OR8c0oG]OQ8a0SH^Ol7`0WH_Oi7a0XH^Oh7a0YH_Of7a0\\H^Od7a0]H_Oc7a0^H_Oa7`0aH_O_7a0aH_O^7a0dH^O\\7b0dH^O\\7b0dH^O\\7b0eH]O[7b0fH^OZ7b0fH^OZ7b0fH_OY7a0gH_OY7a0hH^OX7a0iH_OW7a0iH_OW7a0iH^OX7b0hH^OX7b0hH^OX7b0hH^OX7b0hH^OX7b0gH_OY7a0gH_OY7b0fH^O[7a0eH_O[7a0dH@\\7`0dH@\\7a0cH_O]7a0bH@^7`0aHA_7`0`H@`7`0_HAb7?]HAc7?\\HBd7?ZHBf7?XHAi7`0UHAk7`0SHAm7`0QHAP8`0mGAS8`0jGAW8a0fG@Z8a0cGA]8b0^G@c8n3000O2O000O2O00001N100O2O000O2O001N101N10001N101N101N2O001N101N1O2O0O2O0O2O0O2N101N2N101N2O0O2N1O2N2N2N2O0O2N2N2N2N2N3M2N2N2N2M3N2N3L4M3L3N2M3N3L4L4L3N3L4L4L4L4K7I6I7J6J6H8I8G;C?]OPlT2"
+      },
+      "sam_score_gt_box": 1.0024962425231934,
+      "mask_area": 40311,
+      "color_ratios": {
+        "red": 0.003845104313958969,
+        "blue": 0.0,
+        "yellow": 0.06367988886408177,
+        "green": 0.5947011981841185,
+        "black": 0.00024807124606186895,
+        "white": 0.0038947185631713426,
+        "brown": 0.3486393292153506
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8299694512919009,
+      "o2o_det": [
+        138.72723388671875,
+        31.112533569335938,
+        374.79486083984375,
+        266.1466064453125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.06373255178580299
+    }
+  ]
+}

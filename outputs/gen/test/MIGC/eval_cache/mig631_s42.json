@@ -1,0 +1,152 @@
+{
+  "sample_id": "mig631_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "05aecd132a2cec1d02df540697aae0c6e2a53666",
+  "detections": {
+    "cell phone": {
+      "xyxy": [
+        [
+          67.3716812133789,
+          154.0418243408203,
+          198.64364624023438,
+          483.77947998046875
+        ]
+      ],
+      "conf": [
+        0.7982401847839355
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white cell phone",
+      "category": "cell phone",
+      "color": "white",
+      "box": [
+        0.2938125,
+        0.0009583333333333334,
+        0.549796875,
+        0.5965416666666666
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.09609398678491536,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.09609398678491536,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a white cell phone",
+      "category": "cell phone",
+      "color": "white",
+      "box": [
+        0.43928124999999996,
+        0.3187083333333333,
+        0.9993124999999999,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a white cell phone",
+      "category": "cell phone",
+      "color": "white",
+      "box": [
+        0.52078125,
+        0.0949375,
+        0.864609375,
+        0.3174166666666667
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a black cell phone",
+      "category": "cell phone",
+      "color": "black",
+      "box": [
+        0.117875,
+        0.30572916666666666,
+        0.39346875,
+        0.9723124999999999
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8860193704492385,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "mmR19]?`0C:E;G7G:I6F:I7H8H7J7H7K5H9D;J6E<I6I7F:H8K5H8I7H8I7I7G9I7J7G8J6H8I7K5K5L4M3K5M3N2O1N200O1O1O100O100O100O101O000O1000001O000000001O000000000000001O000000000001O0000000O10001O0O101O0O101N1O1O2O0N2O2N1O1N3L3M4I6D=B=A`0F9A`0C<@a0B>]Ob0C>E;F:_Oa0F:G9I7E;C=E<G9J6G`0WO^Zm4"
+      },
+      "sam_score_gt_box": 1.0040754079818726,
+      "mask_area": 30642,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.16758044514065662,
+        "yellow": 0.0,
+        "green": 0.0013706677109849227,
+        "black": 0.4366555707851968,
+        "white": 0.05427191436590301,
+        "brown": 0.00482997193394687
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8860193704492385,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8860193704492385,
+      "o2o_det": [
+        67.3716812133789,
+        154.0418243408203,
+        198.64364624023438,
+        483.77947998046875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.43697094486387555
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig757_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "757",
+  "caption": "a photo of a yellow knife and a black pizza and a red bowl and a black bowl and a blue dining table",
+  "objects": [
+    {
+      "desc": "a yellow knife",
+      "box": [
+        0.701609375,
+        0.6870083102493074,
+        0.92621875,
+        0.9937119113573407
+      ]
+    },
+    {
+      "desc": "a black pizza",
+      "box": [
+        0.241921875,
+        0.022022160664819945,
+        0.845453125,
+        0.7737119113573407
+      ]
+    },
+    {
+      "desc": "a red bowl",
+      "box": [
+        0.31403125,
+        0.6451246537396121,
+        0.522390625,
+        0.9459002770083101
+      ]
+    },
+    {
+      "desc": "a black bowl",
+      "box": [
+        0.141890625,
+        0.5285318559556788,
+        0.354984375,
+        0.8153462603878118
+      ]
+    },
+    {
+      "desc": "a blue dining table",
+      "box": [
+        0.004390625,
+        0.002880886426592798,
+        1.0,
+        0.9899445983379501
+      ]
+    }
+  ],
+  "seconds": 5.381,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "sample_id": "mig043_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "f9b609bb32be2ae91fedd712206ac5b25015f207",
+  "detections": {
+    "cake": {
+      "xyxy": [
+        [
+          68.548828125,
+          288.0195007324219,
+          243.18435668945312,
+          480.8784484863281
+        ],
+        [
+          246.46533203125,
+          0.0762939453125,
+          464.4056396484375,
+          436.6639099121094
+        ],
+        [
+          140.5554656982422,
+          125.2593765258789,
+          254.28724670410156,
+          289.9045715332031
+        ]
+      ],
+      "conf": [
+        0.6949691772460938,
+        0.6587604284286499,
+        0.5951480865478516
+      ]
+    },
+    "fork": {
+      "xyxy": [
+        [
+          0.19366836547851562,
+          250.2850799560547,
+          93.46907043457031,
+          486.42950439453125
+        ]
+      ],
+      "conf": [
+        0.735588550567627
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a yellow fork",
+      "category": "fork",
+      "color": "yellow",
+      "box": [
+        0.000484375,
+        0.5353286384976526,
+        0.21384375000000003,
+        0.9734741784037559
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.7403296447020168,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "n=T1j>OjNQO^CP1a<UOZCj0g<ZOUCf0m<\\OoBd0S=_OhBb0Y=@dB?Z=GbB9`=I\\B7g=n0O2O01O001O2N2OOO02N3O3K6L3LAfB_NV=b1mB^No<c1TC^Ng<d1[C[Na<g1bCYNZ<i1hCWNT<l1nCTNl;o1VDQNe;R2\\DnMa;U2`DkM[;X2hDhMR;[2PEeMk:_2UEbMg:a2[E^M`:e2bE[MZ:h2gEXMS:m2nESMn9o2TFQMg9S3ZFnL`9V3aFjLZ9Y3hFgLS9]3nFcLm8a3TG_Lh8l0oEZ1[1jMa8d0\\Ff1T1fM[8a0hFh1o0gMU8;UGm1h0iMo76_GQ2c0iMl70gGW2?iMi7ImG_2<hMT9]2nFcMl8a2VG_Mc8f2_GZM\\8i2fGWMS8n2oGSMj7Q3XHoLb7T3bHkLX7Y3jHgLQ7[3RIeLj6\\3YIdLe6:WGm1V2iMc6OcGT2m1nMg7l1]HTNb7j1bHUN]7i1eHXNW7h1nHWNl6l1WITNc6o1`IRNZ6o1jIPNQ6R2SJnMg5T2]JmM\\5T2iJlMR5U2RKkMk4T2YKlMe4=eG;k3XO_4LVHj0^3ZOd5c0`J]O_5b0cJ^O\\5a0fJ_OV5c0lJ]Ol4i0VKWOd4l0_KUOY4P1iKPOQ4S1SLlNf3X1]LgN`3[1bLeN[3Y1jLhNU36mMJU90000000000O2N1O1O002N1O1O1O1O2N001O2NQPX6"
+      },
+      "sam_score_gt_box": 0.9746261835098267,
+      "mask_area": 8505,
+      "color_ratios": {
+        "red": 0.0016460905349794238,
+        "blue": 0.0,
+        "yellow": 0.04162257495590829,
+        "green": 0.0,
+        "black": 0.35473251028806585,
+        "white": 0.03139329805996473,
+        "brown": 0.4991181657848324
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7403296447020168,
+      "o2o_det": [
+        0.19366836547851562,
+        250.2850799560547,
+        93.46907043457031,
+        486.42950439453125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.025448661370991468
+    },
+    {
+      "idx": 1,
+      "desc": "a brown cake",
+      "category": "cake",
+      "color": "brown",
+      "box": [
+        0.125640625,
+        0.5550469483568075,
+        0.49360937499999996,
+        0.9303286384976526
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8889244285898555,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ckS1>a?4J5J6H7K6J5K6L4K4M4L3M3N3M2M3N2M3N2M3N2M4M3M3M2N3M3M2N3M2O2M3M2O2M2O2M3N2M2N3N2M2O2M2O2M2O1N2N3N0O2O1N2O1N101N2O0O2N2O0O2O0O2O1N10001N101O001N101O001O0O10001O00000000001O0000000000000000000000000000001OO10001O00000000001N101O0000001N101O0O2O001N102N1N101N2N101O1O1O1N2O1N2O0O2O1O1N2N2N3N1M3O2M3N3M3K6J4M2M4M3M3M6J5K6J7I9G7J5I8J5J5J7H9I7H9CScV4"
+      },
+      "sam_score_gt_box": 0.9951882362365723,
+      "mask_area": 24166,
+      "color_ratios": {
+        "red": 0.002193163949350327,
+        "blue": 0.0023586857568484647,
+        "yellow": 0.04887031366382521,
+        "green": 4.138045187453447e-05,
+        "black": 0.422577174542746,
+        "white": 0.37941736323760655,
+        "brown": 0.061201688322436484
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8889244285898555,
+      "o2o_det": [
+        68.548828125,
+        288.0195007324219,
+        243.18435668945312,
+        480.8784484863281
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.06121435371052523
+    },
+    {
+      "idx": 2,
+      "desc": "a red cake",
+      "category": "cake",
+      "color": "red",
+      "box": [
+        0.45621875,
+        0.0,
+        0.9124375,
+        0.8539436619718309
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.9316798447633023,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Q[l32m?3N1N2O1f@O5Kg=9QBO42c=1VBO57^=MZBN59_=LXBQ1d=g0O1O0O2O1N100O1_NdM]E]2_:gM`EZ2]:hMcEZ2X:jMfEX2Y:hMfEZ2X:gMfE\\2Y:dMfE^2X:cMgE_2W:cMgE_2W:cMfE`2Y:bMcEa2\\:aMaEb2]:`M`Ea2a:_M\\Ed2c:^MZEd2e:`MVEb2n9aLTFNOQ1Kc2P:aLTFNNj4l9\\KRFNOg4n9n0aNUJhHl5W7VJgHk5Y7VJeHj5\\7VJcHk5\\7VJcHk5]7VJaHk5_7UJWHL\\OP6]8UJUHU6j7mITHS6m7mIQHU6o7lIeG_6Z8dIaG_6_8`010O10O10O01000UOjHlHU7U7mHiHS7V7nHiHS7W7nHhHR7W7QIgHo6Y7RIeHn6[7TIcHm6\\7VIaHk6^7k00100N1O2N20O01O1O0O2A?N2M2N3O1O001O1O01000O0iNhFgKY9X4jFeKV9\\4lF_KW9a4kF[KV9f4jFXKV9i4kFVKU9k4kFSKU9o4lFoJT9R5mFlJR9V5oFgJQ9[5QG^JQ9e5b03J5O2M3G9J6L3F7O2WOj0O110I7O00M40O1N2DPHfHS8X77301E`HUH`7n754H9A>N3^O`0O1K5N1G80JXOYF]KR:`4VFXKm9f4f0O2O1O1O0O3L4H8J6M3N2L4G9N2N2M3N2M3K5M3O1N2N2N2N2L4I7I7N2N2K5J6G9L4O1O1O1N2UO_AMl>Nh0Jo_\\1"
+      },
+      "sam_score_gt_box": 1.0063587427139282,
+      "mask_area": 32770,
+      "color_ratios": {
+        "red": 0.8451937747940189,
+        "blue": 3.0515715593530668e-05,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.053646628013426914,
+        "white": 0.000366188587122368,
+        "brown": 0.004790967348184315
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9316798447633023,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9316798447633023,
+      "o2o_det": [
+        246.46533203125,
+        0.0762939453125,
+        464.4056396484375,
+        436.6639099121094
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.8456394283620374
+    },
+    {
+      "idx": 3,
+      "desc": "a black cake",
+      "category": "cake",
+      "color": "black",
+      "box": [
+        0.2725,
+        0.24629107981220658,
+        0.5152187500000001,
+        0.5773943661971832
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.880297653364958,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "cUW26j?4K3M2N2L4M2N3N2O2kAXOm<l0nBYOn<j0oBXOo<k0^BkN8=1Bh<d1PClN5Ch<[2VCgMh<[2VCgMi<[2TCgM<Kj;m2SDWMj;l2TDUMk;m2RDVMk;m2SDUMj;b3M3O0O1O1O100O1O100O100O010O01N1010O10O0100O0100O1O010O1000O010O01O001O10O01000O01O10O0100O010O0010O01O010O1O01000000O01000000O1O1O001O1O0001O0100O1O1O1O5L2M2O1O2N1SOaCWNa<]1lC`NU<j0aDTOb;=mDUOeNK`<i0^2J5J7J_[Q4"
+      },
+      "sam_score_gt_box": 1.0067734718322754,
+      "mask_area": 12387,
+      "color_ratios": {
+        "red": 0.001453136352627755,
+        "blue": 0.0,
+        "yellow": 0.033422136110438365,
+        "green": 8.07297973682086e-05,
+        "black": 0.0,
+        "white": 0.20125938483894407,
+        "brown": 0.7657221280374586
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.880297653364958,
+      "o2o_det": [
+        140.5554656982422,
+        125.2593765258789,
+        254.28724670410156,
+        289.9045715332031
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    }
+  ]
+}

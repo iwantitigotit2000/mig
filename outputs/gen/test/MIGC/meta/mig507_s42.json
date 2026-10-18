@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig507_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "507",
+  "caption": "a photo of a green sandwich and a brown sandwich and a black dining table",
+  "objects": [
+    {
+      "desc": "a green sandwich",
+      "box": [
+        0.129484375,
+        0.13902083333333334,
+        0.54484375,
+        0.8363125
+      ]
+    },
+    {
+      "desc": "a brown sandwich",
+      "box": [
+        0.5039374999999999,
+        0.024729166666666667,
+        0.958984375,
+        0.6629166666666666
+      ]
+    },
+    {
+      "desc": "a black dining table",
+      "box": [
+        0.0,
+        0.006208333333333333,
+        1.0,
+        0.9881458333333334
+      ]
+    }
+  ],
+  "seconds": 6.449,
+  "peak_mem_allocated_gb": 7.821,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

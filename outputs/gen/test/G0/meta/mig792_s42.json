@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig792_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "792",
+  "caption": "a photo of a red potted plant and a brown sandwich and a brown sandwich and a yellow sandwich and a blue cup",
+  "objects": [
+    {
+      "desc": "a red potted plant",
+      "box": [
+        0.064328125,
+        0.014800936768149883,
+        0.56096875,
+        0.5148009367681499
+      ]
+    },
+    {
+      "desc": "a brown sandwich",
+      "box": [
+        0.134640625,
+        0.3810538641686183,
+        0.502640625,
+        0.8227634660421547
+      ]
+    },
+    {
+      "desc": "a brown sandwich",
+      "box": [
+        0.54725,
+        0.4606791569086651,
+        0.9325625000000001,
+        0.797751756440281
+      ]
+    },
+    {
+      "desc": "a yellow sandwich",
+      "box": [
+        0.43803125,
+        0.45688524590163937,
+        0.645734375,
+        0.7295081967213115
+      ]
+    },
+    {
+      "desc": "a blue cup",
+      "box": [
+        0.176140625,
+        0.28121779859484775,
+        0.398921875,
+        0.5062295081967213
+      ]
+    }
+  ],
+  "seconds": 5.28,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

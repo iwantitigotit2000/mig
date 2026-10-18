@@ -1,0 +1,145 @@
+{
+  "source": "D:\\mig_assets\\repos\\MIGC\\bench_file\\mig_bench_anno.yaml",
+  "split_seed": 2024,
+  "seeds": [
+    42,
+    2025
+  ],
+  "all_800": {
+    "layouts": 800,
+    "instances": 3200,
+    "levels": {
+      "L2": 160,
+      "L3": 160,
+      "L4": 160,
+      "L5": 160,
+      "L6": 160
+    },
+    "layout_overlap_bucket": {
+      "mid": 298,
+      "high": 254,
+      "low": 160,
+      "none": 88
+    },
+    "instance_overlap_bucket": {
+      "mid": 1080,
+      "low": 1036,
+      "none": 486,
+      "high": 598
+    },
+    "layouts_with_same_cat_diff_color": 539,
+    "instances_same_cat_diff_color": 1818,
+    "colors": {
+      "black": 464,
+      "blue": 469,
+      "green": 481,
+      "white": 457,
+      "brown": 427,
+      "red": 462,
+      "yellow": 440
+    }
+  },
+  "pilot": {
+    "layouts": 10,
+    "instances": 40,
+    "levels": {
+      "L2": 2,
+      "L3": 2,
+      "L4": 2,
+      "L5": 2,
+      "L6": 2
+    },
+    "layout_overlap_bucket": {
+      "low": 2,
+      "none": 2,
+      "high": 4,
+      "mid": 2
+    },
+    "instance_overlap_bucket": {
+      "low": 10,
+      "none": 7,
+      "high": 10,
+      "mid": 13
+    },
+    "layouts_with_same_cat_diff_color": 6,
+    "instances_same_cat_diff_color": 19,
+    "colors": {
+      "white": 9,
+      "blue": 5,
+      "green": 9,
+      "black": 6,
+      "red": 6,
+      "yellow": 2,
+      "brown": 3
+    }
+  },
+  "val": {
+    "layouts": 30,
+    "instances": 120,
+    "levels": {
+      "L2": 6,
+      "L3": 6,
+      "L4": 6,
+      "L5": 6,
+      "L6": 6
+    },
+    "layout_overlap_bucket": {
+      "low": 7,
+      "none": 5,
+      "mid": 9,
+      "high": 9
+    },
+    "instance_overlap_bucket": {
+      "low": 41,
+      "none": 19,
+      "mid": 38,
+      "high": 22
+    },
+    "layouts_with_same_cat_diff_color": 18,
+    "instances_same_cat_diff_color": 57,
+    "colors": {
+      "white": 29,
+      "blue": 15,
+      "green": 17,
+      "black": 20,
+      "brown": 10,
+      "yellow": 13,
+      "red": 16
+    }
+  },
+  "test": {
+    "layouts": 100,
+    "instances": 400,
+    "levels": {
+      "L2": 20,
+      "L3": 20,
+      "L4": 20,
+      "L5": 20,
+      "L6": 20
+    },
+    "layout_overlap_bucket": {
+      "none": 12,
+      "mid": 40,
+      "low": 19,
+      "high": 29
+    },
+    "instance_overlap_bucket": {
+      "none": 57,
+      "mid": 149,
+      "low": 127,
+      "high": 67
+    },
+    "layouts_with_same_cat_diff_color": 72,
+    "instances_same_cat_diff_color": 229,
+    "colors": {
+      "yellow": 66,
+      "black": 58,
+      "blue": 57,
+      "brown": 54,
+      "white": 54,
+      "green": 57,
+      "red": 54
+    }
+  },
+  "overlap_bucket_rule": "max IoU with any other box: none=0, low<0.1, mid<0.3, high>=0.3"
+}

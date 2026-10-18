@@ -1,0 +1,70 @@
+{
+  "sample_id": "mig361_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "361",
+  "caption": "a photo of a white spoon and a yellow bowl and a black carrot and a green carrot",
+  "objects": [
+    {
+      "desc": "a white spoon",
+      "box": [
+        0.6028749999999999,
+        0.22922352941176471,
+        0.99684375,
+        0.5595529411764706
+      ]
+    },
+    {
+      "desc": "a yellow bowl",
+      "box": [
+        0.0015,
+        0.0022588235294117645,
+        0.9990781250000002,
+        1.0
+      ]
+    },
+    {
+      "desc": "a black carrot",
+      "box": [
+        0.1673125,
+        0.5324705882352941,
+        0.334625,
+        0.9740235294117648
+      ]
+    },
+    {
+      "desc": "a green carrot",
+      "box": [
+        0.094859375,
+        0.04675294117647059,
+        0.829640625,
+        0.9844235294117647
+      ]
+    }
+  ],
+  "seconds": 6.419,
+  "peak_mem_allocated_gb": 7.829,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

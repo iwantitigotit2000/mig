@@ -1,0 +1,24 @@
+# Shared settings for G1 / G2 (identical data, effective batch, update steps).
+seed: 2024
+total_steps: 2000          # candidate budget; not a convergence guarantee
+keep_steps: [500, 2000]    # early / late checkpoints kept for the checkpoint comparison
+batch_size: 2              # micro-batch
+grad_accum: 4              # effective batch = 8 images / update
+warmup_steps: 100          # official default is 10k for from-scratch training; scaled down for fine-tuning
+weight_decay: 0.0          # official
+precision: bf16            # autocast; weights and optimiser states stay fp32
+sdpa: true
+workers: 2
+log_every: 10
+save_every: 250
+data:
+  train_manifest: manifests/coco_train.jsonl
+  val_manifest: manifests/coco_trainval.jsonl
+  prob_use_caption: 0.5    # official box-text configs
+  max_boxes_per_data: 30   # official
+val:
+  every: 250
+  n_images: 50
+  timesteps: [100, 300, 500, 800]
+  sample_manifest: manifests/cocomig_pilot.jsonl   # pilot ⊂ val split (never test)
+  n_samples: 4

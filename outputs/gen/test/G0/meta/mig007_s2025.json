@@ -1,0 +1,62 @@
+{
+  "sample_id": "mig007_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "7",
+  "caption": "a photo of a black bird and a white bird",
+  "objects": [
+    {
+      "desc": "a black bird",
+      "box": [
+        0.5079374999999999,
+        0.566923076923077,
+        0.6703749999999999,
+        0.7924941724941725
+      ]
+    },
+    {
+      "desc": "a white bird",
+      "box": [
+        0.74815625,
+        0.4516083916083916,
+        0.935546875,
+        0.6666666666666666
+      ]
+    }
+  ],
+  "seconds": 5.234,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

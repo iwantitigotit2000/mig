@@ -1,0 +1,224 @@
+{
+  "sample_id": "mig000_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "c5ebda99c6cb1ec55a754bd312db5e1484974927",
+  "detections": {
+    "carrot": {
+      "xyxy": [
+        [
+          88.15731811523438,
+          89.69596862792969,
+          159.2830047607422,
+          204.7554168701172
+        ],
+        [
+          0.004665374755859375,
+          32.65635681152344,
+          89.39651489257812,
+          256.01361083984375
+        ]
+      ],
+      "conf": [
+        0.6594855785369873,
+        0.647589385509491
+      ]
+    },
+    "fork": {
+      "xyxy": [
+        [
+          372.9576721191406,
+          0.099395751953125,
+          511.7742004394531,
+          286.11798095703125
+        ]
+      ],
+      "conf": [
+        0.8970869183540344
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue fork",
+      "category": "fork",
+      "color": "blue",
+      "box": [
+        0.72472,
+        0.008986666666666667,
+        1.0,
+        0.5595466666666667
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.968385646301016,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "WXk52k?5L3M3M2M3M2O1N2N2O1M2O2N1O1O1M301M2O1O1lAnN\\=R1cBQO[=o0dBUOX=k0iBWOT=i0lBYOR=i0mBXOQ=i0oBXOo<h0RCYOl<h0RCZOn<h0oBZOQ=h0iB[OW=f1010000QCcM\\<^2bCeM\\<\\2bCfM^<[2^ChMa<k210O0001O00001O001O0ObCoLP<Q3oCRMo;n2QDSMn;n2PDTMP<l2nCVMQ<l2mCUMR<^3N1N3N1O1O1N101N101N1O100O1O1O010O0O11OO2O00O11O0O2OO100000O01[MkD`0V;]OTE<k:D\\E5e:JaE1^:0gEJY:6lEFS:;PFBn9`0VF[Oi9g0[FTOd9n0`FmN_9T1gFfNX9\\1mF]NS9d1b22N2O1N2N3M2N2O001O2M2N2O2N1N3N1O101001O1N2O1O1N200O1O1O1O1O1O1O1O1O1O1O100O1N2N2"
+      },
+      "sam_score_gt_box": 0.9996246099472046,
+      "mask_area": 12210,
+      "color_ratios": {
+        "red": 0.000819000819000819,
+        "blue": 0.9427518427518428,
+        "yellow": 0.0003276003276003276,
+        "green": 0.0009009009009009009,
+        "black": 0.008681408681408681,
+        "white": 0.0,
+        "brown": 0.0012285012285012285
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.968385646301016,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.968385646301016,
+      "o2o_det": [
+        372.9576721191406,
+        0.099395751953125,
+        511.7742004394531,
+        286.11798095703125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9427565309966424
+    },
+    {
+      "idx": 1,
+      "desc": "a green carrot",
+      "category": "carrot",
+      "color": "green",
+      "box": [
+        0.0016799999999999999,
+        0.07058666666666666,
+        0.13226000000000002,
+        0.40634666666666663
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.5756354845185496,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "S1c2]=3M2N3M2O1N3M2O2M2O1N2O2M2O1O1N101O1O1O100O1O2O000O1O10000O1000O100000000O2M2M4K4M3M4L3N2M3M3N2M4M2M3N3M3L3N4L2M5L3M4L4L4L4L3M3M3M3M3M4L5L3L4L5L[Zk6"
+      },
+      "sam_score_gt_box": 0.9973582029342651,
+      "mask_area": 6446,
+      "color_ratios": {
+        "red": 0.01085944771951598,
+        "blue": 0.0,
+        "yellow": 0.4168476574619919,
+        "green": 0.4902264970524356,
+        "black": 0.0,
+        "white": 0.0,
+        "brown": 0.12178094942600062
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.5756354845185496,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.5756354845185496,
+      "o2o_det": [
+        0.004665374755859375,
+        32.65635681152344,
+        89.39651489257812,
+        256.01361083984375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.3552601937373282
+    },
+    {
+      "idx": 2,
+      "desc": "a red carrot",
+      "category": "carrot",
+      "color": "red",
+      "box": [
+        0.16056,
+        0.21597333333333332,
+        0.28676,
+        0.38949333333333336
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.5982112201872983,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "je\\18e?6J4L5K4L3M4L3M4L3M4M2N2O1M3N1O2N2N101N1O2M2N2O2N1O0101N1O1O1O2O0O2N2O1O1N10100N2O1O2N1N2O1O1O2M2O1O2N1O2M2O2N2M3M3M4L3M4K7Gokc5"
+      },
+      "sam_score_gt_box": 1.0071684122085571,
+      "mask_area": 3078,
+      "color_ratios": {
+        "red": 0.6319038336582197,
+        "blue": 0.0,
+        "yellow": 0.001949317738791423,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.0,
+        "brown": 0.6494476933073424
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.5982112201872983,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.5982112201872983,
+      "o2o_det": [
+        88.15731811523438,
+        89.69596862792969,
+        159.2830047607422,
+        204.7554168701172
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5768433520876518
+    },
+    {
+      "idx": 3,
+      "desc": "a red carrot",
+      "category": "carrot",
+      "color": "red",
+      "box": [
+        0.07587999999999999,
+        0.36234666666666665,
+        0.20118,
+        0.49410666666666664
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.16327508744986208,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.16327508744986208,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

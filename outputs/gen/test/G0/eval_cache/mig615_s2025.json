@@ -1,0 +1,273 @@
+{
+  "sample_id": "mig615_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "2b1391e5e30bc144642f3ec7b632c0e53d75df46",
+  "detections": {
+    "motorcycle": {
+      "xyxy": [
+        [
+          73.82670593261719,
+          300.51885986328125,
+          442.7548828125,
+          511.85052490234375
+        ],
+        [
+          136.6497039794922,
+          297.4526672363281,
+          247.1329803466797,
+          376.7782287597656
+        ],
+        [
+          74.01811218261719,
+          300.29205322265625,
+          355.009033203125,
+          511.9820556640625
+        ]
+      ],
+      "conf": [
+        0.5486144423484802,
+        0.39525389671325684,
+        0.26552289724349976
+      ]
+    },
+    "potted plant": {
+      "xyxy": [
+        [
+          347.20660400390625,
+          418.4736022949219,
+          507.37799072265625,
+          511.9311218261719
+        ]
+      ],
+      "conf": [
+        0.26213353872299194
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a yellow motorcycle",
+      "category": "motorcycle",
+      "color": "yellow",
+      "box": [
+        0.161796875,
+        0.6516875,
+        0.67078125,
+        0.9955
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.7712113258422667,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "anU16i?1000000O100001O000O10O100000001PO4jALT>9iAGU><jADS>`0kAAS>b0lA_OQ>d0nA\\OP>f0PBZOm=j0QBWOj=o0UBQOi=R1VBnNi=S1WBnNf=U1XBlNg=V1XBkNf=V1ZBkNd=W1ZBkNOF\\=c2H6J3M5K4L4L4M1N1O1O1O10000O10000O1000000AZLcDg3Y;bLaD_3];c0O1O100O10000O10000000000000000000000O100000000000000000000000000001O0000000000001O1O000000001O0000001O001O001O001O001O1O001OKhKcDW4];iKcDW4];jKbDV4^;hKcDY4a;1000000LfKbDZ4^;4000bK`D\\4`;dKaD[4b;0M3O10000004L0000O100O1000000O100000000O100O1000000O10000O1000000000000O100000000O1J6O1O100N200000000O10000000000O1O1O100O1N2O100O1000000000000000000O1O100O1O100O1O1000M`EfJ`:X55N201O0O2O1N110N2RKUEN1`4Z;N2N1M3M3N3M2N2O1O100O1O10000O10O10OAaL]DLO11P3_;]MeD^O0U3Z;]MgD\\O1W3X;\\MSEb2n:]MSEb2m:`MQE`2Q;_MoDa2Q;_MPE`2Q;_MoDa2R;\\MPEd2T;SMQEm2Q;PMPEP3Q;nLPEQ3R;nLnDR3R;nLoDQ3R;nLnDQ3P<10TNWCa0i<]OZCVOMm0i<K]CUOOm0d<LSD0n;MYDOg;O\\D0d;MaD1_;KgD3Z;@WE:m:CVE:j:EZE8i:EZE7ena2"
+      },
+      "sam_score_gt_box": 0.9908310174942017,
+      "mask_area": 34249,
+      "color_ratios": {
+        "red": 0.2203567987386493,
+        "blue": 0.13933253525650385,
+        "yellow": 0.012671902829279687,
+        "green": 0.001693480101608806,
+        "black": 0.3527110280592134,
+        "white": 0.007708254255598704,
+        "brown": 0.05004525679581886
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.7712113258422667,
+      "o2o_det": [
+        74.01811218261719,
+        300.29205322265625,
+        355.009033203125,
+        511.9820556640625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0124435329656625
+    },
+    {
+      "idx": 1,
+      "desc": "a red motorcycle",
+      "category": "motorcycle",
+      "color": "red",
+      "box": [
+        0.24456250000000002,
+        0.5938958333333333,
+        0.5552187500000001,
+        0.8088958333333333
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.44036762619994274,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.44036762619994274,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.22457017470479954,
+      "o2o_det": [
+        73.82670593261719,
+        300.51885986328125,
+        442.7548828125,
+        511.85052490234375
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow motorcycle",
+      "category": "motorcycle",
+      "color": "yellow",
+      "box": [
+        0.44415625,
+        0.8545416666666666,
+        0.8629843749999999,
+        0.9844166666666666
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.1828920886353811,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.1828920886353811,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a white motorcycle",
+      "category": "motorcycle",
+      "color": "white",
+      "box": [
+        0.249171875,
+        0.544,
+        0.46864062500000003,
+        0.73125
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.6858493550719421,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ZYS26[?Om@7m>On@4n>a0\\AUOP>m0lAYO1HG4d=k0cB\\OL5]=`0eB6X=KgB6X=JgB8X=X1000000O2O01O000000O100000000000000000O1010O010O000000001O0000010O0001O0010000O002O0O01O1O1O000001O01O01O1O001O1O1O1O001N2O2N1O000O100O01000O01001O001O000XNXBX1i=fN[BV1g=hNZBX1g=gNYBY1h=eNZBZ1h=dNXB\\1U>0100O100GdAmN]>S18O100O100O1000000TOWA`0j>^OYAa0h>[O[Ac0S?L4M4L5KaUT4"
+      },
+      "sam_score_gt_box": 0.9717737436294556,
+      "mask_area": 7804,
+      "color_ratios": {
+        "red": 0.29241414659149156,
+        "blue": 0.17670425422860073,
+        "yellow": 0.0006406970784213224,
+        "green": 0.0006406970784213224,
+        "black": 0.22821629933367504,
+        "white": 0.007816504356740134,
+        "brown": 0.018323936442849822
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "red",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.6858493550719421,
+      "o2o_det": [
+        136.6497039794922,
+        297.4526672363281,
+        247.1329803466797,
+        376.7782287597656
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.007590415240363149
+    },
+    {
+      "idx": 4,
+      "desc": "a blue potted plant",
+      "category": "potted plant",
+      "color": "blue",
+      "box": [
+        0.8017031250000001,
+        0.8362083333333333,
+        0.9758593750000001,
+        0.9973333333333334
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.491408575798251,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.491408575798251,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.491408575798251,
+      "o2o_det": [
+        347.20660400390625,
+        418.4736022949219,
+        507.37799072265625,
+        511.9311218261719
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 5,
+      "desc": "a red motorcycle",
+      "category": "motorcycle",
+      "color": "red",
+      "box": [
+        0.442171875,
+        0.6467291666666667,
+        0.630375,
+        0.7823333333333333
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.1124727077316598,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.1124727077316598,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sample_id": "mig615_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "615",
+  "caption": "a photo of a yellow motorcycle and a red motorcycle and a yellow motorcycle and a white motorcycle and a blue potted plant and a red motorcycle",
+  "objects": [
+    {
+      "desc": "a yellow motorcycle",
+      "box": [
+        0.161796875,
+        0.6516875,
+        0.67078125,
+        0.9955
+      ]
+    },
+    {
+      "desc": "a red motorcycle",
+      "box": [
+        0.24456250000000002,
+        0.5938958333333333,
+        0.5552187500000001,
+        0.8088958333333333
+      ]
+    },
+    {
+      "desc": "a yellow motorcycle",
+      "box": [
+        0.44415625,
+        0.8545416666666666,
+        0.8629843749999999,
+        0.9844166666666666
+      ]
+    },
+    {
+      "desc": "a white motorcycle",
+      "box": [
+        0.249171875,
+        0.544,
+        0.46864062500000003,
+        0.73125
+      ]
+    },
+    {
+      "desc": "a blue potted plant",
+      "box": [
+        0.8017031250000001,
+        0.8362083333333333,
+        0.9758593750000001,
+        0.9973333333333334
+      ]
+    },
+    {
+      "desc": "a red motorcycle",
+      "box": [
+        0.442171875,
+        0.6467291666666667,
+        0.630375,
+        0.7823333333333333
+      ]
+    }
+  ],
+  "seconds": 5.27,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

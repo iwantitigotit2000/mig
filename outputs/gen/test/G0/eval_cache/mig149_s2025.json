@@ -1,0 +1,161 @@
+{
+  "sample_id": "mig149_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "7dd20aaeece6344f3b72ce603a9bed67ddca2930",
+  "detections": {
+    "zebra": {
+      "xyxy": [
+        [
+          105.37246704101562,
+          202.49655151367188,
+          241.93826293945312,
+          371.5146789550781
+        ],
+        [
+          240.12271118164062,
+          218.5355224609375,
+          405.6996154785156,
+          367.7818603515625
+        ]
+      ],
+      "conf": [
+        0.7842077016830444,
+        0.7624985575675964
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue zebra",
+      "category": "zebra",
+      "color": "blue",
+      "box": [
+        0.22196875,
+        0.4484375,
+        0.48431250000000003,
+        0.7399166666666666
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.7305482219931033,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "[he1d0X?9G9HS1nN<E4L2N01L4`MmBn1X=UNdBNc0L]Oo0?ROINP<a0aDc1`;^NeD[1\\;fNnDn0Q;VOTEBgN41BS<n0REUOfNMX=Q1b14M2M4L3N1N2O0O1O10001N102N3L5L7[BnMn<f2L3M2N3M4L6J2N008H3M1O00GPDaLQ<_390O1O3M2N2N10[NRDkMK66b0l;\\1QDkMM;:EHa0o;X2`DgM_;e1PD\\Nf0JZ;h1`EUN`:j1aEVN^:j1bEVN^:j1dETN\\:m1dERN\\:n1eEQN[:o1eEQN\\:o1dEPN\\:P2j11O001N10001O0O2O00001O0O100O1O1O2JbMhB^2Y=aMgB^2^=000HgMhBZ2X=7O1M3O10O100000TDXMiNOc;h2bEaM]:_2\\EjMa:Y2UEPNj:c3KaKgDa4U;05K6N3L4K5M4H8LaDaLd:V3`ETM[:l2_EZM`:j2TE^Mi:o3K30JSE[Km:a4:M4K5J6K5L4XOTDYMn;c2]DSMg;j2j0K4N2eMmBe1X=YNkBa1Y=ZNoBe0HFW>6l0N2M4KbhW4"
+      },
+      "sam_score_gt_box": 0.9586900472640991,
+      "mask_area": 11808,
+      "color_ratios": {
+        "red": 0.017699864498644986,
+        "blue": 0.2665989159891599,
+        "yellow": 0.0011856368563685636,
+        "green": 0.0005928184281842818,
+        "black": 0.16565040650406504,
+        "white": 0.10848577235772358,
+        "brown": 0.10992547425474254
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7305482219931033,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7305482219931033,
+      "o2o_det": [
+        105.37246704101562,
+        202.49655151367188,
+        241.93826293945312,
+        371.5146789550781
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2535725627183233
+    },
+    {
+      "idx": 1,
+      "desc": "a green zebra",
+      "category": "zebra",
+      "color": "green",
+      "box": [
+        0.458421875,
+        0.494375,
+        0.72303125,
+        0.7258333333333333
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.5768754776577557,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "mYh3:^?`0B;G7J3N00N3H9M2_OYAEi>;`0M20100O1O10000O1000005GX@0c?0^@6]?;K5K7H7^AQOi=i1I8I6J7I4L4LVOUCcNi<Z1]CcNb<\\1bCRNA<n<a1jCYNW<e1R1O2InA`N>c0\\<l0VCiNOd0j<S21N1O2N2N2O2N11O7I00O1001OiNaCmN`<m0QD^NX<a1T100001O1O001O0010O01O00001O00001O4L<C:G5K8H2MN30O10_OZCeMh<k1o0M20010O01O01O01O1N101O1O10O0=gBgMS<U3ZCfLb<Z3^CgLa<X34O001H8G9J6G;K4]OUBnNl=m1gBkMAK[<X35104MD;K6@?G:G9I6I8L4L7J2M3M1O010_OPA1S?Ma0KegU2"
+      },
+      "sam_score_gt_box": 0.9340908527374268,
+      "mask_area": 8075,
+      "color_ratios": {
+        "red": 0.04346749226006192,
+        "blue": 0.20507739938080496,
+        "yellow": 0.0026006191950464397,
+        "green": 0.005325077399380805,
+        "black": 0.16210526315789472,
+        "white": 0.08284829721362229,
+        "brown": 0.16371517027863777
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "blue",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.5768754776577557,
+      "o2o_det": [
+        240.12271118164062,
+        218.5355224609375,
+        405.6996154785156,
+        367.7818603515625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.00595695618754804
+    },
+    {
+      "idx": 2,
+      "desc": "a brown zebra",
+      "category": "zebra",
+      "color": "brown",
+      "box": [
+        0.46003125,
+        0.5035208333333333,
+        0.671296875,
+        0.71575
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.4464584023355455,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4464584023355455,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sample_id": "mig303_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "303",
+  "caption": "a photo of a brown chair and a yellow chair and a blue chair and a red chair and a green potted plant and a blue bench",
+  "objects": [
+    {
+      "desc": "a brown chair",
+      "box": [
+        0.04141666666666667,
+        0.204816,
+        0.23661666666666667,
+        0.39867199999999997
+      ]
+    },
+    {
+      "desc": "a yellow chair",
+      "box": [
+        0.13216666666666665,
+        0.298928,
+        0.3494666666666667,
+        0.49676800000000004
+      ]
+    },
+    {
+      "desc": "a blue chair",
+      "box": [
+        0.6602666666666667,
+        0.292864,
+        0.8977166666666666,
+        0.49832
+      ]
+    },
+    {
+      "desc": "a red chair",
+      "box": [
+        0.7447,
+        0.203504,
+        0.93915,
+        0.43614400000000003
+      ]
+    },
+    {
+      "desc": "a green potted plant",
+      "box": [
+        0.6381333333333333,
+        0.8671200000000001,
+        0.8187833333333333,
+        0.9977440000000001
+      ]
+    },
+    {
+      "desc": "a blue bench",
+      "box": [
+        0.1051,
+        0.10224,
+        0.9062,
+        0.290576
+      ]
+    }
+  ],
+  "seconds": 5.341,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

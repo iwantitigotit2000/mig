@@ -1,0 +1,369 @@
+{
+  "sample_id": "mig708_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "180267236ecd0d738cd65b2a1f72de56595bc0ac",
+  "detections": {
+    "donut": {
+      "xyxy": [
+        [
+          225.61361694335938,
+          161.82090759277344,
+          447.8341979980469,
+          446.81304931640625
+        ],
+        [
+          382.5751037597656,
+          128.260986328125,
+          511.7323913574219,
+          354.8706970214844
+        ],
+        [
+          184.09133911132812,
+          9.241470336914062,
+          344.9486999511719,
+          199.26637268066406
+        ],
+        [
+          0.40262603759765625,
+          8.06024169921875,
+          185.49755859375,
+          231.9794158935547
+        ],
+        [
+          321.1463928222656,
+          1.3753280639648438,
+          449.8689880371094,
+          155.48931884765625
+        ],
+        [
+          19.047653198242188,
+          217.83807373046875,
+          264.3660888671875,
+          511.28790283203125
+        ]
+      ],
+      "conf": [
+        0.8400081396102905,
+        0.7227924466133118,
+        0.7225393652915955,
+        0.7089062333106995,
+        0.6401085257530212,
+        0.6251073479652405
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a red donut",
+      "category": "donut",
+      "color": "red",
+      "box": [
+        0.48224999999999996,
+        0.32966666666666666,
+        0.8546875,
+        0.8398958333333333
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.7865773595318544,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "dXb3h0Q??C8C>_Ob0H;E8I6K3L3N3M3L4M3M3M3L5L3K5K6L4K4L4M4L4L4K4M3M3M3M3M2N3M4L3M3L3N2N3M3M2M3M3N3L3N2N3N1N2O2M2N3N1N2O0O2O1N2O1N2O1N2O1O0O2N1O3M2O0O2N2O1O0010O0100O00001O001O00001N10001O0O10001O0O10000000000O101O000000000000000000000001O000000000000001N10001O0O10001O0000001O001O001O1N101O0O1000O010000O101N100O2O001N1O2O1N2O1N1O2O1N2N2O1N1O2O1N3M2N2N2O1N2N2O1N2N2O1N2N2N2N2M3M4M2M3N2N2N2N3M2N2M3N2N3M2N3K5K5L5J5L4L5K4K6J6K4L5K6J5J5I9H:G6I7E?]Oi0PO^gP1"
+      },
+      "sam_score_gt_box": 0.9920014142990112,
+      "mask_area": 48398,
+      "color_ratios": {
+        "red": 0.9018761105830819,
+        "blue": 0.0,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.031736848630108686,
+        "white": 6.198603248068103e-05,
+        "brown": 8.264804330757469e-05
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7865773595318544,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7865773595318544,
+      "o2o_det": [
+        225.61361694335938,
+        161.82090759277344,
+        447.8341979980469,
+        446.81304931640625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9310991328802437
+    },
+    {
+      "idx": 1,
+      "desc": "a green donut",
+      "category": "donut",
+      "color": "green",
+      "box": [
+        0.0050625,
+        0.015729166666666666,
+        0.37584375000000003,
+        0.4224791666666667
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.8880485074754128,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "h2T2i=7I8I7I5K5K4M7H4L4M3L4M3L5L3M3L3N3M2N3M2N2N3M2M3O1M3N2N2O1M3O1N1O2N2N101N1O2N101N1O2O0O2N1O2O0O101N1O1O2O0O100O100O1O100O1O100O101N100O101N101N100O101O0O100O1000O10O01O10O0100O1O010O10000O10O1000O100O10000O10000O1000000O101N1000000O1000001O0O1000001O000O2O0000001N101O000O2O0O2O0O2O1N1O2N101N2N101N2N2O1N2N1O2O1N2O1N2N2N2N2M3N3M2M3N2M4M2M3M4L4L3N3L3M5J5M3J6K5K6UOoB^NV=S1_CbNh<R1mnS5"
+      },
+      "sam_score_gt_box": 1.0120996236801147,
+      "mask_area": 33278,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.03443716569505379,
+        "yellow": 0.00042069835927639884,
+        "green": 0.6019592523589158,
+        "black": 0.23297674139070856,
+        "white": 0.043812729130356394,
+        "brown": 0.014874691988701245
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8880485074754128,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8880485074754128,
+      "o2o_det": [
+        0.40262603759765625,
+        8.06024169921875,
+        185.49755859375,
+        231.9794158935547
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6035210418425178
+    },
+    {
+      "idx": 2,
+      "desc": "a green donut",
+      "category": "donut",
+      "color": "green",
+      "box": [
+        0.06742187499999999,
+        0.38202083333333337,
+        0.512359375,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.8657324928826002,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "i[:d0n>i0]Oa0A;F:G9F9I6I9I5I<E:F8I6H9I6J6I6J8I7H:G7H4M4K3M3M3N2N2N2M3N2N2O1M3O1N2O1O1N2O1O1O1O1O100O1O1O1O1O1O1O100O1O1O100O1O100O1O100O100O100O1O100O100O10000O100O10000O10000O10000O100O1000000O10000O100000000O10000O1000000000000O1000000001O00000000001O0000001O0000001O001O00001O001O001O001O001O1O1O1O1O001O1O1O001O1O1O1O001O1O001O001O1O001O001O1O1O001O1O001O1O1O1O1O1O1O1O1O1O1O2N1O2N1O1O2N1O2N2N1O2N3M2N2N2N2N3M2N3M2N6J5K4L3M4L:F3M2N2N1O3M2N2N2N2N2N2N2N3M3M3M3M3M3M4L3M4L2N4J5J7I8H;C<E?@a0@d0YOmQl3"
+      },
+      "sam_score_gt_box": 1.0055549144744873,
+      "mask_area": 57777,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.011232843519047372,
+        "yellow": 0.0,
+        "green": 0.8137148000069232,
+        "black": 0.09633591221420289,
+        "white": 0.019298336708378768,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8657324928826002,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8657324928826002,
+      "o2o_det": [
+        19.047653198242188,
+        217.83807373046875,
+        264.3660888671875,
+        511.28790283203125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.8137036075785102
+    },
+    {
+      "idx": 3,
+      "desc": "a red donut",
+      "category": "donut",
+      "color": "red",
+      "box": [
+        0.7449375,
+        0.2770208333333333,
+        1.0,
+        0.6689166666666667
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.8768218101013484,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "WUP66h?4L4M1N3M3M3M3M3N2M3N2N2N2N2N2N2O1M3N2N2O1M3O1N2N2N2O1N2O2M2O1O1N2O1O2M2O1O1O1O1O2N2N2N2N2N2N1O3M3M2N2N5K2O2M3M3M2O4K6J4M3UFQL]7]4mGlKR8^4oFXLQ9[500001O000010O01N10010N101O00001O001O001O001N2O001O1O0O2O1O0O2O1N101O1N2O1O0O2O1N2O1N101N2O1N2O1N2N2N2O2M2N2O1N2N2N3M2N3L3N2N3L\\J"
+      },
+      "sam_score_gt_box": 1.0101165771484375,
+      "mask_area": 17301,
+      "color_ratios": {
+        "red": 0.21651927634240795,
+        "blue": 0.028784463325819316,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.38986185769608694,
+        "white": 0.014912432807352176,
+        "brown": 0.0006358013987630773
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8768218101013484,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8768218101013484,
+      "o2o_det": [
+        382.5751037597656,
+        128.260986328125,
+        511.7323913574219,
+        354.8706970214844
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2162567832813763
+    },
+    {
+      "idx": 4,
+      "desc": "a green donut",
+      "category": "donut",
+      "color": "green",
+      "box": [
+        0.607796875,
+        0.0051875,
+        0.868828125,
+        0.32987500000000003
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.8165707524078568,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "QQR55i?4L4K4L4N3M2N3M3M3M3M3M3M3M9G5K6K3L5K8I;VC\\Ma;e3M1N2O1O1N2O001N2O1O1N2O1O001O001N2O1O1O1O1O1O00001O1O1O001O0000100O1O00001OO2N1N2O1O2N1N2O2N1N2O1O2N1O2N1O2N1O1O2N1O2N1O2N2N1O2N101N2O0O2O1O1O001N2O1O1O001O2N1O002N1O1O1O1O2N1O2N1O2N1O2N2N2N2M3M4J5L5I8G:D`0]Ok]o0"
+      },
+      "sam_score_gt_box": 0.9958746433258057,
+      "mask_area": 13675,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.02340036563071298,
+        "yellow": 7.312614259597807e-05,
+        "green": 0.7670932358318099,
+        "black": 0.13872029250457038,
+        "white": 0.029981718464351007,
+        "brown": 0.0004387568555758684
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8165707524078568,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8165707524078568,
+      "o2o_det": [
+        321.1463928222656,
+        1.3753280639648438,
+        449.8689880371094,
+        155.48931884765625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7797556978995978
+    },
+    {
+      "idx": 5,
+      "desc": "a blue donut",
+      "category": "donut",
+      "color": "blue",
+      "box": [
+        0.361328125,
+        0.009125,
+        0.66796875,
+        0.384125
+      ],
+      "status": "ok",
+      "n_det": 6,
+      "present_any": true,
+      "loc_iou": 0.9406182235220378,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "bbl2f0T?=F>A6L4L4K5L4M4K4J7K5K6K4L5K4K4M3L4M3M2N3M2N3M2N2O1N2O1N2N2M3N2N2N2O1N1O2N2N2O1N1O2O1N2O0O2N2O0O2O1N101O00001N10001O001O000000001O00000O1O10O100O1O1O1O1O1O1O1N2O1O1N2N101O1O1O2N101N2N1O10000O2O0O100O2O0O10001N1O2N2N1O1O1O2N1O1O2O1O010O10000O10O01O1O1O1O2N1O1O1N101O1O1N101O2N1O1O001O1O2M2O2N2M3M3L4K6J:F8G8H7H9G:E`0]OUmc2"
+      },
+      "sam_score_gt_box": 1.009124517440796,
+      "mask_area": 22337,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.9249227738729462,
+        "yellow": 0.0,
+        "green": 0.002686126158391906,
+        "black": 0.0034471952366029457,
+        "white": 0.0021936696960200563,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9406182235220378,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9406182235220378,
+      "o2o_det": [
+        184.09133911132812,
+        9.241470336914062,
+        344.9486999511719,
+        199.26637268066406
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9248880931065354
+    }
+  ]
+}

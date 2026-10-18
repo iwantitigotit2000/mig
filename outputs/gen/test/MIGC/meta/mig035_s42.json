@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig035_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "35",
+  "caption": "a photo of a yellow laptop and a brown laptop and a black book",
+  "objects": [
+    {
+      "desc": "a yellow laptop",
+      "box": [
+        0.01103125,
+        0.152140625,
+        0.504953125,
+        0.8305312499999999
+      ]
+    },
+    {
+      "desc": "a brown laptop",
+      "box": [
+        0.49887499999999996,
+        0.13670312499999998,
+        1.0,
+        0.8872656250000001
+      ]
+    },
+    {
+      "desc": "a black book",
+      "box": [
+        0.49887499999999996,
+        0.289890625,
+        0.662921875,
+        0.462921875
+      ]
+    }
+  ],
+  "seconds": 6.347,
+  "peak_mem_allocated_gb": 7.824,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

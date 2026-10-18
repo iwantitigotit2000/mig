@@ -1,0 +1,70 @@
+{
+  "sample_id": "mig043_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "43",
+  "caption": "a photo of a yellow fork and a brown cake and a red cake and a black cake",
+  "objects": [
+    {
+      "desc": "a yellow fork",
+      "box": [
+        0.000484375,
+        0.5353286384976526,
+        0.21384375000000003,
+        0.9734741784037559
+      ]
+    },
+    {
+      "desc": "a brown cake",
+      "box": [
+        0.125640625,
+        0.5550469483568075,
+        0.49360937499999996,
+        0.9303286384976526
+      ]
+    },
+    {
+      "desc": "a red cake",
+      "box": [
+        0.45621875,
+        0.0,
+        0.9124375,
+        0.8539436619718309
+      ]
+    },
+    {
+      "desc": "a black cake",
+      "box": [
+        0.2725,
+        0.24629107981220658,
+        0.5152187500000001,
+        0.5773943661971832
+      ]
+    }
+  ],
+  "seconds": 6.5,
+  "peak_mem_allocated_gb": 7.821,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

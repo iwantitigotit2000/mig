@@ -1,0 +1,141 @@
+{
+  "sample_id": "mig015_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "4d419b17f291a5016aca647eb79907683473b3a8",
+  "detections": {
+    "clock": {
+      "xyxy": [
+        [
+          367.4715881347656,
+          56.58845138549805,
+          439.1257629394531,
+          158.74505615234375
+        ]
+      ],
+      "conf": [
+        0.6075788736343384
+      ]
+    },
+    "train": {
+      "xyxy": [
+        [
+          0.12158203125,
+          168.12571716308594,
+          431.8493957519531,
+          483.93060302734375
+        ]
+      ],
+      "conf": [
+        0.9392860531806946
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white train",
+      "category": "train",
+      "color": "white",
+      "box": [
+        0.0016875000000000002,
+        0.294375,
+        0.77021875,
+        0.9258333333333334
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8406157526570461,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "\\5b9^600000000O100O2O000O10001N100O10000O101N100O10000O101N10000O101O0O100O100O101O0O100O10001N100O10000O101N10000O100O101O0O1O101N10000O10001N100O10000O100O101N100O100O10000O101N100O100O100O101O0O1O100O1O100O2N1O10000O2N1000000O2O0O1000000O2O0O10000O101N100O100O101O0O100O100O2O0O1000000O2O0O100O100O2N100O10000O2O0O100O100O2O0O100O1O101O0O100O10001N1O100O10000O2O0O1O10000O2O0O100O100O2O0O10000O1O2O0O10000O101N10000O1O100O2O0O100O101N10000O101N100O100O100O2O0O10000O100O2O0O100O10001N100O100O2O0O10000O101N100O100O2O000O100O1O101N10000O1O101N100O10000O2O0O1O1O1000001N1O100O101N1000000O2O0O100O100O2O0O1O100O101O0O10000O2N100O100O101N100O101O000O1O10000O101N1O100O101N1O1O100O101N100O1M3O10001N100O1O1O2O01O00O100O2M2O1O11OO2O0O100O1O100O2N1O1O100O101N100O100O101N1O1O10000O2O0O100O101N1O100O1O101N100O100O2O000O2O1N101O1M6SOWA8VWb1"
+      },
+      "sam_score_gt_box": 1.0067968368530273,
+      "mask_area": 74756,
+      "color_ratios": {
+        "red": 0.019864626250735727,
+        "blue": 0.0008293648670340843,
+        "yellow": 0.00042805928621114024,
+        "green": 0.0002942907592701589,
+        "black": 0.10878056610840602,
+        "white": 0.15553266627427897,
+        "brown": 0.0229279255176842
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8406157526570461,
+      "o2o_det": [
+        0.12158203125,
+        168.12571716308594,
+        431.8493957519531,
+        483.93060302734375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.15497481276153416
+    },
+    {
+      "idx": 1,
+      "desc": "a black clock",
+      "category": "clock",
+      "color": "black",
+      "box": [
+        0.725671875,
+        0.1095,
+        0.854859375,
+        0.29210416666666666
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.836116605390896,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "]Sh5:_?`0C8I6I6L3L4L3N1N4M7H5K5M3L3N2O1N2O001N2O0O101N10001N100O100O10000O100001O00001O0O2O000O2O001N100O2O0O2O0O2N2N3M3M3M4L3M3L4L4L4L3bNfAQ1_>mNbA1Lh0o>UOUAd0m>_Ok]U1"
+      },
+      "sam_score_gt_box": 0.9884999990463257,
+      "mask_area": 5365,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.014911463187325256,
+        "yellow": 0.0,
+        "green": 0.0001863932898415657,
+        "black": 0.278098788443616,
+        "white": 0.002423112767940354,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.836116605390896,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.836116605390896,
+      "o2o_det": [
+        367.4715881347656,
+        56.58845138549805,
+        439.1257629394531,
+        158.74505615234375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2742468772961058
+    }
+  ]
+}

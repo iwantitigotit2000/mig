@@ -1,0 +1,191 @@
+{
+  "sample_id": "mig372_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "403a3d35705f7b2a28b363affc6ab25f54916216",
+  "detections": {
+    "dining table": {
+      "xyxy": [
+        [
+          -0.028133392333984375,
+          325.73016357421875,
+          119.17031860351562,
+          511.77508544921875
+        ]
+      ],
+      "conf": [
+        0.48724326491355896
+      ]
+    },
+    "oven": {
+      "xyxy": [
+        [
+          375.60296630859375,
+          366.6546936035156,
+          511.91864013671875,
+          511.9784240722656
+        ],
+        [
+          384.20703125,
+          407.9371337890625,
+          511.79058837890625,
+          512.0578002929688
+        ]
+      ],
+      "conf": [
+        0.4295891225337982,
+        0.2809375822544098
+      ]
+    },
+    "refrigerator": {
+      "xyxy": [
+        [
+          258.77203369140625,
+          117.08317565917969,
+          418.7655029296875,
+          504.38177490234375
+        ]
+      ],
+      "conf": [
+        0.9332135319709778
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue refrigerator",
+      "category": "refrigerator",
+      "color": "blue",
+      "box": [
+        0.512078125,
+        0.2336065573770492,
+        0.804453125,
+        0.9842622950819672
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9284804921925741,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ldR4Q1^>d0`DjNSMn2]7_NSK^2g4oMjHTN2ENS17X3k6JUI8h6JWI7f6JZI9c6H]I9`6I`I8^6IbI9Z6mN_IWM7m3X6lNaIXM7n3T6kNeIXM7m3S6JmI8o5JQJ7m5JSJ8j5IVJ8g5JYJ7e5J[J8a5eNYJZM7R4^5dN[J[M6T4[5GaJTKOV5^5GbJSK0X5[5FeJSK0Y5X5DiJRK0Z5U5FkJQKO[5S5DoJPKN_5o4BYK`0d4@\\Ka0b4A\\Kd0`4]O_Kf0^4[O]KkJOl5b4YO^KmJOl5a4WOaKkJOQ6\\4UOdKS1Y4mNgKU1W4kNiKW1U4jNjKX1T4hNlKY1S4gNmKY1T4fNlK[1S4eNnKZ1R4fNmK[1S4eNmKlJ0Y6T4POlKP1T4^500NbIoKQ1Q4_5O10000O10000000000001O000O10001O0000001O00000O1000000000000O1O1N3XJiKZOb4f0aKbNT5]1PKbMn5^2WJZLl6f3YIfJV8Z5X100000000O100000000000000000000000000000000000000000000000001O00000000000000000000000000000000001`LfF8Z9PO^GP1c8VNWHi1P;000001O00001O000000001O00000O2J5]Od0XOi0XOZi^1"
+      },
+      "sam_score_gt_box": 1.0020344257354736,
+      "mask_area": 40519,
+      "color_ratios": {
+        "red": 0.0002714775784200005,
+        "blue": 0.7663812038796614,
+        "yellow": 0.004047483896443643,
+        "green": 0.0,
+        "black": 0.0031096522619018237,
+        "white": 0.005306152669118191,
+        "brown": 0.10439546879241837
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9284804921925741,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9284804921925741,
+      "o2o_det": [
+        258.77203369140625,
+        117.08317565917969,
+        418.7655029296875,
+        504.38177490234375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7624116954474097
+    },
+    {
+      "idx": 1,
+      "desc": "a white dining table",
+      "category": "dining table",
+      "color": "white",
+      "box": [
+        0.0,
+        0.6269789227166277,
+        0.23343750000000002,
+        0.9859016393442623
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9357519041124484,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "[:d4\\;0O10000000O1000000000000O1000O10000000O10000007I;E;E7I00000000000O100000000000000000000000dNYF_Lg9a3lFlKT9S4]1O100O1O1O1N2M3L4N2N2N2M2N3N2N2N2M3006J>B?Aa0_O?A3M00001O0000008H00000000000000000000000000]LRFTOIgNR<T2\\DoMg<Q2d000000000O10000000000000000O1K5F:G9H8G9H8I9FoeT6"
+      },
+      "sam_score_gt_box": 0.9981541633605957,
+      "mask_area": 16197,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.07291473729703031,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.909551151447799,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9357519041124484,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9357519041124484,
+      "o2o_det": [
+        -0.028133392333984375,
+        325.73016357421875,
+        119.17031860351562,
+        511.77508544921875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9098882094991044
+    },
+    {
+      "idx": 2,
+      "desc": "a blue oven",
+      "category": "oven",
+      "color": "blue",
+      "box": [
+        0.6581875,
+        0.49662763466042154,
+        0.9985312499999999,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.4379776253324399,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4379776253324399,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.4379776253324399,
+      "o2o_det": [
+        375.60296630859375,
+        366.6546936035156,
+        511.91864013671875,
+        511.9784240722656
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

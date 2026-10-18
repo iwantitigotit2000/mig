@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig031_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "31",
+  "caption": "a photo of a white dining table and a white donut and a green cake and a yellow cake",
+  "objects": [
+    {
+      "desc": "a white dining table",
+      "box": [
+        0.005059999999999999,
+        0.008986666666666667,
+        0.9337,
+        0.9325866666666668
+      ]
+    },
+    {
+      "desc": "a white donut",
+      "box": [
+        0.24662,
+        0.06418666666666667,
+        0.7212799999999999,
+        0.4966133333333333
+      ]
+    },
+    {
+      "desc": "a green cake",
+      "box": [
+        0.0016799999999999999,
+        0.004506666666666667,
+        0.16516,
+        0.37304
+      ]
+    },
+    {
+      "desc": "a yellow cake",
+      "box": [
+        0.2528,
+        0.06517333333333333,
+        0.74832,
+        0.5707733333333334
+      ]
+    }
+  ],
+  "seconds": 5.234,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

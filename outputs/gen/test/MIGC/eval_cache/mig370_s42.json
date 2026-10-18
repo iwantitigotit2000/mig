@@ -1,0 +1,194 @@
+{
+  "sample_id": "mig370_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "1b54bb917edb54f4989a6e8fc21947133a9f1f07",
+  "detections": {
+    "boat": {
+      "xyxy": [
+        [
+          356.3350524902344,
+          290.3656311035156,
+          511.7113342285156,
+          403.2808532714844
+        ],
+        [
+          325.24053955078125,
+          57.11478805541992,
+          400.11517333984375,
+          146.3527374267578
+        ],
+        [
+          40.84507751464844,
+          0.587646484375,
+          332.572021484375,
+          273.0113525390625
+        ]
+      ],
+      "conf": [
+        0.7400868535041809,
+        0.5850986838340759,
+        0.44822490215301514
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green boat",
+      "category": "boat",
+      "color": "green",
+      "box": [
+        0.63584375,
+        0.14629032258064517,
+        0.788703125,
+        0.29096774193548386
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.7449907172785167,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "\\SS59e?8F8J6I5K6D?H3O000000000O2O00000000001O000000000000001O000O100O1001O000000000000000000000O2O0000001O0000000000000000001O000000000O2O0G9O2M5mN`A?S?K4K7Bllg1"
+      },
+      "sam_score_gt_box": 0.9962755441665649,
+      "mask_area": 4203,
+      "color_ratios": {
+        "red": 0.026409707351891507,
+        "blue": 0.25933856768974545,
+        "yellow": 0.0035688793718772305,
+        "green": 0.258148941232453,
+        "black": 0.07827742088984059,
+        "white": 0.013323816321674994,
+        "brown": 0.027599333809183915
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7449907172785167,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7449907172785167,
+      "o2o_det": [
+        325.24053955078125,
+        57.11478805541992,
+        400.11517333984375,
+        146.3527374267578
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2560659599528857
+    },
+    {
+      "idx": 1,
+      "desc": "a red boat",
+      "category": "boat",
+      "color": "red",
+      "box": [
+        0.700875,
+        0.5840967741935483,
+        0.996078125,
+        0.7917741935483871
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8818689779462923,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Sjc53l?3Ni0[NSOeBQ1W=SOeBo0Z=TObBn0\\=UOaBn0]=UO_Bm0`=VO]Bk0b=ZO[Be0c=m001O000O2O2N3M3M4K5L0000O1O1O001O1O1O2N1O1O001O2N1O1O1O1O1O1O1O1O001O2N2N1O00O1N2M3L4K5L4N2O1000000001N10001O0000000000000000001O000000000000001O0000000001O000001O000000000000001O000000001O000000000000010O00000000001O000000001O000000001O000000001O000000001O0000001O0O101O0O1O2L3N3N1N2OhE"
+      },
+      "sam_score_gt_box": 0.9924360513687134,
+      "mask_area": 11877,
+      "color_ratios": {
+        "red": 0.20291319356739917,
+        "blue": 0.01178748842300244,
+        "yellow": 0.009429990738401953,
+        "green": 0.022564620695461817,
+        "black": 0.45929106676770226,
+        "white": 0.015913109371053297,
+        "brown": 0.03418371642670708
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8818689779462923,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8818689779462923,
+      "o2o_det": [
+        356.3350524902344,
+        290.3656311035156,
+        511.7113342285156,
+        403.2808532714844
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2027367360644728
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow boat",
+      "category": "boat",
+      "color": "yellow",
+      "box": [
+        0.0875,
+        0.012903225806451613,
+        0.7515625,
+        0.5096774193548387
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.7890941322204172,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "gbe05f?a0B:G8I6I8I6I7J4M3L3M2N3M4L3L5L2O2M2N2N3M2N3M2M4M3M1O3M3M2N2N2M3N2N2N2N2N2N2N2N2N1O2N1O2N2N1O2N1O2N1N3N1O2N1O2N1O1O1O1O1O1O2N9G1N2O001O000000000O10O1O1M3O100O101O0O011N1O100O10000O100O100000O2O:F3M000000001O00O1000000O1N1^Oc0M30000O10000O100000O10O100O1000O010000O100O10000O10000O100O10@TKhEP5P:c0F;GnJfFo3S9VLQGi3c8ULkGj3S8hK^HX4c7WKmHi4U9O100O100O100O100O010O100O0010000O10O01O010O100O010O010O1O01TO[K]Fd4c9_K[Fa4e9_KZFa4g9_KYF`4h9aKSFIBg4[:bKeEl4\\:;01N1E]JXFe5h9:0VKSF`3n9XL[Ff3f9VL^Fi3c9hKQF0<W4d9gKSF0:Y4b9eKXF16Y4c9dKYF34X4b9aK`F7NX4V:hKjEW4W:iKiEV4X:jKhEU4Y:kKgET4[:kKfES4[:mKeES4[:mKeER4\\:nKeEP4\\:PLdEo3]:PLeEn3]:mKgEQ4V;N2N1O2O1N1O2N1O2M3O0O1O1O2N1N2O1N2O1O1O1O1O1O1O1O1O1O1O2O0O1N2O100O1O1O100O100O1O1N2O1O1N2O1N2N2O2M2O1N2N2O1N2N2O1N2N3M2O1N2N2N2N2N2O1N2N2N2N2M3M4K4M4Ijmj2"
+      },
+      "sam_score_gt_box": 0.9914627075195312,
+      "mask_area": 39502,
+      "color_ratios": {
+        "red": 0.0018986380436433598,
+        "blue": 0.0057465444787605695,
+        "yellow": 0.19776213862589237,
+        "green": 0.0031897119133208443,
+        "black": 0.08078071996354615,
+        "white": 0.0011644980001012607,
+        "brown": 0.8653232747708977
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.7890941322204172,
+      "o2o_det": [
+        40.84507751464844,
+        0.587646484375,
+        332.572021484375,
+        273.0113525390625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.19767530198283065
+    }
+  ]
+}

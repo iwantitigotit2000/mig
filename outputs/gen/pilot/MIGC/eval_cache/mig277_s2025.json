@@ -1,0 +1,119 @@
+{
+  "sample_id": "mig277_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "0f1847c239c9b20f7348caf23a9a2a3cb1f845ce",
+  "detections": {
+    "clock": {
+      "xyxy": [
+        [
+          243.82542419433594,
+          0.059478759765625,
+          340.6346435546875,
+          117.21919250488281
+        ]
+      ],
+      "conf": [
+        0.909583568572998
+      ]
+    },
+    "toilet": {
+      "xyxy": [
+        [
+          169.25155639648438,
+          317.1534423828125,
+          341.3589782714844,
+          511.6619873046875
+        ]
+      ],
+      "conf": [
+        0.8347024917602539
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green toilet",
+      "category": "toilet",
+      "color": "green",
+      "box": [
+        0.3453541666666667,
+        0.6047343749999999,
+        0.6666666666666666,
+        0.9876093749999999
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8932994393539049,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "YZf2460W?`0M111N2O1N3Nn0RO8H1O1O1O002M2O1mBPNT<X2`CUNW<l2NO1O10000EdCRM\\<o2dCQM[<\\3N00N23M1O1O1O001O2N1O2N1O1O1O1O1O1O1O1O1O001O1O1O001O1O1O001O1cEkKm8U4PGPLn8Q4mFTLR9l3kFWLU9i3eF]L[9d3`F`L_9b3\\FbLd9_3VFfLj9h41O000000O100000000001O0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cNVFdLj9[3ZFbLf9^3\\F`Ld9_3_F_La9a3bF\\L^9c3fFZLZ9f3lFRLV9m3QGlKQ9S4^1O100O100O1O2O0O100O1O2O0O1^MVDm0k;ROVDm0l;lN[DR1f;aNgD^1[;VNQEh1P;WNQEi1P;UNREh1Q;VNPEi1R;VNoDh1S;UNoDj1T;SNnDj1e<O2M2O2M3L4L3M5I6XObAEcRf2"
+      },
+      "sam_score_gt_box": 0.9999825954437256,
+      "mask_area": 24041,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0033276486003078077,
+        "yellow": 0.00016638243001539037,
+        "green": 0.7083316001830207,
+        "black": 0.11155941932531925,
+        "white": 0.0020797803751923796,
+        "brown": 0.001331059440123123
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8932994393539049,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8932994393539049,
+      "o2o_det": [
+        169.25155639648438,
+        317.1534423828125,
+        341.3589782714844,
+        511.6619873046875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7067834606443042
+    },
+    {
+      "idx": 1,
+      "desc": "a green clock",
+      "category": "clock",
+      "color": "green",
+      "box": [
+        0.4958958333333333,
+        0.008859375,
+        0.6548958333333333,
+        0.13565625
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.46596208127387884,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.46596208127387884,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.46596208127387884,
+      "o2o_det": [
+        243.82542419433594,
+        0.059478759765625,
+        340.6346435546875,
+        117.21919250488281
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

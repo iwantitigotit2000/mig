@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig694_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "694",
+  "caption": "a photo of a red clock and a black chair and a blue chair and a yellow dining table and a black chair and a blue book",
+  "objects": [
+    {
+      "desc": "a red clock",
+      "box": [
+        0.29596100278551535,
+        0.270375,
+        0.48916434540389975,
+        0.399234375
+      ]
+    },
+    {
+      "desc": "a black chair",
+      "box": [
+        0.003983286908077995,
+        0.538,
+        0.24381615598885795,
+        0.86984375
+      ]
+    },
+    {
+      "desc": "a blue chair",
+      "box": [
+        0.45935933147632313,
+        0.497640625,
+        0.7652924791086351,
+        0.76821875
+      ]
+    },
+    {
+      "desc": "a yellow dining table",
+      "box": [
+        0.0006128133704735376,
+        0.5180625,
+        0.6993036211699165,
+        0.77253125
+      ]
+    },
+    {
+      "desc": "a black chair",
+      "box": [
+        0.0,
+        0.543828125,
+        0.15966573816155988,
+        0.737359375
+      ]
+    },
+    {
+      "desc": "a blue book",
+      "box": [
+        0.6852367688022284,
+        0.2078125,
+        0.9972144846796658,
+        0.7
+      ]
+    }
+  ],
+  "seconds": 6.717,
+  "peak_mem_allocated_gb": 7.824,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

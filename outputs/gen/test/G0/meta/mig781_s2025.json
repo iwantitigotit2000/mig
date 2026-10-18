@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig781_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "781",
+  "caption": "a photo of a blue fork and a red knife and a red pizza and a white pizza and a yellow dining table",
+  "objects": [
+    {
+      "desc": "a blue fork",
+      "box": [
+        0.505032679738562,
+        0.0,
+        0.8360130718954248,
+        0.13839869281045752
+      ]
+    },
+    {
+      "desc": "a red knife",
+      "box": [
+        0.6966339869281045,
+        0.01573529411764706,
+        1.0,
+        0.26516339869281047
+      ]
+    },
+    {
+      "desc": "a red pizza",
+      "box": [
+        0.11684640522875818,
+        0.13933006535947712,
+        0.6696568627450981,
+        0.6876470588235294
+      ]
+    },
+    {
+      "desc": "a white pizza",
+      "box": [
+        0.46965686274509805,
+        0.6269607843137255,
+        0.7325816993464053,
+        0.869656862745098
+      ]
+    },
+    {
+      "desc": "a yellow dining table",
+      "box": [
+        0.0022549019607843133,
+        0.0022549019607843133,
+        0.9977450980392157,
+        0.9932516339869281
+      ]
+    }
+  ],
+  "seconds": 5.268,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

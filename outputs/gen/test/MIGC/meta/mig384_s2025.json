@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig384_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "384",
+  "caption": "a photo of a blue dining table and a yellow donut and a blue donut and a green donut and a red donut and a white donut",
+  "objects": [
+    {
+      "desc": "a blue dining table",
+      "box": [
+        0.0,
+        0.19220833333333334,
+        1.0,
+        0.9870208333333333
+      ]
+    },
+    {
+      "desc": "a yellow donut",
+      "box": [
+        0.47528125,
+        0.3325833333333333,
+        0.817421875,
+        0.6786458333333333
+      ]
+    },
+    {
+      "desc": "a blue donut",
+      "box": [
+        0.09628125,
+        0.4189166666666667,
+        0.34965625,
+        0.8017916666666667
+      ]
+    },
+    {
+      "desc": "a green donut",
+      "box": [
+        0.4245,
+        0.5930625,
+        0.6795312499999999,
+        0.8816458333333335
+      ]
+    },
+    {
+      "desc": "a red donut",
+      "box": [
+        0.7951875,
+        0.42375,
+        1.0,
+        0.6741458333333334
+      ]
+    },
+    {
+      "desc": "a white donut",
+      "box": [
+        0.044859375,
+        0.25335416666666666,
+        0.36921875000000004,
+        0.40439583333333334
+      ]
+    }
+  ],
+  "seconds": 7.006,
+  "peak_mem_allocated_gb": 7.817,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

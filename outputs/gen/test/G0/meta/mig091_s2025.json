@@ -1,0 +1,62 @@
+{
+  "sample_id": "mig091_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "91",
+  "caption": "a photo of a yellow banana and a green banana",
+  "objects": [
+    {
+      "desc": "a yellow banana",
+      "box": [
+        0.82534375,
+        0.0062,
+        0.9983437500000001,
+        0.4080222222222222
+      ]
+    },
+    {
+      "desc": "a green banana",
+      "box": [
+        0.0,
+        0.20404444444444442,
+        0.127703125,
+        0.5044888888888889
+      ]
+    }
+  ],
+  "seconds": 5.259,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

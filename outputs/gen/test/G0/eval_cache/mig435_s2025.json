@@ -1,0 +1,262 @@
+{
+  "sample_id": "mig435_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "85949f2cb60681979f980bb967474ec8c01c670d",
+  "detections": {
+    "microwave": {
+      "xyxy": [
+        [
+          333.484130859375,
+          187.95166015625,
+          464.42242431640625,
+          307.06878662109375
+        ]
+      ],
+      "conf": [
+        0.8670904636383057
+      ]
+    },
+    "oven": {
+      "xyxy": [
+        [
+          333.879638671875,
+          188.33497619628906,
+          464.27764892578125,
+          306.94757080078125
+        ],
+        [
+          418.05291748046875,
+          211.3195343017578,
+          512.052490234375,
+          511.79559326171875
+        ]
+      ],
+      "conf": [
+        0.5060917735099792,
+        0.271685928106308
+      ]
+    },
+    "refrigerator": {
+      "xyxy": [
+        [
+          418.361083984375,
+          211.1777801513672,
+          512.046875,
+          511.89202880859375
+        ]
+      ],
+      "conf": [
+        0.8735089898109436
+      ]
+    },
+    "sink": {
+      "xyxy": [
+        [
+          -0.055820465087890625,
+          320.4766540527344,
+          122.6085205078125,
+          398.8360290527344
+        ]
+      ],
+      "conf": [
+        0.74273681640625
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a yellow refrigerator",
+      "category": "refrigerator",
+      "color": "yellow",
+      "box": [
+        0.812359375,
+        0.4060625,
+        1.0,
+        0.9858333333333335
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9413735828277378,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "eoc67_?<H6I9D:F:H8I7G9I7L4E;^Ob0G9I7I7J6F^KoDi4l:6K7J7J5I7H8I7H9J5I7I7H8L4K4J\\HmGj7e7\\H[Hk7[7b0G9N2000000O10000O1O1O100O1O1O1O1O100O100O1O10000000000000000000000001O00000000000000001O00000000000000001O00"
+      },
+      "sam_score_gt_box": 0.9921269416809082,
+      "mask_area": 21091,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.13863733345976956,
+        "yellow": 0.0017068891944431275,
+        "green": 0.000758617419752501,
+        "black": 0.0007112038310179697,
+        "white": 0.24531790811246504,
+        "brown": 0.002560333791664691
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9413735828277378,
+      "o2o_det": [
+        418.361083984375,
+        211.1777801513672,
+        512.046875,
+        511.89202880859375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0017059994313335229
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow microwave",
+      "category": "microwave",
+      "color": "yellow",
+      "box": [
+        0.6524687499999999,
+        0.376375,
+        0.9047031249999999,
+        0.5961041666666667
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9315175014215268,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "VXX5`0T?=_Oa0]Ob0D=L3N2O2N1O2O1O1N101N101N100O101N10000O101O0000001O000000010O0000001O000000010O00001O000000010O0000001O000000010O0000001O0000001O0001O01O000000001O01O0001O000000001O01O00000001O0001O01O00000000O2O00000000001O0O100N2L4J7H7K5I7K5I7K5G9G9F:L40000O2M6Amig0"
+      },
+      "sam_score_gt_box": 1.0079426765441895,
+      "mask_area": 11783,
+      "color_ratios": {
+        "red": 8.486803021301876e-05,
+        "blue": 0.10370873292030892,
+        "yellow": 0.0007638122719171688,
+        "green": 0.0,
+        "black": 0.5914453025545278,
+        "white": 0.0,
+        "brown": 0.002121700755325469
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9315175014215268,
+      "o2o_det": [
+        333.484130859375,
+        187.95166015625,
+        464.42242431640625,
+        307.06878662109375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0007628411595185624
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow oven",
+      "category": "oven",
+      "color": "yellow",
+      "box": [
+        0.567984375,
+        0.622625,
+        0.862921875,
+        0.9821666666666667
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.08466340658806647,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.08466340658806647,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.08466340658806647,
+      "o2o_det": [
+        418.05291748046875,
+        211.3195343017578,
+        512.052490234375,
+        511.79559326171875
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a green sink",
+      "category": "sink",
+      "color": "green",
+      "box": [
+        0.0,
+        0.6133958333333334,
+        0.2515,
+        0.7613541666666667
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.7824157019233198,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "a:k1T>101N100O10000O100O10000O100O10000O10001N100O10000O10000000000O100000O1000O1000000O1000O10O100000O1000000O10000O10000O100O10000O100O100O100O100O10000O100O1O2O0O10000O100O100O100O100O100O101N100O100O100O2O0O100O101N100O2N100O2O0O2O1N102^OQANQ?ORANR?NRAOc?KodR6"
+      },
+      "sam_score_gt_box": 1.0050381422042847,
+      "mask_area": 7403,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.9972983925435635,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.0,
+        "brown": 0.010401188707280832
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7824157019233198,
+      "o2o_det": [
+        -0.055820465087890625,
+        320.4766540527344,
+        122.6085205078125,
+        398.8360290527344
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    }
+  ]
+}

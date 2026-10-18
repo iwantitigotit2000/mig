@@ -1,0 +1,263 @@
+{
+  "sample_id": "mig043_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "0eeb3525b09dd5295836deb0767256ad5616090f",
+  "detections": {
+    "cake": {
+      "xyxy": [
+        [
+          137.43251037597656,
+          118.34159851074219,
+          259.9837951660156,
+          284.927490234375
+        ],
+        [
+          68.02363586425781,
+          288.4400939941406,
+          236.7280731201172,
+          482.3146057128906
+        ],
+        [
+          229.8484344482422,
+          0.1556854248046875,
+          451.76220703125,
+          439.50396728515625
+        ]
+      ],
+      "conf": [
+        0.703690230846405,
+        0.7023559808731079,
+        0.5083916187286377
+      ]
+    },
+    "fork": {
+      "xyxy": [
+        [
+          0.02447509765625,
+          273.2925720214844,
+          109.73104095458984,
+          465.6215515136719
+        ]
+      ],
+      "conf": [
+        0.8403636813163757
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a yellow fork",
+      "category": "fork",
+      "color": "yellow",
+      "box": [
+        0.000484375,
+        0.5353286384976526,
+        0.21384375000000003,
+        0.9734741784037559
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.847688792711414,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "[=T1j>10O0O2O001N1O2O01O01O001O00001O00001O1O0000001O00010O001O00iN^ORCb0n<BnB?Q=ElB:T=IiB7X=LdB4\\=ObB1^=3]BMc=8XBHi=V1010O1O010O1O00100O100O02O000O2O001N2O1OeNUBc0j=\\OYBb0f=^O[Bc0d=]O]Bc0b=\\O_Be0`=[O`Bf0_=ZOaBg0]=YOdBh0[=XOeBi0Z=VOgBj0Y=VOfBl0Y=TOgBl0X=TOiBm0V=ROkBn0U=ROkBn0U=ROjB1I7]=GkB0K8Z=HkB0K8Y=HlB1L6X=IlB0M6X=IkB1N6X=HjB2M7Y=GiB3N5[=FhB4M7]=BfB8M5_=AeB9M4c=_O`B>MOW>1kAE^>:c00001O00010O2N2N2N2N4K_`0Ob_O3O1N2O10O01001N3LPgX6"
+      },
+      "sam_score_gt_box": 0.9870593547821045,
+      "mask_area": 4424,
+      "color_ratios": {
+        "red": 0.01604882459312839,
+        "blue": 0.0002260397830018083,
+        "yellow": 0.0054249547920434,
+        "green": 0.0027124773960217,
+        "black": 0.002938517179023508,
+        "white": 0.778254972875226,
+        "brown": 0.1114376130198915
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.847688792711414,
+      "o2o_det": [
+        0.02447509765625,
+        273.2925720214844,
+        109.73104095458984,
+        465.6215515136719
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.005255941499085923
+    },
+    {
+      "idx": 1,
+      "desc": "a brown cake",
+      "category": "cake",
+      "color": "brown",
+      "box": [
+        0.125640625,
+        0.5550469483568075,
+        0.49360937499999996,
+        0.9303286384976526
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8518585742389553,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "_mR11l?8\\OLPA9KDi>8ZA<a>G\\A<a>d0K4nAjNT=]1hBjNo<\\1oBiNh<^1UCcNd<`2K5I7I7L4L4N2L4I7C=E;K6L3N2N20O01000000000000000000O010000001O00000000O10O100000O10000000000000000001O0O10000000000000O10000O10O10O10000O100000000O10O1000000000O1000O10O1000000O1000O10O10000O100000O10000000O10O10000000O10001O2M3N3M3M3M2N3L4M2N2N3L4M2N3M2M4M3M3M2N4L2M3N3M3M3M2N3L4M3M1N4M2M2N4L3WN_Bo0c=mNbBCOQ1c=kNWCU1k=M3[OUA2_?M101N1M[RZ4"
+      },
+      "sam_score_gt_box": 1.005989670753479,
+      "mask_area": 24857,
+      "color_ratios": {
+        "red": 0.6171299835056523,
+        "blue": 0.0,
+        "yellow": 0.013718469646377279,
+        "green": 4.0230116265036e-05,
+        "black": 0.011023051856619866,
+        "white": 0.0014482841855412963,
+        "brown": 0.3847206018425393
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8518585742389553,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8518585742389553,
+      "o2o_det": [
+        68.02363586425781,
+        288.4400939941406,
+        236.7280731201172,
+        482.3146057128906
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.38494684278350516
+    },
+    {
+      "idx": 2,
+      "desc": "a red cake",
+      "category": "cake",
+      "color": "red",
+      "box": [
+        0.45621875,
+        0.0,
+        0.9124375,
+        0.8539436619718309
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.9145522921925001,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "^kc3;`?8I4J6K6J5F:I7M4N4L`0_O3M2M5L2L4K6I7L301M2J6N2K5K5M2O2N1J7L3K6O1M2N3O1O1M3M3@lJoEY5j9b0O1N2N2O100O1O1O1N2N2J6J7I6H9L7J3M3L3O2N1O2N2XOWHVIl7e6`HQIc7j6m0L2H9L3N3dI]F34l5m9M2K4L5M2H8O1D<N2O1N1K6N1O1O2O0O2O0N2H9H8J6N3N1O101O0VOcCPN_<l1kCmMV<R2nCiMS<W2QDcMP<^2i00001O0000000000001O00O1000000000000O1N2O11OL`MhB`2W=bMiB]2m<mMSCEN[2d<[NaCe1Z<`NfC`1S<jNjCV1T<mNkCS1R<QOmCo0P<b1MbMSDo0k;d1K5M3M3M3L4M3N2O1M3E;L4N2L4J6J6K5E;I7J6J6J6L4J6K5L4I7M3M3N2I7M3L4M3I7K5K5M3M3N2M3L4K5M3M3M3M3N2L4M3M3N2J6M3L6K4M4L3L4H9J5M3K4K6K5L4K5K5H7L5M3F:I7L4K5H8K5M3M3O1M3M5D;HU_P1"
+      },
+      "sam_score_gt_box": 1.0118941068649292,
+      "mask_area": 53000,
+      "color_ratios": {
+        "red": 0.0670377358490566,
+        "blue": 0.0,
+        "yellow": 0.05360377358490566,
+        "green": 0.0,
+        "black": 0.008358490566037735,
+        "white": 7.547169811320755e-05,
+        "brown": 0.9351132075471699
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.9145522921925001,
+      "o2o_det": [
+        229.8484344482422,
+        0.1556854248046875,
+        451.76220703125,
+        439.50396728515625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.06681518681443163
+    },
+    {
+      "idx": 3,
+      "desc": "a black cake",
+      "category": "cake",
+      "color": "black",
+      "box": [
+        0.2725,
+        0.24629107981220658,
+        0.5152187500000001,
+        0.5773943661971832
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8560678917586596,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "YeU28?4\\>7YA0`>3^A2\\>l0M3M3M2M4M3H:J5K6K5K4L5K4M4K4L3N3L2N3M3M2N2N3M2M3O100O0O2O1O001N101O0O2O1O0O101O001N101O000000001O0O1000000000000O101O0000O0100O1O1O1O1O0<E001O0O101O00001N100O2O001N101N1O2N101N2O0O2N2O0N3N2N1N3M3N2M3M2M4K5L4K6L3L5@gBSN]=j1eBnMd=o19M5J5J7Ib0_O3L5IVZn3"
+      },
+      "sam_score_gt_box": 1.0081291198730469,
+      "mask_area": 14859,
+      "color_ratios": {
+        "red": 0.02617941988020728,
+        "blue": 0.00013459855979541018,
+        "yellow": 0.5252708796015882,
+        "green": 6.729927989770509e-05,
+        "black": 0.036139713305067635,
+        "white": 0.16744060838549027,
+        "brown": 0.24644996298539606
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8560678917586596,
+      "o2o_det": [
+        137.43251037597656,
+        118.34159851074219,
+        259.9837951660156,
+        284.927490234375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.03600996163424648
+    }
+  ]
+}

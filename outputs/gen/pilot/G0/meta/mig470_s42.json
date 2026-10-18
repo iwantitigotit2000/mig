@@ -1,0 +1,71 @@
+{
+  "sample_id": "mig470_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "470",
+  "caption": "a photo of a black cat and a green suitcase and a black chair",
+  "objects": [
+    {
+      "desc": "a black cat",
+      "box": [
+        0.015020833333333334,
+        0.33896875,
+        0.9429374999999999,
+        0.6858124999999999
+      ]
+    },
+    {
+      "desc": "a green suitcase",
+      "box": [
+        0.00010416666666666667,
+        0.192046875,
+        1.0,
+        0.8469687499999999
+      ]
+    },
+    {
+      "desc": "a black chair",
+      "box": [
+        0.0,
+        0.7540312499999999,
+        0.9055833333333333,
+        1.0
+      ]
+    }
+  ],
+  "seconds": 5.378,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

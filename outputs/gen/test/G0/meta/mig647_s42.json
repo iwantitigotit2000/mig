@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig647_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "647",
+  "caption": "a photo of a black umbrella and a black handbag and a blue handbag and a green backpack",
+  "objects": [
+    {
+      "desc": "a black umbrella",
+      "box": [
+        0.25960937500000003,
+        0.266875,
+        0.414953125,
+        0.5756875
+      ]
+    },
+    {
+      "desc": "a black handbag",
+      "box": [
+        0.7398906249999999,
+        0.11872916666666668,
+        0.9471874999999998,
+        0.39962500000000006
+      ]
+    },
+    {
+      "desc": "a blue handbag",
+      "box": [
+        0.8327656250000001,
+        0.3074375,
+        0.9763437500000001,
+        0.6047291666666667
+      ]
+    },
+    {
+      "desc": "a green backpack",
+      "box": [
+        0.001953125,
+        0.19220833333333334,
+        0.24740625,
+        0.9662291666666666
+      ]
+    }
+  ],
+  "seconds": 5.455,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

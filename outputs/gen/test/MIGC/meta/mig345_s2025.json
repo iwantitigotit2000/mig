@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig345_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "345",
+  "caption": "a photo of a black elephant and a green elephant and a red elephant and a black elephant and a yellow elephant and a brown elephant",
+  "objects": [
+    {
+      "desc": "a black elephant",
+      "box": [
+        0.0194375,
+        0.3213380281690141,
+        0.538484375,
+        0.8719014084507041
+      ]
+    },
+    {
+      "desc": "a green elephant",
+      "box": [
+        0.67909375,
+        0.24943661971830988,
+        1.0,
+        0.6516901408450705
+      ]
+    },
+    {
+      "desc": "a red elephant",
+      "box": [
+        0.43528124999999995,
+        0.3213380281690141,
+        0.7538750000000001,
+        0.7123708920187795
+      ]
+    },
+    {
+      "desc": "a black elephant",
+      "box": [
+        0.09034375,
+        0.31241784037558684,
+        0.3558125,
+        0.6799530516431924
+      ]
+    },
+    {
+      "desc": "a yellow elephant",
+      "box": [
+        0.3891875,
+        0.21089201877934274,
+        0.674703125,
+        0.39352112676056333
+      ]
+    },
+    {
+      "desc": "a brown elephant",
+      "box": [
+        0.139421875,
+        0.24211267605633802,
+        0.39128125,
+        0.3817605633802817
+      ]
+    }
+  ],
+  "seconds": 6.669,
+  "peak_mem_allocated_gb": 7.823,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

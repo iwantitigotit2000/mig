@@ -1,0 +1,259 @@
+{
+  "sample_id": "mig389_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "d8bba480e943621200289e509728510f63441a27",
+  "detections": {
+    "airplane": {
+      "xyxy": [
+        [
+          181.42820739746094,
+          66.53922271728516,
+          496.59649658203125,
+          215.739990234375
+        ],
+        [
+          0.10132217407226562,
+          122.96245574951172,
+          121.57746887207031,
+          185.4542236328125
+        ],
+        [
+          0.0926055908203125,
+          182.08763122558594,
+          218.9444580078125,
+          256.7222595214844
+        ]
+      ],
+      "conf": [
+        0.6066862940788269,
+        0.5570858120918274,
+        0.5501910448074341
+      ]
+    },
+    "truck": {
+      "xyxy": [
+        [
+          316.05291748046875,
+          244.58543395996094,
+          396.3194580078125,
+          317.5562744140625
+        ]
+      ],
+      "conf": [
+        0.568117618560791
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a brown airplane",
+      "category": "airplane",
+      "color": "brown",
+      "box": [
+        0.375734375,
+        0.1452927400468384,
+        0.944421875,
+        0.4845433255269321
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.7291905514046252,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "QTk23k?4L4M2O2M2N2O1N2O1N2O1N2O0O2O1O0O2O1O0O2O1O1O1N1N3M3N4L100O2O1N10O0N30O10000O101O00000O10001O0000001O00000O101O2N1O1O00000010O0001O00001O1O001O0001O000000000000001O00001O000O10001O000O10001O0001O1O2N01N100001O102M0000O1O2N1N200001O100O1O1SBUNc=T2010O00000001O010O1O001O01O000000010O01O000001O0O100O10iBnM`<S2^CoMb<Q2\\CPNd<U2VClMj<V2RClMm<d200O10010O01[OWCPNj<P2XCnMi<Q2XCnMh<R2YCmMg<o1g0O10001O01O0001O0001O0001O000000001O0O100O1O101O0000001O0000000000001O000001O01O000000001O000000001N100L40000000000000000000O100000O100O10O10000O100O1O001O1O1O1O2N1O1N3N2N2N1O2M2O1O1N10001N2O0O2O0000001N101O1O1O1O1N2O1O001O1N2O1O1O1O1O1O1O1O1O1O1000eNdCRO\\<j0hCVOX<g0lCWOU<f0nCZOR<d0PD\\OP<b0RD^On;?UDAk;=WDCi;;ZDDf;:\\DFd;7`DgNROl0^<;gDEZ;8hDHX;5kDKU;2nDMS;1oDOQ;NREB[N3d<8SEC\\N3b<8TED[N4a<5WEFZN3`<5XEHYN1`<4ZEJXNNa<6ZEJV;3^2L3Mk]8"
+      },
+      "sam_score_gt_box": 0.9991040229797363,
+      "mask_area": 20607,
+      "color_ratios": {
+        "red": 0.2130829329839375,
+        "blue": 0.04745960110642015,
+        "yellow": 0.18915902363274614,
+        "green": 0.0006308535934391226,
+        "black": 0.052797593050905034,
+        "white": 0.0009705439899063425,
+        "brown": 0.5096326490998204
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7291905514046252,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7291905514046252,
+      "o2o_det": [
+        181.42820739746094,
+        66.53922271728516,
+        496.59649658203125,
+        215.739990234375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.510826723760401
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow airplane",
+      "category": "airplane",
+      "color": "yellow",
+      "box": [
+        0.001109375,
+        0.3359016393442623,
+        0.549015625,
+        0.5013583138173302
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.6843921437949033,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "j5Z1f>0O02O00000000000000000001O00000000001O00001O000000001O0000001O000000001O00001O0000001O00000O2O001O3M2N3M5K2N100N101O00000000000000000000O10000_OXBjNh=V1ZBgNg=Y1ZBfNf=Z1^B`Nd=`1>00000000000000000000000000000000001O00000000000000000000001O000000000000000000000O2O0000000000000jAZNR>m1M001O1O7I001O0000001OO100O01000O1000000000000O1BXBdNh=Z1]BcNc=^1?001O000000000000000000000000000001O0000000000000000001O000000001O08H101N0001O001O010O1CoAhNT>S1kAeN37S>S1PBjNS>U1=N2HYAQOl>m06M2O1N101N101N100O2N2O1N7I2N[Yc4"
+      },
+      "sam_score_gt_box": 0.9928461313247681,
+      "mask_area": 11582,
+      "color_ratios": {
+        "red": 0.09549300638922466,
+        "blue": 0.01355551718183388,
+        "yellow": 0.17078224831635297,
+        "green": 0.0033672940770160596,
+        "black": 0.10697634260058712,
+        "white": 0.0003453634950785702,
+        "brown": 0.5897945087204283
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.6843921437949033,
+      "o2o_det": [
+        0.0926055908203125,
+        182.08763122558594,
+        218.9444580078125,
+        256.7222595214844
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.174211731548353
+    },
+    {
+      "idx": 2,
+      "desc": "a black truck",
+      "category": "truck",
+      "color": "black",
+      "box": [
+        0.60528125,
+        0.47772833723653396,
+        0.772765625,
+        0.6145433255269321
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8868123995245732,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "RYn41j?:Y@3n>c0J401AmNnAT1P>oNnAR1Q>QOiAS1W>;0000001OO2K4N20ON3K5O10O0G:O11O0000001O00O100000000000000000000000000O100003M1O00000000O1O2M2001O3M001O1O5K2OO001O1O1O1O2N7I2M2I6G9VOgAG_>5h0O100O3Nggi1"
+      },
+      "sam_score_gt_box": 0.9886054992675781,
+      "mask_area": 4341,
+      "color_ratios": {
+        "red": 0.0055286800276434,
+        "blue": 0.19235199262842664,
+        "yellow": 0.001612531674729325,
+        "green": 0.002533978346003225,
+        "black": 0.5316747293250403,
+        "white": 0.001151808339092375,
+        "brown": 0.027413038470398526
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8868123995245732,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8868123995245732,
+      "o2o_det": [
+        316.05291748046875,
+        244.58543395996094,
+        396.3194580078125,
+        317.5562744140625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5316747293250403
+    },
+    {
+      "idx": 3,
+      "desc": "a red airplane",
+      "category": "airplane",
+      "color": "red",
+      "box": [
+        0.0,
+        0.23550351288056207,
+        0.21385937500000002,
+        0.3656674473067915
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8489898099663462,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "U4k0U?00000aAXOf=h0XBZOi=f0UB[Ok=e0TB\\Ol=d0SB]Om=c0RB^On=b0QB_Oo=b0oA_OQ>a0nA@S>`0kAAU>?jABV>?iAAW>`0gAAY>`0dAB\\>Q100001O00000O100O2N1O1O1O1O101N1O1O1O1N2O20O001O1O001O102M1O2N1O1O00GcAoN]>P1:010O2N2NEZA]Oe>c0]A]Oa>c0aA[O_>e0eAYOY>g0`0001O00000O100O1O1O1N2O1O1O1O1N2O1N2O100O11O001N101O1N2O1O001N2O1O1O0O2O1O001N101O0O101N10001N2]Og@=_?N100O2O0O101N1O2O1N2NY[S6"
+      },
+      "sam_score_gt_box": 0.997048020362854,
+      "mask_area": 4075,
+      "color_ratios": {
+        "red": 0.683680981595092,
+        "blue": 0.07803680981595092,
+        "yellow": 0.00098159509202454,
+        "green": 0.0034355828220858898,
+        "black": 0.0031901840490797546,
+        "white": 0.0,
+        "brown": 0.12368098159509203
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8489898099663462,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8489898099663462,
+      "o2o_det": [
+        0.10132217407226562,
+        122.96245574951172,
+        121.57746887207031,
+        185.4542236328125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6881188118811881
+    }
+  ]
+}

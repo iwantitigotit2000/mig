@@ -1,0 +1,268 @@
+{
+  "sample_id": "mig762_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "e3565de7c2146bdf0a053d3c7f4c171d0f57c5ee",
+  "detections": {
+    "bed": {
+      "xyxy": [
+        [
+          0.0076751708984375,
+          88.77749633789062,
+          320.01983642578125,
+          479.4689025878906
+        ]
+      ],
+      "conf": [
+        0.3782883584499359
+      ]
+    },
+    "chair": {
+      "xyxy": [
+        [
+          0.05945587158203125,
+          289.1559143066406,
+          204.35940551757812,
+          511.3739929199219
+        ],
+        [
+          -0.018095016479492188,
+          78.59355163574219,
+          55.410499572753906,
+          245.49510192871094
+        ]
+      ],
+      "conf": [
+        0.5955667495727539,
+        0.44837114214897156
+      ]
+    },
+    "keyboard": {
+      "xyxy": [],
+      "conf": []
+    },
+    "laptop": {
+      "xyxy": [
+        [
+          138.01475524902344,
+          136.62551879882812,
+          251.18663024902344,
+          301.846923828125
+        ]
+      ],
+      "conf": [
+        0.8559736013412476
+      ]
+    },
+    "vase": {
+      "xyxy": [
+        [
+          69.41734313964844,
+          79.20668029785156,
+          114.78462219238281,
+          113.5723876953125
+        ]
+      ],
+      "conf": [
+        0.48524078726768494
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green chair",
+      "category": "chair",
+      "color": "green",
+      "box": [
+        0.0014375,
+        0.574192037470726,
+        0.424703125,
+        0.9827868852459016
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8849300937463187,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Q;S3m<4K<D3N2M3N5J2OO02SDnKj;U4O1N011N2O0O100O101N101N1000O0101N2O0O101O1N2O1N100O101N10000O100O2O1O0O2O0O101O1N2O1N2O001N101N2O001N101O0O101N100O10001N100O10000O100O10000O100O100O10000O100O10O010000O10000O010O1000O010O10O10O01000O010O10O10O10O010O0100O010O10O0100O010O10O10O1O010O10O0100O00100O1O010O10O01O100O00100O1O1O100O001O1O100O1O001O1O1O1O1O1N2O1O1O1O1N2O1N3N1M3N2N3M2L5L3L5H7J7XOh0A?F9F;I7K5L4L5K4M3N3L4L7I8FSVj4"
+      },
+      "sam_score_gt_box": 1.0074503421783447,
+      "mask_area": 33130,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0,
+        "green": 0.5513733776033807,
+        "black": 0.3149411409598551,
+        "white": 0.0,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8849300937463187,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8849300937463187,
+      "o2o_det": [
+        0.05945587158203125,
+        289.1559143066406,
+        204.35940551757812,
+        511.3739929199219
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5505861788372864
+    },
+    {
+      "idx": 1,
+      "desc": "a green bed",
+      "category": "bed",
+      "color": "green",
+      "box": [
+        0.7075781250000001,
+        0.5777283372365339,
+        1.0,
+        0.9880327868852459
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.0,
+      "o2o_det": [
+        0.0076751708984375,
+        88.77749633789062,
+        320.01983642578125,
+        479.4689025878906
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a brown laptop",
+      "category": "laptop",
+      "color": "brown",
+      "box": [
+        0.232390625,
+        0.2741686182669789,
+        0.494765625,
+        0.6337002341920376
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.7265240844251533,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "`XV2:b?4PLCXHc0e7CTH`0l7ElG>T8GbG?^8FXG>h8FoF?Q9GeF=[9G]F=c9IRF=n9GjE<V:J_E;a:JUE;k:KjD:V;X210O00000010O0000001O01O000001O0001O0001O0000010O0001O00000010O000000010O00000001O01O0001O0001O0001O000000010O000001O01O000001O01O000010O00000000000O2N1N2M3J6K5K6J5K5J6K5K5J6K6J5J6L4J6[Of0@?_OckR4"
+      },
+      "sam_score_gt_box": 1.0078198909759521,
+      "mask_area": 13782,
+      "color_ratios": {
+        "red": 0.0020316354665505733,
+        "blue": 0.31207371934407196,
+        "yellow": 0.0,
+        "green": 0.00036279204759831664,
+        "black": 0.1317660716877086,
+        "white": 0.39616891597736176,
+        "brown": 0.0008707009142359599
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.7265240844251533,
+      "o2o_det": [
+        138.01475524902344,
+        136.62551879882812,
+        251.18663024902344,
+        301.846923828125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0009402574858961377
+    },
+    {
+      "idx": 3,
+      "desc": "a black keyboard",
+      "category": "keyboard",
+      "color": "black",
+      "box": [
+        0.2884375,
+        0.4474941451990633,
+        0.440046875,
+        0.5779391100702577
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 4,
+      "desc": "a brown vase",
+      "category": "vase",
+      "color": "brown",
+      "box": [
+        0.1275,
+        0.07632318501170961,
+        0.2668125,
+        0.32252927400468384
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.17339605947911238,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.17339605947911238,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.17339605947911238,
+      "o2o_det": [
+        69.41734313964844,
+        79.20668029785156,
+        114.78462219238281,
+        113.5723876953125
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

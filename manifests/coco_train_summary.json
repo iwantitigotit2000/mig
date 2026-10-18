@@ -1,0 +1,10 @@
+{
+  "source": "COCO train2014 (instances_train2014.json, captions_train2014.json)",
+  "eligible_images": 18679,
+  "n_train": 3000,
+  "n_trainval": 100,
+  "seed": 7,
+  "overlap_with_val2014_file_names": 0,
+  "mean_objects_per_image": 5.426774193548387,
+  "attribute_supervision": "none (phrases are COCO category names only)"
+}

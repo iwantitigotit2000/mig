@@ -1,0 +1,4 @@
+*.sh text eol=lf
+*.sbatch text eol=lf
+*.inc text eol=lf
+*.txt text eol=lf

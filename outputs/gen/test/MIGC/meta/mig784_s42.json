@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig784_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "784",
+  "caption": "a photo of a green dining table and a white cup and a white pizza and a green pizza and a yellow pizza",
+  "objects": [
+    {
+      "desc": "a green dining table",
+      "box": [
+        0.0,
+        0.00022,
+        1.0,
+        0.98904
+      ]
+    },
+    {
+      "desc": "a white cup",
+      "box": [
+        0.30261333333333335,
+        0.0022400000000000002,
+        0.6651733333333333,
+        0.16404000000000002
+      ]
+    },
+    {
+      "desc": "a white pizza",
+      "box": [
+        0.0035733333333333337,
+        0.1591,
+        0.74152,
+        0.46122
+      ]
+    },
+    {
+      "desc": "a green pizza",
+      "box": [
+        0.7090133333333333,
+        0.20706,
+        1.0,
+        0.36236
+      ]
+    },
+    {
+      "desc": "a yellow pizza",
+      "box": [
+        0.19394666666666668,
+        0.52844,
+        0.8222666666666667,
+        1.0
+      ]
+    }
+  ],
+  "seconds": 6.528,
+  "peak_mem_allocated_gb": 7.824,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

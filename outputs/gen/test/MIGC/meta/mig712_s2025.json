@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig712_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "712",
+  "caption": "a photo of a yellow donut and a brown donut and a blue donut and a red donut and a black donut and a white donut",
+  "objects": [
+    {
+      "desc": "a yellow donut",
+      "box": [
+        0.6477031249999999,
+        0.4247306791569087,
+        0.9550468750000001,
+        0.8157377049180329
+      ]
+    },
+    {
+      "desc": "a brown donut",
+      "box": [
+        0.33604687499999997,
+        0.4053395784543326,
+        0.634203125,
+        0.8044964871194379
+      ]
+    },
+    {
+      "desc": "a blue donut",
+      "box": [
+        0.0,
+        0.34920374707259955,
+        0.27015625,
+        0.7854566744730679
+      ]
+    },
+    {
+      "desc": "a red donut",
+      "box": [
+        0.511765625,
+        0.14934426229508196,
+        0.7827968750000001,
+        0.5433021077283372
+      ]
+    },
+    {
+      "desc": "a black donut",
+      "box": [
+        0.25179687500000003,
+        0.19131147540983606,
+        0.5119374999999999,
+        0.5215925058548009
+      ]
+    },
+    {
+      "desc": "a white donut",
+      "box": [
+        0.74065625,
+        0.0022482435597189696,
+        0.99553125,
+        0.31461358313817334
+      ]
+    }
+  ],
+  "seconds": 6.85,
+  "peak_mem_allocated_gb": 7.823,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

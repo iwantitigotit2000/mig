@@ -1,0 +1,472 @@
+{
+  "sample_id": "mig047_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "19bc9a68e99e569840d3141a2d9866744f6a1ec8",
+  "detections": {
+    "bowl": {
+      "xyxy": [
+        [
+          0.2666015625,
+          70.29298400878906,
+          511.67486572265625,
+          444.3450927734375
+        ],
+        [
+          213.31826782226562,
+          -0.0358734130859375,
+          325.8980407714844,
+          71.92279052734375
+        ]
+      ],
+      "conf": [
+        0.8472993969917297,
+        0.27972519397735596
+      ]
+    },
+    "broccoli": {
+      "xyxy": [
+        [
+          81.30622863769531,
+          113.23909759521484,
+          216.3069305419922,
+          260.26007080078125
+        ],
+        [
+          190.9277801513672,
+          97.86235046386719,
+          407.69439697265625,
+          366.73828125
+        ],
+        [
+          81.82334899902344,
+          97.19155883789062,
+          407.94879150390625,
+          367.9079895019531
+        ]
+      ],
+      "conf": [
+        0.4325195550918579,
+        0.4203971326351166,
+        0.3538391590118408
+      ]
+    },
+    "carrot": {
+      "xyxy": [
+        [
+          296.1851806640625,
+          62.75675582885742,
+          427.17266845703125,
+          83.20333862304688
+        ],
+        [
+          311.1214904785156,
+          50.65275192260742,
+          434.7456970214844,
+          66.724609375
+        ],
+        [
+          370.6742248535156,
+          81.51495361328125,
+          435.2132873535156,
+          103.84182739257812
+        ],
+        [
+          175.30960083007812,
+          301.2679138183594,
+          322.10858154296875,
+          386.8753967285156
+        ],
+        [
+          163.75503540039062,
+          237.6365203857422,
+          259.58990478515625,
+          347.14825439453125
+        ],
+        [
+          95.53300476074219,
+          238.24832153320312,
+          142.3529052734375,
+          295.6027526855469
+        ],
+        [
+          89.9378433227539,
+          237.7879638671875,
+          321.89312744140625,
+          389.70562744140625
+        ],
+        [
+          94.29093933105469,
+          276.85748291015625,
+          211.27757263183594,
+          348.17230224609375
+        ],
+        [
+          114.76789855957031,
+          239.54638671875,
+          170.57948303222656,
+          291.56732177734375
+        ],
+        [
+          295.7138366699219,
+          62.8095817565918,
+          435.1635437011719,
+          103.80894470214844
+        ],
+        [
+          94.3309326171875,
+          277.40753173828125,
+          295.73687744140625,
+          389.50341796875
+        ],
+        [
+          89.87421417236328,
+          310.5455322265625,
+          214.18157958984375,
+          385.8883056640625
+        ],
+        [
+          94.5750503540039,
+          277.986083984375,
+          257.5150451660156,
+          388.55255126953125
+        ],
+        [
+          154.01556396484375,
+          324.1979675292969,
+          257.91070556640625,
+          389.5206604003906
+        ],
+        [
+          145.60031127929688,
+          360.6138916015625,
+          175.9395751953125,
+          381.745849609375
+        ],
+        [
+          98.36276245117188,
+          319.31182861328125,
+          128.6250762939453,
+          361.2738037109375
+        ]
+      ],
+      "conf": [
+        0.42043179273605347,
+        0.41182270646095276,
+        0.37554463744163513,
+        0.315995454788208,
+        0.3133699595928192,
+        0.3026847541332245,
+        0.2894289195537567,
+        0.28781262040138245,
+        0.28729191422462463,
+        0.28286677598953247,
+        0.27590563893318176,
+        0.2754673957824707,
+        0.26689496636390686,
+        0.25488170981407166,
+        0.2522352635860443,
+        0.2508348226547241
+      ]
+    },
+    "cup": {
+      "xyxy": [
+        [
+          213.72471618652344,
+          -0.026966094970703125,
+          325.658203125,
+          71.97596740722656
+        ]
+      ],
+      "conf": [
+        0.5037320852279663
+      ]
+    },
+    "dining table": {
+      "xyxy": [
+        [
+          0.321624755859375,
+          16.055938720703125,
+          511.46612548828125,
+          511.4445495605469
+        ]
+      ],
+      "conf": [
+        0.37775033712387085
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue bowl",
+      "category": "bowl",
+      "color": "blue",
+      "box": [
+        0.00414,
+        0.1399,
+        0.9989600000000001,
+        0.8886
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9651278421636298,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "k3l6T91N2N2N2N1O2O1N1O2O0O2N2O1N101N1O101N2N2O001N101N1O2O1N2O001N100O2O1N101N101O0O3N001O1N101O1N2O000O2O1N2O1O001N101N101O1O0O101O0O2O001N101O000O2O_N[IgIe6X6^IgI`6Z6bIdI^6[6eIdIZ6\\6gIdIX6[6jIdIU6]6lIcIR6T2PJ<O_MQ6P2ZJ<FcMP6n1_J<CfMm5k1fJ<_OhMi5j1nJ;[OiMg5j1RK;XOkMe5h1UK=WOjMc5g1ZK>TOjMb5g1]KIYNPNi0?`5h1`KGZNPNf0b0_5f1bKHZNnMg0c0]5g1cKGYNoMh0c0[5f1gKFWNQNf0d0Z5f1jKCWNSNf0c0Y5g1kKbNTN@2Df0d0X5f1mKXMXNm02GLIf0d0W5g1\\LQNoMGHENLh0P1V5h1`LmMQNEo0g0_4g1bLlMTNAl0l0^4f1eLkMRN@m0P1[4b1kLlMHb0]3_1QMlMBf0\\3\\1VMkM_Oi0[3Z1ZMkM[Ok0Z3X1?hN@U1c0kN]OS1e0mN[OP1h0POXOn0j0SOUOl0l0UOSOj0n0VOROi0o0WOQOh0P1YOoNf0R1ZOnNe0R1]OmNb0T1^OlNa0U1@iNa0V1@jN?X1AgN?Y1BfN=[1DcN<_1CaN=_1CaN<`1E_N;a1E^N<b1E]N:e1FZN:f1FZN:g1FXN:h1FXN9i1GWN9i1HVN7UN[NO_1l16UN]NMN`L\\1]5:VN\\NLOaL\\1\\59WNYNN3_L[1\\58k1]NjH[1Z58l1]NjH[1Z58l1]NkH[1X58m1]NkH[1X58m1\\NlH\\1W58n1[NkH^1U58o1[NmH\\1T58X2IgM7[2GeM8^2FbM9_2H`M8a2H^M8c2G]M9c2G]M:b2F^M;b2E]M<b2D]M>mNWNC[1`1`0`2A_M`0`2@`Ma0_2@`M`0a2_O_Ma0a2@^M`0b2@^M?c2A]M?c2A]M?c2B\\M>d2B\\M=e2DZM<f2DZM;g2EXM<h2EWM:j2FVM:j2GUM:j2FVM9k2GUM9l2FTM9m2HRM8n2HRM7o2IQM7P3HPM7Q3IoL6R3KmL5S3KmL5T3KkL4V3LjL4V3LjL3W3NhL2Y3MgL2Z3NfL1[3OeL1[3OeL1[30dLO]31cLO^30bL0^30bL0^30bLO_32`LLb34^LJd36\\LIe38ZLGg39YLGg39YLFh3:XLFh3;WLEi3;WLEi3;WLDj3<VLCk3=ULCk3=ULBl3>TLBl3>TLAm3?SL_Oo3b0PL]OQ4c0oK\\OR4d0nKZOT4f0lKYOU4g0kKXOV4h0jKWOW4i0iKVOY4i0gKWOY4j0fKUO[4k0eKUO\\4j0dKVO\\4j0dKUO]4k0cKUO]4k0cKTO_4k0aKUO_4k0aKUO_4l0`KTO`4l0`KTO`4l0`KTO`4l0`KUO_4k0aKUO_4k0aKUO_4k0aKUO`4j0`KVO`4k0_KUOa4k0_KUOa4k0_KUOa4k0_KUOa4k0_KUOa4k0_KUOa4k0_KUOb4j0^KVOb4j0^KWOa4i0^KXOb4h0^KYOa4g0_KYOa4g0_KYOa4g0_KYOa4g0_KYOa4g0_KYOa4g0_KYOa4g0_KYOa4g0_KYOa4g0_KXOa4i0_KWOa4i0_KWOa4i0_KWOa4i0_KVOb4j0^KVOb4j0^KVOb4j0^KVOb4j0^KUOc4k0]KUOc4k0]KUOc4k0]KUOd4j0\\KVOd4j0\\KVOd4j0\\KVOd4j0\\KWOc4i0]KWOc4i0]KWOc4i0]KWOc4i0^KVOb4j0^KVOb4j0^KVOb4j0^KVOb4j0^KVOb4j0^KWOa4i0_KWOa4h0`KYO_4g0aKZO_4e0aK[O_4e0aK\\O^4d0bK\\O^4d0bK]O]4c0cK]O]4c0cK]O]4c0dK]O[4b0fK_OY4a0gK_OY4a0gK@X4`0hK@W4a0iK@V4`0kK_OU4a0kK@T4`0lK@S4`0nK@R4`0nK@Q4a0oK_OP4b0QL]Oo3c0QL\\OP4d0PL\\Oo3e0QL[OP4d0PL[OQ4e0PLZOP4e0QL[Oo3e0QLZOP4f0PLYOQ4g0PLWOQ4i0oKVOS4i0mKWOS4i0mKWOS4i0mKWOS4h0nKWOS4i0mKWOR4j0nKUOS4k0nKTOR4k0oKTOQ4m0oKSOP4n0PLROP4n0PLQOP4o0QLQOd3@fG_1f4QOd3BcG^1i4POc3[1]LfNa3Z1`LeNa3[1`LdN`3\\1`LdN_3]1aLcN^3^1bLbN^3^1bLbN]3^1dLbN\\3^1eLaNZ3`1fL_N[3`1fL`NY3a1gL_NX3b1hL_NV3a1kL_NU3a1kL_NU3a1kL`NS3a1nL^NQ3b1PM_Nn2b1RM^Nn2b1RM_Nl2b1TM^Nl2a1UM`Ni2a1XM^Ng2c1YM]Nf2c1[M^Nc2c1]M^Nb2b1^M_N`2b1`M_N_2`1bMbNZ2`1fMaNX2_1jMbNS2_1mMaNQ2a1oM`No1a1QN`Nm1a1TN^Nk1b1VN_Ng1c1YN]Nf1c1[N^Nb1d1_N]N^1d1bN]N\\1d1dN_NW1b1jN_NT1b1mN^NR1a1oNcNm0]1SOiNd0Z1\\OgNb0Z1^OfNa0Z1@fN>\\1CcN<^1DcN;\\1FdN9]1HcN6]1KdN3]1MdN1]10bNO^12eNI]17hNCY1=hN^KYNj2n2i1kNXK[Nm2k2l1QOnJWNR3i2Q2UOgJVNT3f2U2@XJoM`3b2X27eMK[26cMJ_27[MMe24ZMKg26WMKi28RMJo28mLHT3:iLGX3;cLF^3<^LFb3=XLEj3;SLGm3:PLGQ4;VKPLXOg3b5>jJ=X5DdJ>\\5CcJ=]5F]J<e5FVJ;k5FRJ<n5EPJ;R6GhI<X6f40O2L3O1N2L\\IkFe6T95O1O0O101N1O2O000O101O000O2O000O2O0O101O0O101O0O2O000O1O2O1N101O0O2O0O1O101N101O0O101O0O101N101N101O001N101O0O2O000O2O000O2O1N10001N2O0O2O0O2O001N101O0O101N2O0O2O001N2O001N1O2O1O0O101O1N101N3M2O^K"
+      },
+      "sam_score_gt_box": 0.9874658584594727,
+      "mask_area": 85331,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.9109936599828902,
+        "yellow": 0.0,
+        "green": 1.1719070443332436e-05,
+        "black": 0.013746469630028946,
+        "white": 0.016242631634458753,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9651278421636298,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9651278421636298,
+      "o2o_det": [
+        0.2666015625,
+        70.29298400878906,
+        511.67486572265625,
+        444.3450927734375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9106339612032611
+    },
+    {
+      "idx": 1,
+      "desc": "a green broccoli",
+      "category": "broccoli",
+      "color": "green",
+      "box": [
+        0.19012,
+        0.194575,
+        0.76612,
+        0.6675249999999999
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8088692740222264,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "QfY13i?;G3M4L6I4L5M3N3M000O2O1O001O5K4L2M2H8L3N2N3L5K3M3O1N2O1O1O0010O0000010O010O00001O001O1O1L31000001N101N2O001O1O1O1O1O1N2N2O2N1N2O2N2O1O01O10O1O2M2O3K2O1O000O01O1DjCfL^<X360nChL\\;W3g0O1O10O1[DkL^:U3W10N2O1dDgLP:Z3[10O10O010001N100O101O1O001N10001N1PD\\Ld;d3;1O001M4kCYLn;U4H6I8H6K4K2O1N101O3L101K5N2N2N1O2N4L2N3N1N2O1N2O2N1N2aFfIV9[6710O0001O2O0O001O1O1O00001O1O100O10O010O01N2O001O001N2O1O1O1O1N4M2M2O0O2O1OO20ZGgHc8\\7O01O00000000000000001O001O1O001O0O101N1O2O0O2OWGTI_8k6]G[Ia8U7N2N1N2N1O2N1O1O0O100000000O10O01N01O2O10O1000O10O100OLmG]HS8h7000000000001O000O10000O1000O100O101O001N2N1N3N1000001N1O2O1N2N3L4M3M1N3N1O1O2N2N2O2N1N3N1N<D2O0O2N1O1O2N1O101N1O2N3M4fKbEk2b:QMaEl2c:RLYEi08R3h:hL\\EU3g:hL[EU3k:[LmD1;a3k;M3L4L3M3M4M3M4L4K4L5K3M3L5XOUBSOS>a0m0K4L5K4M2M4M3K_hd1"
+      },
+      "sam_score_gt_box": 0.948043704032898,
+      "mask_area": 52495,
+      "color_ratios": {
+        "red": 9.524716639679969e-05,
+        "blue": 0.002190684827126393,
+        "yellow": 0.09227545480521955,
+        "green": 0.4028764644251834,
+        "black": 0.25813887036860655,
+        "white": 0.001562053528907515,
+        "brown": 0.004057529288503667
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8088692740222264,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8088692740222264,
+      "o2o_det": [
+        81.82334899902344,
+        97.19155883789062,
+        407.94879150390625,
+        367.9079895019531
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.39889104781763896
+    },
+    {
+      "idx": 2,
+      "desc": "a brown carrot",
+      "category": "carrot",
+      "color": "brown",
+      "box": [
+        0.18388,
+        0.463375,
+        0.44888,
+        0.708525
+      ],
+      "status": "ok",
+      "n_det": 16,
+      "present_any": true,
+      "loc_iou": 0.48988973070895975,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.48988973070895975,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.48988973070895975,
+      "o2o_det": [
+        94.29093933105469,
+        276.85748291015625,
+        211.27757263183594,
+        348.17230224609375
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a white dining table",
+      "category": "dining table",
+      "color": "white",
+      "box": [
+        0.61836,
+        0.064525,
+        0.85956,
+        0.241375
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.04416035735039748,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.04416035735039748,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.04416035735039748,
+      "o2o_det": [
+        0.321624755859375,
+        16.055938720703125,
+        511.46612548828125,
+        511.4445495605469
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 4,
+      "desc": "a brown cup",
+      "category": "cup",
+      "color": "brown",
+      "box": [
+        0.41766000000000003,
+        0.0026,
+        0.6441600000000001,
+        0.13765
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9263164075119654,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "PP\\39g?4L4L3M2N3M3M3M2N3M2N2N1O2N2N1O2N2N1O2N1O1O1O2N1O1O1O1O1O2N2N1O1O1O00000000000000000000000000001O000000000000000000000000000000000000000000000000000000O100O1O1O1O1O100O1O1O1L4M3N2M3N2N2M3N2N2N2N2N2M3N2N2L4N2M3L4M3LTPn2"
+      },
+      "sam_score_gt_box": 1.0030438899993896,
+      "mask_area": 5963,
+      "color_ratios": {
+        "red": 0.12476941137011571,
+        "blue": 0.0,
+        "yellow": 0.0008385041086701325,
+        "green": 0.0,
+        "black": 0.0784839845715244,
+        "white": 0.0,
+        "brown": 0.7075297668958578
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9263164075119654,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9263164075119654,
+      "o2o_det": [
+        213.72471618652344,
+        -0.026966094970703125,
+        325.658203125,
+        71.97596740722656
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7075297668958578
+    },
+    {
+      "idx": 5,
+      "desc": "a brown bowl",
+      "category": "bowl",
+      "color": "brown",
+      "box": [
+        0.41928,
+        0.0,
+        0.63818,
+        0.135125
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9430387937577899,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "PP\\39g?4L4L3M2N3M3M3M2N3M2N2N1O2N2N1O2N2N1O2N1O1O1O2N1O1O1O1O1O2N2N1O1O1O00000000000000000000000000001O000000000000000000000000000000000000000000000000000000O100O1O1O1O1O100O1O1O1L4M3N2M3N2M3N2N2N2N2N2N2M3N2N2L4N2M3L4M3LTPn2"
+      },
+      "sam_score_gt_box": 1.001956582069397,
+      "mask_area": 5962,
+      "color_ratios": {
+        "red": 0.12462260986246226,
+        "blue": 0.0,
+        "yellow": 0.0008386447500838644,
+        "green": 0.0,
+        "black": 0.07849714860784972,
+        "white": 0.0,
+        "brown": 0.7074807111707481
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9430387937577899,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9430387937577899,
+      "o2o_det": [
+        213.31826782226562,
+        -0.0358734130859375,
+        325.8980407714844,
+        71.92279052734375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.7075297668958578
+    }
+  ]
+}

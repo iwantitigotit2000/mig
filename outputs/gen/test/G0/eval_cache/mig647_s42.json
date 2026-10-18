@@ -1,0 +1,265 @@
+{
+  "sample_id": "mig647_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "bb93f8a37b7a83e78a3bcf98ac698787386485a2",
+  "detections": {
+    "backpack": {
+      "xyxy": [
+        [
+          378.30145263671875,
+          72.4271240234375,
+          476.8665771484375,
+          208.59429931640625
+        ],
+        [
+          49.520103454589844,
+          122.64785766601562,
+          217.11239624023438,
+          380.3799743652344
+        ],
+        [
+          0.146026611328125,
+          121.78436279296875,
+          214.48739624023438,
+          495.61993408203125
+        ]
+      ],
+      "conf": [
+        0.38134515285491943,
+        0.311810702085495,
+        0.2602475881576538
+      ]
+    },
+    "handbag": {
+      "xyxy": [
+        [
+          429.926513671875,
+          156.89663696289062,
+          499.016845703125,
+          297.6820983886719
+        ],
+        [
+          379.35400390625,
+          72.71978759765625,
+          459.8853759765625,
+          208.20123291015625
+        ],
+        [
+          -0.0764312744140625,
+          121.5166015625,
+          137.4582061767578,
+          496.037353515625
+        ],
+        [
+          143.4949951171875,
+          199.10174560546875,
+          208.18167114257812,
+          285.71270751953125
+        ],
+        [
+          -0.00511932373046875,
+          120.5010986328125,
+          209.82745361328125,
+          495.99188232421875
+        ]
+      ],
+      "conf": [
+        0.4938100576400757,
+        0.41452252864837646,
+        0.35937508940696716,
+        0.27932751178741455,
+        0.2721928060054779
+      ]
+    },
+    "umbrella": {
+      "xyxy": [],
+      "conf": []
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black umbrella",
+      "category": "umbrella",
+      "color": "black",
+      "box": [
+        0.25960937500000003,
+        0.266875,
+        0.414953125,
+        0.5756875
+      ],
+      "status": "ok",
+      "n_det": 0,
+      "present_any": false,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "missing",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a black handbag",
+      "category": "handbag",
+      "color": "black",
+      "box": [
+        0.7398906249999999,
+        0.11872916666666668,
+        0.9471874999999998,
+        0.39962500000000006
+      ],
+      "status": "ok",
+      "n_det": 5,
+      "present_any": true,
+      "loc_iou": 0.6828686820439788,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "gUn5:c?6J5H7H9D;hMfNfE\\1X:mN^EV1b:nNWEV1g:POQES1o:POlDR1S;SOgDP1X;SOdDn0\\;VO]D9AROR<h0YD1LWOj;l0SDK9XOe;W2_DiMb;Q2cDPN_;j1dDVN`;`1fD`N];T1mDkNX;m0kDSOY;h0gDZO];?eDA_;8bDJ`;OdD2^;JcD7];HdD8\\;GdD:Z;GgD9X;HhD9V;GkD9U;GkD9S;HnD8Q;IoD7P;IQE7n:HSE9l:GUE9j:FWE;h:EYE;e:F[E;d:E]E;b:D_E<`:E`E<_:EaE;^:EbE<]:EbE<]:CeE<[:CfE=Z:CfE>Y:BgE>Y:BhE>X:@iE`0V:@kEa0U:^OkEb0U:^OkEc0T:\\OmEd0S:\\OmEd0S:\\OmEd0T:[OlEd0U:\\OlEa0V:_OjE?X:AhE?Y:@fE>]:BcE<_:DaE6f:I\\E5d:K`EMd:3`EFd::`201O\\BJ`;5`DL_;4`DN`;2]D4`;KaD9[;GjD4W;JlD4U;JSEOiMOajj0"
+      },
+      "sam_score_gt_box": 0.9619207382202148,
+      "mask_area": 3818,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.17993713986380303,
+        "yellow": 0.0,
+        "green": 0.003143006809848088,
+        "black": 0.4827134625458355,
+        "white": 0.0013095861707700367,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.6828686820439788,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.6828686820439788,
+      "o2o_det": [
+        379.35400390625,
+        72.71978759765625,
+        459.8853759765625,
+        208.20123291015625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.48016085790884716
+    },
+    {
+      "idx": 2,
+      "desc": "a blue handbag",
+      "category": "handbag",
+      "color": "blue",
+      "box": [
+        0.8327656250000001,
+        0.3074375,
+        0.9763437500000001,
+        0.6047291666666667
+      ],
+      "status": "ok",
+      "n_det": 5,
+      "present_any": true,
+      "loc_iou": 0.8634053397828845,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ngg6l0n>8C=F9G9I7E;J6M3L4L3M4K4M4J5M3K6M2N2O1O101M2O1O100001O00=C;E9G8H5K3M1O1O1O2M2O1O1O2M2O2N2N3L4M4L4K6K2N4L3L2O000O2O1O0O101O1N2O1N7J7Edg6"
+      },
+      "sam_score_gt_box": 0.9979169964790344,
+      "mask_area": 5433,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0,
+        "green": 0.9858273513712498,
+        "black": 0.00018406037180195104,
+        "white": 0.004969630038652678,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8634053397828845,
+      "o2o_det": [
+        429.926513671875,
+        156.89663696289062,
+        499.016845703125,
+        297.6820983886719
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    },
+    {
+      "idx": 3,
+      "desc": "a green backpack",
+      "category": "backpack",
+      "color": "green",
+      "box": [
+        0.001953125,
+        0.19220833333333334,
+        0.24740625,
+        0.9662291666666666
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.5642057272038318,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "]7Q8n71N2N2M3O1N2O1N2N2N2N2M3N2M3N2N2N2M3O1M3N2N2N2O1N2N2N1O2N2N2N2N2N2N2N2O1N2N101N2O1N2O1O1O1O1N2N2N2MXGjKk5U4mI]Lk5b3QJhLk5V3QJSMj5m2SJZMj5e2PJdMn5[2nIlMP6S2mIUNo5j1nI\\NP6d1mIcNo5\\1PJjNl5U1RJQOk5n0TJWOh5j0WJYOg5f0XJ]Og5b0YJ@f5`0XJBh5=XJCh5>WJCi5<WJEi5;VJFi5:WJGi59VJHj57VJJi57VJJj56UJKj56VJKi55VJMh53XJ0f50ZJ5`5L_J;[5EeJ?V5BjJa0S5_OlJf0o4[OQKh0l4XOTKk0h4VOWKm0g4SOYKo0d4SO[Ko0c4QO]KQ1`4PO`KR1]4oNbKS1]4mNcKU1Z4lNfKV1X4jNhKW1V4jNjKX1S4iNmKX1R4hNnKY1P4hNPLY1n3hNRLY1l3hNULW1j3jNVLW1h3jNXLW1f3jNZLV1e3kN[LV1b3lN_LT1]3oNcLR1Y3QOgLP1T3TOmLn0k2WOlLWJ6k6X2ZObMlI5U7a1^OXN]I8f7?^OC`80001O000O1000000000001O000O2O01O2OO1O100MTkl5"
+      },
+      "sam_score_gt_box": 1.007141351699829,
+      "mask_area": 27291,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 7.328423289729215e-05,
+        "yellow": 7.328423289729215e-05,
+        "green": 0.9888974387160603,
+        "black": 0.0005862738631783372,
+        "white": 0.00307793778168627,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.5642057272038318,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.5642057272038318,
+      "o2o_det": [
+        0.146026611328125,
+        121.78436279296875,
+        214.48739624023438,
+        495.61993408203125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.9880651656598939
+    }
+  ]
+}

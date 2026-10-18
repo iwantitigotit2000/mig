@@ -1,0 +1,45 @@
+{
+  "method": "MIGC",
+  "manifest": "manifests/cocomig_test.jsonl",
+  "n_samples": 200,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  },
+  "env": {
+    "python": "3.10.22",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "torch": "2.1.2+cu121",
+      "torchvision": "0.16.2+cu121",
+      "transformers": "4.33.3",
+      "diffusers": "0.21.1",
+      "huggingface_hub": "0.24.5",
+      "accelerate": "0.23.0",
+      "numpy": "1.26.4",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "gpu_total_mem_gb": 11.99
+  },
+  "started": "2026-10-15 17:49:26"
+}

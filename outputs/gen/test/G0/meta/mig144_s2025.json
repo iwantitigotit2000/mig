@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig144_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "144",
+  "caption": "a photo of a brown dog and a black dog and a green dog and a blue frisbee",
+  "objects": [
+    {
+      "desc": "a brown dog",
+      "box": [
+        0.392359375,
+        0.0022083333333333334,
+        0.69265625,
+        0.8090416666666667
+      ]
+    },
+    {
+      "desc": "a black dog",
+      "box": [
+        0.003015625,
+        0.35039583333333335,
+        0.47384375,
+        0.9902291666666667
+      ]
+    },
+    {
+      "desc": "a green dog",
+      "box": [
+        0.577421875,
+        0.3612916666666666,
+        0.9983906250000001,
+        0.9913958333333334
+      ]
+    },
+    {
+      "desc": "a blue frisbee",
+      "box": [
+        0.3875,
+        0.48925,
+        0.648671875,
+        0.6965416666666667
+      ]
+    }
+  ],
+  "seconds": 5.35,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

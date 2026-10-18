@@ -1,0 +1,29 @@
+# Machine-specific locations of large assets. Nothing under assets_root is part of the
+# course code package. Override the root with the MIG_ASSETS environment variable.
+assets_root: E:/transformer/mig_assets
+
+repos:
+  gligen: "{assets_root}/repos/GLIGEN"        # gligen/GLIGEN       @ f9dccb9
+  migc: "{assets_root}/repos/MIGC"            # limuloo/MIGC        @ effd6cc
+  mig_bench: "{assets_root}/repos/MIG_Bench"  # LeyRio/MIG_Bench    @ 063ec45
+
+weights:
+  gligen_box_text: "{assets_root}/weights/gligen_generation_text_box.bin"  # HF gligen/gligen-generation-text-box @ cc6e904
+  migc_sd14: "{assets_root}/weights/MIGC_SD14.ckpt"
+  sd14_diffusers: "{assets_root}/weights/sd-v1-4-diffusers"   # HF CompVis/stable-diffusion-v1-4 @ 133a221
+  clip_text: "{assets_root}/weights/clip-vit-large-patch14"   # HF openai/clip-vit-large-patch14 @ 32bd642
+  groundingdino: "{assets_root}/weights/groundingdino_swint_ogc.pth"
+  bert: "{assets_root}/weights/bert-base-uncased"   # HF bert-base-uncased @ 86b5e09
+  sam_vit_h: "{assets_root}/weights/sam_vit_h_4b8939.pth"
+
+coco:
+  root: "{assets_root}/coco"
+  train_images: "{assets_root}/coco/train2014_subset"
+
+runs_root: "{assets_root}/runs"     # training checkpoints (large, kept out of the code package)
+hf_home: "{assets_root}/hf_home"
+
+envs:
+  gligen: D:/condamini/envs/mig_gligen/python.exe
+  migc: D:/condamini/envs/mig_migc/python.exe
+  eval: D:/condamini/envs/mig_eval/python.exe

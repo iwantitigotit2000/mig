@@ -1,0 +1,52 @@
+{
+  "sample_id": "mig295_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "295",
+  "caption": "a photo of a yellow giraffe and a yellow giraffe",
+  "objects": [
+    {
+      "desc": "a yellow giraffe",
+      "box": [
+        0.28690625000000003,
+        0.06508333333333333,
+        0.8221406250000001,
+        0.9867916666666667
+      ]
+    },
+    {
+      "desc": "a yellow giraffe",
+      "box": [
+        0.303890625,
+        0.6597500000000001,
+        0.483109375,
+        1.0
+      ]
+    }
+  ],
+  "seconds": 6.205,
+  "peak_mem_allocated_gb": 7.811,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

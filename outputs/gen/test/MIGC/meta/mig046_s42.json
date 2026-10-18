@@ -1,0 +1,52 @@
+{
+  "sample_id": "mig046_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "46",
+  "caption": "a photo of a blue clock and a red clock",
+  "objects": [
+    {
+      "desc": "a blue clock",
+      "box": [
+        0.40703125,
+        0.3704918032786885,
+        0.535015625,
+        0.6535128805620608
+      ]
+    },
+    {
+      "desc": "a red clock",
+      "box": [
+        0.6213437500000001,
+        0.26243559718969556,
+        0.780140625,
+        0.47515222482435593
+      ]
+    }
+  ],
+  "seconds": 6.204,
+  "peak_mem_allocated_gb": 7.813,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

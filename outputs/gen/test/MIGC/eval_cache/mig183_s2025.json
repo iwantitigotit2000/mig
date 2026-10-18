@@ -1,0 +1,139 @@
+{
+  "sample_id": "mig183_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "1f503489ffff4666966a8b5f11e807f63596a8ff",
+  "detections": {
+    "keyboard": {
+      "xyxy": [
+        [
+          30.979721069335938,
+          109.2203369140625,
+          425.61517333984375,
+          389.9183044433594
+        ]
+      ],
+      "conf": [
+        0.9567411541938782
+      ]
+    },
+    "mouse": {
+      "xyxy": [
+        [
+          416.880859375,
+          230.8942108154297,
+          483.56536865234375,
+          425.180419921875
+        ]
+      ],
+      "conf": [
+        0.8781883716583252
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green mouse",
+      "category": "mouse",
+      "color": "green",
+      "box": [
+        0.811734375,
+        0.45617210682492576,
+        0.952546875,
+        0.8247181008902077
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9002694305238036,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "lga6`0\\?:G7J7I7I6K6J5L5SEVNZ7n1VHbNf7c1dGoNZ8Y1RGTOn8P40O2O0O3M4M2M3M_OjJZFT5e9PKZFn4f9TKZFj4f9XKYFg4g9]KXF`4g9cK[FY4e9iK]F[OBf4Q:PLbFl3^9WLdFc3]9^LeF_3[9bLiFY3W9hLkFU3U9mLmFo2S9SMmFj2T9XMmFe2T9\\MjFd2V9_MhF_2Y9cMeF]2[9eMcFZ2_9hM^FX2c9mMWFR2l9TNkEm1V:m13M4L4M3L3M4K4M3L5K4L5J5K7H7I8I7H9F:C<G<@gf>"
+      },
+      "sam_score_gt_box": 0.9997015595436096,
+      "mask_area": 8626,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0,
+        "green": 0.9006492000927429,
+        "black": 0.011940644562949224,
+        "white": 0.050776721539531645,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9002694305238036,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9002694305238036,
+      "o2o_det": [
+        416.880859375,
+        230.8942108154297,
+        483.56536865234375,
+        425.180419921875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.900556973775818
+    },
+    {
+      "idx": 1,
+      "desc": "a white keyboard",
+      "category": "keyboard",
+      "color": "white",
+      "box": [
+        0.049703125,
+        0.2195252225519288,
+        0.8354062499999999,
+        0.7476261127596439
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.9456240139664293,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "gU`01k?c0@<E5Kf0YO;F9G>B;D<E9G8H<D;E8H<C=D9G8H4L3M00000000000O100000O01000O10O100000O10O1000O100000O010000O10O1000000000O1000O10000O0100000000O0100000O0100000O1000O10O1000000O100O10O10000O1000000O10O1000O10O1000000O10O1000O1000000O10000O10O10O1O10O2O000O10O10000000O10O1000000O010000000O10O10O1000O1000O100000O10O100000000O10O10O100000O10O1000O010000000000O01000O10O100000O1000000000O0100000O10O1000O0100000000O10O1000O100000O10O1000000O010000000O10O10000000O10O10000000O1000O0100000O010000O100000O100000O100O01000000000O01000000O100000O10000000O1000O10O10O1000000O10O1000000O0100000000O0100000O10000000O10O0100000O1000O10O100O10000000O1000O1000000O10O100000O0100000OO20000JfIfFZ6Y9gIdFO0Y6a9hI^FX6b9hI^FX6b9hI^FX6a9iI_FW6a9iI_FW6a9iI_FV6c9iI]FW6`9hIaF1OW6`9hIaF[6b90JfIfFY6X9fIfF12Y6X9fInFX6]90KiIaFV6`9jI`FV6e90ElIiFU6W9kIiFU6V9jIlFU6U9kIkFU6U9kIjFV6V9iIkFW6U9iIkFW6U9iIkFV6`9000O100000O10O100000O10000O1000000O3N4L9G8G9G9H:VNjDUN_;U1WEaNT;V1PEeNX;Q1SEdNZ;P1T2F=C9HRi[1"
+      },
+      "sam_score_gt_box": 1.0046483278274536,
+      "mask_area": 78061,
+      "color_ratios": {
+        "red": 3.8431483070931704e-05,
+        "blue": 0.05589218687949168,
+        "yellow": 0.0,
+        "green": 8.967346049884065e-05,
+        "black": 0.007391655243975865,
+        "white": 0.6782003817527318,
+        "brown": 0.0001793469209976813
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9456240139664293,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9456240139664293,
+      "o2o_det": [
+        30.979721069335938,
+        109.2203369140625,
+        425.61517333984375,
+        389.9183044433594
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6751342183455118
+    }
+  ]
+}

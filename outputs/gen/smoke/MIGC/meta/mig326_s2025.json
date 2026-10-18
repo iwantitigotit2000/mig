@@ -1,0 +1,52 @@
+{
+  "sample_id": "mig326_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "326",
+  "caption": "a photo of a white laptop and a blue chair",
+  "objects": [
+    {
+      "desc": "a white laptop",
+      "box": [
+        0.0,
+        0.0022384937238493726,
+        0.9533125,
+        0.8764016736401674
+      ]
+    },
+    {
+      "desc": "a blue chair",
+      "box": [
+        0.00020312500000000002,
+        0.06981171548117154,
+        0.17376562499999998,
+        0.2210878661087866
+      ]
+    }
+  ],
+  "seconds": 6.197,
+  "peak_mem_allocated_gb": 7.81,
+  "peak_mem_reserved_gb": 8.703,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "D:/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "D:/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

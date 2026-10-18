@@ -1,0 +1,62 @@
+{
+  "sample_id": "mig046_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "46",
+  "caption": "a photo of a blue clock and a red clock",
+  "objects": [
+    {
+      "desc": "a blue clock",
+      "box": [
+        0.40703125,
+        0.3704918032786885,
+        0.535015625,
+        0.6535128805620608
+      ]
+    },
+    {
+      "desc": "a red clock",
+      "box": [
+        0.6213437500000001,
+        0.26243559718969556,
+        0.780140625,
+        0.47515222482435593
+      ]
+    }
+  ],
+  "seconds": 5.282,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

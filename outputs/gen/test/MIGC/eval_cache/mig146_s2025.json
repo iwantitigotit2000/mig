@@ -1,0 +1,194 @@
+{
+  "sample_id": "mig146_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "638413997991d29370af933e4eb0daa650b0cc98",
+  "detections": {
+    "parking meter": {
+      "xyxy": [
+        [
+          9.931472778320312,
+          12.831695556640625,
+          248.71168518066406,
+          510.7434997558594
+        ]
+      ],
+      "conf": [
+        0.8745453953742981
+      ]
+    },
+    "truck": {
+      "xyxy": [
+        [
+          168.74032592773438,
+          -0.0941314697265625,
+          444.2518615722656,
+          352.1588134765625
+        ],
+        [
+          423.1529846191406,
+          0.06058502197265625,
+          511.8371276855469,
+          184.21484375
+        ],
+        [
+          9.979385375976562,
+          -0.0925140380859375,
+          445.39642333984375,
+          511.521728515625
+        ],
+        [
+          9.955406188964844,
+          12.300872802734375,
+          248.76248168945312,
+          511.2777404785156
+        ]
+      ],
+      "conf": [
+        0.4213133454322815,
+        0.3637591302394867,
+        0.331699013710022,
+        0.329581618309021
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a red parking meter",
+      "category": "parking meter",
+      "color": "red",
+      "box": [
+        0.03673123486682809,
+        0.022088888888888887,
+        0.46276029055690066,
+        0.9546888888888889
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.870815074257084,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "QS6?\\?7K5I7I7J6K4L5K4M4L3L5K5K4M4K5J7K5K5K7J4L4K5L5K5K4L6J5K5K4L5L5J4L5L4K6K3L4M4K5L4L4K5L4L4L4L5K6J6I7J7I7I6I8I7I6J6J6I7J7I5K4L2N2M4M1O1O2N2N3M002N2N1O1O4L4L5K4L4K5L3M4L3M2N2O2M3L6K3N2M2N1O2N1O2N1O2N1O1O2N1O2N1O1O2N1O2N1O1O2N1O2N1O2N1O2N1O1O2N1O2N1O2N1O1O2N1O2N1O2N101N1O2M3N1O2N2O0O1O2N2O0O2N1O100O0001N100O2O0O2O0O101N1O101N2N2O1N2N2O1N2O1N2N2O1N2O1N2N2O1N3N1N2O1N3M2O2M2N2O1N2O1N2N2O2M2N3N1eFgMl4]2TJGe4;kJe0b4@hJV1S5nNSJP2f5Y4bI`FS6m9JETJbF6H\\5g9^JcF3I\\5R:aJQF^5_:JIhJeEX5\\:hJdEX5m9gJ]F1GV5l9jJVFOO1MONV5Q:lJSFO14KQ5Q:lJSFO13LQ5i9kJ\\F1O00000MONl4k9UKZF0000000Ok4o9XKnE11M1Q5Q:RKlE11S5T:hJmEONb5U:_JmEk1Nj1U:[LmEj11h1Y:WNkEd1Z:eLhENH00n0V1`1h9hNRG>l8CiGHY86PHAY87hGG`80dGNY<M2N3M2O0O2O1N2LoaT4"
+      },
+      "sam_score_gt_box": 1.0033141374588013,
+      "mask_area": 74080,
+      "color_ratios": {
+        "red": 0.5328563714902808,
+        "blue": 0.14149568034557236,
+        "yellow": 0.0003779697624190065,
+        "green": 0.011811555075593953,
+        "black": 0.2447489200863931,
+        "white": 0.005818034557235422,
+        "brown": 0.00660097192224622
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.870815074257084,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.870815074257084,
+      "o2o_det": [
+        9.931472778320312,
+        12.831695556640625,
+        248.71168518066406,
+        510.7434997558594
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5339305650834645
+    },
+    {
+      "idx": 1,
+      "desc": "a brown truck",
+      "category": "truck",
+      "color": "brown",
+      "box": [
+        0.2878692493946731,
+        0.002466666666666667,
+        0.8582082324455206,
+        0.7061777777777778
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.8852276183239469,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "dPg23l?2N101N2O2M1O2O2N1N2O1N2O1N2O1N2O1N3M2N2O1N3N1N2N2O1N2O1O2N1N2O2N1O2N2PEeNmL22^O\\9m1QId0hMgMQ8i1cIU1VN\\Mn7d1nHjMSO2Of31nLj7b1`HjMGZ4OYLj7]701O00000O10001O0000000O1O2O001O001O3M5K8H8H7I4L5K9eIUFo5T:J001O00000000O10000001O0000O1000000000000000000000000000000O1000000O100O100O1O100O10000O100O100O10000O100O100O100O10000O100O10000O1O17I004L2N3M3M3M1O5]J`E\\5d:N1gJ\\ET5e:kJ[EU5h:0L42N1O2N1O1OO1O1N2O100001O00N2O100N2O1O1O1N2N2O1N2M3M3L4L4M3K5M3G9VOj0B>M3O1001OO1O1001O00001O1OO100O100O1N2N2O1O1O100O1O1N2O1O1O1O1O100N2O1O1O1O1O1O1O1O1O1O1O1O1O1O1O1O100NlF[IO0n8d6RGeIk8Z6UGiIi8j6M00001O001O1O00000000O100O1N2O1N3M2N3L3L5J6J6QO`FRKl9i4k0J<F7G>^O?SOiCVMi<]2`0L6\\NaB<h=[O_B4D]OW\\S1"
+      },
+      "sam_score_gt_box": 0.999871015548706,
+      "mask_area": 65674,
+      "color_ratios": {
+        "red": 0.4707646861771782,
+        "blue": 0.2989615372902519,
+        "yellow": 1.5226725949386363e-05,
+        "green": 0.001385632061394159,
+        "black": 0.11630173280141304,
+        "white": 0.048420988519048636,
+        "brown": 0.003395559886713159
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "red",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8852276183239469,
+      "o2o_det": [
+        168.74032592773438,
+        -0.0941314697265625,
+        444.2518615722656,
+        352.1588134765625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.003403852611655524
+    },
+    {
+      "idx": 2,
+      "desc": "a white truck",
+      "category": "truck",
+      "color": "white",
+      "box": [
+        0.763317191283293,
+        0.0044444444444444444,
+        0.9979661016949152,
+        0.17506666666666668
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.4004213356077674,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4004213356077674,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.4004213356077674,
+      "o2o_det": [
+        423.1529846191406,
+        0.06058502197265625,
+        511.8371276855469,
+        184.21484375
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

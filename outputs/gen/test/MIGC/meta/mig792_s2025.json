@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig792_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "792",
+  "caption": "a photo of a red potted plant and a brown sandwich and a brown sandwich and a yellow sandwich and a blue cup",
+  "objects": [
+    {
+      "desc": "a red potted plant",
+      "box": [
+        0.064328125,
+        0.014800936768149883,
+        0.56096875,
+        0.5148009367681499
+      ]
+    },
+    {
+      "desc": "a brown sandwich",
+      "box": [
+        0.134640625,
+        0.3810538641686183,
+        0.502640625,
+        0.8227634660421547
+      ]
+    },
+    {
+      "desc": "a brown sandwich",
+      "box": [
+        0.54725,
+        0.4606791569086651,
+        0.9325625000000001,
+        0.797751756440281
+      ]
+    },
+    {
+      "desc": "a yellow sandwich",
+      "box": [
+        0.43803125,
+        0.45688524590163937,
+        0.645734375,
+        0.7295081967213115
+      ]
+    },
+    {
+      "desc": "a blue cup",
+      "box": [
+        0.176140625,
+        0.28121779859484775,
+        0.398921875,
+        0.5062295081967213
+      ]
+    }
+  ],
+  "seconds": 6.534,
+  "peak_mem_allocated_gb": 7.824,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

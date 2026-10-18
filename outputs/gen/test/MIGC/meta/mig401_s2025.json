@@ -1,0 +1,70 @@
+{
+  "sample_id": "mig401_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "401",
+  "caption": "a photo of a white dog and a blue cow and a blue cow and a brown cow",
+  "objects": [
+    {
+      "desc": "a white dog",
+      "box": [
+        0.7284843750000001,
+        0.666019801980198,
+        0.9870468750000001,
+        0.9013663366336633
+      ]
+    },
+    {
+      "desc": "a blue cow",
+      "box": [
+        0.462296875,
+        0.2904950495049505,
+        0.7654687499999999,
+        0.9096237623762377
+      ]
+    },
+    {
+      "desc": "a blue cow",
+      "box": [
+        0.28909375000000004,
+        0.22615841584158414,
+        0.4965625,
+        0.8726930693069307
+      ]
+    },
+    {
+      "desc": "a brown cow",
+      "box": [
+        0.11840625,
+        0.23421782178217823,
+        0.42703125000000003,
+        0.8915445544554456
+      ]
+    }
+  ],
+  "seconds": 6.608,
+  "peak_mem_allocated_gb": 7.825,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

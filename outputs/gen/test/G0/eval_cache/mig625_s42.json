@@ -1,0 +1,308 @@
+{
+  "sample_id": "mig625_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "de303268d3576f5aab3d16ea45a79e920f6603d6",
+  "detections": {
+    "bowl": {
+      "xyxy": [
+        [
+          281.8170166015625,
+          108.68228149414062,
+          422.263427734375,
+          305.6470947265625
+        ],
+        [
+          113.13734436035156,
+          85.77947998046875,
+          226.68052673339844,
+          255.47869873046875
+        ]
+      ],
+      "conf": [
+        0.604580283164978,
+        0.6014932990074158
+      ]
+    },
+    "oven": {
+      "xyxy": [
+        [
+          0.14776611328125,
+          0.1688385009765625,
+          512.1455688476562,
+          447.94805908203125
+        ]
+      ],
+      "conf": [
+        0.3107435703277588
+      ]
+    },
+    "sink": {
+      "xyxy": [
+        [
+          97.57391357421875,
+          72.18287658691406,
+          389.7214660644531,
+          394.10479736328125
+        ]
+      ],
+      "conf": [
+        0.326867014169693
+      ]
+    },
+    "spoon": {
+      "xyxy": [
+        [
+          120.00567626953125,
+          236.31967163085938,
+          280.2796630859375,
+          317.2455139160156
+        ],
+        [
+          113.265380859375,
+          85.76860809326172,
+          226.59158325195312,
+          255.39340209960938
+        ],
+        [
+          282.1529541015625,
+          108.82614135742188,
+          422.064697265625,
+          305.552490234375
+        ]
+      ],
+      "conf": [
+        0.48643338680267334,
+        0.3703424632549286,
+        0.3558378517627716
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a yellow oven",
+      "category": "oven",
+      "color": "yellow",
+      "box": [
+        0.00298,
+        0.0022522522522522522,
+        0.20906,
+        0.8565165165165166
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.20129638407735354,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.20129638407735354,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.20129638407735354,
+      "o2o_det": [
+        0.14776611328125,
+        0.1688385009765625,
+        512.1455688476562,
+        447.94805908203125
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a red sink",
+      "category": "sink",
+      "color": "red",
+      "box": [
+        0.72088,
+        0.1648048048048048,
+        1.0,
+        0.8021621621621622
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.047581439228162874,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.047581439228162874,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.047581439228162874,
+      "o2o_det": [
+        97.57391357421875,
+        72.18287658691406,
+        389.7214660644531,
+        394.10479736328125
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a red bowl",
+      "category": "bowl",
+      "color": "red",
+      "box": [
+        0.55076,
+        0.2118018018018018,
+        0.82914,
+        0.5848348348348348
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9513006222021536,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Sf]4j0n>a0A<E9H9H6I7J6K5J6K4K5L4L4L4M3L3M4M2M3N3L3N2N2N3L3N2N2N2N2N1O2O1N2N2N1O2O1N1O2O1N101N101N2N10001N101O0O101O0O10001O00000O1000001O000000000000000000O2O0000000O101O000O2O000O2O0O2O0O2O0O101N101N2O0O2N2O0O2N2O1N1O2N2N2N2N2N2N2M3N3M2M3N3M2M3M4M2M4L4L3N3K5L5K4K5L5J6J6J7H8H9G:D`0\\OUZ]1"
+      },
+      "sam_score_gt_box": 1.007175326347351,
+      "mask_area": 21224,
+      "color_ratios": {
+        "red": 0.0005653976630229929,
+        "blue": 0.0014134941575574822,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.6830003769317754,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.9513006222021536,
+      "o2o_det": [
+        281.8170166015625,
+        108.68228149414062,
+        422.263427734375,
+        305.6470947265625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0005653443889569396
+    },
+    {
+      "idx": 3,
+      "desc": "a white bowl",
+      "category": "bowl",
+      "color": "white",
+      "box": [
+        0.20756,
+        0.17264264264264265,
+        0.45396000000000003,
+        0.5627927927927928
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.7440526808751853,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "dTi1g0R?`0C9G9H7H8J5J6K5K4L5K4L4L4M3M3L4M2N3M3M2M4N1N3M2N2N2O1N2N2O1N2N2O1O0O2O1N2O001O0O2O001O0O2O00001O0000001O00000000010O00000001O000O2O001O001O0O2O1O0O2O1N2O0O2O1N2O1N2O1N2N2O1N2N2N2N3M2N2N3M2M4M3L4M2M5L3L4K5L5J6J5L6H8H9F;Cc0YOPk^4"
+      },
+      "sam_score_gt_box": 1.0127525329589844,
+      "mask_area": 14725,
+      "color_ratios": {
+        "red": 0.00027164685908319185,
+        "blue": 0.0,
+        "yellow": 0.9461460101867573,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.0064516129032258064,
+        "brown": 0.05215619694397283
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7440526808751853,
+      "o2o_det": [
+        113.13734436035156,
+        85.77947998046875,
+        226.68052673339844,
+        255.47869873046875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.006466984343090538
+    },
+    {
+      "idx": 4,
+      "desc": "a blue spoon",
+      "category": "spoon",
+      "color": "blue",
+      "box": [
+        0.27298,
+        0.46504504504504507,
+        0.54174,
+        0.6008108108108109
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.7374703419929135,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ViX21Q`22P`MO50X?Oe@62KW?8l@GT?:l@FT?0f@21OOO`?0`@150[?0_@0j?5W@N1LZ?b00O0Ke@E]?;c@D^?<b@E]?;c@E]?8f@G[??00N2000O1@c@=]?Cc@<^?Db@;_?30OO20Ia@M_?2c@L^?2d@M\\?0`@O51[?Oa@040\\?0a@10Of?5IJa@0N7a?Ka@5_?Ka@4`?Jc@5d?O4MN0110000P`0NR@0eo10W`40\\PI0`?0_@2_?0`@O`?4\\@Oc?7O1O1O1O1O1O2M2O1M3N3M2N3M2N3N2N2N1O2M3N1O2O1N101O0O101N10000O10000000O1000000O1000000O10000O101O0cNfAS1\\>kNeAU1[>kNfAS1[>mNeAS1[>mNeAR1]>mNdAR1\\>nNeAP1\\>POdAo0]>QOdAm0^>QOdAm0i>N3BRAEPgd3"
+      },
+      "sam_score_gt_box": 0.961721658706665,
+      "mask_area": 3147,
+      "color_ratios": {
+        "red": 0.27359389895138225,
+        "blue": 0.008261836669844296,
+        "yellow": 0.00031776294884016526,
+        "green": 0.0,
+        "black": 0.0031776294884016524,
+        "white": 0.3304734667937718,
+        "brown": 0.12488083889418494
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7374703419929135,
+      "o2o_det": [
+        120.00567626953125,
+        236.31967163085938,
+        280.2796630859375,
+        317.2455139160156
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.006025492468134415
+    }
+  ]
+}

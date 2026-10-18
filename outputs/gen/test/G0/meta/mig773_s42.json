@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig773_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "773",
+  "caption": "a photo of a yellow tv and a green cup and a yellow keyboard and a black book and a yellow book",
+  "objects": [
+    {
+      "desc": "a yellow tv",
+      "box": [
+        0.660328125,
+        0.004004683840749415,
+        1.0,
+        0.5369320843091335
+      ]
+    },
+    {
+      "desc": "a green cup",
+      "box": [
+        0.405671875,
+        0.3094145199063232,
+        0.545,
+        0.4741217798594847
+      ]
+    },
+    {
+      "desc": "a yellow keyboard",
+      "box": [
+        0.5337500000000001,
+        0.5101170960187353,
+        0.85759375,
+        0.8629274004683841
+      ]
+    },
+    {
+      "desc": "a black book",
+      "box": [
+        0.0,
+        0.429344262295082,
+        0.620921875,
+        0.6613348946135831
+      ]
+    },
+    {
+      "desc": "a yellow book",
+      "box": [
+        0.066546875,
+        0.5364402810304449,
+        0.654234375,
+        0.9237939110070258
+      ]
+    }
+  ],
+  "seconds": 5.342,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

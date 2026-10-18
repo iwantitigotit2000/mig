@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig791_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "791",
+  "caption": "a photo of a brown cow and a green cow and a brown cow and a brown cow and a yellow cow",
+  "objects": [
+    {
+      "desc": "a brown cow",
+      "box": [
+        0.164515625,
+        0.483875,
+        0.60321875,
+        0.7720416666666666
+      ]
+    },
+    {
+      "desc": "a green cow",
+      "box": [
+        0.2990625,
+        0.46379166666666666,
+        0.7541718749999999,
+        0.6970625
+      ]
+    },
+    {
+      "desc": "a brown cow",
+      "box": [
+        0.00484375,
+        0.6451666666666667,
+        0.338703125,
+        0.9892500000000001
+      ]
+    },
+    {
+      "desc": "a brown cow",
+      "box": [
+        0.48531250000000004,
+        0.4341041666666667,
+        0.813390625,
+        0.5908958333333333
+      ]
+    },
+    {
+      "desc": "a yellow cow",
+      "box": [
+        0.5955781250000001,
+        0.28010416666666665,
+        0.896046875,
+        0.5371666666666666
+      ]
+    }
+  ],
+  "seconds": 5.302,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

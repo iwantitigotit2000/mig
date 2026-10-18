@@ -1,0 +1,71 @@
+{
+  "sample_id": "mig372_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "372",
+  "caption": "a photo of a blue refrigerator and a white dining table and a blue oven",
+  "objects": [
+    {
+      "desc": "a blue refrigerator",
+      "box": [
+        0.512078125,
+        0.2336065573770492,
+        0.804453125,
+        0.9842622950819672
+      ]
+    },
+    {
+      "desc": "a white dining table",
+      "box": [
+        0.0,
+        0.6269789227166277,
+        0.23343750000000002,
+        0.9859016393442623
+      ]
+    },
+    {
+      "desc": "a blue oven",
+      "box": [
+        0.6581875,
+        0.49662763466042154,
+        0.9985312499999999,
+        1.0
+      ]
+    }
+  ],
+  "seconds": 5.238,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

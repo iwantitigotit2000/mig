@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig000_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "0",
+  "caption": "a photo of a blue fork and a green carrot and a red carrot and a red carrot",
+  "objects": [
+    {
+      "desc": "a blue fork",
+      "box": [
+        0.72472,
+        0.008986666666666667,
+        1.0,
+        0.5595466666666667
+      ]
+    },
+    {
+      "desc": "a green carrot",
+      "box": [
+        0.0016799999999999999,
+        0.07058666666666666,
+        0.13226000000000002,
+        0.40634666666666663
+      ]
+    },
+    {
+      "desc": "a red carrot",
+      "box": [
+        0.16056,
+        0.21597333333333332,
+        0.28676,
+        0.38949333333333336
+      ]
+    },
+    {
+      "desc": "a red carrot",
+      "box": [
+        0.07587999999999999,
+        0.36234666666666665,
+        0.20118,
+        0.49410666666666664
+      ]
+    }
+  ],
+  "seconds": 5.844,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

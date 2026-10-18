@@ -1,0 +1,133 @@
+{
+  "sample_id": "mig195_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "1f98586f736a85a13c8fb914d15d73fa6c732ca8",
+  "detections": {
+    "zebra": {
+      "xyxy": [
+        [
+          190.74168395996094,
+          136.74652099609375,
+          368.7340087890625,
+          356.9182434082031
+        ],
+        [
+          98.92976379394531,
+          124.10138702392578,
+          191.4419403076172,
+          187.89955139160156
+        ]
+      ],
+      "conf": [
+        0.8858744502067566,
+        0.7715300917625427
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black zebra",
+      "category": "zebra",
+      "color": "black",
+      "box": [
+        0.372765625,
+        0.24337499999999998,
+        0.734546875,
+        0.6956249999999999
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9065744782477149,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ZXP35a?=G8L4L4M3L3N2lA3Q<0hC7T<MeC:X<i1M2N2N3M2M3N101N101N2N2M3N2O1O1N2O1O1N2N101O1N2O1O10O01O001O1N1N2O1000N2gN[ETMi:k2`EjLc:U3T1J6L4O1N2O1O0010O02O001O10O101O2N2N3M3M4L4M3M5J5L7UEgK_9c4UFaKj9k4hEWKW:Y51O01O000000001O001N2O001O1OZMTFXOl9h0_FnN_9S1hFfNX9Z1VGYNh8h1cGmMZ8V2lGeMo7_2VH\\Mg7h2dHlLZ7V3g21O1O100O1O100O100O1O100O100O010O100O10O10O10O010O10WF[LW7e3fH_LY7a3eHaLZ7c3_HaLa7b3SHgLm7^3fGjLZ8^500000N2N2M3N2N1N3A?^Ob0G9J6lNUEoLP;R3PEhLT;Z3h03N1N4M2M4M<C4M3M5K8G<aETKS9m5001N1O1O2N2mKXFj1i9jMVF^N7e3e9iMiFR2Z9kMPGf1POlLU:Y1SGa1Y9ZNlF`1Z9ZNkFb1Z9XNmFb1[9RNQGf1e<oN;F9F8HleW2"
+      },
+      "sam_score_gt_box": 1.0061695575714111,
+      "mask_area": 23653,
+      "color_ratios": {
+        "red": 0.0017756732761171944,
+        "blue": 0.043757662875745146,
+        "yellow": 0.0059611888555362955,
+        "green": 0.010146704434955398,
+        "black": 0.4688623007652306,
+        "white": 0.08337208810721684,
+        "brown": 0.024690314125058132
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9065744782477149,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9065744782477149,
+      "o2o_det": [
+        190.74168395996094,
+        136.74652099609375,
+        368.7340087890625,
+        356.9182434082031
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.4691310975609756
+    },
+    {
+      "idx": 1,
+      "desc": "a black zebra",
+      "category": "zebra",
+      "color": "black",
+      "box": [
+        0.193515625,
+        0.23710416666666667,
+        0.37875,
+        0.39914583333333337
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.7479702371107039,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "TTb15R1Lc=9TB8`=LZB8e=LUB7l=LlA8U>i010O01O001N2N1O1O00O1O1001100101O0O00M3M3N101O0001O3M1O000000O100O100O100O100O100O1O10000O1000O1000000001O00000001O00001O001O001O1O001O1O001O0000O100O2O000001O1O1O2N2N7UObAEe>OP\\P5"
+      },
+      "sam_score_gt_box": 1.0025582313537598,
+      "mask_area": 4709,
+      "color_ratios": {
+        "red": 0.008282013166277342,
+        "blue": 0.018050541516245487,
+        "yellow": 0.01444043321299639,
+        "green": 0.00573370142280739,
+        "black": 0.3741771076661712,
+        "white": 0.012316840093438097,
+        "brown": 0.06731790188999788
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7479702371107039,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7479702371107039,
+      "o2o_det": [
+        98.92976379394531,
+        124.10138702392578,
+        191.4419403076172,
+        187.89955139160156
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.37441563960900975
+    }
+  ]
+}

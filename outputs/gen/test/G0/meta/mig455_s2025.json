@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig455_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "455",
+  "caption": "a photo of a black oven and a blue potted plant and a brown refrigerator and a white chair",
+  "objects": [
+    {
+      "desc": "a black oven",
+      "box": [
+        0.06722,
+        0.7982758620689655,
+        0.38996000000000003,
+        1.0
+      ]
+    },
+    {
+      "desc": "a blue potted plant",
+      "box": [
+        0.0,
+        0.0,
+        0.17662,
+        0.3451724137931034
+      ]
+    },
+    {
+      "desc": "a brown refrigerator",
+      "box": [
+        0.44224,
+        0.4224668435013263,
+        0.80652,
+        0.9887533156498673
+      ]
+    },
+    {
+      "desc": "a white chair",
+      "box": [
+        0.52622,
+        0.8089389920424404,
+        0.69696,
+        0.9611405835543767
+      ]
+    }
+  ],
+  "seconds": 5.37,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

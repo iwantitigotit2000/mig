@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig146_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "146",
+  "caption": "a photo of a red parking meter and a brown truck and a white truck",
+  "objects": [
+    {
+      "desc": "a red parking meter",
+      "box": [
+        0.03673123486682809,
+        0.022088888888888887,
+        0.46276029055690066,
+        0.9546888888888889
+      ]
+    },
+    {
+      "desc": "a brown truck",
+      "box": [
+        0.2878692493946731,
+        0.002466666666666667,
+        0.8582082324455206,
+        0.7061777777777778
+      ]
+    },
+    {
+      "desc": "a white truck",
+      "box": [
+        0.763317191283293,
+        0.0044444444444444444,
+        0.9979661016949152,
+        0.17506666666666668
+      ]
+    }
+  ],
+  "seconds": 6.342,
+  "peak_mem_allocated_gb": 7.826,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

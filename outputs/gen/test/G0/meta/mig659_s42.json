@@ -1,0 +1,98 @@
+{
+  "sample_id": "mig659_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "659",
+  "caption": "a photo of a black bed and a black teddy bear and a green teddy bear and a green teddy bear and a green teddy bear and a green teddy bear",
+  "objects": [
+    {
+      "desc": "a black bed",
+      "box": [
+        0.0,
+        0.5841079812206573,
+        1.0,
+        0.9867840375586855
+      ]
+    },
+    {
+      "desc": "a black teddy bear",
+      "box": [
+        0.418265625,
+        0.222981220657277,
+        0.7795624999999999,
+        0.8558450704225353
+      ]
+    },
+    {
+      "desc": "a green teddy bear",
+      "box": [
+        0.6998593750000001,
+        0.47025821596244133,
+        0.9026250000000001,
+        0.7673708920187793
+      ]
+    },
+    {
+      "desc": "a green teddy bear",
+      "box": [
+        0.120390625,
+        0.418849765258216,
+        0.31818749999999996,
+        0.6514084507042254
+      ]
+    },
+    {
+      "desc": "a green teddy bear",
+      "box": [
+        0.311046875,
+        0.2837323943661972,
+        0.48175,
+        0.5103755868544602
+      ]
+    },
+    {
+      "desc": "a green teddy bear",
+      "box": [
+        0.330859375,
+        0.5317840375586854,
+        0.47242187500000005,
+        0.6845774647887324
+      ]
+    }
+  ],
+  "seconds": 5.386,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

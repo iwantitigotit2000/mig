@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig022_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "22",
+  "caption": "a photo of a red vase and a green vase and a yellow vase and a black vase",
+  "objects": [
+    {
+      "desc": "a red vase",
+      "box": [
+        0.503859375,
+        0.5870218579234973,
+        0.6624062500000001,
+        0.9072677595628416
+      ]
+    },
+    {
+      "desc": "a green vase",
+      "box": [
+        0.30290625000000004,
+        0.6019398907103826,
+        0.45670312500000004,
+        0.8815300546448087
+      ]
+    },
+    {
+      "desc": "a yellow vase",
+      "box": [
+        0.7522031250000001,
+        0.5731967213114754,
+        0.9016093749999999,
+        0.8524863387978142
+      ]
+    },
+    {
+      "desc": "a black vase",
+      "box": [
+        0.12575,
+        0.5534699453551912,
+        0.28532812500000004,
+        0.848688524590164
+      ]
+    }
+  ],
+  "seconds": 5.294,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

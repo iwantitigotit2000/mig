@@ -1,0 +1,226 @@
+{
+  "sample_id": "mig389_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "61b487f7c26e45666b75fc5fe0089dac43fd9680",
+  "detections": {
+    "airplane": {
+      "xyxy": [
+        [
+          5.043434143066406,
+          152.2040252685547,
+          239.35125732421875,
+          234.49217224121094
+        ],
+        [
+          228.95199584960938,
+          73.73944091796875,
+          440.8319396972656,
+          158.6365966796875
+        ],
+        [
+          225.6017303466797,
+          133.117919921875,
+          500.85162353515625,
+          224.35394287109375
+        ],
+        [
+          -0.07326889038085938,
+          114.39927673339844,
+          111.79742431640625,
+          183.2743377685547
+        ]
+      ],
+      "conf": [
+        0.6686768531799316,
+        0.6316671371459961,
+        0.6289799809455872,
+        0.6262330412864685
+      ]
+    },
+    "truck": {
+      "xyxy": [
+        [
+          -0.046512603759765625,
+          114.73233795166016,
+          111.59971618652344,
+          180.56695556640625
+        ]
+      ],
+      "conf": [
+        0.2661685347557068
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a brown airplane",
+      "category": "airplane",
+      "color": "brown",
+      "box": [
+        0.375734375,
+        0.1452927400468384,
+        0.944421875,
+        0.4845433255269321
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.4512344144540578,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4512344144540578,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.4512344144540578,
+      "o2o_det": [
+        225.6017303466797,
+        133.117919921875,
+        500.85162353515625,
+        224.35394287109375
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow airplane",
+      "category": "airplane",
+      "color": "yellow",
+      "box": [
+        0.001109375,
+        0.3359016393442623,
+        0.549015625,
+        0.5013583138173302
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.5157536785815567,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "mf01n?3N1O00NV@N]?4j@MX?5g@KW?7i@IW?8h@HW?9i@GV?:72c@CU?=61O101O0O100O100O10000h@^OQ?c0o@]OQ?c0o@]OP?d0PA\\OP?d0PA\\OP?d0510000k@[Oo>e0QA[Oo>e0PA\\OP?d0PA[OQ?e0410000k@YOQ?g0o@ZOP?e0QA[Oo>e0QAZOP?f0410O10000000000O100000000O100000000001O00001O0O1000000000000000000000000O10000000001O0000000O100000002NO1O10O2O00O100000000000000O11O001O1N101O3M001O0000000WAnNd>S1ZAnNf>X1MK]AoNc>Q1]APOb>X1O00H_AQOa>X1O001O000O2O001O1O001O001O00001O0O1000POjA7U>IlA6T>InA6R>JoA5Q>KoA5Q>KPB5o=KRB4n=LTB2l=NVB0j=0YBMf=4]BIc=7_BFb=:_BEa=:aBE_=;bBD^=<dBA]=?dB@\\=`0eB_OZ=b0fB^OZ=b0gB\\OZ=d0gB[OY=e0gB[OY=e0hBZOX=e0R100000000O01000000000O01000000000000000O01000000O10O01O100O001O100N2O100O1O1O2N1O0O2O00100O1O1O101N1O1O10M3WO^A4b>IaA6a>EdA8S?O1O101N6J2O0O100000O0100O2NZjV4"
+      },
+      "sam_score_gt_box": 0.94722580909729,
+      "mask_area": 6755,
+      "color_ratios": {
+        "red": 0.060399703923019986,
+        "blue": 0.009030347890451517,
+        "yellow": 0.2463360473723168,
+        "green": 0.0011843079200592153,
+        "black": 0.4479644707623982,
+        "white": 0.02161361954108068,
+        "brown": 0.10333086602516654
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.5157536785815567,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.5157536785815567,
+      "o2o_det": [
+        5.043434143066406,
+        152.2040252685547,
+        239.35125732421875,
+        234.49217224121094
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.28836805555555556
+    },
+    {
+      "idx": 2,
+      "desc": "a black truck",
+      "category": "truck",
+      "color": "black",
+      "box": [
+        0.60528125,
+        0.47772833723653396,
+        0.772765625,
+        0.6145433255269321
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.0,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.0,
+      "o2o_det": [
+        -0.046512603759765625,
+        114.73233795166016,
+        111.59971618652344,
+        180.56695556640625
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a red airplane",
+      "category": "airplane",
+      "color": "red",
+      "box": [
+        0.0,
+        0.23550351288056207,
+        0.21385937500000002,
+        0.3656674473067915
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.8436458431891917,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "b4h0X?0000O10O100000O1000000O100000000O010000000O100000O100000O100000O1000O10O10000O1000000O100000000O10O10000O01000O100000O10O10O100O1O10O01O1O001O1O1O0O2N2O1N101O1000O01000O101ROXAa0W?M2M2O1O1O1N10001N100O100O100O10000O100O2O0O2Ne[X6"
+      },
+      "sam_score_gt_box": 0.9573015570640564,
+      "mask_area": 2459,
+      "color_ratios": {
+        "red": 0.004880032533550223,
+        "blue": 0.0056933712891419274,
+        "yellow": 0.22204148027653517,
+        "green": 0.00040666937779585197,
+        "black": 0.3786091907279382,
+        "white": 0.03294021960146401,
+        "brown": 0.3005286701911346
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8436458431891917,
+      "o2o_det": [
+        -0.07326889038085938,
+        114.39927673339844,
+        111.79742431640625,
+        183.2743377685547
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.004924086992203529
+    }
+  ]
+}

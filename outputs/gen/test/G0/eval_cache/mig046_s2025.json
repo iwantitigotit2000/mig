@@ -1,0 +1,137 @@
+{
+  "sample_id": "mig046_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "a1e45a7b5cbdf3ade0319dc1b13ea2a159461681",
+  "detections": {
+    "clock": {
+      "xyxy": [
+        [
+          313.7270202636719,
+          135.10089111328125,
+          403.1087341308594,
+          239.873779296875
+        ],
+        [
+          205.75555419921875,
+          183.94619750976562,
+          281.9832458496094,
+          332.7107238769531
+        ]
+      ],
+      "conf": [
+        0.5860807299613953,
+        0.5568534731864929
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a blue clock",
+      "category": "clock",
+      "color": "blue",
+      "box": [
+        0.40703125,
+        0.3704918032786885,
+        0.535015625,
+        0.6535128805620608
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8175158292296413,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "PhX3Z1Y>b0D9I7K5K4M4M2M3M4M2M3M3N3L2O2O1N1O2N1O2N101N1O101N100O1O2N100O100O100O100O100O10000O01000O1000hM\\D4d;M[D3d;N[D3e;LZD5g;KYD5g;JZD6f;JZD6e;J\\D[O4XOa;\\1[DXO;ZOZ;^1ZDUOa0\\OT;`1[DROd0\\OR;a1[DPOg0^On:b1ZDnNl0_On:^1WDQOn0_OQ;NTDo0MAR1@];n0aCAT1@\\;m0`CBW1_OZ;o0]CC\\1[OX;Q1]CCV>9mAEW>7mADU>:QB@T>JhAO>0kVd3"
+      },
+      "sam_score_gt_box": 0.9941701292991638,
+      "mask_area": 7714,
+      "color_ratios": {
+        "red": 0.003629764065335753,
+        "blue": 0.13754213119004408,
+        "yellow": 0.0,
+        "green": 0.002074150894477573,
+        "black": 0.0,
+        "white": 0.7998444386829142,
+        "brown": 0.00012963443090484831
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8175158292296413,
+      "o2o_det": [
+        205.75555419921875,
+        183.94619750976562,
+        281.9832458496094,
+        332.7107238769531
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.1426200204290092
+    },
+    {
+      "idx": 1,
+      "desc": "a red clock",
+      "category": "clock",
+      "color": "red",
+      "box": [
+        0.6213437500000001,
+        0.26243559718969556,
+        0.780140625,
+        0.47515222482435593
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.878080940769663,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "gem4f0V?7I8I5L5L3K4N3L3N3L3N2N2M3N2N2N2N1O2N1O2N101N1O2O0O1O2O0O1O100O100O2O000O01000O1000000O10O10000O01000O100O100O100O101N1O100O101N1O1O2N101N1O2M3N1O2N2N2M3N2M3N2N3L3N3K5J7H:ERkf1"
+      },
+      "sam_score_gt_box": 1.0056811571121216,
+      "mask_area": 6961,
+      "color_ratios": {
+        "red": 0.00732653354403103,
+        "blue": 0.09467030599051861,
+        "yellow": 0.0,
+        "green": 0.00086194512282718,
+        "black": 0.0011492601637695732,
+        "white": 0.8618014653067088,
+        "brown": 0.00014365752047119666
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.878080940769663,
+      "o2o_det": [
+        313.7270202636719,
+        135.10089111328125,
+        403.1087341308594,
+        239.873779296875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.005047591577732911
+    }
+  ]
+}

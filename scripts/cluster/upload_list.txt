@@ -1,0 +1,21 @@
+# Assets needed on the cluster for all stages (paths relative to E:/transformer/mig_assets/), ~18 GB.
+# Destination on the cluster: $HOME/mig_assets/ (default MIG_ASSETS in scripts/slurm/env.sh).
+#
+# Also upload (not under mig_assets):
+#   C:/Users/0/.cache/clip/RN50.pt  ->  $HOME/.cache/clip/RN50.pt     (CLIP-IQA backbone, 244 MB)
+#   E:/transformer/mig_project/     ->  $HOME/mig_project/            (code + manifests; skip outputs/gen and __pycache__)
+#
+# Not uploaded: coco/annotations*, scratch_gligen_official, logs, runs/pilot_* (local Stage A only).
+repos/GLIGEN/
+repos/MIGC/
+repos/MIG_Bench/
+weights/gligen_generation_text_box.bin
+weights/MIGC_SD14.ckpt
+weights/sd-v1-4-diffusers/
+weights/clip-vit-large-patch14/
+weights/bert-base-uncased/
+weights/groundingdino_swint_ogc.pth
+weights/sam_vit_h_4b8939.pth
+coco/train2014_subset/
+coco/phrase_embeddings_clipL14_before.pt
+hf_home/

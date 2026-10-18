@@ -1,0 +1,80 @@
+{
+  "sample_id": "mig366_s2025",
+  "method": "GLIGEN",
+  "seed": 2025,
+  "layout_id": "366",
+  "caption": "a photo of a white clock and a brown clock and a blue clock and a blue clock",
+  "objects": [
+    {
+      "desc": "a white clock",
+      "box": [
+        0.411921875,
+        0.20028125000000002,
+        0.6921406250000001,
+        0.49087499999999995
+      ]
+    },
+    {
+      "desc": "a brown clock",
+      "box": [
+        0.042703124999999995,
+        0.305625,
+        0.27865624999999994,
+        0.541578125
+      ]
+    },
+    {
+      "desc": "a blue clock",
+      "box": [
+        0.8266718750000001,
+        0.72228125,
+        0.991015625,
+        0.896421875
+      ]
+    },
+    {
+      "desc": "a blue clock",
+      "box": [
+        0.007765625,
+        0.6505625,
+        0.227984375,
+        0.88890625
+      ]
+    }
+  ],
+  "seconds": 5.364,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

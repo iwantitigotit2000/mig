@@ -1,0 +1,61 @@
+{
+  "sample_id": "mig229_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "229",
+  "caption": "a photo of a white horse and a blue horse and a white horse",
+  "objects": [
+    {
+      "desc": "a white horse",
+      "box": [
+        0.11165624999999998,
+        0.3806338028169014,
+        0.6054999999999999,
+        0.8430046948356807
+      ]
+    },
+    {
+      "desc": "a blue horse",
+      "box": [
+        0.005234375,
+        0.3767605633802817,
+        0.19929687499999998,
+        0.6565962441314553
+      ]
+    },
+    {
+      "desc": "a white horse",
+      "box": [
+        0.532015625,
+        0.38279342723004695,
+        0.8617343749999999,
+        0.707018779342723
+      ]
+    }
+  ],
+  "seconds": 6.33,
+  "peak_mem_allocated_gb": 7.818,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

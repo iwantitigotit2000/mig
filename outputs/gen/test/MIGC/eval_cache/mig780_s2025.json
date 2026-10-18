@@ -1,0 +1,303 @@
+{
+  "sample_id": "mig780_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "a55ce22c86d04aca45ed17284b26b3ba30eb8de9",
+  "detections": {
+    "keyboard": {
+      "xyxy": [
+        [
+          53.599754333496094,
+          382.1372985839844,
+          157.42034912109375,
+          462.9212951660156
+        ],
+        [
+          319.9376220703125,
+          328.0618896484375,
+          386.8453369140625,
+          396.5767822265625
+        ]
+      ],
+      "conf": [
+        0.4578379690647125,
+        0.4545280635356903
+      ]
+    },
+    "laptop": {
+      "xyxy": [
+        [
+          319.4518737792969,
+          247.54989624023438,
+          412.4357604980469,
+          396.8223571777344
+        ],
+        [
+          30.49056625366211,
+          317.2201232910156,
+          157.68984985351562,
+          463.7072448730469
+        ]
+      ],
+      "conf": [
+        0.7100157737731934,
+        0.49011144042015076
+      ]
+    },
+    "tv": {
+      "xyxy": [
+        [
+          185.35003662109375,
+          201.10720825195312,
+          317.9085998535156,
+          334.8263854980469
+        ],
+        [
+          59.02178192138672,
+          224.817626953125,
+          154.944091796875,
+          380.5430908203125
+        ]
+      ],
+      "conf": [
+        0.7372182011604309,
+        0.40621793270111084
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white laptop",
+      "category": "laptop",
+      "color": "white",
+      "box": [
+        0.052468749999999995,
+        0.5662997658079625,
+        0.313359375,
+        0.8988758782201405
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.7844530233053431,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Pk`07h?5K3N5K3L4M3M3L5L2N3L5L2N4K4M4L2N3L4M4K3N3L3N2N2M2O1O2N2N1N3N2N1N2N2O2N2M2O2N2N1N3N2N1N2O00000O10O001O010O001O10O01O10O01O010O1O100O00100O1O1O010O1O100O1O010O1]NbCC_<o1O01O010O1O1_N_CC`<=aCB`<n11O010O1O010O1YN^CbNNV1e<7^CbNOV1b<9_CaNOU1c<9_CbNOS1c<:^CdN0Q1a<;`CcN1P1`<=]C_NM47n0_<k0bCTO^<k0cCTO^<l0cCRO_<l0cCSO_<k0bCSOc<i0^CUOj<`0hBhN`0g0m<>UC@o<=QCBT=:mBEW=6kBHZ=3hBK]=1dBM]=3cBM]=FRBOc09\\=HlAMN4k05\\=6eBHa=2`BNj>N2N]ca5"
+      },
+      "sam_score_gt_box": 0.9874883890151978,
+      "mask_area": 11068,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0070473436935308996,
+        "yellow": 0.3056559450668594,
+        "green": 0.0010842067220816769,
+        "black": 0.17157571376942538,
+        "white": 0.31062522587640046,
+        "brown": 0.0640585471629924
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7844530233053431,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7844530233053431,
+      "o2o_det": [
+        30.49056625366211,
+        317.2201232910156,
+        157.68984985351562,
+        463.7072448730469
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.30581747020103184
+    },
+    {
+      "idx": 1,
+      "desc": "a blue laptop",
+      "category": "laptop",
+      "color": "blue",
+      "box": [
+        0.5983125,
+        0.4698829039812646,
+        0.801609375,
+        0.7604683840749413
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.7835079232503998,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "fjP52m?3M2N3L3O1N2N3M3N1N2N2O1N3N1N2O1N3N1N2L5I6H8H8J7I6J6I8I6I7H9F9H9L3N2O100O2N10O010O00001N1O2O0O2O0O101N101N1O101N1O101N1O1O2O0O1N2H9L3K5M4J5L4L5L3K5J6J7L3K5L5K4M3L5J5L5K4L4L5K4Lhgb1"
+      },
+      "sam_score_gt_box": 1.003224492073059,
+      "mask_area": 7364,
+      "color_ratios": {
+        "red": 0.0006789788158609451,
+        "blue": 0.2829983704508419,
+        "yellow": 0.007740358500814774,
+        "green": 0.0,
+        "black": 0.007061379684953829,
+        "white": 0.5370722433460076,
+        "brown": 0.023900054318305268
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7835079232503998,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7835079232503998,
+      "o2o_det": [
+        319.4518737792969,
+        247.54989624023438,
+        412.4357604980469,
+        396.8223571777344
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.28328804347826086
+    },
+    {
+      "idx": 2,
+      "desc": "a brown laptop",
+      "category": "laptop",
+      "color": "brown",
+      "box": [
+        0.1164375,
+        0.42601873536299767,
+        0.29889062499999997,
+        0.6237704918032787
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.007202424449323461,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.007202424449323461,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a yellow keyboard",
+      "category": "keyboard",
+      "color": "yellow",
+      "box": [
+        0.09767187499999999,
+        0.7184777517564404,
+        0.31856249999999997,
+        0.8986416861826698
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.7547518656143917,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "T]k04l?2M2O2N2M2O2M2O2M2O2M3N1N2O2M3N1N3N2M2O2M3N1N2O1N1000O010O00010O001O010O001O010O0010O010O01O0010O01O010O0010O01O010O0010O0001O010O0010O01O010O00100O1O101N1O2O1N2N2O0O2N2O1N2N2O1N1O2O1N2N1O2N2O1N2N101N2N3M[Sa5"
+      },
+      "sam_score_gt_box": 0.9932756423950195,
+      "mask_area": 3823,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0007847240387130526,
+        "yellow": 0.8788909233586188,
+        "green": 0.0018310227569971226,
+        "black": 0.0007847240387130526,
+        "white": 0.02432644520010463,
+        "brown": 0.14726654459848287
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7547518656143917,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7547518656143917,
+      "o2o_det": [
+        53.599754333496094,
+        382.1372985839844,
+        157.42034912109375,
+        462.9212951660156
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.8839168202158463
+    },
+    {
+      "idx": 4,
+      "desc": "a black tv",
+      "category": "tv",
+      "color": "black",
+      "box": [
+        0.368828125,
+        0.39833723653395786,
+        0.620515625,
+        0.6318501170960188
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8691824047538277,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "`fm2n2Q=<D6K5K5K3M1O1O001O000000O10O1001O000O10O10000001N101O1O00000O10000000000O10000000000O10000000O1000O1000000000000O1000000000000O10O1000000000O1000000000000O10O1000000000O1000000000000000O100000O10000000000O100000O10O10000000000O10000000000O10O10FeCnL\\<Q3gCmLY<Q3jCnLV<g2g0\\Od0ZOg0YO[ZQ3"
+      },
+      "sam_score_gt_box": 1.0046608448028564,
+      "mask_area": 15272,
+      "color_ratios": {
+        "red": 0.0997904662126768,
+        "blue": 0.005631220534311158,
+        "yellow": 0.02069146149816658,
+        "green": 0.0,
+        "black": 0.5034704033525406,
+        "white": 0.18399685699319016,
+        "brown": 0.14392352016762702
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8691824047538277,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8691824047538277,
+      "o2o_det": [
+        185.35003662109375,
+        201.10720825195312,
+        317.9085998535156,
+        334.8263854980469
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5020787962779648
+    }
+  ]
+}

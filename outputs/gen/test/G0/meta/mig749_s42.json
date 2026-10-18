@@ -1,0 +1,89 @@
+{
+  "sample_id": "mig749_s42",
+  "method": "GLIGEN",
+  "seed": 42,
+  "layout_id": "749",
+  "caption": "a photo of a red dog and a black dog and a yellow dog and a blue couch and a black couch",
+  "objects": [
+    {
+      "desc": "a red dog",
+      "box": [
+        0.27653125,
+        0.20403397027600848,
+        0.7508125,
+        0.5575796178343949
+      ]
+    },
+    {
+      "desc": "a black dog",
+      "box": [
+        0.0044375,
+        0.250828025477707,
+        0.4086875,
+        0.7458174097664543
+      ]
+    },
+    {
+      "desc": "a yellow dog",
+      "box": [
+        0.6899375,
+        0.21229299363057325,
+        0.99446875,
+        0.7122929936305733
+      ]
+    },
+    {
+      "desc": "a blue couch",
+      "box": [
+        0.001578125,
+        0.0021443736730360936,
+        0.997078125,
+        0.9892569002123143
+      ]
+    },
+    {
+      "desc": "a black couch",
+      "box": [
+        0.038234375,
+        0.3992144373673036,
+        1.0,
+        0.9784288747346073
+      ]
+    }
+  ],
+  "seconds": 6.232,
+  "peak_mem_allocated_gb": 9.361,
+  "peak_mem_reserved_gb": 10.0,
+  "config": {
+    "method": "GLIGEN",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/gligen_generation_text_box.bin",
+      "size": 6775067861,
+      "sha1_first_64MB": "e1d722197184fc3586cfbe38bf0c9bc9321fc596"
+    },
+    "checkpoint_extra_keys": [
+      "iters",
+      "opt",
+      "scheduler"
+    ],
+    "trainable_ckpt": null,
+    "repo_commit": "f9dccb9c6cf48bad03c3666290a7dec8c5e58f3c",
+    "sampler": "PLMS",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "alpha_type": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "resolution": [
+      512,
+      512
+    ],
+    "sdpa": true,
+    "autocast_fp16": true,
+    "phrase_source": "object desc, e.g. 'a red carrot'",
+    "max_objs": 30
+  }
+}

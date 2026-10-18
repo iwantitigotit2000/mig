@@ -1,0 +1,308 @@
+{
+  "sample_id": "mig659_s42",
+  "config_hash": "59e1dab752",
+  "image_sha1": "62d921a9f1bbb98cda0a7e8dea6285e710608bb5",
+  "detections": {
+    "bed": {
+      "xyxy": [
+        [
+          0.039093017578125,
+          10.404205322265625,
+          512.0389404296875,
+          511.9389343261719
+        ]
+      ],
+      "conf": [
+        0.6698291897773743
+      ]
+    },
+    "teddy bear": {
+      "xyxy": [
+        [
+          369.46844482421875,
+          242.48080444335938,
+          475.024169921875,
+          401.7730407714844
+        ],
+        [
+          55.68588638305664,
+          219.67835998535156,
+          157.64439392089844,
+          337.1114807128906
+        ],
+        [
+          205.83697509765625,
+          117.14614868164062,
+          400.93377685546875,
+          431.1448669433594
+        ],
+        [
+          163.61790466308594,
+          134.63726806640625,
+          259.9652099609375,
+          349.2612609863281
+        ]
+      ],
+      "conf": [
+        0.740871250629425,
+        0.7402599453926086,
+        0.6358057856559753,
+        0.6186416745185852
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a black bed",
+      "category": "bed",
+      "color": "black",
+      "box": [
+        0.0,
+        0.5841079812206573,
+        1.0,
+        0.9867840375586855
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.41103432745317403,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.41103432745317403,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.41103432745317403,
+      "o2o_det": [
+        0.039093017578125,
+        10.404205322265625,
+        512.0389404296875,
+        511.9389343261719
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a black teddy bear",
+      "category": "teddy bear",
+      "color": "black",
+      "box": [
+        0.418265625,
+        0.222981220657277,
+        0.7795624999999999,
+        0.8558450704225353
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.9202988125104038,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "dhW35f?9H7K4K5L3M3jCWOQ9k0kFCj8?SGEi8=UGGh8;VGHg89XGKc87\\GKa87_GK^86aGL]85bGM]83cGM\\84cGN[83dGN[83dGOZ82cG1]8OaG3^8M_G7`8J]G9a5ZN[K]1QO>a5[NYKX1SO`0c5[NXKT1POg0f5YNWKQ1lNn0k5TNVKo0iNS1o5QNVKl0hNW1Q6oMVKj0dN\\1U6lMUKi0cN^1W6kMTKg0cNa1X6jMSKf0bNc1Z6hMSKf0aNd1[6hMRKe0aNe1]6fMRKd0_Nj1]6cMSKd0^Nk1_6bMRKb0^Nn1_6aMRKa0[NR2d6]MQKa0YNT2f6\\MoJe4P5]KnJd4R5\\KmJe4S5\\KkJe4U5\\KiJe4W5^KfJb4Z5`KcJa4]5aK`J_4a5gKYJY4g5iKUJY4k5iKSJV4n5mKnIT4R6PLjIo3X6RLeIo3[6SLcIl3^6VL_Ik3a6VL^Ii3d6WLZIj3f6WLYIh3h6YLWIg3j6ZLSIf3n6e22O0O1O001N2N2O1N2O0O2N1O2N101O0O1O2N2M2L5N2000O20O01O000O2O1O00001O000001O^H^Hf6c7VIeHe6^8M1O2N100O2N1O100O1O010O0000010O000000000O2N100O1000000O1O100O10PImIS4S6kKoIU4R6iKPJV4P6gKTJX4l5fKWJY4i5fKYJY4g5eK[J[4e5bK_J]4b5aK_J_4a5^KcJ`4^5\\KfJd4[5SKmJm4T5lJSKS5m4jJVKU5l4hJWKW5i4iJWKW5j4gJXKW5i4iJWKW5i4iJXKU5j4jJVKV5j4iJXKV5i4iJWKV5k4gJXKX5h4gJYKX5i4gJXKW5j4gJWKc1QNS1i6XMXKb1iN=Q6nMYKd1QO2i5WNWKg1VOKf5XNYKm1WOCg5VNWKV2UO@]8`0eG\\O]8c0lGROW8m0UHeNo7Y1WH_Nm7_1YHYNj7f1]HoMi7o1V3N1O1O2N3M4L2M3N2M2O2M3N2M3N1N3M3M3M4L5J7FWWh1"
+      },
+      "sam_score_gt_box": 1.0032049417495728,
+      "mask_area": 40001,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0017999550011249719,
+        "yellow": 0.7839304017399565,
+        "green": 0.1609209769755756,
+        "black": 0.012399690007749806,
+        "white": 0.0,
+        "brown": 0.0009999750006249844
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9202988125104038,
+      "o2o_det": [
+        205.83697509765625,
+        117.14614868164062,
+        400.93377685546875,
+        431.1448669433594
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.012446888277930517
+    },
+    {
+      "idx": 2,
+      "desc": "a green teddy bear",
+      "category": "teddy bear",
+      "color": "green",
+      "box": [
+        0.6998593750000001,
+        0.47025821596244133,
+        0.9026250000000001,
+        0.7673708920187793
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.7467416093269215,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "hji5=^?7L3Ma0_O;F6J8H2N2N100O1O1O1cMlMnFT2Q9oMlFR2S9PNkFQ2T9RNiFo1W9SNUFDROZ2i:SNSFFQOX2k:VNQFCQOY2n:UNPFDoNX2Q;VNmEDPOW2S;VNkEY2U:jMgEW2Y:kMdEV2]:kM`EU2a:nMZET2g:oMSES2m:oMnDT2S;\\11O1N3N2M100N2O0O2M3M3M3O1000000000000001O4M3L2N2N1O1O10O01O0010O01O010O0100O0000O10O01O1O100O010000\\MdDd0\\;[OfDd0Z;[OhDd0X;[OjDd0V;[OlDc0U;\\OmDc0T;[OmDe0S;YOPEe0Q;ZOQEe0o:YOTEf0m:WOUEE[OMa;JaD@i0f0XON`;KhE6iNN`;JiE6iNN_;KkE5hNM_;LkE5hNM_;LkE6gNLa;KjE7gNKc;JjE9fNId;JhE;gNFl=8P1M8HVeb0"
+      },
+      "sam_score_gt_box": 1.017004370689392,
+      "mask_area": 11641,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0024911949145262433,
+        "yellow": 0.0,
+        "green": 0.07361910488789623,
+        "black": 0.83214500472468,
+        "white": 8.590327291469805e-05,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.7467416093269215,
+      "o2o_det": [
+        369.46844482421875,
+        242.48080444335938,
+        475.024169921875,
+        401.7730407714844
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.07332468655425854
+    },
+    {
+      "idx": 3,
+      "desc": "a green teddy bear",
+      "category": "teddy bear",
+      "color": "green",
+      "box": [
+        0.120390625,
+        0.418849765258216,
+        0.31818749999999996,
+        0.6514084507042254
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.8341554051621358,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "cil07c?:I6K4L3N2N2N1O2N1O2N1O2N1O2XNiNdDX1[;kNbDV1];mN`DU1^;mN`DT1_;^OoCc0P<@lCb0T<@hCc0V<AfC`0Z<AcCa0]<@bC`0^<B_C?a<`11O010O001O1O0000O10O10O10001O001O001O00000000010O0001O00O1O1O1O1O10000O100000000001O0O2SMdCT2]<kMhCP2Z<mMlCn1V<PNkCo1\\<jMdCV2S=01N101O1O1N3N1O1N3N2M4L3N1N3M3M3M5K6J2N2N2M4M=A_fa5"
+      },
+      "sam_score_gt_box": 1.0029525756835938,
+      "mask_area": 8013,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.7796081367777362,
+        "green": 0.19543242231374017,
+        "black": 0.0027455384999376014,
+        "white": 0.0,
+        "brown": 0.0002495944090852365
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "yellow",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8341554051621358,
+      "o2o_det": [
+        55.68588638305664,
+        219.67835998535156,
+        157.64439392089844,
+        337.1114807128906
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.19520419632821281
+    },
+    {
+      "idx": 4,
+      "desc": "a green teddy bear",
+      "category": "teddy bear",
+      "color": "green",
+      "box": [
+        0.311046875,
+        0.2837323943661972,
+        0.48175,
+        0.5103755868544602
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.4548515282090322,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4548515282090322,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.4548515282090322,
+      "o2o_det": [
+        163.61790466308594,
+        134.63726806640625,
+        259.9652099609375,
+        349.2612609863281
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 5,
+      "desc": "a green teddy bear",
+      "category": "teddy bear",
+      "color": "green",
+      "box": [
+        0.330859375,
+        0.5317840375586854,
+        0.47242187500000005,
+        0.6845774647887324
+      ],
+      "status": "ok",
+      "n_det": 4,
+      "present_any": true,
+      "loc_iou": 0.2686799807701941,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.2686799807701941,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

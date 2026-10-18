@@ -1,0 +1,389 @@
+{
+  "sample_id": "mig588_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "8af1a1f9e44c91fc2da4fa5f679b5bf5eed01829",
+  "detections": {
+    "broccoli": {
+      "xyxy": [
+        [
+          189.44818115234375,
+          256.4281005859375,
+          333.1253662109375,
+          509.05401611328125
+        ],
+        [
+          114.69596099853516,
+          297.71539306640625,
+          192.0892333984375,
+          396.91802978515625
+        ],
+        [
+          219.82373046875,
+          56.1920166015625,
+          435.843994140625,
+          328.9627685546875
+        ],
+        [
+          396.9287109375,
+          91.41053771972656,
+          511.568603515625,
+          345.7528076171875
+        ],
+        [
+          96.35272979736328,
+          0.0738067626953125,
+          294.30938720703125,
+          179.59837341308594
+        ],
+        [
+          0.36777496337890625,
+          61.74488830566406,
+          167.03012084960938,
+          311.76214599609375
+        ],
+        [
+          1.0196762084960938,
+          61.60531997680664,
+          114.87619018554688,
+          135.0820770263672
+        ],
+        [
+          419.7315673828125,
+          134.01779174804688,
+          511.45751953125,
+          345.8833312988281
+        ]
+      ],
+      "conf": [
+        0.6865896582603455,
+        0.6274836659431458,
+        0.5496814846992493,
+        0.45626896619796753,
+        0.4472127854824066,
+        0.41968271136283875,
+        0.3269851803779602,
+        0.2805120050907135
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a red broccoli",
+      "category": "broccoli",
+      "color": "red",
+      "box": [
+        0.45304687499999996,
+        0.14334117647058825,
+        0.833859375,
+        0.6161176470588235
+      ],
+      "status": "ok",
+      "n_det": 8,
+      "present_any": true,
+      "loc_iou": 0.8009671021945088,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "aU_3?^?6J5I7K5K5H7J6K5J5M4M2N3N1N2O1O2N1O1O2N2O0O2N2N1N3N1N3N2M2M3O2N1O1N3N1O2M2N3N2O1N3M3M3N1N2O1N2O1O0O2O1O0O2O1N1O2M2O2M3N`0@3L4M2N2M3N2N2N2N1O2N101N2O0O2N2O2M1O2N2O1N2O0O2O0O2O001N2O00001O0O10000001O01O000000000SGSIg8W7K4M5K2N2N1N2O001O1O1O1O3M3N1N1O100O00100O100O0100O001O010O1O001O1O1O001O1N101O1O1N2O1O001O00100O1O001O1O1O1O010O1O1O1O1O001O1O1O1O001O1O1O1O1N2O2N2N3M2N3L3N2N2M4M3L3N2M4L2O2M3M2^NnESMV:g2oEVMT:f2PFWMS:e2QFXMR:f2QFUMS:i2QFRMS:P3kElLW:T3SF`LP:b0UEk1V<nMYDc1[OPN^<8gD[1jN^N`<5jD[1eN`Nc<2nDZ1R=L3K5N3M1M3K5M4J:H[hT1"
+      },
+      "sam_score_gt_box": 1.0005149841308594,
+      "mask_area": 38606,
+      "color_ratios": {
+        "red": 0.6744029425477905,
+        "blue": 0.10399937833497384,
+        "yellow": 0.00010361083769362275,
+        "green": 0.008677407656840906,
+        "black": 0.008003937211832358,
+        "white": 0.007226855929130187,
+        "brown": 0.007356369476247215
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8009671021945088,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8009671021945088,
+      "o2o_det": [
+        219.82373046875,
+        56.1920166015625,
+        435.843994140625,
+        328.9627685546875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.676101281585638
+    },
+    {
+      "idx": 1,
+      "desc": "a brown broccoli",
+      "category": "broccoli",
+      "color": "brown",
+      "box": [
+        0.0,
+        0.12985882352941175,
+        0.332890625,
+        0.6025882352941176
+      ],
+      "status": "ok",
+      "n_det": 8,
+      "present_any": true,
+      "loc_iou": 0.9472964204714934,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "\\2W6i9001N101N2O000010O0010O003M3M2M4M1N3M3N1N2O1O1O1O1O001N2O1O1O001N2N101N1O100O2O0O100O100000000000000000000000000000O2O00000O100O1000000O101N10000O101N101N101O001O0O2O1N101N2N2O1O1N1O2N1O2M2O2N2N2N1O3L3N2N2M2O2N3M3M3M3N2M2O100O1O01O001O000000O2O00001O001O0O2O001N2O0O3N0O2O2M3N1O2M3M2N3M4L3M6K5J5K5K2N2N2N3M2N3M3M3M3L5L4J9kMaB[1\\>F7eNcAf0Q?J6Goh\\5"
+      },
+      "sam_score_gt_box": 1.010786533355713,
+      "mask_area": 32630,
+      "color_ratios": {
+        "red": 6.129328838492186e-05,
+        "blue": 0.1299724180202268,
+        "yellow": 0.012136071100214526,
+        "green": 0.4743487588109102,
+        "black": 0.1801716212074778,
+        "white": 0.0,
+        "brown": 0.018694452957401166
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.9472964204714934,
+      "o2o_det": [
+        0.36777496337890625,
+        61.74488830566406,
+        167.03012084960938,
+        311.76214599609375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.018693307183133123
+    },
+    {
+      "idx": 2,
+      "desc": "a red broccoli",
+      "category": "broccoli",
+      "color": "red",
+      "box": [
+        0.206984375,
+        0.0025882352941176473,
+        0.55884375,
+        0.3532470588235294
+      ],
+      "status": "ok",
+      "n_det": 8,
+      "present_any": true,
+      "loc_iou": 0.8979599981296926,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "PRa1?]?5M3L4M3K5K5K5M3L4M4L4M2M4M2M3N2N2N1O1O2N1O100O2N1O101N1O2N101N1O2O1N1O2O1N2N2O1N2O2N2M2N3N2M2O2M3M4M2M;F3M1O1O2N1O2N1O1O2N1O1O1O1O1O1O001O1O001O1O001O001O00001O1O001O001O001O001O0000000000001O00000000000000000000000000000000O10000000000O1000000O1N2N2M3M3M3K5K5K5K5N2N3M2O1N3N1O2N1O1O2N101N1O1O2M2O2N1N3M2N3M2O2N2M3N1O2M3N2M3N101N3M2O0O3N1O1N3N1N3N2N1N3M3M2O2L4M2N2N2M3M3N2M3N3M2M4M4L4LVn]3"
+      },
+      "sam_score_gt_box": 1.0049843788146973,
+      "mask_area": 22501,
+      "color_ratios": {
+        "red": 0.41264832674103374,
+        "blue": 0.0,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.18314741567041465,
+        "white": 0.0,
+        "brown": 0.0008444069152482112
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8979599981296926,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8979599981296926,
+      "o2o_det": [
+        96.35272979736328,
+        0.0738067626953125,
+        294.30938720703125,
+        179.59837341308594
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.41271604389745414
+    },
+    {
+      "idx": 3,
+      "desc": "a brown broccoli",
+      "category": "broccoli",
+      "color": "brown",
+      "box": [
+        0.377734375,
+        0.4935058823529412,
+        0.6347343750000001,
+        0.9636470588235294
+      ],
+      "status": "ok",
+      "n_det": 8,
+      "present_any": true,
+      "loc_iou": 0.8475041250359568,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "k[o2?]?7H9I8I5M8G2J6I6K5N3_CjMT;X2kDjMS;X2kDkMc93]FS20nM]94_FP23mM\\9=UFj1=kMU9f0YFa1b0jMQ9i0\\F]1b0kMP9k0\\F[1d0kMm8n0]FW1e0mMk8o0^FU1g0mMh8R1_FQ1i0nMf8T1_Fn0j0PNe8o3YGTLe8m3ZGTLf8l3YGULf8l3YGULf8l3XGVLh8j3UGYLk8g3RG\\Lm8e3oF_LQ9a3kFcLU9^3eFgL[9o400O1000000O101N1000O010000000O1000O10001O000000000O10000O100O1000001O001O2M3N2N2N7I2N1O1O001O010O101N100O1O10O001N101O1O1O1N2O1O1O2M3N1O2M3N2M5L2N0O2N2O0O2N2N2M3N2N2M3N3L3N2N3M3M2N3L4WObEhKd:S4j0J4mN_D_Mg;^2`DRMl;k2g0M3L5K5eMnBa1X=VNQCc1k=J<C8H6I7J7HQdi2"
+      },
+      "sam_score_gt_box": 1.0081546306610107,
+      "mask_area": 25669,
+      "color_ratios": {
+        "red": 0.0002727024815925825,
+        "blue": 0.10510732790525537,
+        "yellow": 0.04098328723362811,
+        "green": 0.3072967392574701,
+        "black": 0.2848182632747672,
+        "white": 0.0,
+        "brown": 0.025283415793369433
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.8475041250359568,
+      "o2o_det": [
+        189.44818115234375,
+        256.4281005859375,
+        333.1253662109375,
+        509.05401611328125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.02483598875351453
+    },
+    {
+      "idx": 4,
+      "desc": "a blue broccoli",
+      "category": "broccoli",
+      "color": "blue",
+      "box": [
+        0.76065625,
+        0.1584470588235294,
+        1.0,
+        0.6597411764705882
+      ],
+      "status": "ok",
+      "n_det": 8,
+      "present_any": true,
+      "loc_iou": 0.8726741590352747,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "SSY64l?4L3M1O3N0O2N3M3K4N3L3N2N1O2M2O2N3M2M3hE`Nl5c1QJdNg5^1WJgNe5[1YJmN_5T1`JnN]5U1VGbNX2<`6S1TGWOh1JQ7P1UG\\Oe1HR7n0VG^Od1HS7l0UG@e1HT7i0TGFa1DY7e2dH]M[7f2_H_M`7b2]HdM^7^2\\HhMc7Y2XHkMg7W2UHkMl7V2QHlMn7Z2hGjMY8n400000001O0O10001O001O100O2N2O0O10O1O1O1O1O2N3lH`Ga6S9M1O1O1O1N2O1N2O2M101O0O1E_FVJb9f5=10O101O1O1O2O0O100O001O001O00001O0O01O0001M2M4L4M2O2O1O1O001O001N2NfK"
+      },
+      "sam_score_gt_box": 1.000975489616394,
+      "mask_area": 17878,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.3518290636536525,
+        "yellow": 0.001957713390759593,
+        "green": 0.3702315695267927,
+        "black": 0.10845732184808145,
+        "white": 0.0001678040049222508,
+        "brown": 0.0011746280344557558
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8726741590352747,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8726741590352747,
+      "o2o_det": [
+        396.9287109375,
+        91.41053771972656,
+        511.568603515625,
+        345.7528076171875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.35248569184154416
+    },
+    {
+      "idx": 5,
+      "desc": "a brown broccoli",
+      "category": "broccoli",
+      "color": "brown",
+      "box": [
+        0.2225,
+        0.5896,
+        0.386359375,
+        0.7532470588235294
+      ],
+      "status": "ok",
+      "n_det": 8,
+      "present_any": true,
+      "loc_iou": 0.7886412093408015,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "lZj15j?2]@6m>Mm@=l>=SOnNaB3BP1k=QO_BY1`=kNZBX1e=b0O1O1000000O2L3N7J3M2O0O2N1O101N101O2N10O001O1O1OO100000O10000O101N2O000O0100O01000001O1O1O000O10001N101O0O2O1N2O0TN^BY1e=cN^BZ1f=bN]B[1i=_NZB\\1Y>J5E^ASOg>h0<M3K5L4K[UP5"
+      },
+      "sam_score_gt_box": 0.9975025653839111,
+      "mask_area": 5584,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.09867478510028653,
+        "green": 0.4629297994269341,
+        "black": 0.2080945558739255,
+        "white": 0.0,
+        "brown": 0.011461318051575931
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.7886412093408015,
+      "o2o_det": [
+        114.69596099853516,
+        297.71539306640625,
+        192.0892333984375,
+        396.91802978515625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.008828828828828829
+    }
+  ]
+}

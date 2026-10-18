@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig708_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "708",
+  "caption": "a photo of a red donut and a green donut and a green donut and a red donut and a green donut and a blue donut",
+  "objects": [
+    {
+      "desc": "a red donut",
+      "box": [
+        0.48224999999999996,
+        0.32966666666666666,
+        0.8546875,
+        0.8398958333333333
+      ]
+    },
+    {
+      "desc": "a green donut",
+      "box": [
+        0.0050625,
+        0.015729166666666666,
+        0.37584375000000003,
+        0.4224791666666667
+      ]
+    },
+    {
+      "desc": "a green donut",
+      "box": [
+        0.06742187499999999,
+        0.38202083333333337,
+        0.512359375,
+        1.0
+      ]
+    },
+    {
+      "desc": "a red donut",
+      "box": [
+        0.7449375,
+        0.2770208333333333,
+        1.0,
+        0.6689166666666667
+      ]
+    },
+    {
+      "desc": "a green donut",
+      "box": [
+        0.607796875,
+        0.0051875,
+        0.868828125,
+        0.32987500000000003
+      ]
+    },
+    {
+      "desc": "a blue donut",
+      "box": [
+        0.361328125,
+        0.009125,
+        0.66796875,
+        0.384125
+      ]
+    }
+  ],
+  "seconds": 6.675,
+  "peak_mem_allocated_gb": 7.822,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

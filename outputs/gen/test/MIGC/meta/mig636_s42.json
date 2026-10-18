@@ -1,0 +1,88 @@
+{
+  "sample_id": "mig636_s42",
+  "method": "MIGC",
+  "seed": 42,
+  "layout_id": "636",
+  "caption": "a photo of a blue chair and a blue potted plant and a blue dining table and a blue bench and a white potted plant and a yellow potted plant",
+  "objects": [
+    {
+      "desc": "a blue chair",
+      "box": [
+        0.52466,
+        0.53128,
+        0.7550399999999999,
+        0.8922666666666668
+      ]
+    },
+    {
+      "desc": "a blue potted plant",
+      "box": [
+        0.14052,
+        0.24848,
+        0.31762,
+        0.5010666666666667
+      ]
+    },
+    {
+      "desc": "a blue dining table",
+      "box": [
+        0.73802,
+        0.55864,
+        0.99762,
+        0.7036000000000001
+      ]
+    },
+    {
+      "desc": "a blue bench",
+      "box": [
+        0.24803999999999998,
+        0.49104,
+        0.37724,
+        0.7461333333333332
+      ]
+    },
+    {
+      "desc": "a white potted plant",
+      "box": [
+        0.33083999999999997,
+        0.4856266666666667,
+        0.4605,
+        0.65744
+      ]
+    },
+    {
+      "desc": "a yellow potted plant",
+      "box": [
+        0.8674,
+        0.46882666666666667,
+        0.994,
+        0.6215466666666667
+      ]
+    }
+  ],
+  "seconds": 6.969,
+  "peak_mem_allocated_gb": 7.819,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "sample_id": "mig719_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "225eb8b894914fb4e82196d79dc98f777e0d2d7b",
+  "detections": {
+    "bottle": {
+      "xyxy": [
+        [
+          360.8765563964844,
+          168.6861572265625,
+          429.1722106933594,
+          286.64666748046875
+        ]
+      ],
+      "conf": [
+        0.45654475688934326
+      ]
+    },
+    "bowl": {
+      "xyxy": [
+        [
+          240.26174926757812,
+          161.4115447998047,
+          318.0108947753906,
+          219.4052276611328
+        ]
+      ],
+      "conf": [
+        0.4258090555667877
+      ]
+    },
+    "broccoli": {
+      "xyxy": [
+        [
+          206.4313507080078,
+          66.47026824951172,
+          342.96014404296875,
+          219.12457275390625
+        ],
+        [
+          206.40521240234375,
+          66.4393539428711,
+          342.8236083984375,
+          170.86138916015625
+        ]
+      ],
+      "conf": [
+        0.3916918635368347,
+        0.3719286620616913
+      ]
+    },
+    "chair": {
+      "xyxy": [
+        [
+          300.53094482421875,
+          68.07424926757812,
+          506.59088134765625,
+          511.6168518066406
+        ],
+        [
+          20.58331298828125,
+          90.93629455566406,
+          251.01058959960938,
+          511.2763671875
+        ]
+      ],
+      "conf": [
+        0.7545786499977112,
+        0.7388986349105835
+      ]
+    },
+    "dining table": {
+      "xyxy": [
+        [
+          58.294342041015625,
+          169.3518524169922,
+          511.6186218261719,
+          511.52337646484375
+        ]
+      ],
+      "conf": [
+        0.6896392107009888
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green dining table",
+      "category": "dining table",
+      "color": "green",
+      "box": [
+        0.03125,
+        0.10588235294117647,
+        0.9859375,
+        0.9811764705882353
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.659443586971857,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "kc;6i?4K8H7K4K5K7I7I4M5J4L9G3M6K3L7J4K2O8G8H3N3M5J4lCTLn;Q4M]OVDfL1Nm;e368kCQL1O1:X;m3gDVLV;a3iDSL8=IBQ;i3oDXL008b0f:X3REYL1MO0030>e:W3^EZLONNO131?b:P3\\E_L8OM1OO11K400b:b3fEZLL0L00000000414\\:`3cEWNP:Q4]HRJl4f3iHZLMN020f1W2_NQ5b3kH\\LNl1P2XNV5b3iHiNf1gMa5`3iHUL1d2`1hMe5^3jHUL52L;0H000Y1_1QOf5\\3jHUL25O9Od1Z1_Nk5h6gIYIY6i6cIYI\\6i6PIcH;f0e6o6XIRIg6d6mHoH1G4h0n6b6mHoH1G0l0R7T3nHeNO_M1a017Q7T3nHeNOYOS7m6oHTGl6l8SIUGo6i8RIVGo6i8402N2lMgH\\K3QNk00\\5_8hIcGj00_5\\8fIdGk0Ne5Z8aIfG_7Y8^IgGRO0c6V8W1L4M3[LoGkK01Oi2V8W1kGoKO20h2Y8f44L4L2N4L3ZLVG0P9cNPGZN1G001O0LN213Ok2Q9KPGZM0L001ON21U3U9a32N5mKdFbM0LO11Y3^9ROaFeM401OOW3^9QO^FhM101OO051K4Om2i9POWFoM101OO051KX3h9kLWFi11XN0L0O1_3i9aLXF\\2MT1Q:]24L2QLiEQ2Y:mMgES2\\:kMeE_N0\\3`:PN`EX2e:eL\\EFO\\4g:kKYEJ0^4g:l0I:Gc0jEeI^9e6M4O2FXInFY7[8fHfGR8h78JdG]HW8g7O2N6oGRHd7R83O1O1O1O1N2N2O1N2N2N2OG9@?F:J7J5G:E;I6H9F9K5I8I6O11O2O1N2N2N2O1N2N2O1N2O1N2O1N2N2N2O1N2O1N2N2O1N2N2O1O1O1O1O1O1O10000O1000000000000000000000000O10000000000000000000000001O00O100000000001O00O100000000001O00O1000000000000001O003M4L6J5K4L3M2N2N2O1N1N2O1O1O1O001O2N00001O001O001O00001O0000000000001O000000000000000000000000O100000000000000O101N100O10000O1O1O1O100O1O1N200M3O1N2M3L4J6H8M3M3N2O1000000000000001O000000000000000000000000000000000000000000001O00001O1O002N1O2lIYFk5R:[KmEhNi0`3^9QMhE^Ob1^3Q;M1O2N1O1O1O2N001O1O1O001O00001O00001O00001O00001O0000SLYMaJg2[5^MdJb2V5dMjJ\\2P5jMPKV2i4RNVKn1g4UNYKk1`4\\N`Kd1Z4bNfK^1S4iNmKW1P4lNPLT1i3SOWLm0c3YO]Lg0_3^O`Lb0Z3DeL=T3JlL6Q3MoL3k23TMNk24TMLj26VMJi27VMJj27UMIk27TMJl26TMJl26SMKm26RMJn26QMLn24QMMo24nLNR32mLOS32jL0W30fL2Z3OaL5_3K_L7a3JVL>j3DiKh0W4XOcKP1Z4QObKV1Z4lNmJRMSOY4j5gNhJ[M]OT4d5dN_JX3S5T4F;E8H8H<D;F;D:F:F3M1OnGgM]2Z2d50000001O000000001O00000J7@?C=hIaLFh3l5=F;J5ZOaK`Ej4X:PKfE`5R:`JmEj5h9<I7K5O2O00000\\M\\IlKe6g60^M]IgKc6X4`IfK`6V4fIhKZ6R4mIlKU6m3SJQLm5g3\\JXLd5a3dJ^L\\5]3kJaLV5X3RKfLn4R3[KmLe4m2bKRM^4h2jKVMW4c2PL\\MP4\\2ZLbMf3X2aLgM`3R2hLlMX3P2mLoMS3i1WMUNi2c1`M\\Na2Z1iMeNW2U1QNiNo1Q1XNnNi1i0`NVO`1?mN_OS1;TODm04\\OJd00CO>GL84E19OA9=HZOa0e0@ROj0l0V7O2N2N1O1O1O1OlD"
+      },
+      "sam_score_gt_box": 0.9604047536849976,
+      "mask_area": 96691,
+      "color_ratios": {
+        "red": 0.0832962736966212,
+        "blue": 0.0,
+        "yellow": 0.0017064669927914697,
+        "green": 0.00039300451955197487,
+        "black": 0.00048608453734060047,
+        "white": 0.01554436297070048,
+        "brown": 0.9550320091838951
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": true,
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 1,
+      "desc": "a green dining table",
+      "category": "dining table",
+      "color": "green",
+      "box": [
+        0.035812500000000004,
+        0.3501882352941177,
+        0.9640156249999998,
+        0.9906352941176471
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.8485017892951111,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "ckm05h?4N2M2O1N2N2O1N2N2O1N2O1N2N2O1N2N2N2O1N2O1O1N2M3O1O1N2N2O1N2O1M3O1N2O1N2N2O1N2N2O1N2N2O1O1N2O1N2N2O1O1N2N3N1O:E>Ad0^O8bD]KP;Z5^O:Gd0\\Oe0ZOc0]O4L2O1O1N2O1N2O1O1N2N2O1N2N2OO0B?C<I7J7J5H9B>M2@`0K5K6H7L50O1O2O1N2N2N2N2O1O1N2N2O1N2O1N2N2O1N2N2O1N2N2O1N2O1N2O1O1O1O1O1O100O100000000000000000000000000O1000000000000000000000000001OO100000000001O00O10000000000000000000000000000001O002N6J6J4L5K2N2N2N2N2N1O1O1O1O1O1O1O1O001O001O00001O001O00000000001O000000000000000000000000000000O1000000000000O101N10000O10000O1N20O02N1O1O1O1N1O2N2N2M3J6I7K5K5O1O101O0000000000O1000010O000000000000000000000000000000000000001O00001O1O1O002N2N:ZKeFS2_9TMZGh2R;M2N1O1O1O1O1O1O1O1O1O00001O001O001O0000001O0000001O0000000000000000000000000000O10000O10000O100O100O100O1O1O1N2N2N2L4M3H8F;J5M4]DdK_;`4O7J1O3iDVKQ;X5PEkJ30Q:Q6E6K7H8I<D7YGcHZ8l7F4MO000O2N2N1O2N1O1O1O1O2N2N1O1AaGQIk8^6SGcI^9Q6?G:TOiEaKb:W4^E\\K1000o:V4h0M4C<C>J5F:N2O2N2N1O1O2N1O1O2M3N2N1O1O2NRNnMoEQ2R<N1O1O2N2N1O2N1O1O2N1O2N1O1O2N1O1O2N1O2N2N1O2N1O2N2N1O1O1O1OlD"
+      },
+      "sam_score_gt_box": 0.9754986763000488,
+      "mask_area": 67055,
+      "color_ratios": {
+        "red": 0.01245246439489971,
+        "blue": 0.0,
+        "yellow": 0.00246066661695623,
+        "green": 0.0004623070613675341,
+        "black": 0.00014913131011855938,
+        "white": 0.022414435910819475,
+        "brown": 0.9381850719558571
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "brown",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8485017892951111,
+      "o2o_det": [
+        58.294342041015625,
+        169.3518524169922,
+        511.6186218261719,
+        511.52337646484375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0004819998005518067
+    },
+    {
+      "idx": 2,
+      "desc": "a green chair",
+      "category": "chair",
+      "color": "green",
+      "box": [
+        0.057374999999999995,
+        0.18736470588235293,
+        0.23521874999999998,
+        0.7359529411764705
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.2640525324583022,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.2640525324583022,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.2640525324583022,
+      "o2o_det": [
+        20.58331298828125,
+        90.93629455566406,
+        251.01058959960938,
+        511.2763671875
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 3,
+      "desc": "a blue broccoli",
+      "category": "broccoli",
+      "color": "blue",
+      "box": [
+        0.373875,
+        0.13656470588235295,
+        0.6641875,
+        0.4091764705882353
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8132087160019977,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "^SX3<a?5L4M7I4L4K5L4M2M2O1N2O1O1N2O1O0O3M2O2M2N101N2N100O2O0O100O101N1N8G:H9G7I5K5K3N2M3M2O1N3N1N2O1N2O0O2N2O001N101O001O00000010O00001O000010O000001O000000000O1000000000000O2O001O0O2O0O2O1N101N2N2N2O1N1O2M4M3L5L3K4L3L5I6I7C=O101O0O2O001N101N2O1O0O2O1N2O2M=C3L3N2L4L4K6J8GTld2"
+      },
+      "sam_score_gt_box": 1.008198857307434,
+      "mask_area": 13443,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.005802276277616604,
+        "yellow": 7.438815740534107e-05,
+        "green": 0.9796176448709365,
+        "black": 0.0019340920925388677,
+        "white": 0.0,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.8132087160019977,
+      "o2o_det": [
+        206.4313507080078,
+        66.47026824951172,
+        342.96014404296875,
+        219.12457275390625
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.005819592628516004
+    },
+    {
+      "idx": 4,
+      "desc": "a white bottle",
+      "category": "bottle",
+      "color": "white",
+      "box": [
+        0.6954374999999999,
+        0.3280705882352941,
+        0.8699999999999999,
+        0.5772235294117647
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.7065986759643688,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "gUe56l18c;KeCo0V<UOPCe1l<i0M4M2N2N2M3N2N2O1N101O001O001O00001O000O2O00000001O0000000001OO10001O000000000O2O000O10001N100O2N101N1N3N1N3L4L4J6G9D<F:D=A?@cjY1"
+      },
+      "sam_score_gt_box": 1.0110883712768555,
+      "mask_area": 6629,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.08176195504600996,
+        "yellow": 0.0001508523155830442,
+        "green": 0.0,
+        "black": 0.0,
+        "white": 0.8256147231860009,
+        "brown": 0.0003017046311660884
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7065986759643688,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7065986759643688,
+      "o2o_det": [
+        360.8765563964844,
+        168.6861572265625,
+        429.1722106933594,
+        286.64666748046875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.8264874660223498
+    },
+    {
+      "idx": 5,
+      "desc": "a brown bowl",
+      "category": "bowl",
+      "color": "brown",
+      "box": [
+        0.44978125,
+        0.29451764705882355,
+        0.6115,
+        0.4347529411764706
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.6778607065480728,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "Teh35j?8I8H6J4L3M3N1N2O000O2O0O100O001O100O001O010O000010O0001O0O10000000001O01O0000000000000O0100000000O10O10000O10000O10O0100O1O00100O1O1N2O1N2N2N2M3L4I7IP[Q3"
+      },
+      "sam_score_gt_box": 1.005953311920166,
+      "mask_area": 3193,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.024428437206388976,
+        "yellow": 0.0,
+        "green": 0.9718133416849358,
+        "black": 0.0,
+        "white": 0.0,
+        "brown": 0.0
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.6778607065480728,
+      "o2o_det": [
+        240.26174926757812,
+        161.4115447998047,
+        318.0108947753906,
+        219.4052276611328
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.0
+    }
+  ]
+}

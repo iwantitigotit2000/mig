@@ -1,0 +1,79 @@
+{
+  "sample_id": "mig762_s2025",
+  "method": "MIGC",
+  "seed": 2025,
+  "layout_id": "762",
+  "caption": "a photo of a green chair and a green bed and a brown laptop and a black keyboard and a brown vase",
+  "objects": [
+    {
+      "desc": "a green chair",
+      "box": [
+        0.0014375,
+        0.574192037470726,
+        0.424703125,
+        0.9827868852459016
+      ]
+    },
+    {
+      "desc": "a green bed",
+      "box": [
+        0.7075781250000001,
+        0.5777283372365339,
+        1.0,
+        0.9880327868852459
+      ]
+    },
+    {
+      "desc": "a brown laptop",
+      "box": [
+        0.232390625,
+        0.2741686182669789,
+        0.494765625,
+        0.6337002341920376
+      ]
+    },
+    {
+      "desc": "a black keyboard",
+      "box": [
+        0.2884375,
+        0.4474941451990633,
+        0.440046875,
+        0.5779391100702577
+      ]
+    },
+    {
+      "desc": "a brown vase",
+      "box": [
+        0.1275,
+        0.07632318501170961,
+        0.2668125,
+        0.32252927400468384
+      ]
+    }
+  ],
+  "seconds": 6.539,
+  "peak_mem_allocated_gb": 7.821,
+  "peak_mem_reserved_gb": 8.664,
+  "config": {
+    "method": "MIGC",
+    "checkpoint": {
+      "path": "E:/transformer/mig_assets/weights/MIGC_SD14.ckpt",
+      "size": 229514282,
+      "sha1_first_64MB": "1e90ab3dd6b67cbf42262fe9fd1976d5e10dc90a"
+    },
+    "base_model": "E:/transformer/mig_assets/weights/sd-v1-4-diffusers",
+    "repo_commit": "effd6cc2e6a9f7d2fe34409c300a5f037a87b9ec",
+    "scheduler": "EulerDiscreteScheduler",
+    "steps": 50,
+    "guidance_scale": 7.5,
+    "negative_prompt": "worst quality, low quality, bad anatomy",
+    "MIGCsteps": 25,
+    "NaiveFuserSteps": -1,
+    "aug_phase_with_and": true,
+    "resolution": [
+      512,
+      512
+    ],
+    "autocast_fp16": true
+  }
+}

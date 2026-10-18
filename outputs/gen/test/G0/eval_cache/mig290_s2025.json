@@ -1,0 +1,200 @@
+{
+  "sample_id": "mig290_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "e516a7964fab69723ee13c0f42349eb914affb94",
+  "detections": {
+    "bed": {
+      "xyxy": [
+        [
+          130.8426513671875,
+          143.9180145263672,
+          376.2546691894531,
+          302.3486328125
+        ],
+        [
+          0.118896484375,
+          145.21922302246094,
+          304.4145812988281,
+          511.2747802734375
+        ]
+      ],
+      "conf": [
+        0.7269979119300842,
+        0.2995385527610779
+      ]
+    },
+    "chair": {
+      "xyxy": [
+        [
+          339.14288330078125,
+          170.381591796875,
+          399.36468505859375,
+          248.36083984375
+        ]
+      ],
+      "conf": [
+        0.49410417675971985
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green bed",
+      "category": "bed",
+      "color": "green",
+      "box": [
+        0.0015,
+        0.3061826697892272,
+        0.61171875,
+        0.9848243559718969
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.9219224852308487,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "^6k5=WJL1Il00WO090B[7l5mHZJIl1Y7k3kHcLS7^3lHdLQ7_3nHcLo6^3QIbLn6^3SIcLk6^3UIcLi6_3WI`Lg6b3XI_Lg6b3YI`Ld6a3\\I_Lc6b3]IaL_6`3`IbL^6^3cIdLZ6\\3hIdLV6^3jI`LV6a3iI`LU6b3kI]LU6d3kI[LU6f3jIZLV6g3jIXLV6i3jIVLV6j3kIULU6m3iISLW6n3iIQLW6P4iIoKW6Q4jInKV6S4jIlKV6U4jIjKV6W4jIhKV6Y4jIfKV6Z4jIeKW6\\4iIcKW6^4jIaKT6a4lI^KU6c4jI\\KV6d4kI[KU6f4kIYKT6i4lIVKT6k4lISKU6m4kISKU6n4kIQKU6Q5jInJW6R5iInJV6S5jIlJV6U5jIjJV6W5iIhJX6Y5hIeJY6\\5fIdJ[6\\5eIdJZ6]5gIaJY6a5eI_J\\6`5eI_J[6c5dI\\J]6d5cI[J]6f5cIXJ_6g5aIYJ_6d71O010XN`InIa6Q6`InI`6R6`ImIb6S6]ImId6g700001aN[IaIe6_6\\I`Ie6_6]I_Ic6a6_I]Ib6c6bIXI^6i6[IWH5k0`6U7XIoG>?_6e7SImG`0Oe6m8MO0N2010OiNnHaIR7_6mH`IT7g702M00O2N1O2N1O110000ON3O0O2O0O2O001O0O1O2L3O1O2000O00O2N100O1N30O2ON2N1O2O0M3N2002ON1N3O0O2O001N110M2M4N1O2O0K5O21N00N3N2O1O0O101O001M2O2N1O101O03NN1N2O2N1O101O1O000O2O000O2O0O20O00O2M2O2M2O1O20OO2N101N2O0O2O1O001N100O2O00001O1N101N101O0O2O001N101N1O101N10001N1O101N2O0O1O101N100O2O0O1O2O001O0O1O2O0O101N2O1N100O2N100O2O001N101N2N100O2O1N101N2N101N10001N101N1O101O0O101N101N101N2O0O101O1N101N2N1O1O2O0O2N1N3H7K6J5I7L5K5L4K5L4K5M2N3N2M5GSfX3"
+      },
+      "sam_score_gt_box": 0.9820371866226196,
+      "mask_area": 63239,
+      "color_ratios": {
+        "red": 1.5813026771454325e-05,
+        "blue": 0.0,
+        "yellow": 0.00022138237480036054,
+        "green": 0.6375970524518098,
+        "black": 0.31817391166843245,
+        "white": 0.0,
+        "brown": 0.003225857461376682
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9219224852308487,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9219224852308487,
+      "o2o_det": [
+        0.118896484375,
+        145.21922302246094,
+        304.4145812988281,
+        511.2747802734375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.6373930508769433
+    },
+    {
+      "idx": 1,
+      "desc": "a white bed",
+      "category": "bed",
+      "color": "white",
+      "box": [
+        0.30815625,
+        0.28250585480093676,
+        0.7554531250000001,
+        0.6592037470725995
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.709021033562939,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "mTT23l?5L4L4L7I5K8VA]Og=_1O3M1O1O1O2N002N1O2N2N1O1O1O1O1O001O1O1O1O001N2O1O1O1O001O1O1O1O001O1O1O001O1O1O1O001O001O1O1N1010OO2O001O001O001O001O001O001O0O2N101O0O2O00001O01O01O0001O01N101O00001O001O00001O00001O00000000001O000000000000000000000000O100000000000000O01000O1000O1TDnKj;R4200000O0100000O10O10001O0O4M1O00]DULQ;k3nDVLR;i3PEULQ;k3c0YMnC^1=_MT;i0iDg1L_ML3^;e0lDi1I`MM1_;c0nDl1EbML1a;?PEl1DeMJ0b;?PEl1DeMKOa;`0PEl1EcMK1`;`0QEk1DdMK1a;>QEm1CdMK1a;>QEm1BeML1`;=REm1BfMJ1b;;TEm1_OPN_;NUER2\\OhMJ1m<U2[CiMI0m<W2ZCiMJOl<X2ZChMK0l<V2ZCjMKOk<W2ZCjMKOk<Z2VCiMMNn<W2VCkMKNP=T2XCnMKKn<V2XCnMJLn<V2XCmMP=R2PCnMP=Q2QCoMo<Q2QCoMP=P2oBRNP=n1PCRNP=n1PCQNR=m1PCRNP=n1PCRNQ=m1oBSNQ=m1oBSNR=l1nBTNR=k1hBSNN2MMZ=n1kBSNN2MM[=m1QCVNDM[=m1QCVNR=i1oBWNR=h1nBXNR=h1hBUNL3\\=h1gBWNL2]=f1fBYNL3]=d1gBYNL3^=c1gBYNL2^=d1gBZNK1_=e1mB[NT=d1lB\\NT=d1eB[NK2_=d1dB[NL2`=c1aBgN`=Y1^BhNb=W1`BhNa=U1bBiN_=W1bBhN_=X1aB`NJ0e=]1ZBdN20N0f=\\1ZBdN18f=i1101]OXBkNj=P1UBcN4;g=U1YBjNi=U1YBiNg=T1SBhN24l=Z1SBgNm=e1101ZOPBZOQ>e0oAZOR>f0nAnN12S>W1oAfNS>S1jAmN4NS>[1mAeNU>Z1gAiNY>_12N2VOdA\\O00O1]>b0eA\\O10N0_>=iAAK01N]>=kADf>7]AI]?0W@1a?O\\@5OJc?9kWU2"
+      },
+      "sam_score_gt_box": 0.9344431161880493,
+      "mask_area": 22679,
+      "color_ratios": {
+        "red": 0.0022487764010758853,
+        "blue": 0.05617531637197407,
+        "yellow": 0.0003527492393844526,
+        "green": 0.10560430354072049,
+        "black": 0.04501962167644076,
+        "white": 0.5944265620177257,
+        "brown": 0.017725649279068743
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.709021033562939,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.709021033562939,
+      "o2o_det": [
+        130.8426513671875,
+        143.9180145263672,
+        376.2546691894531,
+        302.3486328125
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.5586910713547907
+    },
+    {
+      "idx": 2,
+      "desc": "a black chair",
+      "category": "chair",
+      "color": "black",
+      "box": [
+        0.6701875,
+        0.3438173302107728,
+        0.796125,
+        0.5056206088992974
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.6810982518689688,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "bfY52f?9F9J6I8K4N2O2N101O0OK6_O_AAc>;aAD`>:bAF^>:bAF^>:cAF\\>:dAF\\>:dAF\\>:dAF\\>:dAF\\>;cAE]>;dADNOm==UBDN0l=<VBDN0l=<VBEM0m=:VBFN0k=:WBFN1j=:WBEO2i=9XBEO3h=8YBEO5f=6[BE08JE\\=>kBDOe0U=GlBDOe0U=GlBDOe0U=GlBDOe0U=GlBD0d0T=HlBEOc0U=HlBEOc0U=HlBEOc0U=IkBDNe0W=GkBDIi0]=CjBj0W=UOgBm0Y=SOaBS1_=g00O101ZO_BkNa=n0fBQO\\=h0jBXOV=b0QC]Oo<`0TC_On<?TC_Om<a0UC[On<c0X1O2F:I8J_Zh1"
+      },
+      "sam_score_gt_box": 0.9739233255386353,
+      "mask_area": 2227,
+      "color_ratios": {
+        "red": 0.001347103726986978,
+        "blue": 0.02784014369106421,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.03547373147732375,
+        "white": 0.5271665918275708,
+        "brown": 0.00449034575662326
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "white",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.6810982518689688,
+      "o2o_det": [
+        339.14288330078125,
+        170.381591796875,
+        399.36468505859375,
+        248.36083984375
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.03295711060948081
+    }
+  ]
+}

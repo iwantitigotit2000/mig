@@ -1,0 +1,351 @@
+{
+  "sample_id": "mig063_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "ed8e5bd20b47781490b5b0c23dfdb671835eec5a",
+  "detections": {
+    "bottle": {
+      "xyxy": [
+        [
+          134.6031494140625,
+          123.30256652832031,
+          234.228271484375,
+          384.826904296875
+        ],
+        [
+          405.1038818359375,
+          152.21121215820312,
+          512.0867919921875,
+          393.4369812011719
+        ]
+      ],
+      "conf": [
+        0.7816264629364014,
+        0.7722556591033936
+      ]
+    },
+    "cup": {
+      "xyxy": [
+        [
+          188.8160400390625,
+          237.95321655273438,
+          378.568603515625,
+          407.1858825683594
+        ]
+      ],
+      "conf": [
+        0.71416175365448
+      ]
+    },
+    "sink": {
+      "xyxy": [
+        [
+          -0.11942291259765625,
+          431.99810791015625,
+          237.43270874023438,
+          512.1669921875
+        ]
+      ],
+      "conf": [
+        0.44101426005363464
+      ]
+    },
+    "toothbrush": {
+      "xyxy": [
+        [
+          109.36737060546875,
+          147.69309997558594,
+          203.46722412109375,
+          261.669677734375
+        ],
+        [
+          66.33468627929688,
+          147.25674438476562,
+          138.1007080078125,
+          229.34988403320312
+        ]
+      ],
+      "conf": [
+        0.5993332266807556,
+        0.37979379296302795
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a green cup",
+      "category": "cup",
+      "color": "green",
+      "box": [
+        0.2728403755868545,
+        0.45279687500000004,
+        0.7343427230046948,
+        0.7891250000000001
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.7451325360042751,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "nWo25h?7K2N5K6K4K3N4L3L7J4K6K4K7J4L4L4L6J4K4M5K9G4L:F5K5K3M4L5K3M2N1O2N1O1O1O001N2O001O001O001O0000001O0000001O0000000O1000001O000000000000000000001O0O1000000000000000000000000000000000000000000000000000000000000000O1000000000000000000000000O10000000000O100000000O1000000O2O000O10000O10000O100O100O2O0O100O1O1O1O1O1N2N3L3N2N2K5L4L4K6J5L4L4M3K5J7J5L4L4L4L5K4L4L4L5K4L5K4K6K5K5K5J8HVhR2"
+      },
+      "sam_score_gt_box": 0.9902503490447998,
+      "mask_area": 25104,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0010755258126195029,
+        "green": 0.3331341618865519,
+        "black": 0.042104843849585724,
+        "white": 0.0,
+        "brown": 0.0004780114722753346
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.7451325360042751,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.7451325360042751,
+      "o2o_det": [
+        188.8160400390625,
+        237.95321655273438,
+        378.568603515625,
+        407.1858825683594
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.33285429141716566
+    },
+    {
+      "idx": 1,
+      "desc": "a yellow bottle",
+      "category": "bottle",
+      "color": "yellow",
+      "box": [
+        0.24502347417840376,
+        0.30171875,
+        0.44812206572769947,
+        0.7094374999999999
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.707930387284873,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "jdl11n?3M3N1SAIn=8oAMn=4QBNn=2TBKm=2^ANZ?=O1O02M2O01TAAV>`0e0Oe@Bb1h0R;F[CC]1Y1l:UOdCGY1c1h:nNVEb1]:]N`EU2R:jMmEd0nNe0g:gNYFe0POP10eMX:e0eFj0SOV1R:mMkFP1ROV1Q:jMlFl3S9XLfFj3[9VLcFl3]9SLbFn3_9QL`FQ4`9oK^FR4c9nK[FT4f9kKXFV4i9jKVFW4j9jKSFW4n9iKQFW4P:iKoEX4Q:hKmEY4T:hKjEX4W:h01O10D^JYFa5]9QK\\Fn4b9XK]Fe4b9[KaFc4^9]KdFb4\\9bK`F^4_9S1NZLfFh0Z9ZOdFf0\\9[OcFe0\\9\\OcFe0]9o2O100000jLdFH\\98dFH\\98eFGZ9:gFEY9;gFEY9=eFC[9a3000_LjF8V9HjF8V9JiFQMLm2[91RGNn82RGNn81TGNl80YGMg82]GKb86cGE^8:dGD\\8<iG_OX8?nG\\OS8c0QHYOo7f0THXOl7g0ZHTOg7ZOhF1e1a0c7\\OmFOf1?_7@mFOi1=[7cNaFh0=8j19m7oN\\Fg0m14f8L]G1d8MaGO_81fGI\\86iGEW8;QH]OP8b0WHUOk7k0f3O1O001O001O1O001O2N1O1O1O2N1O2N2N2N3M3Leh[4"
+      },
+      "sam_score_gt_box": 0.9433598518371582,
+      "mask_area": 13063,
+      "color_ratios": {
+        "red": 0.14537242593584934,
+        "blue": 0.019214575518640434,
+        "yellow": 0.11942126617162979,
+        "green": 0.3019980096455638,
+        "black": 0.08520248028783588,
+        "white": 0.03222843144760009,
+        "brown": 0.25185638827221923
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "green",
+      "crosstalk": true,
+      "o2o_present": 1,
+      "o2o_iou": 0.707930387284873,
+      "o2o_det": [
+        134.6031494140625,
+        123.30256652832031,
+        234.228271484375,
+        384.826904296875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.10439851616322204
+    },
+    {
+      "idx": 2,
+      "desc": "a yellow bottle",
+      "category": "bottle",
+      "color": "yellow",
+      "box": [
+        0.8047417840375587,
+        0.3355,
+        1.0,
+        0.7593125000000001
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.8405913052846862,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "\\[[65g?6K5J6G8I8G8I7J6H8H7H9G9\\Oc0F:L5L3N2N3N1O1N3N1O1O2N1O1O1O1O2N1O1O1O1N3N1O1O1N2N2N3L3M3K5K5L4K5N2000000001O00001O00000000001O0000000000]OSJSGl5n8TJSGk5a9000000O101O0O100O100O100O2N1O1O1N2N2N2K4K6L5K4dKTE`3k;K4G8I8I6J6I7K5J6K5K5L5I6K^H"
+      },
+      "sam_score_gt_box": 0.9941457509994507,
+      "mask_area": 15217,
+      "color_ratios": {
+        "red": 0.0003942958533219426,
+        "blue": 0.0,
+        "yellow": 0.2869159492672669,
+        "green": 0.6450023000591444,
+        "black": 0.02378918315042387,
+        "white": 0.002760070973253598,
+        "brown": 0.0028915029243609123
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8405913052846862,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8405913052846862,
+      "o2o_det": [
+        405.1038818359375,
+        152.21121215820312,
+        512.0867919921875,
+        393.4369812011719
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.2531601530789748
+    },
+    {
+      "idx": 3,
+      "desc": "a brown sink",
+      "category": "sink",
+      "color": "brown",
+      "box": [
+        0.0,
+        0.8409375000000001,
+        0.453755868544601,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 1,
+      "present_any": true,
+      "loc_iou": 0.959123810023868,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "c=]2c=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001O00000000000000000000000000000000000000000000000000001O00000000000000000000001O0000000000000000001O0000000000001O000000001O000000001O0000001O00001O0000001O00001O001O00001O00001O001O00001O00001O001O00001O001O001O001O001O1O001O001O001O001O1O001O1O1O001O1O1O001O1O1O1O1O1O1O1O1O1O1O1O2N1O1O1O2N1O1O2N1O2N2N2N4L4LTP[4"
+      },
+      "sam_score_gt_box": 1.0059884786605835,
+      "mask_area": 15301,
+      "color_ratios": {
+        "red": 0.0,
+        "blue": 0.060192144304293836,
+        "yellow": 0.0,
+        "green": 0.022874321939742502,
+        "black": 0.7273380824782694,
+        "white": 0.028952356055159792,
+        "brown": 0.02476962290046402
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "black",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.959123810023868,
+      "o2o_det": [
+        -0.11942291259765625,
+        431.99810791015625,
+        237.43270874023438,
+        512.1669921875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.024751828631138974
+    },
+    {
+      "idx": 4,
+      "desc": "a brown toothbrush",
+      "category": "toothbrush",
+      "color": "brown",
+      "box": [
+        0.15368544600938966,
+        0.27478125000000003,
+        0.34131455399061034,
+        0.461
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.47943460728081194,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.47943460728081194,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.47943460728081194,
+      "o2o_det": [
+        66.33468627929688,
+        147.25674438476562,
+        138.1007080078125,
+        229.34988403320312
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 5,
+      "desc": "a brown toothbrush",
+      "category": "toothbrush",
+      "color": "brown",
+      "box": [
+        0.27612676056338026,
+        0.23157812500000002,
+        0.40835680751173703,
+        0.4583281250000001
+      ],
+      "status": "ok",
+      "n_det": 2,
+      "present_any": true,
+      "loc_iou": 0.4095591341768187,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.4095591341768187,
+      "failure": "mislocated",
+      "o2o_present": 1,
+      "o2o_iou": 0.4095591341768187,
+      "o2o_det": [
+        109.36737060546875,
+        147.69309997558594,
+        203.46722412109375,
+        261.669677734375
+      ],
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    }
+  ]
+}

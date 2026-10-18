@@ -1,0 +1,246 @@
+{
+  "sample_id": "mig444_s2025",
+  "config_hash": "59e1dab752",
+  "image_sha1": "f9f88de886778215125264be6f0f040e39588c0f",
+  "detections": {
+    "wine glass": {
+      "xyxy": [
+        [
+          329.282958984375,
+          102.42025756835938,
+          503.656982421875,
+          512.0799560546875
+        ],
+        [
+          126.9705810546875,
+          38.814788818359375,
+          331.1041564941406,
+          511.9580993652344
+        ],
+        [
+          0.01318359375,
+          0.11492919921875,
+          124.58121490478516,
+          512.0612182617188
+        ]
+      ],
+      "conf": [
+        0.7573539614677429,
+        0.7089983224868774,
+        0.6299037933349609
+      ]
+    }
+  },
+  "instances": [
+    {
+      "idx": 0,
+      "desc": "a white wine glass",
+      "category": "wine glass",
+      "color": "white",
+      "box": [
+        0.217390625,
+        0.07818750000000001,
+        0.513375,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.6166712543105404,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "jQP2:c?h0XOe0]O=C9H5J7I;F7H5L3M5J3N4L3L7J2N2M3N3M1N2OPNiDXOOTNS;k4N2N1N2O3SEmJg:X5N3M1O1O3M1O1N3N1O3M2N2N2N2N1O`JUFn4h9RKXFP5f9PKZFR5d9nJ]FS5a9mJ_FU5_9kJ`FX5^9hJbFZ5\\9fJeF[5Y9dJhF_5U9bJjFa5S9_JmFc5Q9\\JQGe5n8ZJRGg5m8ZJRGj5j8VJUGl5j8SJXGo5e8QJ[GQ6c8oI]GT6`8lI`GV6^8jIcGV6]8iIbGY6]8gIcG]6Y8cIgGa6V8^IjGc6U8]IkGe6S8[ImGh6P8XIPHi6P8VIPHk6o7UIQHP7j7PIVHT7f7lHZHV7d7jH\\HY7b7fH^HFNa7a7iHaHFNf7\\7dHfHFNg7[7cHgHFNi7Y7aHiHFNo7S7[HoHGMU8m6THUIHNY8i6nGZIGO_8b6jG_IGOi8W6aGjIFOQ9OlFm5=UJFO]9d5lF]JG0c9\\5fFdJG0f:NYEV4;kKF0]=0dB\\19cNG1d=^1cBbNH1d=]1cBcNI0d=[1YBbN:3I0d=^1bBbNJ0d=^1bBbNI1e=]1bBbNI2d=\\1cBbNJ1c=]1cBbNJ2b=]1cBaNJ3c=\\1cBbNI2d=\\1cBbNI1e=]1bBbNI1e=]1aBlN^=U1bBjN^=U1cBbNI2d=\\1cBbNJ1c=^1bBaNJ7_=Y1fB`NJ8`=W1gBaNI40Ia=c1eBjNJD`=b1eBPOZ=P1fBPOZ=P1gBoNY=R1fBnNZ=R1fBoNK\\O\\=e1hBROX=o0eBZNOg0T<W2lCSM0g08YOh:b4WE`K6MT9b5gF`J5NX8^6=>D<kGiHDO^7`7gH`HI31OW7e7lHlHl3^OnNk7RMjHm3ZOPL2l2o7WMeHN[O0O20M25N10d21XM5e2P8\\MaHMZO10044K10a2d0FQ9LaFhMN1Q10RO3MZ1d9nNYFU1d2`N\\MS1k9oNUFM5OOm0MZOe2KZMP1e:\\OZEOW3b0c7\\O`EKm2e0f7UOXE185j2b0`8]ObG>b8B^G;b8CUD0W3=c8EXDLT3<[<I7KmLOe]i3"
+      },
+      "sam_score_gt_box": 0.8645492792129517,
+      "mask_area": 33664,
+      "color_ratios": {
+        "red": 0.0046934410646387835,
+        "blue": 0.34734434410646386,
+        "yellow": 0.2504158745247148,
+        "green": 0.0,
+        "black": 0.009000712927756654,
+        "white": 0.08546221482889733,
+        "brown": 0.19590660646387834
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.0,
+      "failure": "colour_wrong",
+      "dominant_color": "blue",
+      "crosstalk": false,
+      "o2o_present": 1,
+      "o2o_iou": 0.6166712543105404,
+      "o2o_det": [
+        126.9705810546875,
+        38.814788818359375,
+        331.1041564941406,
+        511.9580993652344
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 0,
+      "o2o_success": 0,
+      "o2o_color_ratio": 0.07508754272294563
+    },
+    {
+      "idx": 1,
+      "desc": "a white wine glass",
+      "category": "wine glass",
+      "color": "white",
+      "box": [
+        0.4729375,
+        0.1501875,
+        0.751765625,
+        0.9878333333333332
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.31884882800573583,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.31884882800573583,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 2,
+      "desc": "a brown wine glass",
+      "category": "wine glass",
+      "color": "brown",
+      "box": [
+        0.6388281250000001,
+        0.18822916666666664,
+        0.931765625,
+        0.9882291666666667
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.8143865093595707,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "lUn4U2b=X2PGQMn0b3ZLfNd3l6N2O1O1001O00003M>B8H4L`NWGYKSO>e9P4kGkKS8m3ZHoKe7f3jHULW7h3b2O1O1O1O1O1O100O1O100O1000000O10000OgHcLQ2]3Y50000O10QIdLZ1\\3e5O100000000O10aIfL8Z3W6000000O100000QJgLWOY3h600000000O100000000000000000iJiLeMV3\\2kLcMU3d7000000000000000XKiLgLW3Q800000000000mKlLZKT3m4nLVGL`3V3V9000O11O00000000000000000000000001YLjLbJV3X5XM`Jh2^5\\M`Jd2^5`M`J`2_5cMUHVO]1W3\\6gMmGA`1h2b6kMfGEe1`2d6ROXIn0g6UOWIk0g6^ORIb0n6NbH3[73aHM^75aHK^7=kG[L10NZ3U8f0hGBW8:WH]Og7e0ZHZOd7g0]HYOb7i0]HWO`7l0`HTO_7m0aHTO\\7n0dHRO[7o0eHQOY7R1fHnNY7U1eHkNY7X1fHhNZ7Y1eHhNX7\\1fHdNY7^1fHbNY7`1fH`NY7c1eH]NZ7e1dH\\N[7V5M2O1O1O2M2O1O1N2N3N1N3N1N3N1N3N1N2O2M3N1M4M3M2N3M3L5L3M4K6J7I5L6H7J8H6J8G;E8G<E9F;D>_O?@Uj4"
+      },
+      "sam_score_gt_box": 0.9828203916549683,
+      "mask_area": 59886,
+      "color_ratios": {
+        "red": 0.15597969475336473,
+        "blue": 0.010035734562335103,
+        "yellow": 0.03842300370704338,
+        "green": 0.0,
+        "black": 0.09827004642153425,
+        "white": 0.023043783188057308,
+        "brown": 0.5829743178706208
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.8143865093595707,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.8143865093595707,
+      "o2o_det": [
+        329.282958984375,
+        102.42025756835938,
+        503.656982421875,
+        512.0799560546875
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.585471089920086
+    },
+    {
+      "idx": 3,
+      "desc": "a red wine glass",
+      "category": "wine glass",
+      "color": "red",
+      "box": [
+        0.8239375000000001,
+        0.23145833333333332,
+        1.0,
+        1.0
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.43080116550663683,
+      "official_pos": 0,
+      "official_color": 0,
+      "official_success": 0,
+      "official_miou": 0.43080116550663683,
+      "failure": "mislocated",
+      "o2o_present": 0,
+      "o2o_iou": 0.0,
+      "o2o_pos": 0,
+      "o2o_color": 0,
+      "o2o_success": 0
+    },
+    {
+      "idx": 4,
+      "desc": "a red wine glass",
+      "category": "wine glass",
+      "color": "red",
+      "box": [
+        0.0017656249999999998,
+        0.0035416666666666665,
+        0.23348437500000002,
+        0.9870208333333333
+      ],
+      "status": "ok",
+      "n_det": 3,
+      "present_any": true,
+      "loc_iou": 0.9367749382017775,
+      "mask_gt_box": {
+        "size": [
+          512,
+          512
+        ],
+        "counts": "0W:i2lE\\M[2LjM0W:=bEi01mN3N0O110Oo]=1QQC1n@1O11Ok>MTA5OO2N10i>8VAH2O0OSn10nQN1]?:^@IZ?8f@FONR20P;2nB3d?<Hh0YAgNX=[1UBgN30O0g=X1j0[O]A]OZ`5Oi_J001KO0=1C\\=e3WNb1REoKj7W6H8M3L4M3M3N2M3N2M3N2O1O1N2O1O1O1O1O1O1O1N2O1O1N2O1O1O1O1O1O1O1O1O1O1O1O1N2O1O1O1N2O1O1M3N2N2O1N2M3N2M3N2M3K7I5I7I7L6J6J5ZLnDX2Y;WMSD004_1d0lNJm;^OgC4k27TiS6"
+      },
+      "sam_score_gt_box": 0.9989550113677979,
+      "mask_area": 41621,
+      "color_ratios": {
+        "red": 0.34523437687705727,
+        "blue": 0.018908723961461763,
+        "yellow": 0.0,
+        "green": 0.0,
+        "black": 0.27106508733571993,
+        "white": 0.03599144662550155,
+        "brown": 0.007015689195358113
+      },
+      "empty_mask": false,
+      "official_pos": 1,
+      "official_color": 1,
+      "official_success": 1,
+      "official_miou": 0.9367749382017775,
+      "failure": "success",
+      "o2o_present": 1,
+      "o2o_iou": 0.9367749382017775,
+      "o2o_det": [
+        0.01318359375,
+        0.11492919921875,
+        124.58121490478516,
+        512.0612182617188
+      ],
+      "o2o_pos": 1,
+      "o2o_color": 1,
+      "o2o_success": 1,
+      "o2o_color_ratio": 0.3439718855339597
+    }
+  ]
+}
