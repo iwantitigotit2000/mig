@@ -2,8 +2,8 @@
 
 > **新的 Claude 窗口请先读 `CLAUDE.md` → `docs/HANDOFF.md` → `docs/TASK_SPEC.md`。**
 
-**当前状态（2026-10-18）**：Stage A、B、C-1、C-2 已完成；Stage C-3（微调模型在验证集上的评测，作业 43571）正在集群上运行；Stage D（图表、失败分析、报告）未开始。
-本文第 4 节列出已完成的内容，第 5 节列出未完成的内容（按组员分工标注）。
+**当前状态（2026-10-20）**：Stage D 的数据隔离检查、统计分析、架构比较、趋势图、失败案例图和 8 页报告均已完成，并在 Apple Silicon Mac 上独立复现了 CPU 分析流程。C-3 的微调验证集分析已完成，测试集评测仍待 GPU 环境补跑。仓库中已提交的测试结果来自本地 RTX 4070，按 `PROVISIONAL` 处理；README 早期记录所称的 A40 结果没有原始文件，不能视为已验证。
+本文第 4 节列出已完成内容，第 5 节仅列出仍需 GPU、原始证据或小组确认的事项。
 
 ---
 
@@ -23,7 +23,7 @@ outputs/      生成图片、评测缓存、结果表、日志、检查结果
 docs/         TASK_SPEC.md（原始任务）、HANDOFF.md（交接记录）
 ```
 
-大文件（权重、官方仓库、COCO、训练检查点）在 `E:\transformer\mig_assets`（集群上是 `~/mig_assets`），不属于代码包。
+大文件（权重、官方仓库、COCO、训练检查点）放在 `MIG_ASSETS` 指向的外部资源目录（集群可设为 `~/mig_assets`），不属于代码包；不要把本机绝对路径提交到仓库。
 
 ## 2. 环境
 
@@ -35,7 +35,7 @@ docs/         TASK_SPEC.md（原始任务）、HANDOFF.md（交接记录）
 | `mig_migc` | MIGC 生成 | diffusers 0.21.1，transformers 4.33.3，huggingface_hub 0.24.5，accelerate 0.23.0 |
 | `mig_eval` | 评测和汇总 | transformers 4.33.3，supervision 0.7.0，pycocotools，pyiqa 0.1.10，setuptools 69.5.1 |
 
-- 本机：`E:\transformer\mig_assets\mkenv.sh`。
+- 本机：运行外部资源目录中的 `mkenv.sh`（目录由 `MIG_ASSETS` 指定）。
 - 集群：`scripts/cluster/mkenv_linux.sh`，版本取自本机的 `pip freeze`（`scripts/cluster/requirements_*.txt`）。
 - 注意：`pip freeze` 不会列出 setuptools，`mig_eval` 需要另外装 `setuptools==69.5.1`，否则 CLIP-IQA 会报 `No module named 'pkg_resources'`。
 
@@ -95,26 +95,26 @@ sbatch --export=ALL,RATIO=0.5,G2_LR=<lr> scripts/slurm/stageC_eval_ft.sbatch   #
   - 已统一：512×512、50 步、CFG 7.5、相同的负向提示、相同的初始噪声（由种子决定）。
   - **无法统一**：采样器。GLIGEN 用官方的 PLMS，MIGC 用官方的 Euler。
 - **每次生成都保存**：图片、输入、检查点、完整配置、耗时和峰值显存（`outputs/gen/*/*/meta/`）。
-- **测试集结果**（集群 A40，100 个布局 × 2 个种子 = 每个方法 200 张；方括号内为按布局 bootstrap 的 95% 置信区间）：
+- **测试集结果**（仓库已提交的本地 RTX 4070 运行，100 个布局 × 2 个种子 = 每个方法 200 张；方括号内为按布局 bootstrap 的 95% 置信区间）。该运行因缺少明确的机器声明文件而标为 **PROVISIONAL**，详见 `outputs/final_analysis/PROVENANCE.md`：
 
 | 指标 | GLIGEN（G0） | MIGC | MIGC − G0 |
 |---|---|---|---|
-| 官方实例成功率（位置和颜色都对） | 0.319 | **0.669** | +0.350 [+0.303, +0.398] |
-| 官方整图成功率 | 0.065 | **0.280** | +0.215 [+0.145, +0.285] |
-| 官方 mIoU（颜色错误记 0） | 0.286 | **0.574** | +0.287 [+0.247, +0.326] |
-| 纯定位 IoU | 0.691 | 0.741 | +0.050 [+0.023, +0.080] |
+| 官方实例成功率（位置和颜色都对） | 0.321 | **0.665** | +0.344 [+0.294, +0.393] |
+| 官方整图成功率 | 0.065 | **0.280** | +0.215 [+0.150, +0.280] |
+| 官方 mIoU（颜色错误记 0） | 0.288 | **0.572** | +0.284 [+0.243, +0.325] |
+| 纯定位 IoU | 0.690 | 0.741 | +0.051 [+0.023, +0.080] |
 | 一对一匹配的对象出现率 | 0.917 | 0.932 | +0.015 [−0.013, +0.042]（不显著） |
-| 失败：对象缺失 / 位置错误 / 颜色错误 | 0.031 / 0.160 / **0.490** | 0.009 / 0.116 / 0.206 | |
-| 颜色错误中属于串扰的比例 | 0.577 | 0.442 | |
+| 失败：对象缺失 / 位置错误 / 颜色错误 | 0.033 / 0.159 / **0.487** | 0.009 / 0.119 / 0.207 | |
+| 颜色错误中属于串扰的比例 | 0.572 | 0.440 | |
 | 评测异常数 | 0 | 0 | |
-| 每张耗时 / 峰值显存 | 5.2 s / 9.4 GB | 5.7 s / 7.8 GB | |
-| CLIP-IQA | 待补算 | 待补算 | |
+| 每张耗时 / 峰值显存 | 5.7 s / 9.4 GB | 6.5 s / 7.8 GB | |
+| CLIP-IQA | 0.689 | **0.707** | +0.018 [+0.002, +0.034] |
 
 **观察**：两种方法画出对象的比例相近，MIGC 的定位略好一些。差距主要来自颜色绑定：GLIGEN 约一半的对象颜色错误，其中超过一半是串扰（用了画面中另一个对象的颜色）。
 
-### 4.3 grounding 控制持续比例（Stage C-1，仅用验证集）
+### 4.3 grounding 控制持续比例（Stage C-1，仅用验证集；原始输出未提交）
 
-比例 r 的含义：GLIGEN 的 alpha_type 为 [r, 0, 1−r]；MIGC 的 MIGCsteps 为 r × 50。验证集 30 个布局 × 2 个种子。
+比例 r 的含义：GLIGEN 的 alpha_type 为 [r, 0, 1−r]；MIGC 的 MIGCsteps 为 r × 50。验证集 30 个布局 × 2 个种子。以下数字来自早期小组日志；由于原始结果文件不在仓库中，报告只定性引用并明确标注为未验证。
 
 | 指标 | G0 r=0.3 | G0 r=0.5 | G0 r=0.8 | MIGC r=0.3 | MIGC r=0.5 | MIGC r=0.8 |
 |---|---|---|---|---|---|---|
@@ -163,100 +163,57 @@ sbatch --export=ALL,RATIO=0.5,G2_LR=<lr> scripts/slurm/stageC_eval_ft.sbatch   #
 - **按组汇总**：按对象数（L2–L6）和框重叠程度分组；所有指标都给出按布局 bootstrap 的 95% 置信区间；同一批样本之间做配对差值。
 - **保存与容错**：检测框、mask、颜色比例和失败状态都会缓存；评测异常会被计数并记录，不会被静默删除。
 
+### 4.6 Stage D 分析、图表与报告
+
+- **数据与隔离检查**：固定并记录 test / val / pilot / train manifest 的版本、行数和 sha256；确认 test 与 val 布局不重叠，并检查 130 个评测布局与 3,100 张训练/训练验证图的框布局近重复，阈值 mean matched IoU ≥ 0.9 时为 0 个。
+- **image ID 边界**：COCO-MIG bench 文件没有保存原 COCO image ID，因此不能导出或逐 ID 比对。仓库导出了可用的 layout ID、sample ID、来源与内容哈希，并完成来源隔离和布局级近重复检查；报告没有把这些替代检查写成 image-ID 检查。
+- **架构分析**：`analysis/architecture_analysis.md` 已分析 GLIGEN fuser / `position_net` 与 MIGC 的 EA、LA、SAC，并给出两张架构图和比较表。没有做单组件消融，因此机制解释是证据支持的推断，不是因果结论。
+- **微调分析**：`analysis/finetune_analysis.md` 已完成学习率、检查点、权重漂移、门值和 `position_net` 分析。结论仅来自 30-layout 验证集；G1/G2 测试集结果仍待补跑。
+- **结果与失败分析**：完成总体与子组 bootstrap、颜色阈值敏感性、计算成本、17 张趋势/架构/失败案例图及固定规则选出的案例 A–E。`failure_cases/cases.csv` 的人工备注栏仍可由组员在最终提交前补充。
+- **报告与复现**：`report/report.pdf` 为 8 页；`bash scripts/stageD_analysis.sh` 可从已提交的 CSV、缓存和图片重建分析、表格、图和 PDF，并检查报告数字。Mac CPU 独立复现记录见 `docs/MAC_CPU_REPRODUCTION.md`。
+
 ---
 
-## 5. 未完成的内容
+## 5. 仍需完成或由小组确认的内容
 
-标记说明：❌ 未做；🟡 部分完成；⏳ 正在运行。
+### 5.1 原分工项的当前状态
 
-### 总览（按负责人）
+成员 A / B / C 尚未最终对应到具体同学，因此这里不再把任务绑定到个人；以证据状态为准。
 
-| 未完成的项目 | 状态 | 负责人 | 对应分工 |
-|---|---|---|---|
-| 导出测试 image ID | ❌ | **C** | 首先向 A 提供测试集 image ID |
-| 按 ID 排除重叠（目前只做了来源隔离） | 🟡 | **A**（用 C 的清单） | 根据成员 C 提供的测试 image ID 排除重叠样本 |
-| 检查训练集与测试集的 ID 重叠 | 🟡 | **C** | 数据流程第 5 步 |
-| 训练清单缺版本号 | 🟡 | **A** | 输出固定的训练数据清单和版本说明 |
-| 小目标标注 | ❌ | **C** | 标注同类异色、框重叠和小目标等困难条件 |
-| scheduler 未统一（见下文说明） | 🟡 | **B** | 统一分辨率、采样步数、CFG、scheduler 和种子 |
-| position_net 影响分析 | ❌ | **A** | 分析 position_net 对位置控制和对象出现率的影响 |
-| 学习率和检查点分析 | ⏳ | **A** | 完成学习率和 checkpoint 分析（等 C-3 结果） |
-| `architecture_analysis.md`（含 MIGC 的 EA / LA / SAC） | ❌ | **B** 为主，GLIGEN 结构部分可由 A 补充 | 分析 EA、LA、SAC；撰写架构比较 |
-| CLIP-IQA 待补算 | 🟡 | **C** | 实现 GroundingDINO、SAM、HSV 和 CLIP-IQA 评测流程 |
-| 指标名对齐 | 🟡 | **C** | Object Recall、Position Success、Attribute Success、Color Leakage Rate |
-| 失败模式分析 | 🟡 | **C** | 按对象数量和困难条件分析失败模式 |
-| 趋势图和失败案例图 | ❌ | **C** | 制作总体结果表、趋势图和失败案例图 |
-| 报告撰写 | ❌ | **A / B / C 各写一部分** | A：GLIGEN、训练数据、position_net；B：MIGC、架构比较、fuser、计算成本；C：数据集、评测方法、结果、局限、结论 |
-| C-3 验证集部分 | ⏳ | **A 和 B** | G1 的检查点分析归 A；G2 的学习率比较归 B |
-
-按人统计：
-- **A**：4 项，外加自己负责的报告部分；
-- **B**：2 项，外加自己负责的报告部分；
-- **C**：7 项，外加自己负责的报告部分。
-
-### 关于"scheduler 未统一"（需要组内决定，负责人 B）
-
-**scheduler（采样器）**是生成图片时用的去噪算法。生成一张图，就是从随机噪声开始，分 50 步逐步去噪；scheduler 决定每一步怎样根据模型的预测更新图片。同一个模型、同一个初始噪声，换一个 scheduler，画出来的图也会有所不同。
-
-| | GLIGEN | MIGC |
+| 原任务 | 当前状态 | 证据边界 / 下一步 |
 |---|---|---|
-| 当前使用的 scheduler | PLMS | Euler |
-| 来源 | GLIGEN 官方推理脚本的默认设置 | MIGC 官方 benchmark 脚本的设置 |
+| 导出测试 image ID | ⚠️ 无法从现有 bench 导出 | 上游 YAML 不含 COCO image ID。已导出 layout ID、sample ID 和哈希，并做来源与布局级隔离检查；不能冒充逐 image-ID 检查。 |
+| 训练/评测隔离与 manifest 版本 | ✅ 已完成 | `manifests/MANIFEST_VERSIONS.json`、`manifests/eval_layout_ids.csv`、`outputs/checks/train_eval_isolation.*`。 |
+| 小目标/困难条件标注 | ✅ 已完成可复现替代 | 数据中没有 COCO “small” 对象；按相对面积四分位分析，并保留同类异色与框重叠分组。 |
+| `position_net` 影响分析 | ✅ 验证集完成；测试集待补 | `analysis/finetune_analysis.md`。没有证据表明它改善定位或对象出现率；正向点估计主要在颜色阈值通过率。 |
+| 学习率和检查点分析 | ✅ 验证集完成 | 1e-5 未见效果；5e-5 点估计更高但与 1e-5 的直接对比区间跨 0；没有证据支持 2000 步优于 500 步。 |
+| EA / LA / SAC 与架构比较 | ✅ 已完成 | `analysis/architecture_analysis.md` 和两张架构图；未做组件消融，不能表述为因果证明。 |
+| 指标命名、总体/子组统计 | ✅ 已完成 | Object Recall、Position Success、Attribute Success、Color Leakage Rate 已统一，采用布局级配对 bootstrap。 |
+| 趋势图和失败案例图 | ✅ 已完成 | 共 17 张图，案例 A–E 由固定规则选取；CSV 的人工备注栏可在最终提交前补充。 |
+| 报告撰写 | ✅ 8 页草稿完成 | 数字自动核对通过；仍需替换 Group XX、姓名并确认贡献声明。 |
+| C-3 微调测试集评测 | ❌ 待 GPU 补跑 | 当前 `position_net` / G2 结论只基于 30-layout 验证集，报告已明确说明。 |
 
-- 分辨率、步数、CFG、种子和初始噪声都已统一，**只有 scheduler 不同**。
-- **当时没有统一的原因**：两个官方代码库不同。GLIGEN 用自带的 ldm 代码，只支持 PLMS 和 DDIM；MIGC 基于 diffusers，使用 Euler。当时选择各用官方设置，以代表"原模型"的效果，并在 `configs/gen.yaml` 中注明。
-- **影响**：分工要求统一 scheduler。现在测试集上两种方法的差距，严格来说可能有一小部分来自采样器的不同，而不完全来自模型本身。
-- **可选方案**：
-  1. **保持现状**：在报告中写明这一差异及理由（两者都用官方默认设置）。不需要重跑。
-  2. **两者都改用 DDIM**：两个代码库都支持 DDIM，但需要先核对能否与官方结果对上。改了以后，Stage B、C-1 和微调评测的生成都要重跑，在集群上估计需要 3–4 小时。
+### 5.2 仍缺少的实验或原始证据
 
-### 成员 A：训练数据、GLIGEN 基线、position_net 微调
+1. **C-3 测试集**：在 GPU 上对验证集选出的 G1 与 G2 5e-5 配置跑测试集。没有 GPU 时可以提交现有版本，但不能把验证集结论写成测试集结论。
+2. **A40 原始输出**：早期小组记录提到 A40 数字，但原始 CSV、metadata 与 provenance 文件不在仓库。拿到后应选择一个 canonical run，重新运行 Stage D，不能混用本地与集群数字。
+3. **统一 sampler / 组件消融**：GLIGEN 使用官方 PLMS，MIGC 使用官方 Euler；EA/LA/SAC 与 fuser 的作用没有单独消融。这两点已作为限制写进报告。如果课程明确要求统一 sampler，则需用共同支持的 DDIM 重跑。
+4. **人工案例备注**：`outputs/final_analysis/failure_cases/cases.csv` 已含自动判定和选择原因，但 `human_observation` 尚未逐行填写；最终定稿前可由组员对照 A–E 图补充，不应自动杜撰。
 
-| 任务 | 状态 | 还差什么 |
-|---|---|---|
-| 根据 C 提供的测试 image ID 排除重叠 | 🟡 | 目前只在来源上隔离（train2014 和 val2014），**没有按测试 image ID 清单逐一排除** |
-| 训练数据清单和版本说明 | 🟡 | 清单和统计都有；**缺版本号和文件校验值（sha256）** |
-| 学习率和检查点分析 | ⏳ | 等 C-3 在验证集上的结果 |
-| 分析 position_net 对位置控制和对象出现率的影响 | ❌ | 依赖 C-3 中 G1 在测试集上的结果 |
-| 撰写 GLIGEN、训练数据和 position_net 实验部分 | ❌ | |
+### 5.3 CPU 复现
 
-### 成员 B：MIGC、position_net + fuser 微调、统一推理
+从仓库根目录运行：
 
-| 任务 | 状态 | 还差什么 |
-|---|---|---|
-| 分析 MIGC 的 EA、LA、SAC | 🟡 | 维度探测已运行（`outputs/analysis/migc_probe.json`）；**`architecture_analysis.md` 未写**（包括两张结构图和方法差异表） |
-| 统一 scheduler | 🟡 | **未统一**：GLIGEN 用 PLMS，MIGC 用 Euler，都是各自官方的设置。需要组内决定，见上文"关于 scheduler 未统一" |
-| 撰写 MIGC、架构比较、fuser 和计算成本部分 | ❌ | |
+```bash
+bash scripts/stageD_analysis.sh 2>&1 | tee stageD_run.log
+```
 
-### 成员 C：测试集、自动评测、失败模式分析
+该命令会检查数据隔离，重算统计、表格和 17 张图，验证报告数字，并在安装了 `pdflatex` 时重建 `report/report.pdf`。它不会重跑 GPU 训练、生成、GroundingDINO/SAM 或 CLIP-IQA 推理。Apple Silicon Mac 的独立复现记录见 `docs/MAC_CPU_REPRODUCTION.md`。
 
-| 任务 | 状态 | 还差什么 |
-|---|---|---|
-| 向 A 提供测试集 image ID | ❌ | 没有导出 ID 清单 |
-| 标注小目标 | ❌ | 同类异色和框重叠已标注；小目标没有 |
-| CLIP-IQA | 🟡 | 流程在本机跑通了；集群环境缺 setuptools，Stage B 和 C-1 的质量分**待补算** |
-| 指标命名 | 🟡 | 内容都有，但名字还没对齐到 Object Recall / Position Success / Attribute Success / Color Leakage Rate |
-| 汇总所有模型结果 | 🟡 | 原模型和比例实验已汇总；微调模型等 C-3 |
-| 按对象数和困难条件分析失败模式 | 🟡 | 分组表能自动生成，**分析还没写**；小目标这一组缺失 |
-| 总体结果表、趋势图、失败案例图 | ❌ | 结果表能自动生成；**趋势图、训练曲线、≥ 6 组配对图、失败案例图都没做** |
-| 撰写数据集、评测方法、结果、局限和结论部分 | ❌ | |
+### 5.4 最终提交前清单
 
-### 数据责任流程
-
-| 步骤 | 状态 |
-|---|---|
-| 1. C 导出测试 image ID | ❌ |
-| 2. A 据此构建无重叠训练集 | 🟡 只做了来源隔离 |
-| 3. A 发布训练清单、样本数和版本号 | 🟡 缺版本号 |
-| 4. A、B 使用同一版本训练集 | ✅ |
-| 5. C 检查训练集与测试集的 ID 重叠 | 🟡 只按文件名检查过，没有独立的检查记录 |
-| 6. 训练集锁定后不再修改 | ✅ 至今没有修改 |
-
-### 运行中 / 待提交的作业
-
-| 作业 | 状态 |
-|---|---|
-| C-3 验证集部分（`RATIO=0.5`，作业 43571） | ⏳ 运行中 |
-| C-3 测试集部分（G1 和选定学习率的 G2） | 等 C-3 验证集结果选出 G2 学习率后提交 |
-| Stage B、C-1 补算 CLIP-IQA | 在集群 `mig_eval` 环境装好 `setuptools==69.5.1` 后，重新提交对应作业 |
-| 下载集群结果到本机 | 未做。本机 `outputs/` 里仍是 Stage A 的结果和 152 张本机生成的旧测试图，**不用于最终结果** |
+- [ ] 在 `report/report.tex` 中替换 `Group XX` 和姓名占位符。
+- [ ] 小组确认 `report/contribution.md`，按实际贡献分配，不沿用旧的 A/B/C 假设。
+- [ ] 决定是否补跑 C-3 测试集；如不补跑，保留现有明确限制。
+- [ ] 如收到 A40 原始文件，更新 provenance 并完整重跑 Stage D。
+- [ ] 运行一次 `bash scripts/stageD_analysis.sh`，确认所有检查通过后再提交。

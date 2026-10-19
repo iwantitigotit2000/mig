@@ -1,0 +1,38 @@
+{
+  "source": "outputs/results/test_original/instances.csv",
+  "baseline_reconstruction_mismatches": 0,
+  "position_threshold": 0.5,
+  "masks": "unchanged stored SAM masks",
+  "bootstrap": {
+    "unit": "layout",
+    "draws": 5000,
+    "seed": 2026
+  },
+  "scope": "Post hoc sensitivity of the automatic evaluator; no new model training or inference.",
+  "results": [
+    {
+      "colour_threshold": 0.1,
+      "G0_success": 0.37875,
+      "MIGC_success": 0.7375,
+      "MIGC_minus_G0": 0.35875,
+      "delta_ci95_low": 0.30970499042349436,
+      "delta_ci95_high": 0.40780294317528354
+    },
+    {
+      "colour_threshold": 0.2,
+      "G0_success": 0.32125,
+      "MIGC_success": 0.665,
+      "MIGC_minus_G0": 0.34375,
+      "delta_ci95_low": 0.2944122968935953,
+      "delta_ci95_high": 0.3929440389294404
+    },
+    {
+      "colour_threshold": 0.3,
+      "G0_success": 0.26375,
+      "MIGC_success": 0.59875,
+      "MIGC_minus_G0": 0.335,
+      "delta_ci95_low": 0.2857142857142857,
+      "delta_ci95_high": 0.3838120104438642
+    }
+  ]
+}

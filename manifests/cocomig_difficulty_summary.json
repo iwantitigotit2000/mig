@@ -1,0 +1,59 @@
+{
+  "resolution": 512,
+  "definitions": {
+    "size_bucket_coco": "COCO small/medium/large thresholds (32^2, 96^2 px) at 512x512",
+    "relative_size_q": "quartiles of normalised box area within each split (unique layouts)"
+  },
+  "quartile_cutoffs_normalised_area": {
+    "pilot": {
+      "q25": 0.04985809703722681,
+      "q50": 0.16047505995244563,
+      "q75": 0.3268167284339042
+    },
+    "test": {
+      "q25": 0.050995244943373104,
+      "q50": 0.0890370725315945,
+      "q75": 0.17845658179820173
+    },
+    "val": {
+      "q25": 0.043369593594051334,
+      "q50": 0.10842559195773396,
+      "q75": 0.23375691284179684
+    }
+  },
+  "splits": {
+    "pilot": {
+      "objects_unique": 40,
+      "objects_with_seeds": 80,
+      "size_bucket_coco": {
+        "large": 35,
+        "medium": 5
+      },
+      "touches_border": 13,
+      "median_side_px_512": 204.4685037878241,
+      "min_side_px_512": 72.69805609505664
+    },
+    "test": {
+      "objects_unique": 400,
+      "objects_with_seeds": 800,
+      "size_bucket_coco": {
+        "large": 346,
+        "medium": 54
+      },
+      "touches_border": 95,
+      "median_side_px_512": 152.77608237942417,
+      "min_side_px_512": 65.78657695937676
+    },
+    "val": {
+      "objects_unique": 120,
+      "objects_with_seeds": 240,
+      "size_bucket_coco": {
+        "large": 103,
+        "medium": 17
+      },
+      "touches_border": 32,
+      "median_side_px_512": 168.55286543926167,
+      "min_side_px_512": 69.13970517078857
+    }
+  }
+}

@@ -1,6 +1,8 @@
 # 交接记录（给新的 Claude 窗口）
 
-最后更新：2026-10-16。用户要求：**用中文回复**；项目放在 **E 盘**；用户说“停”时不要再自动启动长任务；**任何运行或改文件之前都先问用户**。
+最后更新：2026-10-20。项目根目录以当前仓库为准；大文件位置通过 `MIG_ASSETS` 配置，不在交接文档中记录个人电脑的绝对路径。
+
+> **当前权威状态（2026-10-20）**：Stage D 的隔离检查、统计、架构分析、17 张图和 8 页报告已完成；CPU 分析已在 Apple Silicon Mac 上独立复现。C-3 微调测试集仍待 GPU 补跑。仓库内测试结果的 metadata 指向本地 RTX 4070，属于 `PROVISIONAL`；早期记录中的 A40 结果没有原始文件，不能视为已验证。下面第 1–4 节保留 2026-10-16 的历史环境与决策记录，当前待办以第 5 节及根目录 `MERGE_READY.md` 为准。
 
 **2026-10-16 决定：Stage B–C 全部改在学校 CCDS TC2 集群（A40）上运行，Stage B 在集群上从头跑。** 操作步骤见 `scripts/slurm/README_slurm.md`。集群相关脚本已写好，但**还没有在集群上运行或验证过**。
 
@@ -12,11 +14,11 @@
 
 | 内容 | 位置 |
 |---|---|
-| 代码 + 结果（课程代码包） | `E:\transformer\mig_project` |
-| 大文件（权重、官方仓库、COCO、训练检查点），不进代码包 | `E:\transformer\mig_assets` |
-| Python 环境（conda 环境无法搬动，留在 D 盘） | `D:\condamini\envs\mig_gligen` / `mig_migc` / `mig_eval` |
+| 代码 + 结果（课程代码包） | 仓库根目录 |
+| 大文件（权重、官方仓库、COCO、训练检查点），不进代码包 | `${MIG_ASSETS}` |
+| Python 环境 | conda 环境 `mig_gligen` / `mig_migc` / `mig_eval` |
 
-所有路径集中在 `configs/paths.yaml`（`assets_root: E:/transformer/mig_assets`，可用环境变量 `MIG_ASSETS` 覆盖）。
+所有路径集中在 `configs/paths.yaml`；本机资源根目录应通过环境变量 `MIG_ASSETS` 覆盖，避免提交个人绝对路径。
 
 三个环境（依赖冲突，所以分开）：
 - `mig_gligen`：torch 2.1.2+cu121，transformers 4.19.2（GLIGEN 官方 ckpt 需要旧版 text encoder 键）。
@@ -25,10 +27,10 @@
 
 硬件：本机是 RTX 4070 12 GB、32 GB 内存、Windows 11，**不是任务目标的 A40**（Stage A 在本机完成）。
 
-集群（CCDS TC2，用户手册 `E:\transformer\CCDSGPU-TC2-Masters-UserGuide.pdf`）：
+集群（CCDS TC2；用户手册保存在组员本地，不纳入仓库）：
 - QoS "normal"：CPU ≤ 10、GPU 1、主机内存 ≤ 30G、同时最多 2 个作业、单个作业最长 6 h、家目录 100 GB；分区 `MGPU-TC2`。
 - 登录节点只能传文件、建环境、提交作业，不能跑代码。计算节点能否联网未知，所以权重全部预先上传，作业里打开 HF 离线模式。
-- `scripts/slurm/*.sbatch` 共用 `scripts/slurm/env.sh`（加载 conda、设置 `MIG_ASSETS`/`PY_*`、离线模式、检查 GPU）。`scripts/lib.sh` 的解释器路径可以用 `PY_GLIGEN`/`PY_MIGC`/`PY_EVAL` 覆盖，默认仍是本机 D 盘路径。
+- `scripts/slurm/*.sbatch` 共用 `scripts/slurm/env.sh`（加载 conda、设置 `MIG_ASSETS`/`PY_*`、离线模式、检查 GPU）。`scripts/lib.sh` 的解释器路径可以用 `PY_GLIGEN`/`PY_MIGC`/`PY_EVAL` 覆盖；使用时应显式设置，避免依赖旧版配置中的本机绝对路径。
 - 环境：`scripts/cluster/mkenv_linux.sh` 按 `scripts/cluster/requirements_*.txt`（本机三个环境的 pip freeze）建环境。上传清单在 `scripts/cluster/upload_list.txt`（约 17 GB）。
 
 ## 2. 版本记录
@@ -56,7 +58,7 @@
 - 样本清单 `manifests/`（`data_tools/build_cocomig_manifest.py`）：来自 MIGC 官方 `bench_file/mig_bench_anno.yaml`（800 布局）。按对象数 L2–L6 分层：val 30 布局、pilot 10 布局（val 的子集）、test 100 布局，互不重叠；每个布局两个种子 42、2025。标注了同类不同颜色和框重叠分桶（none / low<0.1 / mid<0.3 / high）。
 - 训练数据（`data_tools/prepare_coco_train.py`）：COCO **train2014** 中 3000 张训练 + 100 张留出验证，与 val2014（COCO-MIG 的来源）无重叠。对象描述只用 COCO 类别名，**没有颜色监督**。
 - pilot 10 布局 × 2 种子，两种方法都已生成和评测：`outputs/results/pilot/summary.md`。仅用于验证流程，不下结论。MIGC 实例成功率 0.59，GLIGEN 0.23；定位 IoU 都是 0.73；GLIGEN 主要败在颜色。
-- 60 步短训练（`E:\transformer\mig_assets\runs\pilot_g1`、`pilot_g2`）：
+- 60 步短训练（`${MIG_ASSETS}/runs/pilot_g1`、`${MIG_ASSETS}/runs/pilot_g2`）：
   - G1 只训练 position_net，1,083,968 参数（0.10%），1.64 s/更新，5.8 GB。
   - G2 训练 position_net + fuser，209,102,240 参数（19.57%），1.74 s/更新，8.4 GB。
   - 两者的梯度检查和权重检查都通过：可训练参数都有梯度且都更新了，冻结参数无梯度、未改变。
@@ -82,14 +84,19 @@
   - GroundingDINO 使用同文件里的 PyTorch 版可变形注意力（未编译 CUDA 算子），BERT 指向本地。
 - **内存注意**：Windows 提交内存（commit）接近上限时会出现 MemoryError。生成脚本会自动重试并记录到 `errors.jsonl`；`scripts/lib.sh` 里有 GPU 锁，防止两条流水线同时运行。
 
-## 5. 下一步（按顺序）
+## 5. 当前下一步（按优先级）
 
-先在集群上上传资源并建环境（`scripts/slurm/README_slurm.md` 第 1、2 步），然后把下面每一步换成对应的 `sbatch scripts/slurm/<阶段>.sbatch` 提交（不要在本机运行 `bash scripts/...`）。每一步提交前都要先问用户。
+1. **先完成提交信息**：在 `report/report.tex` 替换 Group XX 和姓名；全组按实际贡献确认 `report/contribution.md`。
+2. **有 GPU 时补跑 C-3 测试集**：仅评测验证集预先选出的 G1 与 G2 5e-5，避免再用测试集调参。将结果复制回仓库后完整运行 `bash scripts/stageD_analysis.sh`。
+3. **若收到 A40 原始输出**：先补 `provenance.json`，选择一个 canonical run，再重建全部统计、图和报告；不要把本地 RTX 4070 与 A40 数字混在一张主表中。
+4. **决定 sampler 处理**：当前 GLIGEN=PLMS、MIGC=Euler，并已作为限制披露。只有课程明确要求统一时才用共同支持的 DDIM 重跑。
+5. **最终 CPU 检查**：运行 `bash scripts/stageD_analysis.sh 2>&1 | tee stageD_run.log`。Mac 复现记录在 `docs/MAC_CPU_REPRODUCTION.md`。
 
-1. 跑完 Stage B：`bash scripts/stageB.sh`，约 1 小时。之后写 `analysis/architecture_analysis.md`：用 `outputs/analysis/gligen_probe.json`、`migc_probe.json` 的真实维度，加两张结构图和方法差异表。
-2. Stage C-1：`bash scripts/stageC_val_ratio.sh`。在 val 上比较 grounding 持续比例 r ∈ {0.3, 0.5, 0.8}，GLIGEN 和 MIGC 都做，约 40 分钟。
-3. Stage C-2：`bash scripts/stageC_train.sh`。g1_lr5e-5、g2_lr5e-5、g2_lr1e-5 各 2000 步，每个约 1 小时，可断点恢复。
-4. Stage C-3：`RATIO=<val 选出的值> G2_LR=<val 选出的值> bash scripts/stageC_eval_ft.sh`。在 val 上比较学习率和早期/后期检查点，然后用 test 跑 G1/G2。
-5. Stage D：汇总表（`analysis/aggregate.py`）、训练曲线、≥6 组配对图、失败案例、README 复现命令、报告初稿。
+**已完成但有证据边界的项目**：
 
-**未运行**的内容一律在报告里标注为“未运行”或“估算”。
+- `position_net`、学习率和 checkpoint：验证集分析完成，测试集尚未运行。
+- MIGC 的 EA / LA / SAC 与架构比较：文档和图完成；没有组件消融，不能作因果表述。
+- 测试 image ID：上游 bench 不提供实际 COCO image ID；已完成来源隔离、layout/sample 标识导出与布局级近重复检查。
+- 失败模式、趋势图和报告：已完成；失败案例 CSV 的人工观察栏可由组员在最终提交前补充。
+
+**未运行**的内容一律在报告里标注为“未运行”“待补”或“未验证”，不得根据日志推断为已完成。

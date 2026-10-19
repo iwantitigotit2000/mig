@@ -1,0 +1,40 @@
+{
+  "data_version": "v1.0-locked-2026-10",
+  "files": {
+    "cocomig_pilot.jsonl": {
+      "sha256": "d8f19053d0969fddacfbc8e39b6a3763d7684d19f4792a47e86ca6e44efe84b6",
+      "bytes": 29160,
+      "rows": 20
+    },
+    "cocomig_val.jsonl": {
+      "sha256": "ca132fd73bf7f41531e602b3648f0166d8f915e17e2b1eccf48f9ab64bbf2d62",
+      "bytes": 87482,
+      "rows": 60
+    },
+    "cocomig_test.jsonl": {
+      "sha256": "ad10ee34b546b59de073fc7f2ed142b5ef0474baaedb12daec3dec2e898321d5",
+      "bytes": 290034,
+      "rows": 200
+    },
+    "coco_train.jsonl": {
+      "sha256": "6666eba4d3636a9b87a3a4c3b3bc87636cea81d124689ccfcf269ff8042d5aed",
+      "bytes": 2708366,
+      "rows": 3000
+    },
+    "coco_trainval.jsonl": {
+      "sha256": "860e5d375191aa9f93edd20dacdc244c357df0bd532372a52f9a028d3807914c",
+      "bytes": 91937,
+      "rows": 100
+    },
+    "cocomig_split_summary.json": {
+      "sha256": "09680fd8182df8d499594d0e679f48a35d262ad698a08bf2442acb3da65116a7",
+      "bytes": 2684,
+      "rows": null
+    },
+    "coco_train_summary.json": {
+      "sha256": "510ce84454f30eb551f6d6f8cf3559a855a4a80cc1a24a1df7eba97806f31578",
+      "bytes": 326,
+      "rows": null
+    }
+  }
+}

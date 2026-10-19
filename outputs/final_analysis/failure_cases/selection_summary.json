@@ -1,0 +1,13 @@
+{
+  "selected": {
+    "A": 3,
+    "B": 2,
+    "C": 1,
+    "D": 2,
+    "E": 2
+  },
+  "A_pool": 29,
+  "C_pool": 1,
+  "images_where_MIGC_all_correct": 56,
+  "images_where_GLIGEN_all_correct": 13
+}
