@@ -1,15 +1,14 @@
-# Group XX — Contribution statement (to be filled in by the group)
+# Group 7 — Contribution statement (to be filled in by the group)
 
 > Rule: each member lists only what they actually implemented, ran or verified. Training runs are
 > credited to the member who executed them. Assignment below is intentionally **blank**; agree it
-> in the group, then convert with `pandoc contribution.md -o group_XX_contribution.pdf`.
+> in the group, then convert with `pandoc contribution.md -o group_7_contribution.pdf`.
 
 | Member (name as on student card) | Contribution (pick from the task list below, add specifics) |
 |---|---|
-| | |
-| | |
-| | |
-| | |
+| Zhichen Liu | |
+| Xinkuo Wu | |
+| Yanyu Wen | |
 
 ## Task list (unassigned)
 
