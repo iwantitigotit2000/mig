@@ -9,7 +9,8 @@ Prepared on 20 October 2026 against upstream `main` commit
 - split, difficulty, and train/evaluation-isolation checks;
 - paired layout-bootstrap statistics, failure analysis, evaluator sensitivity,
   fine-tuning analysis, figures, and generated report tables;
-- an eight-page compiled technical report;
+- the submitted report `report/group_7_report.pdf` (15 pages, single column, Group 7) and the
+  two-column LaTeX draft `report/report.pdf` that the number-checking pipeline targets;
 - a receipt for the independent Apple Silicon Mac CPU reproduction.
 
 ## Validation completed
@@ -34,7 +35,7 @@ prevent merging the analysis branch.
 
 ## Group actions before final submission
 
-1. Replace `Group XX` and the author placeholder in `report/report.tex`.
+1. Remove or complete the dangling footnote marker (¹) in Section 4.1 of `group_7_report.pdf` at the source document.
 2. Confirm the final contribution statement in `report/contribution.md` after
    roles are assigned.
 3. If the missing A40 artifacts later become available, choose one canonical run,

@@ -170,7 +170,7 @@ sbatch --export=ALL,RATIO=0.5,G2_LR=<lr> scripts/slurm/stageC_eval_ft.sbatch   #
 - **架构分析**：`analysis/architecture_analysis.md` 已分析 GLIGEN fuser / `position_net` 与 MIGC 的 EA、LA、SAC，并给出两张架构图和比较表。没有做单组件消融，因此机制解释是证据支持的推断，不是因果结论。
 - **微调分析**：`analysis/finetune_analysis.md` 已完成学习率、检查点、权重漂移、门值和 `position_net` 分析。结论仅来自 30-layout 验证集；G1/G2 测试集结果仍待补跑。
 - **结果与失败分析**：完成总体与子组 bootstrap、颜色阈值敏感性、计算成本、17 张趋势/架构/失败案例图及固定规则选出的案例 A–E。`failure_cases/cases.csv` 的人工备注栏仍可由组员在最终提交前补充。
-- **报告与复现**：`report/report.pdf` 为 8 页；`bash scripts/stageD_analysis.sh` 可从已提交的 CSV、缓存和图片重建分析、表格、图和 PDF，并检查报告数字。Mac CPU 独立复现记录见 `docs/MAC_CPU_REPRODUCTION.md`。
+- **报告与复现**：提交版报告为 `report/group_7_report.pdf`（15 页，单栏；由 `report/make_docx.js` 生成的 Word 文档在 Google Docs 中定稿导出）。`report/report.tex` / `report.pdf` 是同一内容的双栏 LaTeX 版本，保留它是因为数字检查流水线（`check_report_numbers.py`）作用于它；两版数字均来自 `report/tables/`。`bash scripts/stageD_analysis.sh` 可从已提交的 CSV、缓存和图片重建分析、表格、图和 PDF，并检查报告数字。Mac CPU 独立复现记录见 `docs/MAC_CPU_REPRODUCTION.md`。
 
 ---
 
@@ -212,7 +212,8 @@ bash scripts/stageD_analysis.sh 2>&1 | tee stageD_run.log
 
 ### 5.4 最终提交前清单
 
-- [ ] 在 `report/report.tex` 中替换 `Group XX` 和姓名占位符。
+- [x] 提交版报告 `report/group_7_report.pdf` 已写入组号与姓名；`report/report.tex` 中的 `Group XX` 占位符只影响 LaTeX 草稿。
+- [ ] `group_7_report.pdf` 第 4.1 节 "Table 2 and Figure 2 give the main result. ¹" 的脚注标记 ¹ 没有对应脚注正文（Google Docs 导出时丢失）；提交前在源文档中删除 ¹，或补回数据来源说明。
 - [ ] 小组确认 `report/contribution.md`，按实际贡献分配，不沿用旧的 A/B/C 假设。
 - [ ] 决定是否补跑 C-3 测试集；如不补跑，保留现有明确限制。
 - [ ] 如收到 A40 原始文件，更新 provenance 并完整重跑 Stage D。
